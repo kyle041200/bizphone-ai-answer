@@ -165,3 +165,55 @@
   -webkit-background-clip: text;
   color: transparent;
 }
+
+/* ============================================================
+   BizSite page theme — deep navy & teal identity (page-scoped)
+   ============================================================ */
+:root {
+  --bs-navy: oklch(0.21 0.045 245);
+  --bs-navy-deep: oklch(0.155 0.038 250);
+  --bs-teal: oklch(0.62 0.11 205);
+  --bs-teal-bright: oklch(0.8 0.13 190);
+  --bs-paper: oklch(0.975 0.006 95);
+  --bs-sand: oklch(0.945 0.012 95);
+  --bs-ink: oklch(0.2 0.03 245);
+  --bs-muted: oklch(0.46 0.025 245);
+  --bs-line: oklch(0.895 0.008 240);
+  --bs-on-dark: oklch(0.96 0.008 200);
+  --bs-on-dark-muted: oklch(0.78 0.03 210);
+  --bs-dark-line: oklch(1 0 0 / 12%);
+  --bs-dark-card: oklch(1 0 0 / 6%);
+  --bs-gradient: linear-gradient(135deg, var(--bs-teal), oklch(0.55 0.12 225));
+}
+
+@utility font-display { font-family: "Sora", ui-sans-serif, system-ui, sans-serif; }
+@utility font-body { font-family: "Manrope", ui-sans-serif, system-ui, sans-serif; }
+
+@utility bg-bs-navy { background-color: var(--bs-navy); }
+@utility bg-bs-navy-deep { background-color: var(--bs-navy-deep); }
+@utility bg-bs-paper { background-color: var(--bs-paper); }
+@utility bg-bs-sand { background-color: var(--bs-sand); }
+@utility bg-bs-teal { background-color: var(--bs-teal); }
+@utility bg-bs-teal-bright { background-color: var(--bs-teal-bright); }
+@utility bg-bs-dark-card { background-color: var(--bs-dark-card); }
+@utility bg-bs-gradient { background-image: var(--bs-gradient); }
+
+@utility text-bs-teal { color: var(--bs-teal); }
+@utility text-bs-teal-bright { color: var(--bs-teal-bright); }
+@utility text-bs-ink { color: var(--bs-ink); }
+@utility text-bs-muted { color: var(--bs-muted); }
+@utility text-bs-on-dark { color: var(--bs-on-dark); }
+@utility text-bs-on-dark-muted { color: var(--bs-on-dark-muted); }
+
+@utility border-bs-line { border-color: var(--bs-line); }
+@utility border-bs-teal { border-color: var(--bs-teal); }
+@utility border-bs-dark-line { border-color: var(--bs-dark-line); }
+
+@utility text-bs-gradient {
+  background-image: linear-gradient(120deg, var(--bs-teal-bright), var(--bs-teal));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@utility shadow-bs-glow { box-shadow: 0 20px 60px -20px color-mix(in oklab, var(--bs-teal) 45%, transparent); }
+@utility shadow-bs-card { box-shadow: 0 10px 30px -15px oklch(0.3 0.05 245 / 0.15); }

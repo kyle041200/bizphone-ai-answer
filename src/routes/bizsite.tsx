@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
-  ArrowRight, Sparkles, Check, Globe, PenLine, MousePointerClick, Inbox,
+  ArrowRight, Check, Globe, PenLine, MousePointerClick, Inbox,
   Search, ShieldCheck, LifeBuoy, Wrench, HardHat, UtensilsCrossed, Scale,
-  CalendarCheck, Rocket, MonitorSmartphone, FileText, TrendingUp, RefreshCw,
-  Building2, Workflow, MessageSquare, Phone, Layout,
+  CalendarCheck, Rocket, MonitorSmartphone, FileText, TrendingUp,
+  Building2, MessageSquare, Phone, Layout, Compass,
 } from "lucide-react";
 import heroImg from "@/assets/hero-bizsite.jpg";
 import mockupImg from "@/assets/website-mockup.png";
@@ -29,6 +29,14 @@ export const Route = createFileRoute("/bizsite")({
           "Modern small business websites with copy, design, lead capture, SEO, hosting, and ongoing support — without the months-long website process.",
       },
     ],
+    links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap",
+      },
+    ],
   }),
 });
 
@@ -44,16 +52,21 @@ function Section({
   className?: string;
 }) {
   return (
-    <section id={id} className={`py-24 px-6 ${className}`}>
+    <section id={id} className={`px-6 py-24 ${className}`}>
       <div className="mx-auto max-w-6xl">{children}</div>
     </section>
   );
 }
 
-function Eyebrow({ children }: { children: React.ReactNode }) {
+function Eyebrow({ children, dark = false }: { children: React.ReactNode; dark?: boolean }) {
   return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-accent px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-accent-foreground">
-      <Sparkles className="size-3.5" /> {children}
+    <span
+      className={`inline-flex items-center gap-2.5 text-xs font-bold uppercase tracking-[0.22em] ${
+        dark ? "text-bs-teal-bright" : "text-bs-teal"
+      }`}
+    >
+      <span className={`h-px w-8 ${dark ? "bg-bs-teal-bright" : "bg-bs-teal"}`} />
+      {children}
     </span>
   );
 }
@@ -63,20 +76,20 @@ function CTAButtons({ light = false }: { light?: boolean }) {
     <div className="flex flex-wrap items-center gap-3">
       <a
         href="#pricing"
-        className={`inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-bold transition-all hover:-translate-y-0.5 ${
+        className={`inline-flex items-center gap-2 px-7 py-3.5 text-sm font-bold transition-all hover:-translate-y-0.5 ${
           light
-            ? "bg-white text-primary shadow-glow hover:bg-white/90"
-            : "bg-gradient-primary text-primary-foreground shadow-glow"
+            ? "bg-bs-teal-bright text-bs-navy-deep shadow-bs-glow hover:bg-bs-teal"
+            : "bg-bs-gradient text-bs-on-dark shadow-bs-glow"
         }`}
       >
         Get Your BizSite <ArrowRight className="size-4" />
       </a>
       <a
         href="#examples"
-        className={`inline-flex items-center gap-2 rounded-full border px-7 py-3.5 text-sm font-bold transition-colors ${
+        className={`inline-flex items-center gap-2 border px-7 py-3.5 text-sm font-bold transition-colors ${
           light
-            ? "border-white/40 text-white hover:bg-white/10"
-            : "border-border text-foreground hover:bg-secondary"
+            ? "border-bs-dark-line text-bs-on-dark hover:bg-bs-dark-card"
+            : "border-bs-line text-bs-ink hover:bg-bs-sand"
         }`}
       >
         <Layout className="size-4" /> See Examples
@@ -89,24 +102,26 @@ function CTAButtons({ light = false }: { light?: boolean }) {
 
 function Nav() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-bs-dark-line bg-bs-navy-deep">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <div className="flex items-center gap-2">
-          <span className="text-2xl font-black tracking-tighter text-primary">»»</span>
-          <span className="text-lg font-black tracking-tight text-foreground">
+        <div className="flex items-center gap-2.5">
+          <span className="flex size-8 items-center justify-center bg-bs-gradient font-display text-sm font-extrabold text-bs-on-dark">
+            B
+          </span>
+          <span className="font-display text-lg font-bold tracking-tight text-bs-on-dark">
             BizSite
-            <span className="ml-1.5 text-xs font-medium text-muted-foreground">by KGHQ</span>
+            <span className="ml-1.5 font-body text-xs font-medium text-bs-on-dark-muted">by KGHQ</span>
           </span>
         </div>
-        <nav className="hidden items-center gap-8 text-sm font-medium text-foreground/70 md:flex">
-          <a href="#how" className="transition-colors hover:text-primary">How It Works</a>
-          <a href="#features" className="transition-colors hover:text-primary">Features</a>
-          <a href="#pricing" className="transition-colors hover:text-primary">Pricing</a>
-          <a href="#faq" className="transition-colors hover:text-primary">FAQ</a>
+        <nav className="hidden items-center gap-8 text-sm font-semibold text-bs-on-dark-muted md:flex">
+          <a href="#how" className="transition-colors hover:text-bs-teal-bright">How It Works</a>
+          <a href="#features" className="transition-colors hover:text-bs-teal-bright">Features</a>
+          <a href="#pricing" className="transition-colors hover:text-bs-teal-bright">Pricing</a>
+          <a href="#faq" className="transition-colors hover:text-bs-teal-bright">FAQ</a>
         </nav>
         <a
           href="#pricing"
-          className="inline-flex items-center gap-1.5 rounded-full bg-gradient-primary px-5 py-2.5 text-sm font-bold text-primary-foreground transition-transform hover:-translate-y-0.5"
+          className="inline-flex items-center gap-1.5 bg-bs-teal-bright px-5 py-2.5 text-sm font-bold text-bs-navy-deep transition-transform hover:-translate-y-0.5"
         >
           Get Your BizSite
         </a>
@@ -117,53 +132,54 @@ function Nav() {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden bg-foreground">
+    <section className="relative overflow-hidden bg-bs-navy-deep">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="Small business owner smiling while viewing her new professional website on a laptop" width={1536} height={1024} className="size-full object-cover opacity-40" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[oklch(0.16_0.06_285)] via-[oklch(0.18_0.08_285/0.92)] to-[oklch(0.2_0.12_290/0.55)]" />
+        <img
+          src={heroImg}
+          alt="Small business owner smiling while viewing her new professional website on a laptop"
+          width={1536}
+          height={1024}
+          className="size-full object-cover opacity-45"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-bs-navy-deep via-bs-navy-deep/90 to-bs-navy/50" />
       </div>
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-12 px-6 pb-24 pt-20 lg:grid-cols-[1.15fr_0.85fr] lg:pb-28 lg:pt-24">
-        <div className="text-white">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] backdrop-blur">
-            <Sparkles className="size-3.5" /> Websites for Small Business by KGHQ
-          </span>
-          <h1 className="mt-6 text-5xl font-black leading-[1.02] tracking-tight md:text-6xl lg:text-7xl">
+        <div className="text-bs-on-dark">
+          <Eyebrow dark>Websites for Small Business by KGHQ</Eyebrow>
+          <h1 className="mt-6 font-display text-5xl font-extrabold leading-[1.04] tracking-tight md:text-6xl lg:text-7xl">
             A Better Website.<br />
-            <span className="bg-gradient-to-r from-white to-[oklch(0.8_0.16_300)] bg-clip-text text-transparent">
-              Built to Bring You
-            </span>{" "}
-            Business.
+            Built to <span className="text-bs-gradient">Bring You Business.</span>
           </h1>
-          <p className="mt-6 max-w-xl text-xl font-semibold text-white/95">
+          <p className="mt-7 max-w-xl text-xl font-semibold text-bs-on-dark">
             BizSite gives your small business a modern, professional website designed to turn visitors into customers.
           </p>
-          <p className="mt-3 max-w-xl text-lg leading-relaxed text-white/75">
+          <p className="mt-4 max-w-xl text-lg leading-relaxed text-bs-on-dark-muted">
             We handle the strategy, writing, design, lead capture, hosting, and ongoing support — without the traditional months-long website process.
           </p>
-          <p className="mt-3 max-w-xl text-base text-white/60">
+          <p className="mt-4 max-w-xl border-l-2 border-bs-teal pl-4 text-base font-medium text-bs-on-dark-muted">
             You tell us about your business. We build the site.
           </p>
           <div className="mt-10">
             <CTAButtons light />
           </div>
-          <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-white/70">
+          <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-bs-on-dark-muted">
             {["Copy & design included", "Hosting & security handled", "Ongoing support built in"].map((t) => (
               <span key={t} className="inline-flex items-center gap-2">
-                <Check className="size-4 text-[oklch(0.8_0.16_300)]" /> {t}
+                <Check className="size-4 text-bs-teal-bright" /> {t}
               </span>
             ))}
           </div>
         </div>
 
         <div className="relative mx-auto w-full max-w-sm">
-          <div className="absolute inset-0 -z-10 rounded-full bg-primary/40 blur-[100px]" />
+          <div className="absolute inset-0 -z-10 rounded-full bg-bs-teal/40 blur-[100px]" />
           <img
             src={examplesImg}
-            alt="Examples of modern BizSite small business websites shown on laptops and a phone"
+            alt="Examples of modern BizSite small business websites shown on a laptop, tablet, and phone"
             width={1024}
             height={1024}
-            className="w-full drop-shadow-2xl"
+            className="w-full rounded-2xl border border-bs-dark-line shadow-bs-glow"
           />
         </div>
       </div>
@@ -183,37 +199,38 @@ const outcomes = [
 
 function Problem() {
   return (
-    <Section id="problem">
+    <Section id="problem" className="bg-bs-paper">
       <div className="grid items-start gap-14 lg:grid-cols-2">
         <div className="lg:sticky lg:top-28">
           <Eyebrow>The reality</Eyebrow>
-          <h2 className="mt-5 text-4xl font-black tracking-tight md:text-5xl">
+          <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-bs-ink md:text-5xl">
             Your Website Should Do More Than Look Good
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-5 text-lg leading-relaxed text-bs-muted">
             A lot of small business websites are little more than online brochures.
           </p>
-          <p className="mt-4 border-l-2 border-primary pl-5 text-lg font-semibold text-foreground">
+          <p className="mt-4 border-l-2 border-bs-teal pl-5 text-lg font-semibold text-bs-ink">
             BizSite is built to help people find you, trust you, and take the next step.
           </p>
-          <p className="mt-6 text-2xl font-black text-gradient-primary">
+          <p className="mt-8 font-display text-2xl font-bold text-bs-gradient">
             Your website should work for your business — even when you're not working.
           </p>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-2">
-          {outcomes.map(({ icon: Icon, label }) => (
-            <div
-              key={label}
-              className="group flex items-center gap-3 rounded-2xl border border-border bg-card p-4 shadow-card transition-all hover:-translate-y-0.5 hover:border-primary/30"
-            >
-              <span className="flex size-9 shrink-0 items-center justify-center rounded-xl bg-accent text-accent-foreground">
+        <ol className="divide-y divide-bs-line border-y border-bs-line">
+          {outcomes.map(({ icon: Icon, label }, i) => (
+            <li key={label} className="group flex items-center gap-5 py-5 transition-colors hover:bg-bs-sand/60">
+              <span className="font-display text-sm font-bold text-bs-teal">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+              <span className="flex size-10 shrink-0 items-center justify-center border border-bs-line bg-bs-paper text-bs-teal transition-colors group-hover:border-bs-teal">
                 <Icon className="size-4.5" />
               </span>
-              <span className="text-sm font-semibold">{label}</span>
-            </div>
+              <span className="text-base font-semibold text-bs-ink">{label}</span>
+              <ArrowRight className="ml-auto size-4 text-bs-teal opacity-0 transition-opacity group-hover:opacity-100" />
+            </li>
           ))}
-        </div>
+        </ol>
       </div>
     </Section>
   );
@@ -249,32 +266,48 @@ const steps = [
 
 function HowItWorks() {
   return (
-    <Section id="how">
-      <div className="text-center">
+    <Section id="how" className="bg-bs-sand">
+      <div className="max-w-3xl">
         <Eyebrow>How it works</Eyebrow>
-        <h2 className="mx-auto mt-5 max-w-3xl text-4xl font-black tracking-tight md:text-5xl">
+        <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-bs-ink md:text-5xl">
           Tell Us About Your Business. We'll Take It From There.
         </h2>
-        <p className="mx-auto mt-5 max-w-2xl text-lg text-muted-foreground">
+        <p className="mt-5 max-w-2xl text-lg text-bs-muted">
           You don't need to write website copy, figure out page layouts, learn SEO, or become a web designer.
         </p>
       </div>
-      <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
-        {steps.map((s) => (
-          <div key={s.n} className="relative rounded-3xl border border-border bg-card p-6 shadow-card">
-            <span className="text-4xl font-black text-primary/20">{s.n}</span>
-            <h3 className="mt-3 text-base font-bold">{s.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
-          </div>
-        ))}
+
+      <div className="relative mt-14">
+        <div className="absolute left-6 top-0 hidden h-full w-px bg-bs-line lg:left-1/2 lg:block" />
+        <div className="space-y-10">
+          {steps.map((s, i) => (
+            <div
+              key={s.n}
+              className={`relative grid gap-6 lg:grid-cols-2 lg:gap-16 ${i % 2 === 1 ? "lg:text-right" : ""}`}
+            >
+              <div className={i % 2 === 1 ? "lg:order-2" : ""}>
+                <div className={`flex items-center gap-4 ${i % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
+                  <span className="flex size-12 shrink-0 items-center justify-center bg-bs-navy font-display text-sm font-bold text-bs-teal-bright">
+                    {s.n}
+                  </span>
+                  <h3 className="font-display text-xl font-bold text-bs-ink">{s.title}</h3>
+                </div>
+                <p className={`mt-4 max-w-md leading-relaxed text-bs-muted ${i % 2 === 1 ? "lg:ml-auto" : ""}`}>
+                  {s.body}
+                </p>
+              </div>
+              <div className="hidden lg:block" />
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div id="examples" className="mt-16 overflow-hidden rounded-[2rem] border border-border bg-card shadow-glow">
-        <div className="flex items-center gap-2 border-b border-border bg-secondary px-5 py-3">
+      <div id="examples" className="mt-20 overflow-hidden border border-bs-line bg-bs-paper shadow-bs-glow">
+        <div className="flex items-center gap-2 border-b border-bs-line bg-bs-sand px-5 py-3">
           <span className="size-2.5 rounded-full bg-destructive/60" />
           <span className="size-2.5 rounded-full bg-chart-4/70" />
-          <span className="size-2.5 rounded-full bg-chart-2/70" />
-          <span className="ml-3 text-xs font-medium text-muted-foreground">
+          <span className="size-2.5 rounded-full bg-bs-teal/70" />
+          <span className="ml-3 text-xs font-medium text-bs-muted">
             BizSite example — services, quote form &amp; lead capture built in
           </span>
         </div>
@@ -287,7 +320,7 @@ function HowItWorks() {
           className="w-full"
         />
       </div>
-      <p className="mt-6 text-center text-sm text-muted-foreground">
+      <p className="mt-6 text-center text-sm text-bs-muted">
         Every BizSite is designed around your business, your services, and your customers.
       </p>
     </Section>
@@ -299,6 +332,7 @@ const features = [
     icon: MonitorSmartphone,
     title: "Professional Design",
     body: "A clean, modern, mobile-friendly website that makes your business look credible.",
+    large: true,
   },
   {
     icon: PenLine,
@@ -329,26 +363,38 @@ const features = [
     icon: LifeBuoy,
     title: "Ongoing Support",
     body: "Your website doesn't become another thing you have to manage yourself.",
+    large: true,
   },
 ];
 
 function Features() {
   return (
-    <Section id="features" className="bg-secondary/60">
-      <div className="text-center">
-        <Eyebrow>What's included</Eyebrow>
-        <h2 className="mx-auto mt-5 max-w-3xl text-4xl font-black tracking-tight md:text-5xl">
-          Everything Your Small Business Website Needs
-        </h2>
+    <Section id="features" className="bg-bs-paper">
+      <div className="flex flex-wrap items-end justify-between gap-6">
+        <div className="max-w-2xl">
+          <Eyebrow>What's included</Eyebrow>
+          <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-bs-ink md:text-5xl">
+            Everything Your Small Business Website Needs
+          </h2>
+        </div>
+        <p className="max-w-xs text-sm leading-relaxed text-bs-muted">
+          One plan covers the whole job — strategy, content, design, and the technical plumbing behind it.
+        </p>
       </div>
-      <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {features.map(({ icon: Icon, title, body }) => (
-          <div key={title} className="rounded-3xl border border-border bg-card p-7 shadow-card transition-all hover:-translate-y-0.5 hover:border-primary/30">
-            <span className="flex size-11 items-center justify-center rounded-2xl bg-gradient-primary text-primary-foreground">
+
+      <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        {features.map(({ icon: Icon, title, body, large }) => (
+          <div
+            key={title}
+            className={`group border border-bs-line bg-bs-paper p-7 shadow-bs-card transition-all hover:-translate-y-1 hover:border-bs-teal ${
+              large ? "sm:col-span-2" : ""
+            }`}
+          >
+            <span className="flex size-11 items-center justify-center bg-bs-navy text-bs-teal-bright transition-colors group-hover:bg-bs-teal group-hover:text-bs-navy-deep">
               <Icon className="size-5" />
             </span>
-            <h3 className="mt-5 text-lg font-bold">{title}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{body}</p>
+            <h3 className="mt-5 font-display text-lg font-bold text-bs-ink">{title}</h3>
+            <p className="mt-2 text-sm leading-relaxed text-bs-muted">{body}</p>
           </div>
         ))}
       </div>
@@ -391,35 +437,42 @@ const industries = [
 
 function Industries() {
   return (
-    <div className="relative overflow-hidden bg-foreground text-white">
-      <img src={wavesImg} alt="" loading="lazy" width={1536} height={768} className="absolute inset-0 size-full object-cover opacity-35" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[oklch(0.16_0.06_285/0.9)] to-[oklch(0.14_0.05_285)]" />
+    <div className="relative overflow-hidden bg-bs-navy-deep text-bs-on-dark">
+      <img
+        src={wavesImg}
+        alt=""
+        loading="lazy"
+        width={1536}
+        height={768}
+        className="absolute inset-0 size-full object-cover opacity-40"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-bs-navy-deep/85 to-bs-navy-deep" />
       <Section className="relative">
         <div className="max-w-2xl">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em]">
-            Who it's for
-          </span>
-          <h2 className="mt-5 text-4xl font-black tracking-tight md:text-5xl">
+          <Eyebrow dark>Who it's for</Eyebrow>
+          <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight md:text-5xl">
             Built for Small Businesses That Need to Get Found
           </h2>
         </div>
-        <div className="mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+
+        <div className="mt-12 divide-y divide-bs-dark-line border-y border-bs-dark-line">
           {industries.map(({ icon: Icon, title, body }) => (
             <div
               key={title}
-              className="rounded-3xl border border-white/12 bg-white/[0.06] p-7 backdrop-blur transition-colors hover:border-white/30"
+              className="group grid items-center gap-3 py-6 transition-colors hover:bg-bs-dark-card md:grid-cols-[auto_1fr_2fr] md:gap-8 md:px-4"
             >
-              <span className="flex size-11 items-center justify-center rounded-2xl bg-white/10">
+              <span className="flex size-11 items-center justify-center border border-bs-dark-line text-bs-teal-bright transition-colors group-hover:border-bs-teal">
                 <Icon className="size-5" />
               </span>
-              <h3 className="mt-5 text-lg font-bold">{title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-white/70">{body}</p>
+              <h3 className="font-display text-lg font-bold">{title}</h3>
+              <p className="text-sm leading-relaxed text-bs-on-dark-muted">{body}</p>
             </div>
           ))}
         </div>
-        <p className="mt-10 text-xl font-bold">
+
+        <p className="mt-10 max-w-3xl font-display text-xl font-bold leading-relaxed md:text-2xl">
           If people search for your business online before deciding whether to call, visit, or buy —{" "}
-          <span className="text-[oklch(0.82_0.14_300)]">your website matters.</span>
+          <span className="text-bs-teal-bright">your website matters.</span>
         </p>
       </Section>
     </div>
@@ -451,25 +504,31 @@ const scenarios = [
 
 function Scenarios() {
   return (
-    <Section>
-      <div className="text-center">
-        <Eyebrow>Where you're at</Eyebrow>
-        <h2 className="mx-auto mt-5 max-w-2xl text-4xl font-black tracking-tight md:text-5xl">
-          Starting From Scratch or Starting Over?
-        </h2>
-      </div>
-      <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {scenarios.map((s, i) => (
-          <div
-            key={s.title}
-            className={`rounded-3xl border border-border bg-card p-7 shadow-card transition-all hover:-translate-y-0.5 hover:border-primary/30 ${
-              i === 3 ? "lg:col-start-1" : ""
-            }`}
-          >
-            <h3 className="text-lg font-bold">{s.title}</h3>
-            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.body}</p>
+    <Section className="bg-bs-sand">
+      <div className="grid items-start gap-12 lg:grid-cols-[0.9fr_1.1fr]">
+        <div className="lg:sticky lg:top-28">
+          <Eyebrow>Where you're at</Eyebrow>
+          <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-bs-ink md:text-5xl">
+            Starting From Scratch or Starting Over?
+          </h2>
+          <p className="mt-5 text-lg leading-relaxed text-bs-muted">
+            Wherever your website is today, there's a BizSite path forward.
+          </p>
+          <div className="mt-8">
+            <CTAButtons />
           </div>
-        ))}
+        </div>
+        <div className="space-y-4">
+          {scenarios.map((s) => (
+            <div
+              key={s.title}
+              className="border-l-4 border-bs-teal bg-bs-paper p-6 shadow-bs-card transition-transform hover:-translate-y-0.5"
+            >
+              <h3 className="font-display text-lg font-bold text-bs-ink">{s.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-bs-muted">{s.body}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </Section>
   );
@@ -536,55 +595,57 @@ const plans = [
 
 function Pricing() {
   return (
-    <Section id="pricing" className="bg-secondary/60">
+    <Section id="pricing" className="bg-bs-paper">
       <div className="text-center">
         <Eyebrow>Pricing</Eyebrow>
-        <h2 className="mt-5 text-4xl font-black tracking-tight md:text-5xl">Simple Website Packages</h2>
+        <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-bs-ink md:text-5xl">
+          Simple Website Packages
+        </h2>
       </div>
 
       <div className="mt-14 grid items-start gap-5 lg:grid-cols-3">
         {plans.map((p) => (
           <div
             key={p.name}
-            className={`relative rounded-[2rem] border p-8 ${
+            className={`relative border p-8 ${
               p.featured
-                ? "border-primary/30 bg-foreground text-white shadow-glow lg:-mt-4 lg:pb-12"
-                : "border-border bg-card shadow-card"
+                ? "border-bs-teal bg-bs-navy-deep text-bs-on-dark shadow-bs-glow lg:-mt-4 lg:pb-12"
+                : "border-bs-line bg-bs-paper shadow-bs-card"
             }`}
           >
             {p.featured && (
-              <span className="absolute -top-3 left-8 rounded-full bg-gradient-primary px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-primary-foreground">
+              <span className="absolute -top-3 left-8 bg-bs-teal-bright px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-bs-navy-deep">
                 Most popular
               </span>
             )}
-            <h3 className="text-lg font-bold">{p.name}</h3>
+            <h3 className="font-display text-lg font-bold">{p.name}</h3>
             <div className="mt-4 flex items-end gap-1">
-              <span className="text-4xl font-black tracking-tight">{p.price}</span>
-              <span className={p.featured ? "mb-1 text-sm text-white/60" : "mb-1 text-sm text-muted-foreground"}>
+              <span className="font-display text-5xl font-extrabold tracking-tight">{p.price}</span>
+              <span className={p.featured ? "mb-1 text-sm text-bs-on-dark-muted" : "mb-1 text-sm text-bs-muted"}>
                 /month
               </span>
             </div>
-            <p className={`mt-1 text-sm font-medium ${p.featured ? "text-white/60" : "text-muted-foreground"}`}>
+            <p className={`mt-1 text-sm font-medium ${p.featured ? "text-bs-on-dark-muted" : "text-bs-muted"}`}>
               {p.setup}
             </p>
-            <p className={`mt-4 text-sm ${p.featured ? "text-white/75" : "text-muted-foreground"}`}>
+            <p className={`mt-4 text-sm ${p.featured ? "text-bs-on-dark-muted" : "text-bs-muted"}`}>
               {p.blurb}
             </p>
             <a
               href="#contact"
-              className={`mt-6 flex w-full items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-bold transition-transform hover:-translate-y-0.5 ${
+              className={`mt-6 flex w-full items-center justify-center gap-2 px-6 py-3 text-sm font-bold transition-transform hover:-translate-y-0.5 ${
                 p.featured
-                  ? "bg-white text-primary"
-                  : "bg-gradient-primary text-primary-foreground"
+                  ? "bg-bs-teal-bright text-bs-navy-deep"
+                  : "bg-bs-navy text-bs-on-dark"
               }`}
             >
               {p.cta} <ArrowRight className="size-4" />
             </a>
-            {p.intro && <p className="mt-7 text-sm font-semibold text-white/80">{p.intro}</p>}
-            <ul className={`mt-6 space-y-3 text-sm ${p.featured ? "text-white/85" : "text-foreground/80"}`}>
+            {p.intro && <p className="mt-7 text-sm font-semibold text-bs-teal-bright">{p.intro}</p>}
+            <ul className={`mt-6 space-y-3 text-sm ${p.featured ? "text-bs-on-dark" : "text-bs-ink"}`}>
               {p.features.map((f) => (
                 <li key={f} className="flex items-start gap-2.5">
-                  <Check className={`mt-0.5 size-4 shrink-0 ${p.featured ? "text-[oklch(0.82_0.14_300)]" : "text-primary"}`} />
+                  <Check className={`mt-0.5 size-4 shrink-0 ${p.featured ? "text-bs-teal-bright" : "text-bs-teal"}`} />
                   {f}
                 </li>
               ))}
@@ -593,16 +654,19 @@ function Pricing() {
         ))}
       </div>
 
-      <div className="mt-14 rounded-[2rem] border border-border bg-card p-8 text-center shadow-card">
-        <h3 className="text-xl font-black">Make Your BizSite Even Smarter</h3>
-        <p className="mt-2 text-sm text-muted-foreground">Add what your business needs:</p>
+      <div className="mt-14 border border-bs-line bg-bs-sand p-8 text-center shadow-bs-card">
+        <h3 className="font-display text-xl font-bold text-bs-ink">Make Your BizSite Even Smarter</h3>
+        <p className="mt-2 text-sm text-bs-muted">Add what your business needs:</p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           {[
             "Additional Pages", "CRM Integration", "Email Follow-Up", "SMS Lead Alerts",
             "Advanced Chatbot", "Landing Pages", "Lead Magnets", "Advanced SEO",
             "Review Requests", "Analytics",
           ].map((a) => (
-            <span key={a} className="rounded-full border border-primary/20 bg-accent px-4 py-2 text-sm font-semibold text-accent-foreground">
+            <span
+              key={a}
+              className="border border-bs-line bg-bs-paper px-4 py-2 text-sm font-semibold text-bs-ink transition-colors hover:border-bs-teal hover:text-bs-teal"
+            >
               {a}
             </span>
           ))}
@@ -615,39 +679,44 @@ function Pricing() {
 function MoreThan() {
   const flow = ["Get Found", "Build Trust", "Capture Interest", "Generate Leads", "Help You Grow"];
   return (
-    <Section>
+    <Section className="bg-bs-sand">
       <div className="grid items-center gap-12 lg:grid-cols-2">
         <div>
           <Eyebrow>The difference</Eyebrow>
-          <h2 className="mt-5 text-4xl font-black tracking-tight md:text-5xl">
+          <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-bs-ink md:text-5xl">
             More Than Just a Website
           </h2>
-          <p className="mt-5 text-lg text-muted-foreground">
+          <p className="mt-5 text-lg text-bs-muted">
             A traditional website project often ends when the site launches.
           </p>
-          <p className="mt-2 text-lg font-semibold text-foreground">
+          <p className="mt-2 text-lg font-semibold text-bs-ink">
             That's when BizSite starts working.
           </p>
-          <p className="mt-6 text-muted-foreground">
+          <p className="mt-6 text-bs-muted">
             And KGHQ stays behind it with hosting, updates, support, SEO options, content, and growth tools.
           </p>
-          <div className="mt-8 flex items-center gap-3 text-sm font-semibold text-muted-foreground">
-            <Building2 className="size-5 text-primary" /> Fully managed by KGHQ
+          <div className="mt-8 flex items-center gap-3 text-sm font-semibold text-bs-muted">
+            <Building2 className="size-5 text-bs-teal" /> Fully managed by KGHQ
           </div>
         </div>
 
-        <div className="rounded-[2rem] border border-border bg-card p-8 shadow-glow">
-          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+        <div className="border border-bs-line bg-bs-paper p-8 shadow-bs-glow">
+          <p className="text-xs font-bold uppercase tracking-[0.22em] text-bs-muted">
             Your website can
           </p>
-          <div className="mt-6 space-y-3">
+          <div className="mt-6 space-y-0">
             {flow.map((f, i) => (
-              <div key={f} className="flex items-center gap-4">
-                <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-gradient-primary text-xs font-bold text-primary-foreground">
+              <div key={f} className="relative flex items-center gap-4 pb-6 last:pb-0">
+                {i < flow.length - 1 && (
+                  <span className="absolute left-4 top-9 h-[calc(100%-2rem)] w-px bg-bs-line" />
+                )}
+                <span className="flex size-8 shrink-0 items-center justify-center bg-bs-navy font-display text-xs font-bold text-bs-teal-bright">
                   {i + 1}
                 </span>
-                <div className="flex-1 rounded-xl bg-secondary px-4 py-3 text-sm font-bold">{f}</div>
-                {i < flow.length - 1 && <Workflow className="size-4 text-primary/40" />}
+                <div className="flex-1 border border-bs-line bg-bs-sand px-4 py-3 text-sm font-bold text-bs-ink">
+                  {f}
+                </div>
+                <Compass className="size-4 text-bs-teal" />
               </div>
             ))}
           </div>
@@ -694,23 +763,28 @@ const faqs = [
 
 function FAQ() {
   return (
-    <Section id="faq" className="bg-secondary/60">
-      <div className="text-center">
-        <Eyebrow>FAQ</Eyebrow>
-        <h2 className="mt-5 text-4xl font-black tracking-tight md:text-5xl">
-          Frequently Asked Questions
-        </h2>
-      </div>
-      <div className="mx-auto mt-12 max-w-3xl space-y-3">
-        {faqs.map((f) => (
-          <details key={f.q} className="group rounded-2xl border border-border bg-card p-6 shadow-card">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-bold">
-              {f.q}
-              <span className="text-primary transition-transform group-open:rotate-45">+</span>
-            </summary>
-            <p className="mt-4 leading-relaxed text-muted-foreground">{f.a}</p>
-          </details>
-        ))}
+    <Section id="faq" className="bg-bs-paper">
+      <div className="grid items-start gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+        <div className="lg:sticky lg:top-28">
+          <Eyebrow>FAQ</Eyebrow>
+          <h2 className="mt-5 font-display text-4xl font-extrabold tracking-tight text-bs-ink md:text-5xl">
+            Frequently Asked Questions
+          </h2>
+          <p className="mt-5 text-lg text-bs-muted">
+            Everything small business owners usually ask us before getting started.
+          </p>
+        </div>
+        <div className="space-y-3">
+          {faqs.map((f) => (
+            <details key={f.q} className="group border border-bs-line bg-bs-paper p-6 shadow-bs-card">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-display font-bold text-bs-ink">
+                {f.q}
+                <span className="text-bs-teal transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <p className="mt-4 leading-relaxed text-bs-muted">{f.a}</p>
+            </details>
+          ))}
+        </div>
       </div>
     </Section>
   );
@@ -718,17 +792,24 @@ function FAQ() {
 
 function FinalCTA() {
   return (
-    <div id="contact" className="relative overflow-hidden bg-foreground text-white">
-      <img src={wavesImg} alt="" loading="lazy" width={1536} height={768} className="absolute inset-0 size-full object-cover opacity-40" />
-      <div className="absolute inset-0 bg-[oklch(0.15_0.06_285/0.8)]" />
+    <div id="contact" className="relative overflow-hidden bg-bs-navy-deep text-bs-on-dark">
+      <img
+        src={wavesImg}
+        alt=""
+        loading="lazy"
+        width={1536}
+        height={768}
+        className="absolute inset-0 size-full object-cover opacity-50"
+      />
+      <div className="absolute inset-0 bg-bs-navy-deep/70" />
       <Section className="relative text-center">
-        <h2 className="mx-auto max-w-3xl text-4xl font-black tracking-tight md:text-6xl">
-          Your Business Deserves a Better Website.
+        <h2 className="mx-auto max-w-3xl font-display text-4xl font-extrabold tracking-tight md:text-6xl">
+          Your Business Deserves a <span className="text-bs-gradient">Better Website.</span>
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-white/75">
+        <p className="mx-auto mt-6 max-w-2xl text-lg text-bs-on-dark-muted">
           Look professional. Get found. Capture leads. Grow your business.
         </p>
-        <p className="mt-4 text-xl font-bold">You run your business. We'll handle the website.</p>
+        <p className="mt-4 font-display text-xl font-bold">You run your business. We'll handle the website.</p>
         <div className="mt-10 flex justify-center">
           <CTAButtons light />
         </div>
@@ -739,18 +820,20 @@ function FinalCTA() {
 
 function Footer() {
   return (
-    <footer className="border-t border-border bg-background px-6 py-10">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-sm text-muted-foreground md:flex-row">
-        <div className="flex items-center gap-2">
-          <span className="text-xl font-black tracking-tighter text-primary">»»</span>
-          <span className="font-bold text-foreground">BizSite</span>
+    <footer className="border-t border-bs-dark-line bg-bs-navy-deep px-6 py-10">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-sm text-bs-on-dark-muted md:flex-row">
+        <div className="flex items-center gap-2.5">
+          <span className="flex size-7 items-center justify-center bg-bs-gradient font-display text-xs font-extrabold text-bs-on-dark">
+            B
+          </span>
+          <span className="font-display font-bold text-bs-on-dark">BizSite</span>
           <span>by KGHQ</span>
         </div>
         <div className="flex items-center gap-2">
           <MessageSquare className="size-4" /> Websites that bring you business, managed for you.
         </div>
         <div className="flex items-center gap-4">
-          <Link to="/" className="inline-flex items-center gap-1.5 transition-colors hover:text-primary">
+          <Link to="/" className="inline-flex items-center gap-1.5 transition-colors hover:text-bs-teal-bright">
             <Phone className="size-4" /> BizPhone
           </Link>
           <span>© {new Date().getFullYear()} KGHQ. All rights reserved.</span>
@@ -762,7 +845,7 @@ function Footer() {
 
 function BizSite() {
   return (
-    <main className="bg-background">
+    <main className="bg-bs-paper font-body text-bs-ink antialiased">
       <Nav />
       <Hero />
       <Problem />
