@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   PhoneCall, Clock, UserPlus, CalendarCheck, FileText, ArrowRight, Sparkles,
   MessageSquare, ShieldCheck, Check, Phone, Moon, Layers, PhoneForwarded,
@@ -102,6 +102,7 @@ function Nav() {
           <a href="#how" className="transition-colors hover:text-primary">How It Works</a>
           <a href="#pricing" className="transition-colors hover:text-primary">Pricing</a>
           <a href="#faq" className="transition-colors hover:text-primary">FAQ</a>
+          <Link to="/bizsite" className="transition-colors hover:text-primary">BizSite</Link>
         </nav>
         <a
           href="#pricing"
