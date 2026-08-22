@@ -102,7 +102,7 @@ function CTAButtons({ light = false }: { light?: boolean }) {
 
 function Nav() {
   return (
-    <header className="sticky top-0 z-50 border-b border-bs-dark-line bg-bs-navy-deep/85 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-bs-dark-line bg-bs-navy-deep">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <div className="flex items-center gap-2.5">
           <span className="flex size-8 items-center justify-center bg-bs-gradient font-display text-sm font-extrabold text-bs-on-dark">
@@ -179,7 +179,7 @@ function Hero() {
             alt="Examples of modern BizSite small business websites shown on a laptop, tablet, and phone"
             width={1024}
             height={1024}
-            className="w-full drop-shadow-2xl"
+            className="w-full rounded-2xl border border-bs-dark-line shadow-bs-glow"
           />
         </div>
       </div>
