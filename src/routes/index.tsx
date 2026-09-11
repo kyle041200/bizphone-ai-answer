@@ -58,7 +58,7 @@ function Nav() {
   const [open, setOpen] = useState(false);
   const links = [["Services", "#services"], ["Programs", "#programs"], ["Tools", "#tools"], ["How It Works", "#how-it-works"], ["Resources", "#resources"]];
   return (
-    <header className="sticky top-0 z-50 border-b border-kh-dark-line bg-kh-ink/95 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-kh-dark-line bg-kh-ink">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 md:px-8">
         <Logo light />
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
