@@ -9,7 +9,7 @@ import phoneImg from "@/assets/app-call-summary.png";
 import dashboardImg from "@/assets/dashboard.png";
 import wavesImg from "@/assets/texture-waves.jpg";
 
-export const Route = createFileRoute("/")({
+export const Route = createFileRoute("/bizphone")({
   component: Index,
   head: () => ({
     meta: [
