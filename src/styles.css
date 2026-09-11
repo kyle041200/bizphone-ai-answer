@@ -224,9 +224,9 @@
   --kh-ink-soft: oklch(0.22 0.065 285);
   --kh-paper: oklch(0.985 0.006 285);
   --kh-mist: oklch(0.955 0.025 290);
-  --kh-green: oklch(0.57 0.245 285);
-  --kh-green-deep: oklch(0.43 0.22 285);
-  --kh-lime: oklch(0.78 0.18 300);
+  --kh-green: oklch(0.4936 0.2873 285.36);
+  --kh-green-deep: oklch(0.41 0.245 285.36);
+  --kh-lime: oklch(0.72 0.22 292);
   --kh-yellow: oklch(0.88 0.08 315);
   --kh-coral: oklch(0.68 0.22 335);
   --kh-white: oklch(0.995 0 0);

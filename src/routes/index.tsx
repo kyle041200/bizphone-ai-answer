@@ -8,6 +8,8 @@ import {
 import { useState } from "react";
 import heroImg from "@/assets/kghq-home-hero.jpg";
 import teamImg from "@/assets/kghq-team-work.jpg";
+import logoAsset from "@/assets/kghq-logo.png.asset.json";
+import logoLightAsset from "@/assets/kghq-logo-light.png.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Home,
@@ -32,12 +34,14 @@ const cx = (...classes: Array<string | false | undefined>) => classes.filter(Boo
 
 function Logo({ light = false }: { light?: boolean }) {
   return (
-    <Link to="/" aria-label="KGHQ home" className="group inline-flex items-center gap-2.5">
-      <span className="grid size-9 grid-cols-2 gap-0.5 bg-kh-lime p-2 text-kh-ink transition-transform group-hover:-rotate-3" aria-hidden="true">
-        <span className="border-b-2 border-r-2 border-current" /><span className="border-b-2 border-current" />
-        <span className="border-r-2 border-current" /><span />
-      </span>
-      <span className={cx("font-display text-xl font-extrabold tracking-normal", light ? "text-kh-white" : "text-kh-ink")}>KGHQ</span>
+    <Link to="/" aria-label="KGHQ home" className="inline-flex items-center">
+      <img
+        src={light ? logoLightAsset.url : logoAsset.url}
+        alt="KGHQ"
+        width={249}
+        height={66}
+        className="h-8 w-auto md:h-9"
+      />
     </Link>
   );
 }
