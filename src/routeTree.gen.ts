@@ -9,9 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as NewClientRouteImport } from './routes/new-client'
 import { Route as BizsiteRouteImport } from './routes/bizsite'
 import { Route as IndexRouteImport } from './routes/index'
 
+const NewClientRoute = NewClientRouteImport.update({
+  id: '/new-client',
+  path: '/new-client',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BizsiteRoute = BizsiteRouteImport.update({
   id: '/bizsite',
   path: '/bizsite',
@@ -26,31 +32,42 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/bizsite': typeof BizsiteRoute
+  '/new-client': typeof NewClientRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/bizsite': typeof BizsiteRoute
+  '/new-client': typeof NewClientRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/bizsite': typeof BizsiteRoute
+  '/new-client': typeof NewClientRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/bizsite'
+  fullPaths: '/' | '/bizsite' | '/new-client'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/bizsite'
-  id: '__root__' | '/' | '/bizsite'
+  to: '/' | '/bizsite' | '/new-client'
+  id: '__root__' | '/' | '/bizsite' | '/new-client'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BizsiteRoute: typeof BizsiteRoute
+  NewClientRoute: typeof NewClientRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/new-client': {
+      id: '/new-client'
+      path: '/new-client'
+      fullPath: '/new-client'
+      preLoaderRoute: typeof NewClientRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/bizsite': {
       id: '/bizsite'
       path: '/bizsite'
@@ -71,6 +88,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BizsiteRoute: BizsiteRoute,
+  NewClientRoute: NewClientRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
