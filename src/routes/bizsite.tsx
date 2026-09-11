@@ -104,7 +104,7 @@ function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-bs-dark-line bg-bs-navy-deep">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <div className="flex items-center gap-2.5">
+        <Link to="/" aria-label="KGHQ home" className="flex items-center gap-2.5">
           <span className="flex size-8 items-center justify-center bg-bs-gradient font-display text-sm font-extrabold text-bs-on-dark">
             B
           </span>
@@ -112,7 +112,7 @@ function Nav() {
             BizSite
             <span className="ml-1.5 font-body text-xs font-medium text-bs-on-dark-muted">by KGHQ</span>
           </span>
-        </div>
+        </Link>
         <nav className="hidden items-center gap-8 text-sm font-semibold text-bs-on-dark-muted md:flex">
           <a href="#how" className="transition-colors hover:text-bs-teal-bright">How It Works</a>
           <a href="#features" className="transition-colors hover:text-bs-teal-bright">Features</a>
@@ -834,7 +834,7 @@ function Footer() {
           <MessageSquare className="size-4" /> Websites that bring you business, managed for you.
         </div>
         <div className="flex items-center gap-4">
-          <Link to="/" className="inline-flex items-center gap-1.5 transition-colors hover:text-bs-teal-bright">
+          <Link to="/bizphone" className="inline-flex items-center gap-1.5 transition-colors hover:text-bs-teal-bright">
             <Phone className="size-4" /> BizPhone
           </Link>
           <span>© {new Date().getFullYear()} KGHQ. All rights reserved.</span>

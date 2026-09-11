@@ -11,7 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as NewClientRouteImport } from './routes/new-client'
 import { Route as BizsiteRouteImport } from './routes/bizsite'
-import { Route as IndexRouteImport } from './routes/index'
+import { Route as BizphoneRouteImport } from './routes/bizphone'
 
 const NewClientRoute = NewClientRouteImport.update({
   id: '/new-client',
@@ -23,38 +23,38 @@ const BizsiteRoute = BizsiteRouteImport.update({
   path: '/bizsite',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const BizphoneRoute = BizphoneRouteImport.update({
+  id: '/bizphone',
+  path: '/bizphone',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
-  '/': typeof IndexRoute
+  '/bizphone': typeof BizphoneRoute
   '/bizsite': typeof BizsiteRoute
   '/new-client': typeof NewClientRoute
 }
 export interface FileRoutesByTo {
-  '/': typeof IndexRoute
+  '/bizphone': typeof BizphoneRoute
   '/bizsite': typeof BizsiteRoute
   '/new-client': typeof NewClientRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  '/': typeof IndexRoute
+  '/bizphone': typeof BizphoneRoute
   '/bizsite': typeof BizsiteRoute
   '/new-client': typeof NewClientRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/bizsite' | '/new-client'
+  fullPaths: '/bizphone' | '/bizsite' | '/new-client'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/bizsite' | '/new-client'
-  id: '__root__' | '/' | '/bizsite' | '/new-client'
+  to: '/bizphone' | '/bizsite' | '/new-client'
+  id: '__root__' | '/bizphone' | '/bizsite' | '/new-client'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  IndexRoute: typeof IndexRoute
+  BizphoneRoute: typeof BizphoneRoute
   BizsiteRoute: typeof BizsiteRoute
   NewClientRoute: typeof NewClientRoute
 }
@@ -75,18 +75,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BizsiteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/bizphone': {
+      id: '/bizphone'
+      path: '/bizphone'
+      fullPath: '/bizphone'
+      preLoaderRoute: typeof BizphoneRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
-  IndexRoute: IndexRoute,
+  BizphoneRoute: BizphoneRoute,
   BizsiteRoute: BizsiteRoute,
   NewClientRoute: NewClientRoute,
 }

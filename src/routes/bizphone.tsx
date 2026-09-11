@@ -90,13 +90,13 @@ function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <div className="flex items-center gap-2">
+        <Link to="/" aria-label="KGHQ home" className="flex items-center gap-2">
           <span className="text-2xl font-black tracking-tighter text-primary">»»</span>
           <span className="text-lg font-black tracking-tight text-foreground">
             BizPhone
             <span className="ml-1.5 text-xs font-medium text-muted-foreground">by KGHQ</span>
           </span>
-        </div>
+        </Link>
         <nav className="hidden items-center gap-8 text-sm font-medium text-foreground/70 md:flex">
           <a href="#modes" className="transition-colors hover:text-primary">Modes</a>
           <a href="#how" className="transition-colors hover:text-primary">How It Works</a>
@@ -677,7 +677,7 @@ function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-sm text-muted-foreground md:flex-row">
         <div className="flex items-center gap-2">
           <span className="text-xl font-black tracking-tighter text-primary">»»</span>
-          <span className="font-bold text-foreground">BizPhone</span>
+          <Link to="/" className="font-bold text-foreground">BizPhone</Link>
           <span>by KGHQ</span>
         </div>
         <div className="flex items-center gap-2">

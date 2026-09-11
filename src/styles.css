@@ -217,3 +217,45 @@
 }
 @utility shadow-bs-glow { box-shadow: 0 20px 60px -20px color-mix(in oklab, var(--bs-teal) 45%, transparent); }
 @utility shadow-bs-card { box-shadow: 0 10px 30px -15px oklch(0.3 0.05 245 / 0.15); }
+
+/* KGHQ homepage — editorial execution system */
+:root {
+  --kh-ink: oklch(0.16 0.018 175);
+  --kh-ink-soft: oklch(0.22 0.025 175);
+  --kh-paper: oklch(0.985 0.006 92);
+  --kh-mist: oklch(0.95 0.012 165);
+  --kh-green: oklch(0.54 0.115 165);
+  --kh-green-deep: oklch(0.36 0.085 165);
+  --kh-lime: oklch(0.88 0.16 105);
+  --kh-yellow: oklch(0.88 0.15 88);
+  --kh-coral: oklch(0.67 0.18 32);
+  --kh-white: oklch(0.995 0 0);
+  --kh-muted: oklch(0.47 0.02 175);
+  --kh-line: oklch(0.87 0.015 165);
+  --kh-dark-line: oklch(1 0 0 / 14%);
+  --kh-dark-muted: oklch(0.77 0.025 165);
+  --kh-shadow: 0 22px 70px -34px oklch(0.16 0.03 175 / 45%);
+}
+
+@utility bg-kh-ink { background-color: var(--kh-ink); }
+@utility bg-kh-ink-soft { background-color: var(--kh-ink-soft); }
+@utility bg-kh-paper { background-color: var(--kh-paper); }
+@utility bg-kh-mist { background-color: var(--kh-mist); }
+@utility bg-kh-green { background-color: var(--kh-green); }
+@utility bg-kh-green-deep { background-color: var(--kh-green-deep); }
+@utility bg-kh-lime { background-color: var(--kh-lime); }
+@utility bg-kh-yellow { background-color: var(--kh-yellow); }
+@utility bg-kh-coral { background-color: var(--kh-coral); }
+@utility bg-kh-white { background-color: var(--kh-white); }
+@utility text-kh-ink { color: var(--kh-ink); }
+@utility text-kh-paper { color: var(--kh-paper); }
+@utility text-kh-white { color: var(--kh-white); }
+@utility text-kh-muted { color: var(--kh-muted); }
+@utility text-kh-green { color: var(--kh-green); }
+@utility text-kh-green-deep { color: var(--kh-green-deep); }
+@utility text-kh-lime { color: var(--kh-lime); }
+@utility text-kh-yellow { color: var(--kh-yellow); }
+@utility text-kh-dark-muted { color: var(--kh-dark-muted); }
+@utility border-kh-line { border-color: var(--kh-line); }
+@utility border-kh-dark-line { border-color: var(--kh-dark-line); }
+@utility shadow-kh { box-shadow: var(--kh-shadow); }

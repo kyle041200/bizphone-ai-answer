@@ -115,7 +115,7 @@ function NewClient() {
           Questions? Reach us any time — we're happy to walk through it with you.
         </p>
         <p className="mt-2">
-          <Link to="/" className="font-semibold text-primary hover:underline">BizPhone</Link>
+          <Link to="/bizphone" className="font-semibold text-primary hover:underline">BizPhone</Link>
           {" · "}
           <Link to="/bizsite" className="font-semibold text-primary hover:underline">BizSite</Link>
           {" · KGHQ"}
@@ -129,15 +129,15 @@ function Nav() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <div className="flex items-center gap-2">
+        <Link to="/" aria-label="KGHQ home" className="flex items-center gap-2">
           <span className="text-2xl font-black tracking-tighter text-primary">»»</span>
           <span className="text-lg font-black tracking-tight text-foreground">
             KGHQ
             <span className="ml-1.5 text-xs font-medium text-muted-foreground">New Client</span>
           </span>
-        </div>
+        </Link>
         <nav className="hidden items-center gap-8 text-sm font-medium text-foreground/70 md:flex">
-          <Link to="/" className="transition-colors hover:text-primary">BizPhone</Link>
+          <Link to="/bizphone" className="transition-colors hover:text-primary">BizPhone</Link>
           <Link to="/bizsite" className="transition-colors hover:text-primary">BizSite</Link>
           <a href="#form" className="transition-colors hover:text-primary">The Form</a>
         </nav>
