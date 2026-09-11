@@ -118,6 +118,7 @@ function Nav() {
           <a href="#features" className="transition-colors hover:text-bs-teal-bright">Features</a>
           <a href="#pricing" className="transition-colors hover:text-bs-teal-bright">Pricing</a>
           <a href="#faq" className="transition-colors hover:text-bs-teal-bright">FAQ</a>
+          <Link to="/new-client" className="text-bs-teal-bright transition-colors hover:text-bs-on-dark">New Client</Link>
         </nav>
         <a
           href="#pricing"
