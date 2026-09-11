@@ -218,23 +218,23 @@
 @utility shadow-bs-glow { box-shadow: 0 20px 60px -20px color-mix(in oklab, var(--bs-teal) 45%, transparent); }
 @utility shadow-bs-card { box-shadow: 0 10px 30px -15px oklch(0.3 0.05 245 / 0.15); }
 
-/* KGHQ homepage — editorial execution system */
+/* KGHQ homepage — signature purple execution system */
 :root {
-  --kh-ink: oklch(0.16 0.018 175);
-  --kh-ink-soft: oklch(0.22 0.025 175);
-  --kh-paper: oklch(0.985 0.006 92);
-  --kh-mist: oklch(0.95 0.012 165);
-  --kh-green: oklch(0.54 0.115 165);
-  --kh-green-deep: oklch(0.36 0.085 165);
-  --kh-lime: oklch(0.88 0.16 105);
-  --kh-yellow: oklch(0.88 0.15 88);
-  --kh-coral: oklch(0.67 0.18 32);
+  --kh-ink: oklch(0.16 0.055 285);
+  --kh-ink-soft: oklch(0.22 0.065 285);
+  --kh-paper: oklch(0.985 0.006 285);
+  --kh-mist: oklch(0.955 0.025 290);
+  --kh-green: oklch(0.57 0.245 285);
+  --kh-green-deep: oklch(0.43 0.22 285);
+  --kh-lime: oklch(0.78 0.18 300);
+  --kh-yellow: oklch(0.88 0.08 315);
+  --kh-coral: oklch(0.68 0.22 335);
   --kh-white: oklch(0.995 0 0);
-  --kh-muted: oklch(0.47 0.02 175);
-  --kh-line: oklch(0.87 0.015 165);
+  --kh-muted: oklch(0.47 0.035 285);
+  --kh-line: oklch(0.87 0.025 285);
   --kh-dark-line: oklch(1 0 0 / 14%);
-  --kh-dark-muted: oklch(0.77 0.025 165);
-  --kh-shadow: 0 22px 70px -34px oklch(0.16 0.03 175 / 45%);
+  --kh-dark-muted: oklch(0.78 0.035 290);
+  --kh-shadow: 0 22px 70px -34px oklch(0.3 0.15 285 / 45%);
 }
 
 @utility bg-kh-ink { background-color: var(--kh-ink); }
