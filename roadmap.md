@@ -3,3 +3,6 @@
 - [x] Preserve and reconnect BizPhone, BizSite, and New Client pages
 - [x] Add KGHQ styling, imagery, metadata, and favicon
 - [x] Verify desktop, mobile, navigation, and all routes
+- [x] Build the Growth Reset workshop page from the supplied references
+- [x] Add Growth Reset to the homepage navigation
+- [x] Verify the workshop, growth check, and responsive layouts
