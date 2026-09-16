@@ -67,11 +67,12 @@ function Nav() {
         <Logo light />
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
           {links.map(([label, href]) => <a key={label} href={href} className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">{label}</a>)}
+          <Link to="/growth-reset" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Growth Reset</Link>
         </nav>
         <div className="hidden md:block"><PrimaryCTA light /></div>
         <button type="button" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)} className="grid size-11 place-items-center text-kh-white lg:hidden">{open ? <X /> : <Menu />}</button>
       </div>
-      {open && <nav className="border-t border-kh-dark-line bg-kh-ink px-5 py-5 lg:hidden">{links.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">{label}</a>)}<div className="mt-5"><PrimaryCTA light /></div></nav>}
+      {open && <nav className="border-t border-kh-dark-line bg-kh-ink px-5 py-5 lg:hidden">{links.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">{label}</a>)}<Link to="/growth-reset" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Growth Reset</Link><div className="mt-5"><PrimaryCTA light /></div></nav>}
     </header>
   );
 }
