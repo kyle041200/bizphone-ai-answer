@@ -6,3 +6,6 @@
 - [x] Build the Growth Reset workshop page from the supplied references
 - [x] Add Growth Reset to the homepage navigation
 - [x] Verify the workshop, growth check, and responsive layouts
+- [x] Build the KGHQ Partner Network page from the supplied content
+- [x] Add Partners to the homepage navigation
+- [x] Verify the Partners page, inquiry form, and responsive layouts

@@ -9,12 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as PartnersRouteImport } from './routes/partners'
 import { Route as NewClientRouteImport } from './routes/new-client'
 import { Route as GrowthResetRouteImport } from './routes/growth-reset'
 import { Route as BizsiteRouteImport } from './routes/bizsite'
 import { Route as BizphoneRouteImport } from './routes/bizphone'
 import { Route as IndexRouteImport } from './routes/index'
 
+const PartnersRoute = PartnersRouteImport.update({
+  id: '/partners',
+  path: '/partners',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const NewClientRoute = NewClientRouteImport.update({
   id: '/new-client',
   path: '/new-client',
@@ -47,6 +53,7 @@ export interface FileRoutesByFullPath {
   '/bizsite': typeof BizsiteRoute
   '/growth-reset': typeof GrowthResetRoute
   '/new-client': typeof NewClientRoute
+  '/partners': typeof PartnersRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +61,7 @@ export interface FileRoutesByTo {
   '/bizsite': typeof BizsiteRoute
   '/growth-reset': typeof GrowthResetRoute
   '/new-client': typeof NewClientRoute
+  '/partners': typeof PartnersRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,12 +70,25 @@ export interface FileRoutesById {
   '/bizsite': typeof BizsiteRoute
   '/growth-reset': typeof GrowthResetRoute
   '/new-client': typeof NewClientRoute
+  '/partners': typeof PartnersRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/bizphone' | '/bizsite' | '/growth-reset' | '/new-client'
+  fullPaths:
+    | '/'
+    | '/bizphone'
+    | '/bizsite'
+    | '/growth-reset'
+    | '/new-client'
+    | '/partners'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/bizphone' | '/bizsite' | '/growth-reset' | '/new-client'
+  to:
+    | '/'
+    | '/bizphone'
+    | '/bizsite'
+    | '/growth-reset'
+    | '/new-client'
+    | '/partners'
   id:
     | '__root__'
     | '/'
@@ -75,6 +96,7 @@ export interface FileRouteTypes {
     | '/bizsite'
     | '/growth-reset'
     | '/new-client'
+    | '/partners'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -83,10 +105,18 @@ export interface RootRouteChildren {
   BizsiteRoute: typeof BizsiteRoute
   GrowthResetRoute: typeof GrowthResetRoute
   NewClientRoute: typeof NewClientRoute
+  PartnersRoute: typeof PartnersRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/partners': {
+      id: '/partners'
+      path: '/partners'
+      fullPath: '/partners'
+      preLoaderRoute: typeof PartnersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/new-client': {
       id: '/new-client'
       path: '/new-client'
@@ -131,6 +161,7 @@ const rootRouteChildren: RootRouteChildren = {
   BizsiteRoute: BizsiteRoute,
   GrowthResetRoute: GrowthResetRoute,
   NewClientRoute: NewClientRoute,
+  PartnersRoute: PartnersRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
