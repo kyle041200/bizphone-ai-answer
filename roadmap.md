@@ -15,3 +15,6 @@
 - [x] Build the KGHQ Marketing Solutions page from the supplied content
 - [x] Add Marketing to the homepage navigation and service pathway
 - [x] Verify the Marketing page interactions and responsive layouts
+- [x] Build the KGHQ Sales Development page from the supplied content
+- [x] Add Sales to homepage navigation and sales pathways
+- [x] Verify the Sales page interactions and responsive layouts
