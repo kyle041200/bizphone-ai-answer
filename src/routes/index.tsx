@@ -60,12 +60,13 @@ function Kicker({ children, dark = false }: { children: React.ReactNode; dark?: 
 
 function Nav() {
   const [open, setOpen] = useState(false);
-  const links = [["Services", "#services"], ["Programs", "#programs"], ["Tools", "#tools"], ["How It Works", "#how-it-works"], ["Resources", "#resources"]];
+  const links = [["Programs", "#programs"], ["Tools", "#tools"], ["How It Works", "#how-it-works"], ["Resources", "#resources"]];
   return (
     <header className="sticky top-0 z-50 border-b border-kh-dark-line bg-kh-ink">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 md:px-8">
         <Logo light />
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
+          <Link to="/marketing" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Marketing</Link>
           {links.map(([label, href]) => <a key={label} href={href} className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">{label}</a>)}
           <Link to="/growth-reset" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Growth Reset</Link>
           <Link to="/deliverables" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Deliverables</Link>
@@ -74,7 +75,7 @@ function Nav() {
         <div className="hidden md:block"><PrimaryCTA light /></div>
         <button type="button" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)} className="grid size-11 place-items-center text-kh-white lg:hidden">{open ? <X /> : <Menu />}</button>
       </div>
-      {open && <nav className="border-t border-kh-dark-line bg-kh-ink px-5 py-5 lg:hidden">{links.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">{label}</a>)}<Link to="/growth-reset" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Growth Reset</Link><Link to="/deliverables" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Deliverables</Link><Link to="/partners" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Partners</Link><div className="mt-5"><PrimaryCTA light /></div></nav>}
+      {open && <nav className="border-t border-kh-dark-line bg-kh-ink px-5 py-5 lg:hidden"><Link to="/marketing" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Marketing</Link>{links.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">{label}</a>)}<Link to="/growth-reset" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Growth Reset</Link><Link to="/deliverables" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Deliverables</Link><Link to="/partners" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Partners</Link><div className="mt-5"><PrimaryCTA light /></div></nav>}
     </header>
   );
 }
@@ -123,7 +124,7 @@ function Capacity() {
 }
 
 const pillars = [
-  { id: "services", icon: Wrench, tag: "Services", title: "Get It Done.", copy: "On-demand execution for the work behind your growth.", items: ["Websites & landing pages", "SEO & lead generation", "Outbound sales", "CRM & automation", "Content & design", "Research & operations"], link: "/bizsite" as const, cta: "Explore Services" },
+  { id: "services", icon: Wrench, tag: "Services", title: "Get It Done.", copy: "On-demand execution for the work behind your growth.", items: ["Websites & landing pages", "SEO & lead generation", "Outbound sales", "CRM & automation", "Content & design", "Research & operations"], link: "/marketing" as const, cta: "Explore Marketing" },
   { id: "programs", icon: Users, tag: "Programs", title: "Build It Better.", copy: "Structured programs and advisory experiences that pair strategy with implementation.", items: ["Growth planning", "Sales development", "Growth workshops", "AI implementation", "Business systems", "Team training"], link: "/new-client" as const, cta: "Explore Programs" },
   { id: "tools", icon: CircleGauge, tag: "Tools", title: "Run It Smarter.", copy: "Practical technology that helps small businesses decide and execute faster.", items: ["Execution Engine", "BizPhone", "BizSite", "Growth assessments", "Buyer-intent intelligence", "Client dashboards"], link: "/bizphone" as const, cta: "Explore Tools" },
 ];
