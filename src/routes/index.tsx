@@ -68,12 +68,13 @@ function Nav() {
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
           {links.map(([label, href]) => <a key={label} href={href} className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">{label}</a>)}
           <Link to="/growth-reset" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Growth Reset</Link>
+          <Link to="/deliverables" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Deliverables</Link>
           <Link to="/partners" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Partners</Link>
         </nav>
         <div className="hidden md:block"><PrimaryCTA light /></div>
         <button type="button" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)} className="grid size-11 place-items-center text-kh-white lg:hidden">{open ? <X /> : <Menu />}</button>
       </div>
-      {open && <nav className="border-t border-kh-dark-line bg-kh-ink px-5 py-5 lg:hidden">{links.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">{label}</a>)}<Link to="/growth-reset" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Growth Reset</Link><Link to="/partners" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Partners</Link><div className="mt-5"><PrimaryCTA light /></div></nav>}
+      {open && <nav className="border-t border-kh-dark-line bg-kh-ink px-5 py-5 lg:hidden">{links.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">{label}</a>)}<Link to="/growth-reset" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Growth Reset</Link><Link to="/deliverables" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Deliverables</Link><Link to="/partners" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Partners</Link><div className="mt-5"><PrimaryCTA light /></div></nav>}
     </header>
   );
 }
@@ -191,7 +192,7 @@ function FinalCTA() {
 }
 
 function Footer() {
-  const groups = [{ title: "Services", items: ["Websites", "SEO", "Lead Generation", "Sales Development", "Automation", "Marketing"] }, { title: "Programs", items: ["Growth Planning", "Workshops", "Growth Evaluation", "AI Programs"] }, { title: "Tools", items: ["Execution Engine", "BizPhone", "BizSite", "Growth Assessment"] }, { title: "Company", items: ["About", "Resources", "Podcast", "Contact", "Careers"] }];
+  const groups = [{ title: "Services", items: ["Websites", "SEO", "Lead Generation", "Sales Development", "Automation", "Marketing"] }, { title: "Programs", items: ["Growth Planning", "Workshops", "Growth Evaluation", "AI Programs"] }, { title: "Tools", items: ["Execution Engine", "BizPhone", "BizSite", "Growth Assessment"] }, { title: "Company", items: ["About", "Resources", "Deliverables", "Contact", "Careers"] }];
   return <footer className="border-t border-kh-dark-line bg-kh-ink px-5 py-16 text-kh-white md:px-8"><div className="mx-auto max-w-7xl"><div className="grid gap-12 lg:grid-cols-[1.2fr_2fr]"><div><Logo light /><p className="mt-5 max-w-xs text-sm leading-relaxed text-kh-dark-muted">The Execution Engine for Small Businesses &amp; Entrepreneurs.</p><div className="mt-8 flex gap-3"><Link to="/bizphone" className="border border-kh-dark-line px-4 py-2 text-sm font-bold">BizPhone</Link><Link to="/bizsite" className="border border-kh-dark-line px-4 py-2 text-sm font-bold">BizSite</Link></div></div><div className="grid grid-cols-2 gap-8 sm:grid-cols-4">{groups.map(group => <div key={group.title}><h3 className="font-display text-sm font-bold text-kh-lime">{group.title}</h3><ul className="mt-4 space-y-2.5 text-sm text-kh-dark-muted">{group.items.map(item => <li key={item}>{item}</li>)}</ul></div>)}</div></div><div className="mt-14 flex flex-col justify-between gap-4 border-t border-kh-dark-line pt-7 text-sm text-kh-dark-muted sm:flex-row"><span className="font-display font-bold text-kh-white">Know what to do next. Then get it done.</span><span>© {new Date().getFullYear()} KGHQ. AI-assisted. Human-executed.</span></div></div></footer>;
 }
 

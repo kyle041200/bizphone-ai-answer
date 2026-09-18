@@ -9,3 +9,6 @@
 - [x] Build the KGHQ Partner Network page from the supplied content
 - [x] Add Partners to the homepage navigation
 - [x] Verify the Partners page, inquiry form, and responsive layouts
+- [x] Build the interactive KGHQ Deliverables Library
+- [x] Add Deliverables to the homepage navigation
+- [x] Verify the library interactions and responsive layouts
