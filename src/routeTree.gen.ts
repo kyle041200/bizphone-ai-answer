@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as PartnersRouteImport } from './routes/partners'
 import { Route as NewClientRouteImport } from './routes/new-client'
 import { Route as GrowthResetRouteImport } from './routes/growth-reset'
+import { Route as DeliverablesRouteImport } from './routes/deliverables'
 import { Route as BizsiteRouteImport } from './routes/bizsite'
 import { Route as BizphoneRouteImport } from './routes/bizphone'
 import { Route as IndexRouteImport } from './routes/index'
@@ -29,6 +30,11 @@ const NewClientRoute = NewClientRouteImport.update({
 const GrowthResetRoute = GrowthResetRouteImport.update({
   id: '/growth-reset',
   path: '/growth-reset',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DeliverablesRoute = DeliverablesRouteImport.update({
+  id: '/deliverables',
+  path: '/deliverables',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BizsiteRoute = BizsiteRouteImport.update({
@@ -51,6 +57,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/bizphone': typeof BizphoneRoute
   '/bizsite': typeof BizsiteRoute
+  '/deliverables': typeof DeliverablesRoute
   '/growth-reset': typeof GrowthResetRoute
   '/new-client': typeof NewClientRoute
   '/partners': typeof PartnersRoute
@@ -59,6 +66,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/bizphone': typeof BizphoneRoute
   '/bizsite': typeof BizsiteRoute
+  '/deliverables': typeof DeliverablesRoute
   '/growth-reset': typeof GrowthResetRoute
   '/new-client': typeof NewClientRoute
   '/partners': typeof PartnersRoute
@@ -68,6 +76,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/bizphone': typeof BizphoneRoute
   '/bizsite': typeof BizsiteRoute
+  '/deliverables': typeof DeliverablesRoute
   '/growth-reset': typeof GrowthResetRoute
   '/new-client': typeof NewClientRoute
   '/partners': typeof PartnersRoute
@@ -78,6 +87,7 @@ export interface FileRouteTypes {
     | '/'
     | '/bizphone'
     | '/bizsite'
+    | '/deliverables'
     | '/growth-reset'
     | '/new-client'
     | '/partners'
@@ -86,6 +96,7 @@ export interface FileRouteTypes {
     | '/'
     | '/bizphone'
     | '/bizsite'
+    | '/deliverables'
     | '/growth-reset'
     | '/new-client'
     | '/partners'
@@ -94,6 +105,7 @@ export interface FileRouteTypes {
     | '/'
     | '/bizphone'
     | '/bizsite'
+    | '/deliverables'
     | '/growth-reset'
     | '/new-client'
     | '/partners'
@@ -103,6 +115,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BizphoneRoute: typeof BizphoneRoute
   BizsiteRoute: typeof BizsiteRoute
+  DeliverablesRoute: typeof DeliverablesRoute
   GrowthResetRoute: typeof GrowthResetRoute
   NewClientRoute: typeof NewClientRoute
   PartnersRoute: typeof PartnersRoute
@@ -129,6 +142,13 @@ declare module '@tanstack/react-router' {
       path: '/growth-reset'
       fullPath: '/growth-reset'
       preLoaderRoute: typeof GrowthResetRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/deliverables': {
+      id: '/deliverables'
+      path: '/deliverables'
+      fullPath: '/deliverables'
+      preLoaderRoute: typeof DeliverablesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/bizsite': {
@@ -159,6 +179,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BizphoneRoute: BizphoneRoute,
   BizsiteRoute: BizsiteRoute,
+  DeliverablesRoute: DeliverablesRoute,
   GrowthResetRoute: GrowthResetRoute,
   NewClientRoute: NewClientRoute,
   PartnersRoute: PartnersRoute,
