@@ -21,4 +21,4 @@
 
 - [x] Build the KGHQ Business Support page from the supplied content
 - [x] Add Business Support to homepage and service-page navigation
-- [ ] Verify the Business Support page interactions and responsive layouts
+- [x] Verify the Business Support page interactions and responsive layouts
