@@ -11,4 +11,4 @@
 - [x] Verify the Partners page, inquiry form, and responsive layouts
 - [x] Build the interactive KGHQ Deliverables Library
 - [x] Add Deliverables to the homepage navigation
-- [ ] Verify the library interactions and responsive layouts
+- [x] Verify the library interactions and responsive layouts
