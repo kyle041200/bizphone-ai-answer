@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as PartnersRouteImport } from './routes/partners'
 import { Route as NewClientRouteImport } from './routes/new-client'
+import { Route as MarketingRouteImport } from './routes/marketing'
 import { Route as GrowthResetRouteImport } from './routes/growth-reset'
 import { Route as DeliverablesRouteImport } from './routes/deliverables'
 import { Route as BizsiteRouteImport } from './routes/bizsite'
@@ -25,6 +26,11 @@ const PartnersRoute = PartnersRouteImport.update({
 const NewClientRoute = NewClientRouteImport.update({
   id: '/new-client',
   path: '/new-client',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MarketingRoute = MarketingRouteImport.update({
+  id: '/marketing',
+  path: '/marketing',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GrowthResetRoute = GrowthResetRouteImport.update({
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/bizsite': typeof BizsiteRoute
   '/deliverables': typeof DeliverablesRoute
   '/growth-reset': typeof GrowthResetRoute
+  '/marketing': typeof MarketingRoute
   '/new-client': typeof NewClientRoute
   '/partners': typeof PartnersRoute
 }
@@ -68,6 +75,7 @@ export interface FileRoutesByTo {
   '/bizsite': typeof BizsiteRoute
   '/deliverables': typeof DeliverablesRoute
   '/growth-reset': typeof GrowthResetRoute
+  '/marketing': typeof MarketingRoute
   '/new-client': typeof NewClientRoute
   '/partners': typeof PartnersRoute
 }
@@ -78,6 +86,7 @@ export interface FileRoutesById {
   '/bizsite': typeof BizsiteRoute
   '/deliverables': typeof DeliverablesRoute
   '/growth-reset': typeof GrowthResetRoute
+  '/marketing': typeof MarketingRoute
   '/new-client': typeof NewClientRoute
   '/partners': typeof PartnersRoute
 }
@@ -89,6 +98,7 @@ export interface FileRouteTypes {
     | '/bizsite'
     | '/deliverables'
     | '/growth-reset'
+    | '/marketing'
     | '/new-client'
     | '/partners'
   fileRoutesByTo: FileRoutesByTo
@@ -98,6 +108,7 @@ export interface FileRouteTypes {
     | '/bizsite'
     | '/deliverables'
     | '/growth-reset'
+    | '/marketing'
     | '/new-client'
     | '/partners'
   id:
@@ -107,6 +118,7 @@ export interface FileRouteTypes {
     | '/bizsite'
     | '/deliverables'
     | '/growth-reset'
+    | '/marketing'
     | '/new-client'
     | '/partners'
   fileRoutesById: FileRoutesById
@@ -117,6 +129,7 @@ export interface RootRouteChildren {
   BizsiteRoute: typeof BizsiteRoute
   DeliverablesRoute: typeof DeliverablesRoute
   GrowthResetRoute: typeof GrowthResetRoute
+  MarketingRoute: typeof MarketingRoute
   NewClientRoute: typeof NewClientRoute
   PartnersRoute: typeof PartnersRoute
 }
@@ -135,6 +148,13 @@ declare module '@tanstack/react-router' {
       path: '/new-client'
       fullPath: '/new-client'
       preLoaderRoute: typeof NewClientRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/marketing': {
+      id: '/marketing'
+      path: '/marketing'
+      fullPath: '/marketing'
+      preLoaderRoute: typeof MarketingRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/growth-reset': {
@@ -181,6 +201,7 @@ const rootRouteChildren: RootRouteChildren = {
   BizsiteRoute: BizsiteRoute,
   DeliverablesRoute: DeliverablesRoute,
   GrowthResetRoute: GrowthResetRoute,
+  MarketingRoute: MarketingRoute,
   NewClientRoute: NewClientRoute,
   PartnersRoute: PartnersRoute,
 }
