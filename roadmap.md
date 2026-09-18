@@ -12,3 +12,6 @@
 - [x] Build the interactive KGHQ Deliverables Library
 - [x] Add Deliverables to the homepage navigation
 - [x] Verify the library interactions and responsive layouts
+- [ ] Build the KGHQ Marketing Solutions page from the supplied content
+- [ ] Add Marketing to the homepage navigation and service pathway
+- [ ] Verify the Marketing page interactions and responsive layouts
