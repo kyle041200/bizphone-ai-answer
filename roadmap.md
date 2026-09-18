@@ -18,3 +18,7 @@
 - [x] Build the KGHQ Sales Development page from the supplied content
 - [x] Add Sales to homepage navigation and sales pathways
 - [x] Verify the Sales page interactions and responsive layouts
+
+- [x] Build the KGHQ Business Support page from the supplied content
+- [x] Add Business Support to homepage and service-page navigation
+- [ ] Verify the Business Support page interactions and responsive layouts
