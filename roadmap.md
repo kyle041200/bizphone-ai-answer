@@ -22,3 +22,5 @@
 - [x] Build the KGHQ Business Support page from the supplied content
 - [x] Add Business Support to homepage and service-page navigation
 - [x] Verify the Business Support page interactions and responsive layouts
+- [x] Replace Marketing, Sales, and Business Support header photos with sharper high-resolution images
+- [x] Verify all three service headers across desktop and mobile
