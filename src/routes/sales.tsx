@@ -7,7 +7,7 @@ import {
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import logoLightAsset from "@/assets/kghq-logo-light.png.asset.json";
-import salesHero from "@/assets/sales-team-pipeline-hq.jpg";
+import salesHero from "@/assets/sales-team-conversation.jpg";
 
 export const Route = createFileRoute("/sales")({
   component: SalesPage,
