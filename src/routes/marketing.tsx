@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   ArrowRight, BarChart3, Bot, BrainCircuit, Check, ChevronDown, CircleDollarSign,
-  FileText, Globe2, Layers3, Mail, Megaphone, Menu, Palette, Search,
+  FileText, Globe2, Layers3, Mail, MapPin, Megaphone, Menu, Palette, Quote, Search,
   ShieldCheck, Sparkles, Star, Target, TrendingUp, Users, Workflow, X, Zap,
 } from "lucide-react";
 import { useState } from "react";
@@ -54,15 +54,17 @@ const plans = [
 ];
 
 const popular = [
-  [Globe2, "Landing Page", "A conversion-focused page for a campaign, event, or offer.", "4", "3–5 days"],
-  [FileText, "Lead Magnet", "A useful resource designed to attract and capture leads.", "4", "3–5 days"],
-  [Mail, "Email Nurture Sequence", "A sequence that keeps prospects engaged and moving forward.", "5", "5–7 days"],
-  [Megaphone, "Social Content Pack", "Branded content that keeps your business top of mind.", "4", "3–5 days"],
-  [Search, "SEO Article", "Search-optimized content built around what customers seek.", "3", "3–5 days"],
-  [Target, "Google Business Profile", "Improve your local visibility and attract nearby customers.", "3", "3–5 days"],
-  [Palette, "Brand Refresh", "Update your visual direction and key brand assets.", "6", "5–10 days"],
-  [Star, "Case Study", "Turn a successful project into a story that wins the next one.", "4", "3–5 days"],
+  { title: "Landing Page", body: "A conversion-focused page for a campaign, event, or offer.", tokens: "4", time: "3–5 days", preview: "site" },
+  { title: "Lead Magnet", body: "A useful resource designed to attract and capture leads.", tokens: "4", time: "3–5 days", preview: "doc" },
+  { title: "Email Nurture Sequence", body: "A sequence that keeps prospects engaged and moving forward.", tokens: "5", time: "5–7 days", preview: "email" },
+  { title: "Social Content Pack", body: "Branded content that keeps your business top of mind.", tokens: "4", time: "3–5 days", preview: "social" },
+  { title: "SEO Article", body: "Search-optimized content built around what customers seek.", tokens: "3", time: "3–5 days", preview: "search" },
+  { title: "Google Business Profile", body: "Improve your local visibility and attract nearby customers.", tokens: "3", time: "3–5 days", preview: "local" },
+  { title: "Brand Refresh", body: "Update your visual direction and key brand assets.", tokens: "6", time: "5–10 days", preview: "brand" },
+  { title: "Case Study", body: "Turn a successful project into a story that wins the next one.", tokens: "4", time: "3–5 days", preview: "story" },
 ] as const;
+
+type PreviewType = (typeof popular)[number]["preview"];
 
 function Header() {
   const [open, setOpen] = useState(false);
