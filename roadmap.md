@@ -32,3 +32,5 @@
 - [x] Verify the complete catalog, search, categories, sorting, and page layout
 - [x] Match Sales and Business Support preview cards to library descriptions, photos, and Brick amounts
 - [x] Verify both updated service libraries on desktop and mobile
+- [x] Add Articles page with the nine supplied titles, category filters, and article reading pages
+- [x] Link Articles in homepage navigation and verify search, filters, reading, and phone layouts

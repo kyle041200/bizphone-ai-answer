@@ -6,6 +6,7 @@ import {
   TrendingUp, Users, WandSparkles, Workflow, Wrench, X,
 } from "lucide-react";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
 import heroImg from "@/assets/kghq-home-hero.jpg";
 import teamImg from "@/assets/kghq-team-work.jpg";
 import logoAsset from "@/assets/kghq-logo.png.asset.json";
@@ -65,19 +66,20 @@ function Nav() {
     <header className="sticky top-0 z-50 border-b border-kh-dark-line bg-kh-ink">
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 md:px-8">
         <Logo light />
-        <nav className="hidden items-center gap-7 lg:flex" aria-label="Main navigation">
+        <nav className="hidden items-center gap-4 2xl:flex" aria-label="Main navigation">
           <Link to="/marketing" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Marketing</Link>
           <Link to="/sales" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Sales</Link>
           <Link to="/business-support" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Business Support</Link>
           {links.map(([label, href]) => <a key={label} href={href} className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">{label}</a>)}
           <Link to="/growth-reset" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Growth Reset</Link>
           <Link to="/deliverables" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Deliverables</Link>
+          <Link to="/articles" search={{ category: "All", q: "" }} className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Articles</Link>
           <Link to="/partners" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Partners</Link>
         </nav>
         <div className="hidden md:block"><PrimaryCTA light /></div>
-        <button type="button" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)} className="grid size-11 place-items-center text-kh-white lg:hidden">{open ? <X /> : <Menu />}</button>
+        <Button variant="ghost" size="icon" type="button" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)} className="grid size-11 place-items-center text-kh-white 2xl:hidden">{open ? <X /> : <Menu />}</Button>
       </div>
-      {open && <nav className="border-t border-kh-dark-line bg-kh-ink px-5 py-5 lg:hidden"><Link to="/marketing" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Marketing</Link><Link to="/sales" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Sales</Link><Link to="/business-support" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Business Support</Link>{links.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">{label}</a>)}<Link to="/growth-reset" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Growth Reset</Link><Link to="/deliverables" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Deliverables</Link><Link to="/partners" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Partners</Link><div className="mt-5"><PrimaryCTA light /></div></nav>}
+      {open && <nav className="border-t border-kh-dark-line bg-kh-ink px-5 py-5 2xl:hidden"><Link to="/marketing" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Marketing</Link><Link to="/sales" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Sales</Link><Link to="/business-support" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Business Support</Link>{links.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">{label}</a>)}<Link to="/growth-reset" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Growth Reset</Link><Link to="/deliverables" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Deliverables</Link><Link to="/articles" search={{ category: "All", q: "" }} onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Articles</Link><Link to="/partners" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Partners</Link><div className="mt-5"><PrimaryCTA light /></div></nav>}
     </header>
   );
 }
