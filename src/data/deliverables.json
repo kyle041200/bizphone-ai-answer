@@ -1,0 +1,1988 @@
+[
+  {
+    "id": "deliverable-001",
+    "title": "Brand Foundation Kit",
+    "description": "A complete brand built from the ground up, including logo, MBA-level brand strategy (2 sessions), style guide, business cards, and stationery, giving your business a polished and cohesive identity.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 1200,
+    "bricksMax": 1200,
+    "sourcePage": 3,
+    "image": "001"
+  },
+  {
+    "id": "deliverable-002",
+    "title": "Brand Refresh Kit",
+    "description": "A modernization of existing brand assets, such as logo refinements, updated colors/fonts, a simple style guide, and refreshed supporting materials while preserving the core identity of the business.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 950,
+    "bricksMax": 950,
+    "sourcePage": 3,
+    "image": "002"
+  },
+  {
+    "id": "deliverable-003",
+    "title": "Brand Style Guide",
+    "description": "A one-page brand style guide outlining your logo usage, fonts, colors, and overall branding guidelines for consistent use everywhere.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 150,
+    "bricksMax": 150,
+    "sourcePage": 3,
+    "image": "003"
+  },
+  {
+    "id": "deliverable-004",
+    "title": "Brochure (Premium)",
+    "description": "Up to 5 pages of premium brochure with custom layout, refined visuals, and premium design by expert designers.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 3,
+    "image": "004"
+  },
+  {
+    "id": "deliverable-005",
+    "title": "Brochure (Signature)",
+    "description": "Up to 3 pages of a custom brochure designed from the ground up to clearly showcase your services, value, and brand.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 3,
+    "image": "005"
+  },
+  {
+    "id": "deliverable-006",
+    "title": "Brochure Cleanup",
+    "description": "Up to 3 pages of a refreshed and polished brochure with improved layout and visual consistency.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 100,
+    "bricksMax": 100,
+    "sourcePage": 3,
+    "image": "006"
+  },
+  {
+    "id": "deliverable-007",
+    "title": "Business Card Design",
+    "description": "A business card front and back with customized size and design.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 75,
+    "bricksMax": 75,
+    "sourcePage": 3,
+    "image": "007"
+  },
+  {
+    "id": "deliverable-008",
+    "title": "Business Essentials Pack",
+    "description": "Professionally designed business cards, letterhead, envelopes, and customized thank-you postcards.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 150,
+    "bricksMax": 150,
+    "sourcePage": 3,
+    "image": "008"
+  },
+  {
+    "id": "deliverable-009",
+    "title": "Flyer",
+    "description": "A one-page overview of your service or company or offerings.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 100,
+    "bricksMax": 100,
+    "sourcePage": 3,
+    "image": "009"
+  },
+  {
+    "id": "deliverable-010",
+    "title": "Logo Design (Express)",
+    "description": "3 fast, affordable logos created using AI tools. Simple, modern, and ready to use.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 100,
+    "bricksMax": 100,
+    "sourcePage": 3,
+    "image": "010"
+  },
+  {
+    "id": "deliverable-011",
+    "title": "Logo Design (Premium)",
+    "description": "9 customized logo options to choose from by premium designers.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 1200,
+    "bricksMax": 1200,
+    "sourcePage": 3,
+    "image": "011"
+  },
+  {
+    "id": "deliverable-012",
+    "title": "Logo Design (Signature)",
+    "description": "3 customized logo options aligned to your brand and target audience, with one consultation to refine direction and selection.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 400,
+    "bricksMax": 400,
+    "sourcePage": 3,
+    "image": "012"
+  },
+  {
+    "id": "deliverable-013",
+    "title": "Merch or Promotional Design",
+    "description": "A custom merchandise design aligned with your brand and ready for production.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 175,
+    "bricksMax": 175,
+    "sourcePage": 3,
+    "image": "013"
+  },
+  {
+    "id": "deliverable-014",
+    "title": "One-Sheet Design",
+    "description": "A polished one-page sales or speaker sheet that clearly presents your value.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 3,
+    "image": "014"
+  },
+  {
+    "id": "deliverable-015",
+    "title": "Podcast Branding Pack",
+    "description": "A complete podcast branding kit including an express logo, cover art, and 3 social media templates for consistent promotion.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 3,
+    "image": "015"
+  },
+  {
+    "id": "deliverable-016",
+    "title": "Podcast One Sheet",
+    "description": "A polished one-page overview that helps you promote your podcast or pitch yourself as a podcast guest.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 3,
+    "image": "016"
+  },
+  {
+    "id": "deliverable-017",
+    "title": "Press Release (with Distribution)",
+    "description": "A 400-word press release distributed via EIN Presswire, optimized for visibility, reach, and SEO.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 350,
+    "bricksMax": 350,
+    "sourcePage": 4,
+    "image": "017"
+  },
+  {
+    "id": "deliverable-018",
+    "title": "Press Release (written only)",
+    "description": "A clear and concise 400-word press release crafted to communicate your announcement, story, or update in a professional and news-ready format.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 4,
+    "image": "018"
+  },
+  {
+    "id": "deliverable-019",
+    "title": "Sales Pricing Sheet",
+    "description": "A simple one page pricing and offering sheet for your business.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 75,
+    "bricksMax": 75,
+    "sourcePage": 4,
+    "image": "019"
+  },
+  {
+    "id": "deliverable-020",
+    "title": "Slide Deck Template",
+    "description": "A polished 10-slide deck with custom layout, visuals, and clean formatting for presentations or pitches.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 75,
+    "bricksMax": 75,
+    "sourcePage": 4,
+    "image": "020"
+  },
+  {
+    "id": "deliverable-021",
+    "title": "Social Media Banner",
+    "description": "A platform-ready banner tailored for social media or YouTube, sized and formatted to match platform specifications.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 75,
+    "bricksMax": 75,
+    "sourcePage": 4,
+    "image": "021"
+  },
+  {
+    "id": "deliverable-022",
+    "title": "Social Media Templates",
+    "description": "10 reusable customized social media templates professionally designed, fully editable in Canva for easy future use, including posts and stories.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 4,
+    "image": "022"
+  },
+  {
+    "id": "deliverable-023",
+    "title": "Vehicles Graphics/Wrap Design (Premium)",
+    "description": "A high-impact vehicle branding concept that includes multiple creative directions and a full-wrap design.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 4,
+    "image": "023"
+  },
+  {
+    "id": "deliverable-024",
+    "title": "Vehicles Graphics/Wrap Design (Signature)",
+    "description": "Branded vehicle graphics design using the client’s existing brand. Iincludes one primary design concept.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 4,
+    "image": "024"
+  },
+  {
+    "id": "deliverable-025",
+    "title": "Virtual Meeting Background",
+    "description": "A custom virtual background designed to match your brand for a clean, polished, and consistent look during online meetings and presentations.",
+    "category": "Marketing",
+    "subcategory": "Brand Identity",
+    "bricksMin": 75,
+    "bricksMax": 75,
+    "sourcePage": 4,
+    "image": "025"
+  },
+  {
+    "id": "deliverable-026",
+    "title": "Blog / Article Writing - AI",
+    "description": "500 words of a ghost-written and edited article that will showcase your expertise as an entrepreneur mostly generated by AI but edited by a human.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 100,
+    "bricksMax": 100,
+    "sourcePage": 4,
+    "image": "026"
+  },
+  {
+    "id": "deliverable-027",
+    "title": "Blog / Article Writing - Human",
+    "description": "500 words of professionally ghost-written and edited article that will showcase your expertise as an entrepreneur written and edited by a professional writer.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 4,
+    "image": "027"
+  },
+  {
+    "id": "deliverable-028",
+    "title": "Content Repurposing Pack",
+    "description": "Turn 1 piece of content into up to 5 repurposed pieces, including posts, clips, emails, or other reusable assets.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 4,
+    "image": "028"
+  },
+  {
+    "id": "deliverable-029",
+    "title": "Demo Reel / Speaker Reel",
+    "description": "Up to 5 minutes of polished demo reel with color correction, transitions, voice-over, and text overlays, ready for YouTube or Vimeo.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 750,
+    "bricksMax": 750,
+    "sourcePage": 4,
+    "image": "029"
+  },
+  {
+    "id": "deliverable-030",
+    "title": "Email - Promotional",
+    "description": "A promotional email of up to 500 words designed to highlight an offer, product, or service and drive action.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 50,
+    "bricksMax": 50,
+    "sourcePage": 4,
+    "image": "030"
+  },
+  {
+    "id": "deliverable-031",
+    "title": "Email - Newsletter",
+    "description": "A newsletter of up to 1,000 words featuring updates, insights, or valuable content to engage your audience.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 75,
+    "bricksMax": 75,
+    "sourcePage": 4,
+    "image": "031"
+  },
+  {
+    "id": "deliverable-032",
+    "title": "Explainer Video - AI Generated",
+    "description": "A 2–3 minute AI-generated explainer video with script, AI voiceover, visuals, and editing.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 350,
+    "bricksMax": 350,
+    "sourcePage": 5,
+    "image": "032"
+  },
+  {
+    "id": "deliverable-033",
+    "title": "Explainer Video - Script + Video",
+    "description": "A 2–3 minute explainer video with visuals, voiceover, and editing that explains your product, service, or concept.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 5,
+    "image": "033"
+  },
+  {
+    "id": "deliverable-034",
+    "title": "Explainer Video - Script Only",
+    "description": "A clear, engaging script of up to 150 words (roughly 1 minute) that explains your product, service, or concept.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 5,
+    "image": "034"
+  },
+  {
+    "id": "deliverable-035",
+    "title": "FAQs",
+    "description": "Up to 10 frequently asked questions with clear, concise answers tailored to your business and audience.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 50,
+    "bricksMax": 50,
+    "sourcePage": 5,
+    "image": "035"
+  },
+  {
+    "id": "deliverable-036",
+    "title": "Podcast Script - Express",
+    "description": "Up to 1,500 words (about 10 minutes ) of a structured script tailored to your topic, audience, and key talking points. Iincludes 15 minute consultation.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 125,
+    "bricksMax": 125,
+    "sourcePage": 5,
+    "image": "036"
+  },
+  {
+    "id": "deliverable-037",
+    "title": "Podcast Script - Premium",
+    "description": "Up to 6,000 words (about 40-50 minutes) of a structured script tailored to your topic, audience, and key talking points. Iincludes 30 minute consultation.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 350,
+    "bricksMax": 350,
+    "sourcePage": 5,
+    "image": "037"
+  },
+  {
+    "id": "deliverable-038",
+    "title": "Podcast Script - Signature",
+    "description": "Up to 3,000 words (about 20-25 minutes) of a structured script tailored to your topic, audience, and key talking points. Iincludes 30 minute consultation.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 5,
+    "image": "038"
+  },
+  {
+    "id": "deliverable-039",
+    "title": "Presentation Script",
+    "description": "A clear, structured script designed for presentations, pitches, or webinars, with a logical flow and key talking points per 1,000 words (roughly 8 minutes).",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 5,
+    "image": "039"
+  },
+  {
+    "id": "deliverable-040",
+    "title": "Slide Deck - Express",
+    "description": "Up to 5 slides of professionally designed presentation deck for pitches, sales, webinars, or client presentations.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 150,
+    "bricksMax": 150,
+    "sourcePage": 5,
+    "image": "040"
+  },
+  {
+    "id": "deliverable-041",
+    "title": "Slide Deck - Premium",
+    "description": "Up to 20 slides of professionally designed presentation deck for pitches, sales, webinars, or client presentations.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 400,
+    "bricksMax": 400,
+    "sourcePage": 5,
+    "image": "041"
+  },
+  {
+    "id": "deliverable-042",
+    "title": "Slide Deck - Signature",
+    "description": "Up to 10 slides of professionally designed presentation deck for pitches, sales, webinars, or client presentations.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 5,
+    "image": "042"
+  },
+  {
+    "id": "deliverable-043",
+    "title": "Social Media Carousel",
+    "description": "A custom social media carousel of up to 5 slides, designed to match your brand and clearly communicate your message.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 50,
+    "bricksMax": 50,
+    "sourcePage": 5,
+    "image": "043"
+  },
+  {
+    "id": "deliverable-044",
+    "title": "Social Media Post - Express",
+    "description": "Up to 5 custom social media posts designed to match your brand.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 150,
+    "bricksMax": 150,
+    "sourcePage": 5,
+    "image": "044"
+  },
+  {
+    "id": "deliverable-045",
+    "title": "Social Media Post - Premium",
+    "description": "Up to 20 custom social media posts designed to match your brand.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 400,
+    "bricksMax": 400,
+    "sourcePage": 5,
+    "image": "045"
+  },
+  {
+    "id": "deliverable-046",
+    "title": "Social Media Post - Signature",
+    "description": "Up to 10 custom social media posts designed to match your brand.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 5,
+    "image": "046"
+  },
+  {
+    "id": "deliverable-047",
+    "title": "Story - Brand",
+    "description": "Up to 500 words telling the brand’s story, purpose, and what makes it unique.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 125,
+    "bricksMax": 125,
+    "sourcePage": 5,
+    "image": "047"
+  },
+  {
+    "id": "deliverable-048",
+    "title": "Story - Customer",
+    "description": "Up to 500 words highlighting a customer’s experience, journey, and results with the brand.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 125,
+    "bricksMax": 125,
+    "sourcePage": 6,
+    "image": "048"
+  },
+  {
+    "id": "deliverable-049",
+    "title": "Story - Founder",
+    "description": "Up to 750 words telling the founder’s story, journey, and vision in an engaging narrative.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 125,
+    "bricksMax": 125,
+    "sourcePage": 6,
+    "image": "049"
+  },
+  {
+    "id": "deliverable-050",
+    "title": "Video Editing & Promo Content",
+    "description": "A video clip up to 2 minutes edited with basic cuts and adjustments for marketing, education, or promotion.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 450,
+    "bricksMax": 450,
+    "sourcePage": 6,
+    "image": "050"
+  },
+  {
+    "id": "deliverable-051",
+    "title": "Video Script",
+    "description": "Up to 750 words of a structured, engaging script tailored to your topic, audience, and goals.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 200,
+    "bricksMax": 200,
+    "sourcePage": 6,
+    "image": "051"
+  },
+  {
+    "id": "deliverable-052",
+    "title": "Voiceover Script",
+    "description": "Up to 300 words of a clear, engaging script designed for videos, ads, or narration, with smooth flow and natural delivery (approx. 1–2 minutes).",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 125,
+    "bricksMax": 125,
+    "sourcePage": 6,
+    "image": "052"
+  },
+  {
+    "id": "deliverable-053",
+    "title": "Website Copy",
+    "description": "Full website copy for up to 5 pages, aligned to your Ideal Customer Profile (ICP) and buyer persona, including research and professional editing to support conversions.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 6,
+    "image": "053"
+  },
+  {
+    "id": "deliverable-054",
+    "title": "Video Edit – Express",
+    "description": "Basic cleanup of 1 video up to 2 minutes, including trimming, simple cuts, and basic formatting.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 30,
+    "bricksMax": 30,
+    "sourcePage": 6,
+    "image": "054"
+  },
+  {
+    "id": "deliverable-055",
+    "title": "Video Edit – Signature",
+    "description": "Professional edit of 1 video up to 2 minutes, including trimming, transitions, captions, audio adjustments, and platform-ready formatting.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 40,
+    "bricksMax": 40,
+    "sourcePage": 6,
+    "image": "055"
+  },
+  {
+    "id": "deliverable-056",
+    "title": "Video Edit – Premium",
+    "description": "Enhanced edit of 1 video up to 2 minutes, including everything in Signature plus branded graphics, B-roll, music, stronger pacing, visual enhancements, and more polished production.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 75,
+    "bricksMax": 75,
+    "sourcePage": 6,
+    "image": "056"
+  },
+  {
+    "id": "deliverable-057",
+    "title": "Video Intro/Outro – Simple",
+    "description": "1 basic branded intro or outro with logo, text, and simple visual elements.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 50,
+    "bricksMax": 50,
+    "sourcePage": 6,
+    "image": "057"
+  },
+  {
+    "id": "deliverable-058",
+    "title": "Video Intro/Outro – Complex",
+    "description": "1 custom animated intro or outro with advanced motion effects, transitions, and branded visuals.",
+    "category": "Marketing",
+    "subcategory": "Content Creation",
+    "bricksMin": 150,
+    "bricksMax": 150,
+    "sourcePage": 6,
+    "image": "058"
+  },
+  {
+    "id": "deliverable-059",
+    "title": "Ad Creative Pack",
+    "description": "Up to 3 ad creatives designed to match your brand, including visuals and copy optimized to capture attention and drive results.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 6,
+    "image": "059"
+  },
+  {
+    "id": "deliverable-060",
+    "title": "Email Drip Campaign (Written + Setup)",
+    "description": "10 compelling emails written and configuration of the approved email sequence inside the selected email/CRM platform, including timing, basic segmentation, and testing.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 350,
+    "bricksMax": 350,
+    "sourcePage": 6,
+    "image": "060"
+  },
+  {
+    "id": "deliverable-061",
+    "title": "Email Drip Campaign (Written Only)",
+    "description": "10 compelling emails written to keep your leads in the loop on autopilot on a regular basis.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 6,
+    "image": "061"
+  },
+  {
+    "id": "deliverable-062",
+    "title": "Landing Page",
+    "description": "A full landing page with copy, design, and development with 1-2 calls-to-action.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 350,
+    "bricksMax": 350,
+    "sourcePage": 6,
+    "image": "062"
+  },
+  {
+    "id": "deliverable-063",
+    "title": "Lead Magnet - Assessment",
+    "description": "An assessment up to 12 questions designed to engage your audience, provide personalized insights, and capture qualified leads.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 7,
+    "image": "063"
+  },
+  {
+    "id": "deliverable-064",
+    "title": "Lead Magnet - Downloadable PDF",
+    "description": "A downloadable PDF or guide up to 5 pages designed to attract leads, deliver value, and support conversions.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 7,
+    "image": "064"
+  },
+  {
+    "id": "deliverable-065",
+    "title": "Lead Magnet - Quiz",
+    "description": "An interactive quiz up to 7 questions designed to engage users, deliver tailored results, and generate high-quality leads.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 175,
+    "bricksMax": 175,
+    "sourcePage": 7,
+    "image": "065"
+  },
+  {
+    "id": "deliverable-066",
+    "title": "Paid Ads - Management",
+    "description": "Monitoring and optimization of up to 2 active advertising campaigns on one platform to improve performance, control costs, and generate more leads, traffic, or sales. Price is per month.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 7,
+    "image": "066"
+  },
+  {
+    "id": "deliverable-067",
+    "title": "Paid Ads - Setup",
+    "description": "Campaigns built and ready to launch, including strategy, targeting, campaign structure, ad copy, tracking, budget settings, and initial optimization. Iincludes setup of up to 2 campaigns on one advertising platform.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 750,
+    "bricksMax": 750,
+    "sourcePage": 7,
+    "image": "067"
+  },
+  {
+    "id": "deliverable-068",
+    "title": "SEO Starter Kit",
+    "description": "Foundational SEO for up to 10 keywords, page structure, titles & meta, headings, on-page fixes, and simple monthly progress updates.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 1500,
+    "bricksMax": 1500,
+    "sourcePage": 7,
+    "image": "068"
+  },
+  {
+    "id": "deliverable-069",
+    "title": "Social Media Management - Express",
+    "description": "4 posts on 1 platform. Iincludes content creation, caption writing, scheduling, posting, and basic strategy.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 7,
+    "image": "069"
+  },
+  {
+    "id": "deliverable-070",
+    "title": "Social Media Management - Premium",
+    "description": "20 posts on up to 3 platforms. Iincludes advanced content creation, captions, scheduling, posting, and growth-focused strategy.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 950,
+    "bricksMax": 950,
+    "sourcePage": 7,
+    "image": "070"
+  },
+  {
+    "id": "deliverable-071",
+    "title": "Social Media Management - Signature",
+    "description": "8 posts on up to 2 platforms. Iincludes content creation, captions, scheduling, posting, and structured strategy.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 7,
+    "image": "071"
+  },
+  {
+    "id": "deliverable-072",
+    "title": "Social Media Profile Setup",
+    "description": "Setup and optimization of up to 3 social media profiles including profile creation or refresh, bio writing, cover image, contact info setup, and basic branding alignment.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 7,
+    "image": "072"
+  },
+  {
+    "id": "deliverable-073",
+    "title": "Webinar Kit",
+    "description": "Iincludes webinar or event positioning, outline, promotional copy, landing page/email support as scoped, and supporting creative assets.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 750,
+    "bricksMax": 750,
+    "sourcePage": 7,
+    "image": "073"
+  },
+  {
+    "id": "deliverable-074",
+    "title": "Website Kit - Premium",
+    "description": "A fully designed and developed website up to 10 pages including professional copy and visual design. This iincludes domain connection and SSL certification.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 1750,
+    "bricksMax": 1750,
+    "sourcePage": 7,
+    "image": "074"
+  },
+  {
+    "id": "deliverable-075",
+    "title": "Website Kit - Express",
+    "description": "A one-page website with a navigation bar, designed to clearly present your brand, services, and key information in a simple Bricks and seamless layout.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 750,
+    "bricksMax": 750,
+    "sourcePage": 7,
+    "image": "075"
+  },
+  {
+    "id": "deliverable-076",
+    "title": "Website Kit - Signature",
+    "description": "A fully designed and developed website up to 5 pages including professional copy and visual design. This iincludes domain connection and SSL certification.",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 1200,
+    "bricksMax": 1200,
+    "sourcePage": 7,
+    "image": "076"
+  },
+  {
+    "id": "deliverable-077",
+    "title": "Website Upkeep",
+    "description": "Ongoing website upkeep for 1 domain, including plugin updates, optimization, uptime monitoring, and up to 1 hour of content updates (recommended monthly).",
+    "category": "Marketing",
+    "subcategory": "Digital Presence",
+    "bricksMin": 50,
+    "bricksMax": 50,
+    "sourcePage": 7,
+    "image": "077"
+  },
+  {
+    "id": "deliverable-078",
+    "title": "Accounts Receivable Follow-Up",
+    "description": "Up to 3 outbound phone calls to follow up on outstanding invoices and payment status.",
+    "category": "Business Support",
+    "subcategory": "Executive Assistance",
+    "bricksMin": 20,
+    "bricksMax": 20,
+    "sourcePage": 8,
+    "image": "078"
+  },
+  {
+    "id": "deliverable-079",
+    "title": "Bookkeeping",
+    "description": "Accurate categorization and reconciliation for every 100 financial transactions.",
+    "category": "Business Support",
+    "subcategory": "Executive Assistance",
+    "bricksMin": 30,
+    "bricksMax": 30,
+    "sourcePage": 8,
+    "image": "079"
+  },
+  {
+    "id": "deliverable-080",
+    "title": "Data Cleanup",
+    "description": "Clean and organize up to 500 records on a spreadsheet by removing duplicates, standardizing formatting, correcting obvious inconsistencies, and preparing data for easier use, reporting, or import.",
+    "category": "Business Support",
+    "subcategory": "Executive Assistance",
+    "bricksMin": 100,
+    "bricksMax": 100,
+    "sourcePage": 8,
+    "image": "080"
+  },
+  {
+    "id": "deliverable-081",
+    "title": "Data Entry",
+    "description": "1 hour of data entry for creating or maintaining spreadsheets, including budgeting, expense tracking, or data organization.",
+    "category": "Business Support",
+    "subcategory": "Executive Assistance",
+    "bricksMin": 30,
+    "bricksMax": 30,
+    "sourcePage": 8,
+    "image": "081"
+  },
+  {
+    "id": "deliverable-082",
+    "title": "Invoicing",
+    "description": "Prepare and send 1 invoice to clients and track payment receipts.",
+    "category": "Business Support",
+    "subcategory": "Executive Assistance",
+    "bricksMin": 10,
+    "bricksMax": 10,
+    "sourcePage": 8,
+    "image": "082"
+  },
+  {
+    "id": "deliverable-083",
+    "title": "Web Research and Data Collection",
+    "description": "Up to 1 hour of research and data collection from specified online sources, organized into a structured spreadsheet.",
+    "category": "Business Support",
+    "subcategory": "Executive Assistance",
+    "bricksMin": 40,
+    "bricksMax": 40,
+    "sourcePage": 8,
+    "image": "083"
+  },
+  {
+    "id": "deliverable-084",
+    "title": "Lead Uploading",
+    "description": "Upload and organize up to 500 leads, including data formatting, field mapping, owner assignment, and basic validation.",
+    "category": "Business Support",
+    "subcategory": "Executive Assistance",
+    "bricksMin": 20,
+    "bricksMax": 20,
+    "sourcePage": 8,
+    "image": "084"
+  },
+  {
+    "id": "deliverable-085",
+    "title": "General Administrative Support",
+    "description": "Up to 30 minutes of administrative support for tasks not specifically listed in our service menu.",
+    "category": "Business Support",
+    "subcategory": "Executive Assistance",
+    "bricksMin": 15,
+    "bricksMax": 15,
+    "sourcePage": 8,
+    "image": "085"
+  },
+  {
+    "id": "deliverable-086",
+    "title": "Proposals – Express",
+    "description": "Send 1 proposal using the provided document and designated platform.",
+    "category": "Business Support",
+    "subcategory": "Executive Assistance",
+    "bricksMin": 5,
+    "bricksMax": 5,
+    "sourcePage": 8,
+    "image": "086"
+  },
+  {
+    "id": "deliverable-087",
+    "title": "Proposals - Signature",
+    "description": "Write 1 customized proposal including project details, scope, deliverables, pricing, payment terms, timeline, and next steps.",
+    "category": "Business Support",
+    "subcategory": "Executive Assistance",
+    "bricksMin": 25,
+    "bricksMax": 25,
+    "sourcePage": 8,
+    "image": "087"
+  },
+  {
+    "id": "deliverable-088",
+    "title": "Proposals - Premium",
+    "description": "Write and send 1 customized proposal including project details, scope, deliverables, pricing, payment terms, timeline, terms, and next steps.",
+    "category": "Business Support",
+    "subcategory": "Executive Assistance",
+    "bricksMin": 30,
+    "bricksMax": 30,
+    "sourcePage": 8,
+    "image": "088"
+  },
+  {
+    "id": "deliverable-089",
+    "title": "Virtual Meeting Producing",
+    "description": "Manage and support 1 virtual meeting for up to 1 hour, including setup, coordination, and basic technical support.",
+    "category": "Business Support",
+    "subcategory": "Executive Assistance",
+    "bricksMin": 100,
+    "bricksMax": 100,
+    "sourcePage": 8,
+    "image": "089"
+  },
+  {
+    "id": "deliverable-090",
+    "title": "Video Upload & Publishing",
+    "description": "Upload and publish one ready-to-post video to up to 3 platforms, including title/caption entry, tags, thumbnail upload if provided, and scheduling or publishing.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 10,
+    "bricksMax": 10,
+    "sourcePage": 8,
+    "image": "090"
+  },
+  {
+    "id": "deliverable-091",
+    "title": "Blog/Article Post - Express",
+    "description": "1 blog/article posted to the website or blog hosting platform.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 6,
+    "bricksMax": 6,
+    "sourcePage": 8,
+    "image": "091"
+  },
+  {
+    "id": "deliverable-092",
+    "title": "Blog/Article Post - Signature",
+    "description": "1 blog/article + 1 stock image posted to the website or blog hosting platform.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 8,
+    "bricksMax": 8,
+    "sourcePage": 8,
+    "image": "092"
+  },
+  {
+    "id": "deliverable-093",
+    "title": "Blog/Article Post - Premium",
+    "description": "1 blog/article + 1 relevant stock image + summary and tags, posted to the website or blog hosting platform.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 10,
+    "bricksMax": 10,
+    "sourcePage": 9,
+    "image": "093"
+  },
+  {
+    "id": "deliverable-094",
+    "title": "Design Tweaks",
+    "description": "Up to 30 minutes of minor design edits and visual adjustments of existing materials.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 20,
+    "bricksMax": 20,
+    "sourcePage": 9,
+    "image": "094"
+  },
+  {
+    "id": "deliverable-095",
+    "title": "Email Newsletter Sending",
+    "description": "Take your ready-to-send email or newsletter and prepare, schedule, and send it to your existing email list through your email marketing platform.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 10,
+    "bricksMax": 10,
+    "sourcePage": 9,
+    "image": "095"
+  },
+  {
+    "id": "deliverable-096",
+    "title": "Email Campaign Build and Send",
+    "description": "Build and send up to 5 emails in a campaign, including setup, formatting, testing, scheduling, and basic campaign organization.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 30,
+    "bricksMax": 30,
+    "sourcePage": 9,
+    "image": "096"
+  },
+  {
+    "id": "deliverable-097",
+    "title": "Email Signature",
+    "description": "1 professional email signature with all of your contact information formatted for daily business use.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 15,
+    "bricksMax": 15,
+    "sourcePage": 9,
+    "image": "097"
+  },
+  {
+    "id": "deliverable-098",
+    "title": "Podcast – Express",
+    "description": "Edit up to 30 minutes of podcast audio, including audio cleanup, basic trimming, episode description, and delivery of the final episode file via email.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 20,
+    "bricksMax": 20,
+    "sourcePage": 9,
+    "image": "098"
+  },
+  {
+    "id": "deliverable-099",
+    "title": "Podcast – Signature",
+    "description": "Edit and publish up to 30 minutes of podcast audio, including audio cleanup, trimming, episode description, and episode upload.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 25,
+    "bricksMax": 25,
+    "sourcePage": 9,
+    "image": "099"
+  },
+  {
+    "id": "deliverable-100",
+    "title": "Podcast – Premium",
+    "description": "Edit and publish up to 30 minutes of podcast audio, including audio cleanup, trimming, episode description, custom episode graphic, publishing, and 3 audio clips for social media.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 40,
+    "bricksMax": 40,
+    "sourcePage": 9,
+    "image": "100"
+  },
+  {
+    "id": "deliverable-101",
+    "title": "Podcast Audio Clips",
+    "description": "Create up to 3 short audio clips from a podcast episode, including trimming, cleanup, and formatting for social media or promotional use.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 20,
+    "bricksMax": 20,
+    "sourcePage": 9,
+    "image": "101"
+  },
+  {
+    "id": "deliverable-102",
+    "title": "Podcast Video Clips",
+    "description": "Create up to 3 short video clips from a podcast episode, including trimming, captions, and formatting for social media.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 20,
+    "bricksMax": 20,
+    "sourcePage": 9,
+    "image": "102"
+  },
+  {
+    "id": "deliverable-103",
+    "title": "Audio Content Repurposing",
+    "description": "Turn up to 30 minutes of audio into up to 5 reusable pieces, such as social posts, key takeaways, quotes, captions, summaries, or other marketing content.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 30,
+    "bricksMax": 30,
+    "sourcePage": 9,
+    "image": "103"
+  },
+  {
+    "id": "deliverable-104",
+    "title": "Video Content Repurposing",
+    "description": "Turn up to 30 minutes of video into up to 5 reusable short-form video clips, trimmed and formatted for social media and digital channels.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 35,
+    "bricksMax": 35,
+    "sourcePage": 9,
+    "image": "104"
+  },
+  {
+    "id": "deliverable-105",
+    "title": "Written Content Repurposing",
+    "description": "Transform 1 piece of written content into up to 10 reusable pieces, such as emails, summaries, captions, FAQs, website content, or other written assets.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 25,
+    "bricksMax": 25,
+    "sourcePage": 9,
+    "image": "105"
+  },
+  {
+    "id": "deliverable-106",
+    "title": "Social Post Repurposing",
+    "description": "Turn up to 500 words of existing written content into up to 10 ready-to-use designed and edited social media posts.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 50,
+    "bricksMax": 50,
+    "sourcePage": 9,
+    "image": "106"
+  },
+  {
+    "id": "deliverable-107",
+    "title": "Slide Deck – Express",
+    "description": "Clean content placement and formatting using a provided template, priced per 5 slides.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 30,
+    "bricksMax": 30,
+    "sourcePage": 9,
+    "image": "107"
+  },
+  {
+    "id": "deliverable-108",
+    "title": "Slide Deck – Signature",
+    "description": "Custom-designed slides with cohesive layouts, visual styling, and content formatting, priced per 5 slides.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 40,
+    "bricksMax": 40,
+    "sourcePage": 9,
+    "image": "108"
+  },
+  {
+    "id": "deliverable-109",
+    "title": "Slide Deck – Premium",
+    "description": "Advanced presentation design with strategic layouts, polished visuals, and content organization, priced per 5 slides.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 50,
+    "bricksMax": 50,
+    "sourcePage": 10,
+    "image": "109"
+  },
+  {
+    "id": "deliverable-110",
+    "title": "Social Media Publishing",
+    "description": "Publish up to 5 provided posts on up to 3 social media platforms, including scheduling, caption formatting, hashtags, platform-specific adjustments.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 10,
+    "bricksMax": 10,
+    "sourcePage": 10,
+    "image": "110"
+  },
+  {
+    "id": "deliverable-111",
+    "title": "Survey/Form – Simple",
+    "description": "Create a form or survey with up to 10 questions, including standard fields and response options.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 20,
+    "bricksMax": 20,
+    "sourcePage": 10,
+    "image": "111"
+  },
+  {
+    "id": "deliverable-112",
+    "title": "Survey/Form – Complex",
+    "description": "Create a form or survey with up to 10 questions, including conditional logic, branching, and customized response paths.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 30,
+    "bricksMax": 30,
+    "sourcePage": 10,
+    "image": "112"
+  },
+  {
+    "id": "deliverable-113",
+    "title": "Thumbnails – YouTube + Vimeo",
+    "description": "1 custom thumbnail designed for YouTube or Vimeo, optimized for platform dimensions and visibility.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 10,
+    "bricksMax": 10,
+    "sourcePage": 10,
+    "image": "113"
+  },
+  {
+    "id": "deliverable-114",
+    "title": "Transcription",
+    "description": "Up to 20 minutes of audio accurately transcribed into a clean, readable text document.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 5,
+    "bricksMax": 5,
+    "sourcePage": 10,
+    "image": "114"
+  },
+  {
+    "id": "deliverable-115",
+    "title": "Website Updates – Content",
+    "description": "Make up to 30 minutes of content updates to an existing website, including text, images, links, or other provided content.",
+    "category": "Business Support",
+    "subcategory": "Content Management",
+    "bricksMin": 15,
+    "bricksMax": 15,
+    "sourcePage": 10,
+    "image": "115"
+  },
+  {
+    "id": "deliverable-116",
+    "title": "Proposals System Setup",
+    "description": "Set up proposal system for creating, sending, signing, and tracking client proposals, iincludes a customized training video.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 100,
+    "bricksMax": 100,
+    "sourcePage": 10,
+    "image": "116"
+  },
+  {
+    "id": "deliverable-117",
+    "title": "AI Agent Setup",
+    "description": "Create an AI-powered assistant or workflow for a specific business process.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": {
+      "min": 550,
+      "max": 5000
+    },
+    "bricksMax": {
+      "min": 550,
+      "max": 5000
+    },
+    "sourcePage": 10,
+    "image": "117"
+  },
+  {
+    "id": "deliverable-118",
+    "title": "Automation Setup",
+    "description": "Customized automation setup designed to streamline workflows, reduce manual tasks, and improve business efficiency.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": {
+      "min": 550,
+      "max": 5000
+    },
+    "bricksMax": {
+      "min": 550,
+      "max": 5000
+    },
+    "sourcePage": 10,
+    "image": "118"
+  },
+  {
+    "id": "deliverable-119",
+    "title": "Chatbot Setup",
+    "description": "Add a smart website assistant to capture questions, leads, or support requests.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 750,
+    "bricksMax": 750,
+    "sourcePage": 10,
+    "image": "119"
+  },
+  {
+    "id": "deliverable-120",
+    "title": "CRM Setup",
+    "description": "Set up your CRM so leads, contacts, and follow-ups are easier to manage.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": {
+      "min": 750,
+      "max": 2500
+    },
+    "bricksMax": {
+      "min": 750,
+      "max": 2500
+    },
+    "sourcePage": 10,
+    "image": "120"
+  },
+  {
+    "id": "deliverable-121",
+    "title": "Custom Tech Setup",
+    "description": "Custom system setup for workflows that do not fit neatly into a standard package.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": {
+      "min": 100,
+      "max": 5000
+    },
+    "bricksMax": {
+      "min": 100,
+      "max": 5000
+    },
+    "sourcePage": 10,
+    "image": "121"
+  },
+  {
+    "id": "deliverable-122",
+    "title": "Dashboard & Reporting Setup",
+    "description": "Build a dashboard that makes key business data easier to understand.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 10,
+    "image": "122"
+  },
+  {
+    "id": "deliverable-123",
+    "title": "Ecommerce Store Setup",
+    "description": "Launch a simple online store with products, payments, and key settings in place.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 950,
+    "bricksMax": 950,
+    "sourcePage": 10,
+    "image": "123"
+  },
+  {
+    "id": "deliverable-124",
+    "title": "Form System Setup",
+    "description": "Set up a complete forms system to organize, manage, and streamline form submissions and information collection.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 150,
+    "bricksMax": 150,
+    "sourcePage": 10,
+    "image": "124"
+  },
+  {
+    "id": "deliverable-125",
+    "title": "Phone / SMS System Setup",
+    "description": "Set up phone routing and text messaging workflows for better customer communication.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 650,
+    "bricksMax": 650,
+    "sourcePage": 11,
+    "image": "125"
+  },
+  {
+    "id": "deliverable-126",
+    "title": "Ticketing / Help Desk Setup",
+    "description": "Organize customer support requests with a simple ticketing system.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 600,
+    "bricksMax": 600,
+    "sourcePage": 11,
+    "image": "126"
+  },
+  {
+    "id": "deliverable-127",
+    "title": "QR Code Setup",
+    "description": "1 QR code created, tested, and configured to direct users to a website, form, review page, menu, contact information, or other destination.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 30,
+    "bricksMax": 30,
+    "sourcePage": 11,
+    "image": "127"
+  },
+  {
+    "id": "deliverable-128",
+    "title": "Employee Time Tracking Setup",
+    "description": "1 employee time-tracking system configured with users, projects or jobs, time-entry settings, basic permissions, and reporting.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": {
+      "min": 150,
+      "max": 300
+    },
+    "bricksMax": {
+      "min": 150,
+      "max": 300
+    },
+    "sourcePage": 11,
+    "image": "128"
+  },
+  {
+    "id": "deliverable-129",
+    "title": "CRM Pipeline Setup",
+    "description": "1 CRM sales pipeline configured with customized stages, statuses, and deal flow based on your sales process.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": {
+      "min": 150,
+      "max": 300
+    },
+    "bricksMax": {
+      "min": 150,
+      "max": 300
+    },
+    "sourcePage": 11,
+    "image": "129"
+  },
+  {
+    "id": "deliverable-130",
+    "title": "CRM Custom Fields Setup",
+    "description": "Up to 5 custom CRM fields created and organized for contacts, leads, companies, deals, or other records.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 100,
+    "bricksMax": 100,
+    "sourcePage": 11,
+    "image": "130"
+  },
+  {
+    "id": "deliverable-131",
+    "title": "CRM Dashboard Setup",
+    "description": "1 customized CRM dashboard configured to track key sales, pipeline, lead, activity, or performance metrics.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 11,
+    "image": "131"
+  },
+  {
+    "id": "deliverable-132",
+    "title": "CRM Form Integration",
+    "description": "1 existing website, lead, or intake form connected to your CRM to automatically create or update records from submissions.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": {
+      "min": 150,
+      "max": 350
+    },
+    "bricksMax": {
+      "min": 150,
+      "max": 350
+    },
+    "sourcePage": 11,
+    "image": "132"
+  },
+  {
+    "id": "deliverable-133",
+    "title": "CRM Automation Setup",
+    "description": "1 CRM automation configured for lead assignment, task creation, notifications, follow-ups, status changes, or another defined workflow.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 11,
+    "image": "133"
+  },
+  {
+    "id": "deliverable-134",
+    "title": "Virtual Phone Number Setup",
+    "description": "1 business phone number set up and configured with basic calling, routing, and account settings.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": {
+      "min": 75,
+      "max": 150
+    },
+    "bricksMax": {
+      "min": 75,
+      "max": 150
+    },
+    "sourcePage": 11,
+    "image": "134"
+  },
+  {
+    "id": "deliverable-135",
+    "title": "Call Forwarding Setup",
+    "description": "Call forwarding configured for 1 business phone number to route incoming calls to designated phones or team members.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 50,
+    "bricksMax": 50,
+    "sourcePage": 11,
+    "image": "135"
+  },
+  {
+    "id": "deliverable-136",
+    "title": "IVR / Phone Menu Setup",
+    "description": "1 automated phone menu configured with up to 5 routing options, including prompts and call-routing rules.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 11,
+    "image": "136"
+  },
+  {
+    "id": "deliverable-137",
+    "title": "Voicemail Setup",
+    "description": "1 business voicemail box configured with greeting, notification settings, and voicemail delivery or transcription where supported.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 100,
+    "bricksMax": 100,
+    "sourcePage": 11,
+    "image": "137"
+  },
+  {
+    "id": "deliverable-138",
+    "title": "SMS Notification Setup",
+    "description": "1 automated SMS notification workflow configured for leads, appointments, form submissions, orders, or another defined trigger.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": {
+      "min": 150,
+      "max": 350
+    },
+    "bricksMax": {
+      "min": 150,
+      "max": 350
+    },
+    "sourcePage": 11,
+    "image": "138"
+  },
+  {
+    "id": "deliverable-139",
+    "title": "AI Voice Receptionist Setup – Express",
+    "description": "1 AI voice receptionist configured to answer incoming calls, greet callers, respond to basic FAQs, collect caller information, and route calls based on simple business rules.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 11,
+    "image": "139"
+  },
+  {
+    "id": "deliverable-140",
+    "title": "AI Voice Receptionist Setup – Signature",
+    "description": "1 AI voice receptionist configured with custom call flows, FAQs, lead capture, call routing, appointment scheduling, and business-specific responses based on your services and customer needs.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 750,
+    "bricksMax": 750,
+    "sourcePage": 12,
+    "image": "140"
+  },
+  {
+    "id": "deliverable-141",
+    "title": "AI Voice Receptionist Setup – Premium",
+    "description": "1 advanced AI voice receptionist configured with complex call flows, appointment scheduling, lead qualification, CRM or system integrations, multiple routing paths, custom prompts, and end-to-end testing and optimization.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 1000,
+    "bricksMax": 1000,
+    "sourcePage": 12,
+    "image": "141"
+  },
+  {
+    "id": "deliverable-142",
+    "title": "Google Workspace Setup",
+    "description": "1 Google Workspace account configured with your business domain, email, users, basic permissions, Calendar, and Drive settings.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 150,
+    "bricksMax": 150,
+    "sourcePage": 12,
+    "image": "142"
+  },
+  {
+    "id": "deliverable-143",
+    "title": "SPF / DKIM / DMARC Setup",
+    "description": "SPF, DKIM, and DMARC records configured and tested for 1 domain to improve email authentication and deliverability.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 50,
+    "bricksMax": 50,
+    "sourcePage": 12,
+    "image": "143"
+  },
+  {
+    "id": "deliverable-144",
+    "title": "Calendly Setup",
+    "description": "1 Calendly account configured with up to 3 appointment types, availability, calendar connections, meeting links, and confirmation settings.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 100,
+    "bricksMax": 100,
+    "sourcePage": 12,
+    "image": "144"
+  },
+  {
+    "id": "deliverable-145",
+    "title": "Appointment Reminder Setup",
+    "description": "Automated email and/or SMS reminders configured for 1 appointment workflow, including reminder timing and basic messaging.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": {
+      "min": 100,
+      "max": 250
+    },
+    "bricksMax": {
+      "min": 100,
+      "max": 250
+    },
+    "sourcePage": 12,
+    "image": "145"
+  },
+  {
+    "id": "deliverable-146",
+    "title": "Lead Capture Form Setup",
+    "description": "1 lead capture form created with up to 10 fields, confirmation messaging, notifications, and basic branding.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 100,
+    "bricksMax": 100,
+    "sourcePage": 12,
+    "image": "146"
+  },
+  {
+    "id": "deliverable-147",
+    "title": "E-Signature Setup",
+    "description": "1 e-signature system configured with account settings and 1 reusable document or signing workflow.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 150,
+    "bricksMax": 150,
+    "sourcePage": 12,
+    "image": "147"
+  },
+  {
+    "id": "deliverable-148",
+    "title": "Payment Link Setup",
+    "description": "1 payment link created and configured for a product, service, deposit, invoice, or specified payment amount.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 75,
+    "bricksMax": 75,
+    "sourcePage": 12,
+    "image": "148"
+  },
+  {
+    "id": "deliverable-149",
+    "title": "DNS Setup",
+    "description": "DNS records configured or updated for 1 domain to connect a website, email service, subdomain, or other business platform.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 50,
+    "bricksMax": 50,
+    "sourcePage": 12,
+    "image": "149"
+  },
+  {
+    "id": "deliverable-150",
+    "title": "SSL Setup",
+    "description": "1 SSL certificate installed or configured and tested to enable secure HTTPS access for your website.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 50,
+    "bricksMax": 50,
+    "sourcePage": 12,
+    "image": "150"
+  },
+  {
+    "id": "deliverable-151",
+    "title": "Website Hosting Setup",
+    "description": "Hosting configured for 1 website, including domain connection, basic hosting settings, and launch testing.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 150,
+    "bricksMax": 150,
+    "sourcePage": 12,
+    "image": "151"
+  },
+  {
+    "id": "deliverable-152",
+    "title": "Project Management System Setup",
+    "description": "1 project management workspace configured with projects, statuses, users, task structure, and basic templates.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": {
+      "min": 300,
+      "max": 750
+    },
+    "bricksMax": {
+      "min": 300,
+      "max": 750
+    },
+    "sourcePage": 12,
+    "image": "152"
+  },
+  {
+    "id": "deliverable-153",
+    "title": "Online Course Platform Setup",
+    "description": "1 online course set up with provided content, including modules, lessons, basic branding, user settings, and course structure.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": {
+      "min": 350,
+      "max": 1000
+    },
+    "bricksMax": {
+      "min": 350,
+      "max": 1000
+    },
+    "sourcePage": 12,
+    "image": "153"
+  },
+  {
+    "id": "deliverable-154",
+    "title": "Domain Connection Setup",
+    "description": "1 domain connected to your website, including DNS record updates, domain verification, SSL/HTTPS confirmation, redirect setup if needed, and testing to make sure your website loads correctly at the intended domain.",
+    "category": "Business Support",
+    "subcategory": "Tech Setup",
+    "bricksMin": 75,
+    "bricksMax": 75,
+    "sourcePage": 12,
+    "image": "154"
+  },
+  {
+    "id": "deliverable-155",
+    "title": "Leads List - Express",
+    "description": "A curated list of 250 qualified prospects matched to your ideal customer profile, with key contact and company details.",
+    "category": "Sales",
+    "subcategory": "Lead Generation",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 13,
+    "image": "155"
+  },
+  {
+    "id": "deliverable-156",
+    "title": "Leads List - Premium",
+    "description": "A curated list of 5,000 qualified prospects matched to your ideal customer profile, with key contact and company details.",
+    "category": "Sales",
+    "subcategory": "Lead Generation",
+    "bricksMin": 2500,
+    "bricksMax": 2500,
+    "sourcePage": 13,
+    "image": "156"
+  },
+  {
+    "id": "deliverable-157",
+    "title": "Leads List - Signature",
+    "description": "A curated list of 1,000 qualified prospects matched to your ideal customer profile, with key contact and company details.",
+    "category": "Sales",
+    "subcategory": "Lead Generation",
+    "bricksMin": 750,
+    "bricksMax": 750,
+    "sourcePage": 13,
+    "image": "157"
+  },
+  {
+    "id": "deliverable-158",
+    "title": "Outbound Dialing - Express",
+    "description": "Up to 40 hours/month of targeted outbound calling to qualified prospects. Iincludes prospect outreach, interest identification, and activity tracking.",
+    "category": "Sales",
+    "subcategory": "Lead Generation",
+    "bricksMin": 1500,
+    "bricksMax": 1500,
+    "sourcePage": 13,
+    "image": "158"
+  },
+  {
+    "id": "deliverable-159",
+    "title": "Outbound Dialing - Premium",
+    "description": "Up to 160 hours/month of high-volume outbound calling to qualified prospects, with prospect qualification, follow-up, meeting opportunities, and ongoing fractional sales management and training with A.J.",
+    "category": "Sales",
+    "subcategory": "Lead Generation",
+    "bricksMin": 4000,
+    "bricksMax": 4000,
+    "sourcePage": 13,
+    "image": "159"
+  },
+  {
+    "id": "deliverable-160",
+    "title": "Outbound Dialing - Signature",
+    "description": "Up to 80 hours/month of consistent outbound calling to qualified prospects, with prospect qualification, opportunity identification, and fractional sales management and training with A.J.",
+    "category": "Sales",
+    "subcategory": "Lead Generation",
+    "bricksMin": 2500,
+    "bricksMax": 2500,
+    "sourcePage": 13,
+    "image": "160"
+  },
+  {
+    "id": "deliverable-161",
+    "title": "Sales Deck",
+    "description": "Up to 10 slides, completely customized and designed around your brand and offerings. A professionally structured presentation for sales conversations, highlighting your value proposition, solutions, differentiators, proof, and process.",
+    "category": "Sales",
+    "subcategory": "Lead Generation",
+    "bricksMin": 750,
+    "bricksMax": 750,
+    "sourcePage": 13,
+    "image": "161"
+  },
+  {
+    "id": "deliverable-162",
+    "title": "Buyer Intent Lead List - Express",
+    "description": "A focused list of 150 leads showing relevant buyer intent signals, including selected intent topics, priority contacts, contact information, and the activity indicating potential interest.",
+    "category": "Sales",
+    "subcategory": "Outbound Outreach",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 13,
+    "image": "162"
+  },
+  {
+    "id": "deliverable-163",
+    "title": "Buyer Intent Lead List - Signature",
+    "description": "A broader list of 300 leads demonstrating elevated buyer intent, researched around relevant products, services, competitors, or industry topics, with prioritized contacts and intent activity to help identify the strongest outreach opportunities.",
+    "category": "Sales",
+    "subcategory": "Outbound Outreach",
+    "bricksMin": 350,
+    "bricksMax": 350,
+    "sourcePage": 13,
+    "image": "163"
+  },
+  {
+    "id": "deliverable-164",
+    "title": "Outbound Dialing Trial Kit",
+    "description": "Fully managed outbound sales engine including 120 hours of strategic dialing to 1,000 targeted leads per month, custom call script and sales-flow architecture, TAM analysis and outbound strategy, lead sourcing, weekly performance reporting, ongoing sales training and dialer management, and biweekly strategy sessions with A.J.",
+    "category": "Sales",
+    "subcategory": "Outbound Outreach",
+    "bricksMin": 5300,
+    "bricksMax": 5300,
+    "sourcePage": 13,
+    "image": "164"
+  },
+  {
+    "id": "deliverable-165",
+    "title": "Buyer Intent Lead List - Premium",
+    "description": "A comprehensive list of 1,000 leads demonstrating elevated buyer intent, with detailed intent signals, relevant topics, target decision-makers, contact information, account prioritization, and recommended accounts for immediate outreach.",
+    "category": "Sales",
+    "subcategory": "Sales Enablement",
+    "bricksMin": 1000,
+    "bricksMax": 1000,
+    "sourcePage": 13,
+    "image": "165"
+  },
+  {
+    "id": "deliverable-166",
+    "title": "ICP Development",
+    "description": "A defined ideal customer profile outlining the industries, company characteristics, buyer roles, challenges, buying triggers, and criteria that best match your offering.",
+    "category": "Sales",
+    "subcategory": "Sales Enablement",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 14,
+    "image": "166"
+  },
+  {
+    "id": "deliverable-167",
+    "title": "LinkedIn Outreach Sequence",
+    "description": "A customized LinkedIn messaging sequence for prospecting, follow-ups, value-driven outreach, meeting requests, and personalized engagement.",
+    "category": "Sales",
+    "subcategory": "Sales Enablement",
+    "bricksMin": 350,
+    "bricksMax": 350,
+    "sourcePage": 14,
+    "image": "167"
+  },
+  {
+    "id": "deliverable-168",
+    "title": "Objection Handling Playbook",
+    "description": "A customized playbook with practical responses to common, competitor, and industry-specific sales objections.",
+    "category": "Sales",
+    "subcategory": "Sales Enablement",
+    "bricksMin": 250,
+    "bricksMax": 250,
+    "sourcePage": 14,
+    "image": "168"
+  },
+  {
+    "id": "deliverable-169",
+    "title": "Outbound Call Script",
+    "description": "A completely customized cold calling framework built around your brand, offerings, and target prospects. Iincludes opening, discovery, qualification, meeting-setting, voicemail, objection handling, and alternate talk tracks.",
+    "category": "Sales",
+    "subcategory": "Sales Enablement",
+    "bricksMin": 350,
+    "bricksMax": 350,
+    "sourcePage": 14,
+    "image": "169"
+  },
+  {
+    "id": "deliverable-170",
+    "title": "Outbound Email Sequence",
+    "description": "A customized 4–6 email sequence designed around your brand, offering, and target prospects to generate sales conversations. Iincludes initial outreach, strategic follow-ups, subject lines, calls to action, and personalization recommendations.",
+    "category": "Sales",
+    "subcategory": "Sales Enablement",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 14,
+    "image": "170"
+  },
+  {
+    "id": "deliverable-171",
+    "title": "Outbound Messaging Kit",
+    "description": "A complete outbound messaging system covering cold calls, email, LinkedIn, objection handling, value propositions, persona-specific messaging, and calls to action.",
+    "category": "Sales",
+    "subcategory": "Sales Enablement",
+    "bricksMin": 1000,
+    "bricksMax": 1000,
+    "sourcePage": 14,
+    "image": "171"
+  },
+  {
+    "id": "deliverable-172",
+    "title": "Sales Enablement Kit",
+    "description": "Call scripts, sales-flow recommendations, follow-up templates, and objection handling, plus up to 4 team training sessions.",
+    "category": "Sales",
+    "subcategory": "Sales Enablement",
+    "bricksMin": 2500,
+    "bricksMax": 2500,
+    "sourcePage": 14,
+    "image": "172"
+  },
+  {
+    "id": "deliverable-173",
+    "title": "TAM Analysis",
+    "description": "A detailed assessment of your total addressable market, identifying target companies, contacts, key segments, industries, company sizes, and geographic opportunities.",
+    "category": "Sales",
+    "subcategory": "Sales Enablement",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 14,
+    "image": "173"
+  },
+  {
+    "id": "deliverable-174",
+    "title": "Territory & Account Planning",
+    "description": "A structured account and territory strategy that organizes target markets, prioritizes sales opportunities, and identifies the accounts and contacts to focus on first.",
+    "category": "Sales",
+    "subcategory": "Sales Enablement",
+    "bricksMin": 500,
+    "bricksMax": 500,
+    "sourcePage": 14,
+    "image": "174"
+  }
+]

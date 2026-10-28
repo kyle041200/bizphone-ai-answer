@@ -1,0 +1,1118 @@
+[
+  {
+    "id": "deliverable-001",
+    "title": "Brand Foundation Kit",
+    "min": 1200,
+    "max": 1200
+  },
+  {
+    "id": "deliverable-002",
+    "title": "Brand Refresh Kit",
+    "min": 950,
+    "max": 950
+  },
+  {
+    "id": "deliverable-003",
+    "title": "Brand Style Guide",
+    "min": 150,
+    "max": 150
+  },
+  {
+    "id": "deliverable-004",
+    "title": "Brochure (Premium)",
+    "min": 500,
+    "max": 500
+  },
+  {
+    "id": "deliverable-005",
+    "title": "Brochure (Signature)",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-006",
+    "title": "Brochure Cleanup",
+    "min": 100,
+    "max": 100
+  },
+  {
+    "id": "deliverable-007",
+    "title": "Business Card Design",
+    "min": 75,
+    "max": 75
+  },
+  {
+    "id": "deliverable-008",
+    "title": "Business Essentials Pack",
+    "min": 150,
+    "max": 150
+  },
+  {
+    "id": "deliverable-009",
+    "title": "Flyer",
+    "min": 100,
+    "max": 100
+  },
+  {
+    "id": "deliverable-010",
+    "title": "Logo Design (Express)",
+    "min": 100,
+    "max": 100
+  },
+  {
+    "id": "deliverable-011",
+    "title": "Logo Design (Premium)",
+    "min": 1200,
+    "max": 1200
+  },
+  {
+    "id": "deliverable-012",
+    "title": "Logo Design (Signature)",
+    "min": 400,
+    "max": 400
+  },
+  {
+    "id": "deliverable-013",
+    "title": "Merch or Promotional Design",
+    "min": 175,
+    "max": 175
+  },
+  {
+    "id": "deliverable-014",
+    "title": "One-Sheet Design",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-015",
+    "title": "Podcast Branding Pack",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-016",
+    "title": "Podcast One Sheet",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-017",
+    "title": "Press Release (with Distribution)",
+    "min": 350,
+    "max": 350
+  },
+  {
+    "id": "deliverable-018",
+    "title": "Press Release (written only)",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-019",
+    "title": "Sales Pricing Sheet",
+    "min": 75,
+    "max": 75
+  },
+  {
+    "id": "deliverable-020",
+    "title": "Slide Deck Template",
+    "min": 75,
+    "max": 75
+  },
+  {
+    "id": "deliverable-021",
+    "title": "Social Media Banner",
+    "min": 75,
+    "max": 75
+  },
+  {
+    "id": "deliverable-022",
+    "title": "Social Media Templates",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-023",
+    "title": "Vehicles Graphics/Wrap Design (Premium)",
+    "min": 500,
+    "max": 500
+  },
+  {
+    "id": "deliverable-024",
+    "title": "Vehicles Graphics/Wrap Design (Signature)",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-025",
+    "title": "Virtual Meeting Background",
+    "min": 75,
+    "max": 75
+  },
+  {
+    "id": "deliverable-026",
+    "title": "Blog / Article Writing - AI",
+    "min": 100,
+    "max": 100
+  },
+  {
+    "id": "deliverable-027",
+    "title": "Blog / Article Writing - Human",
+    "min": 500,
+    "max": 500
+  },
+  {
+    "id": "deliverable-028",
+    "title": "Content Repurposing Pack",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-029",
+    "title": "Demo Reel / Speaker Reel",
+    "min": 750,
+    "max": 750
+  },
+  {
+    "id": "deliverable-030",
+    "title": "Email - Promotional",
+    "min": 50,
+    "max": 50
+  },
+  {
+    "id": "deliverable-031",
+    "title": "Email - Newsletter",
+    "min": 75,
+    "max": 75
+  },
+  {
+    "id": "deliverable-032",
+    "title": "Explainer Video - AI Generated",
+    "min": 350,
+    "max": 350
+  },
+  {
+    "id": "deliverable-033",
+    "title": "Explainer Video - Script + Video",
+    "min": 500,
+    "max": 500
+  },
+  {
+    "id": "deliverable-034",
+    "title": "Explainer Video - Script Only",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-035",
+    "title": "FAQs",
+    "min": 50,
+    "max": 50
+  },
+  {
+    "id": "deliverable-036",
+    "title": "Podcast Script - Express",
+    "min": 125,
+    "max": 125
+  },
+  {
+    "id": "deliverable-037",
+    "title": "Podcast Script - Premium",
+    "min": 350,
+    "max": 350
+  },
+  {
+    "id": "deliverable-038",
+    "title": "Podcast Script - Signature",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-039",
+    "title": "Presentation Script",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-040",
+    "title": "Slide Deck - Express",
+    "min": 150,
+    "max": 150
+  },
+  {
+    "id": "deliverable-041",
+    "title": "Slide Deck - Premium",
+    "min": 400,
+    "max": 400
+  },
+  {
+    "id": "deliverable-042",
+    "title": "Slide Deck - Signature",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-043",
+    "title": "Social Media Carousel",
+    "min": 50,
+    "max": 50
+  },
+  {
+    "id": "deliverable-044",
+    "title": "Social Media Post - Express",
+    "min": 150,
+    "max": 150
+  },
+  {
+    "id": "deliverable-045",
+    "title": "Social Media Post - Premium",
+    "min": 400,
+    "max": 400
+  },
+  {
+    "id": "deliverable-046",
+    "title": "Social Media Post - Signature",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-047",
+    "title": "Story - Brand",
+    "min": 125,
+    "max": 125
+  },
+  {
+    "id": "deliverable-048",
+    "title": "Story - Customer",
+    "min": 125,
+    "max": 125
+  },
+  {
+    "id": "deliverable-049",
+    "title": "Story - Founder",
+    "min": 125,
+    "max": 125
+  },
+  {
+    "id": "deliverable-050",
+    "title": "Video Editing & Promo Content",
+    "min": 450,
+    "max": 450
+  },
+  {
+    "id": "deliverable-051",
+    "title": "Video Script",
+    "min": 200,
+    "max": 200
+  },
+  {
+    "id": "deliverable-052",
+    "title": "Voiceover Script",
+    "min": 125,
+    "max": 125
+  },
+  {
+    "id": "deliverable-053",
+    "title": "Website Copy",
+    "min": 500,
+    "max": 500
+  },
+  {
+    "id": "deliverable-054",
+    "title": "Video Edit – Express",
+    "min": 30,
+    "max": 30
+  },
+  {
+    "id": "deliverable-055",
+    "title": "Video Edit – Signature",
+    "min": 40,
+    "max": 40
+  },
+  {
+    "id": "deliverable-056",
+    "title": "Video Edit – Premium",
+    "min": 75,
+    "max": 75
+  },
+  {
+    "id": "deliverable-057",
+    "title": "Video Intro/Outro – Simple",
+    "min": 50,
+    "max": 50
+  },
+  {
+    "id": "deliverable-058",
+    "title": "Video Intro/Outro – Complex",
+    "min": 150,
+    "max": 150
+  },
+  {
+    "id": "deliverable-059",
+    "title": "Ad Creative Pack",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-060",
+    "title": "Email Drip Campaign (Written + Setup)",
+    "min": 350,
+    "max": 350
+  },
+  {
+    "id": "deliverable-061",
+    "title": "Email Drip Campaign (Written Only)",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-062",
+    "title": "Landing Page",
+    "min": 350,
+    "max": 350
+  },
+  {
+    "id": "deliverable-063",
+    "title": "Lead Magnet - Assessment",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-064",
+    "title": "Lead Magnet - Downloadable PDF",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-065",
+    "title": "Lead Magnet - Quiz",
+    "min": 175,
+    "max": 175
+  },
+  {
+    "id": "deliverable-066",
+    "title": "Paid Ads - Management",
+    "min": 500,
+    "max": 500
+  },
+  {
+    "id": "deliverable-067",
+    "title": "Paid Ads - Setup",
+    "min": 750,
+    "max": 750
+  },
+  {
+    "id": "deliverable-068",
+    "title": "SEO Starter Kit",
+    "min": 1500,
+    "max": 1500
+  },
+  {
+    "id": "deliverable-069",
+    "title": "Social Media Management - Express",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-070",
+    "title": "Social Media Management - Premium",
+    "min": 950,
+    "max": 950
+  },
+  {
+    "id": "deliverable-071",
+    "title": "Social Media Management - Signature",
+    "min": 500,
+    "max": 500
+  },
+  {
+    "id": "deliverable-072",
+    "title": "Social Media Profile Setup",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-073",
+    "title": "Webinar Kit",
+    "min": 750,
+    "max": 750
+  },
+  {
+    "id": "deliverable-074",
+    "title": "Website Kit - Premium",
+    "min": 1750,
+    "max": 1750
+  },
+  {
+    "id": "deliverable-075",
+    "title": "Website Kit - Express",
+    "min": 750,
+    "max": 750
+  },
+  {
+    "id": "deliverable-076",
+    "title": "Website Kit - Signature",
+    "min": 1200,
+    "max": 1200
+  },
+  {
+    "id": "deliverable-077",
+    "title": "Website Upkeep",
+    "min": 50,
+    "max": 50
+  },
+  {
+    "id": "deliverable-078",
+    "title": "Accounts Receivable Follow-Up",
+    "min": 20,
+    "max": 20
+  },
+  {
+    "id": "deliverable-079",
+    "title": "Bookkeeping",
+    "min": 30,
+    "max": 30
+  },
+  {
+    "id": "deliverable-080",
+    "title": "Data Cleanup",
+    "min": 100,
+    "max": 100
+  },
+  {
+    "id": "deliverable-081",
+    "title": "Data Entry",
+    "min": 30,
+    "max": 30
+  },
+  {
+    "id": "deliverable-082",
+    "title": "Invoicing",
+    "min": 10,
+    "max": 10
+  },
+  {
+    "id": "deliverable-083",
+    "title": "Web Research and Data Collection",
+    "min": 40,
+    "max": 40
+  },
+  {
+    "id": "deliverable-084",
+    "title": "Lead Uploading",
+    "min": 20,
+    "max": 20
+  },
+  {
+    "id": "deliverable-085",
+    "title": "General Administrative Support",
+    "min": 15,
+    "max": 15
+  },
+  {
+    "id": "deliverable-086",
+    "title": "Proposals – Express",
+    "min": 5,
+    "max": 5
+  },
+  {
+    "id": "deliverable-087",
+    "title": "Proposals - Signature",
+    "min": 25,
+    "max": 25
+  },
+  {
+    "id": "deliverable-088",
+    "title": "Proposals - Premium",
+    "min": 30,
+    "max": 30
+  },
+  {
+    "id": "deliverable-089",
+    "title": "Virtual Meeting Producing",
+    "min": 100,
+    "max": 100
+  },
+  {
+    "id": "deliverable-090",
+    "title": "Video Upload & Publishing",
+    "min": 10,
+    "max": 10
+  },
+  {
+    "id": "deliverable-091",
+    "title": "Blog/Article Post - Express",
+    "min": 6,
+    "max": 6
+  },
+  {
+    "id": "deliverable-092",
+    "title": "Blog/Article Post - Signature",
+    "min": 8,
+    "max": 8
+  },
+  {
+    "id": "deliverable-093",
+    "title": "Blog/Article Post - Premium",
+    "min": 10,
+    "max": 10
+  },
+  {
+    "id": "deliverable-094",
+    "title": "Design Tweaks",
+    "min": 20,
+    "max": 20
+  },
+  {
+    "id": "deliverable-095",
+    "title": "Email Newsletter Sending",
+    "min": 10,
+    "max": 10
+  },
+  {
+    "id": "deliverable-096",
+    "title": "Email Campaign Build and Send",
+    "min": 30,
+    "max": 30
+  },
+  {
+    "id": "deliverable-097",
+    "title": "Email Signature",
+    "min": 15,
+    "max": 15
+  },
+  {
+    "id": "deliverable-098",
+    "title": "Podcast – Express",
+    "min": 20,
+    "max": 20
+  },
+  {
+    "id": "deliverable-099",
+    "title": "Podcast – Signature",
+    "min": 25,
+    "max": 25
+  },
+  {
+    "id": "deliverable-100",
+    "title": "Podcast – Premium",
+    "min": 40,
+    "max": 40
+  },
+  {
+    "id": "deliverable-101",
+    "title": "Podcast Audio Clips",
+    "min": 20,
+    "max": 20
+  },
+  {
+    "id": "deliverable-102",
+    "title": "Podcast Video Clips",
+    "min": 20,
+    "max": 20
+  },
+  {
+    "id": "deliverable-103",
+    "title": "Audio Content Repurposing",
+    "min": 30,
+    "max": 30
+  },
+  {
+    "id": "deliverable-104",
+    "title": "Video Content Repurposing",
+    "min": 35,
+    "max": 35
+  },
+  {
+    "id": "deliverable-105",
+    "title": "Written Content Repurposing",
+    "min": 25,
+    "max": 25
+  },
+  {
+    "id": "deliverable-106",
+    "title": "Social Post Repurposing",
+    "min": 50,
+    "max": 50
+  },
+  {
+    "id": "deliverable-107",
+    "title": "Slide Deck – Express",
+    "min": 30,
+    "max": 30
+  },
+  {
+    "id": "deliverable-108",
+    "title": "Slide Deck – Signature",
+    "min": 40,
+    "max": 40
+  },
+  {
+    "id": "deliverable-109",
+    "title": "Slide Deck – Premium",
+    "min": 50,
+    "max": 50
+  },
+  {
+    "id": "deliverable-110",
+    "title": "Social Media Publishing",
+    "min": 10,
+    "max": 10
+  },
+  {
+    "id": "deliverable-111",
+    "title": "Survey/Form – Simple",
+    "min": 20,
+    "max": 20
+  },
+  {
+    "id": "deliverable-112",
+    "title": "Survey/Form – Complex",
+    "min": 30,
+    "max": 30
+  },
+  {
+    "id": "deliverable-113",
+    "title": "Thumbnails – YouTube + Vimeo",
+    "min": 10,
+    "max": 10
+  },
+  {
+    "id": "deliverable-114",
+    "title": "Transcription",
+    "min": 5,
+    "max": 5
+  },
+  {
+    "id": "deliverable-115",
+    "title": "Website Updates – Content",
+    "min": 15,
+    "max": 15
+  },
+  {
+    "id": "deliverable-116",
+    "title": "Proposals System Setup",
+    "min": 100,
+    "max": 100
+  },
+  {
+    "id": "deliverable-117",
+    "title": "AI Agent Setup",
+    "min": {
+      "min": 550,
+      "max": 5000
+    },
+    "max": {
+      "min": 550,
+      "max": 5000
+    }
+  },
+  {
+    "id": "deliverable-118",
+    "title": "Automation Setup",
+    "min": {
+      "min": 550,
+      "max": 5000
+    },
+    "max": {
+      "min": 550,
+      "max": 5000
+    }
+  },
+  {
+    "id": "deliverable-119",
+    "title": "Chatbot Setup",
+    "min": 750,
+    "max": 750
+  },
+  {
+    "id": "deliverable-120",
+    "title": "CRM Setup",
+    "min": {
+      "min": 750,
+      "max": 2500
+    },
+    "max": {
+      "min": 750,
+      "max": 2500
+    }
+  },
+  {
+    "id": "deliverable-121",
+    "title": "Custom Tech Setup",
+    "min": {
+      "min": 100,
+      "max": 5000
+    },
+    "max": {
+      "min": 100,
+      "max": 5000
+    }
+  },
+  {
+    "id": "deliverable-122",
+    "title": "Dashboard & Reporting Setup",
+    "min": 500,
+    "max": 500
+  },
+  {
+    "id": "deliverable-123",
+    "title": "Ecommerce Store Setup",
+    "min": 950,
+    "max": 950
+  },
+  {
+    "id": "deliverable-124",
+    "title": "Form System Setup",
+    "min": 150,
+    "max": 150
+  },
+  {
+    "id": "deliverable-125",
+    "title": "Phone / SMS System Setup",
+    "min": 650,
+    "max": 650
+  },
+  {
+    "id": "deliverable-126",
+    "title": "Ticketing / Help Desk Setup",
+    "min": 600,
+    "max": 600
+  },
+  {
+    "id": "deliverable-127",
+    "title": "QR Code Setup",
+    "min": 30,
+    "max": 30
+  },
+  {
+    "id": "deliverable-128",
+    "title": "Employee Time Tracking Setup",
+    "min": {
+      "min": 150,
+      "max": 300
+    },
+    "max": {
+      "min": 150,
+      "max": 300
+    }
+  },
+  {
+    "id": "deliverable-129",
+    "title": "CRM Pipeline Setup",
+    "min": {
+      "min": 150,
+      "max": 300
+    },
+    "max": {
+      "min": 150,
+      "max": 300
+    }
+  },
+  {
+    "id": "deliverable-130",
+    "title": "CRM Custom Fields Setup",
+    "min": 100,
+    "max": 100
+  },
+  {
+    "id": "deliverable-131",
+    "title": "CRM Dashboard Setup",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-132",
+    "title": "CRM Form Integration",
+    "min": {
+      "min": 150,
+      "max": 350
+    },
+    "max": {
+      "min": 150,
+      "max": 350
+    }
+  },
+  {
+    "id": "deliverable-133",
+    "title": "CRM Automation Setup",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-134",
+    "title": "Virtual Phone Number Setup",
+    "min": {
+      "min": 75,
+      "max": 150
+    },
+    "max": {
+      "min": 75,
+      "max": 150
+    }
+  },
+  {
+    "id": "deliverable-135",
+    "title": "Call Forwarding Setup",
+    "min": 50,
+    "max": 50
+  },
+  {
+    "id": "deliverable-136",
+    "title": "IVR / Phone Menu Setup",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-137",
+    "title": "Voicemail Setup",
+    "min": 100,
+    "max": 100
+  },
+  {
+    "id": "deliverable-138",
+    "title": "SMS Notification Setup",
+    "min": {
+      "min": 150,
+      "max": 350
+    },
+    "max": {
+      "min": 150,
+      "max": 350
+    }
+  },
+  {
+    "id": "deliverable-139",
+    "title": "AI Voice Receptionist Setup – Express",
+    "min": 500,
+    "max": 500
+  },
+  {
+    "id": "deliverable-140",
+    "title": "AI Voice Receptionist Setup – Signature",
+    "min": 750,
+    "max": 750
+  },
+  {
+    "id": "deliverable-141",
+    "title": "AI Voice Receptionist Setup – Premium",
+    "min": 1000,
+    "max": 1000
+  },
+  {
+    "id": "deliverable-142",
+    "title": "Google Workspace Setup",
+    "min": 150,
+    "max": 150
+  },
+  {
+    "id": "deliverable-143",
+    "title": "SPF / DKIM / DMARC Setup",
+    "min": 50,
+    "max": 50
+  },
+  {
+    "id": "deliverable-144",
+    "title": "Calendly Setup",
+    "min": 100,
+    "max": 100
+  },
+  {
+    "id": "deliverable-145",
+    "title": "Appointment Reminder Setup",
+    "min": {
+      "min": 100,
+      "max": 250
+    },
+    "max": {
+      "min": 100,
+      "max": 250
+    }
+  },
+  {
+    "id": "deliverable-146",
+    "title": "Lead Capture Form Setup",
+    "min": 100,
+    "max": 100
+  },
+  {
+    "id": "deliverable-147",
+    "title": "E-Signature Setup",
+    "min": 150,
+    "max": 150
+  },
+  {
+    "id": "deliverable-148",
+    "title": "Payment Link Setup",
+    "min": 75,
+    "max": 75
+  },
+  {
+    "id": "deliverable-149",
+    "title": "DNS Setup",
+    "min": 50,
+    "max": 50
+  },
+  {
+    "id": "deliverable-150",
+    "title": "SSL Setup",
+    "min": 50,
+    "max": 50
+  },
+  {
+    "id": "deliverable-151",
+    "title": "Website Hosting Setup",
+    "min": 150,
+    "max": 150
+  },
+  {
+    "id": "deliverable-152",
+    "title": "Project Management System Setup",
+    "min": {
+      "min": 300,
+      "max": 750
+    },
+    "max": {
+      "min": 300,
+      "max": 750
+    }
+  },
+  {
+    "id": "deliverable-153",
+    "title": "Online Course Platform Setup",
+    "min": {
+      "min": 350,
+      "max": 1000
+    },
+    "max": {
+      "min": 350,
+      "max": 1000
+    }
+  },
+  {
+    "id": "deliverable-154",
+    "title": "Domain Connection Setup",
+    "min": 75,
+    "max": 75
+  },
+  {
+    "id": "deliverable-155",
+    "title": "Leads List - Express",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-156",
+    "title": "Leads List - Premium",
+    "min": 2500,
+    "max": 2500
+  },
+  {
+    "id": "deliverable-157",
+    "title": "Leads List - Signature",
+    "min": 750,
+    "max": 750
+  },
+  {
+    "id": "deliverable-158",
+    "title": "Outbound Dialing - Express",
+    "min": 1500,
+    "max": 1500
+  },
+  {
+    "id": "deliverable-159",
+    "title": "Outbound Dialing - Premium",
+    "min": 4000,
+    "max": 4000
+  },
+  {
+    "id": "deliverable-160",
+    "title": "Outbound Dialing - Signature",
+    "min": 2500,
+    "max": 2500
+  },
+  {
+    "id": "deliverable-161",
+    "title": "Sales Deck",
+    "min": 750,
+    "max": 750
+  },
+  {
+    "id": "deliverable-162",
+    "title": "Buyer Intent Lead List - Express",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-163",
+    "title": "Buyer Intent Lead List - Signature",
+    "min": 350,
+    "max": 350
+  },
+  {
+    "id": "deliverable-164",
+    "title": "Outbound Dialing Trial Kit",
+    "min": 5300,
+    "max": 5300
+  },
+  {
+    "id": "deliverable-165",
+    "title": "Buyer Intent Lead List - Premium",
+    "min": 1000,
+    "max": 1000
+  },
+  {
+    "id": "deliverable-166",
+    "title": "ICP Development",
+    "min": 500,
+    "max": 500
+  },
+  {
+    "id": "deliverable-167",
+    "title": "LinkedIn Outreach Sequence",
+    "min": 350,
+    "max": 350
+  },
+  {
+    "id": "deliverable-168",
+    "title": "Objection Handling Playbook",
+    "min": 250,
+    "max": 250
+  },
+  {
+    "id": "deliverable-169",
+    "title": "Outbound Call Script",
+    "min": 350,
+    "max": 350
+  },
+  {
+    "id": "deliverable-170",
+    "title": "Outbound Email Sequence",
+    "min": 500,
+    "max": 500
+  },
+  {
+    "id": "deliverable-171",
+    "title": "Outbound Messaging Kit",
+    "min": 1000,
+    "max": 1000
+  },
+  {
+    "id": "deliverable-172",
+    "title": "Sales Enablement Kit",
+    "min": 2500,
+    "max": 2500
+  },
+  {
+    "id": "deliverable-173",
+    "title": "TAM Analysis",
+    "min": 500,
+    "max": 500
+  },
+  {
+    "id": "deliverable-174",
+    "title": "Territory & Account Planning",
+    "min": 500,
+    "max": 500
+  }
+]
