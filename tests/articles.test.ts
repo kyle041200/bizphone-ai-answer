@@ -20,7 +20,7 @@ describe("Article category rules from the supplied references", () => {
   });
   test("Search intersects with the selected category", () => {
     expect(filterArticles("Technology", "AI")).toHaveLength(1);
-    expect(filterArticles("Leadership", "AI")).toHaveLength(0);
+    expect(filterArticles("Leadership", "AI automation")).toHaveLength(0);
     expect(filterArticles("All", "appointment setting").map(article => article.slug)).toEqual(["appointment-setting-guide"]);
     expect(new Set(articles.map(article => article.slug)).size).toBe(9);
   });
