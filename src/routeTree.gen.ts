@@ -9,55 +9,20 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SalesRouteImport } from './routes/sales'
-import { Route as PartnersRouteImport } from './routes/partners'
-import { Route as NewClientRouteImport } from './routes/new-client'
-import { Route as MarketingRouteImport } from './routes/marketing'
-import { Route as GrowthResetRouteImport } from './routes/growth-reset'
-import { Route as DeliverablesRouteImport } from './routes/deliverables'
-import { Route as BusinessSupportRouteImport } from './routes/business-support'
-import { Route as BizsiteRouteImport } from './routes/bizsite'
-import { Route as BizphoneRouteImport } from './routes/bizphone'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as BizphoneRouteImport } from './routes/bizphone'
+import { Route as BizsiteRouteImport } from './routes/bizsite'
+import { Route as BusinessSupportRouteImport } from './routes/business-support'
+import { Route as DeliverablesRouteImport } from './routes/deliverables'
+import { Route as GrowthResetRouteImport } from './routes/growth-reset'
+import { Route as MarketingRouteImport } from './routes/marketing'
+import { Route as NewClientRouteImport } from './routes/new-client'
+import { Route as PartnersRouteImport } from './routes/partners'
+import { Route as SalesRouteImport } from './routes/sales'
 
-const SalesRoute = SalesRouteImport.update({
-  id: '/sales',
-  path: '/sales',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PartnersRoute = PartnersRouteImport.update({
-  id: '/partners',
-  path: '/partners',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const NewClientRoute = NewClientRouteImport.update({
-  id: '/new-client',
-  path: '/new-client',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const MarketingRoute = MarketingRouteImport.update({
-  id: '/marketing',
-  path: '/marketing',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const GrowthResetRoute = GrowthResetRouteImport.update({
-  id: '/growth-reset',
-  path: '/growth-reset',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DeliverablesRoute = DeliverablesRouteImport.update({
-  id: '/deliverables',
-  path: '/deliverables',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BusinessSupportRoute = BusinessSupportRouteImport.update({
-  id: '/business-support',
-  path: '/business-support',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const BizsiteRoute = BizsiteRouteImport.update({
-  id: '/bizsite',
-  path: '/bizsite',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BizphoneRoute = BizphoneRouteImport.update({
@@ -65,9 +30,44 @@ const BizphoneRoute = BizphoneRouteImport.update({
   path: '/bizphone',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const BizsiteRoute = BizsiteRouteImport.update({
+  id: '/bizsite',
+  path: '/bizsite',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BusinessSupportRoute = BusinessSupportRouteImport.update({
+  id: '/business-support',
+  path: '/business-support',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DeliverablesRoute = DeliverablesRouteImport.update({
+  id: '/deliverables',
+  path: '/deliverables',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GrowthResetRoute = GrowthResetRouteImport.update({
+  id: '/growth-reset',
+  path: '/growth-reset',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MarketingRoute = MarketingRouteImport.update({
+  id: '/marketing',
+  path: '/marketing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NewClientRoute = NewClientRouteImport.update({
+  id: '/new-client',
+  path: '/new-client',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PartnersRoute = PartnersRouteImport.update({
+  id: '/partners',
+  path: '/partners',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SalesRoute = SalesRouteImport.update({
+  id: '/sales',
+  path: '/sales',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -162,60 +162,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/sales': {
-      id: '/sales'
-      path: '/sales'
-      fullPath: '/sales'
-      preLoaderRoute: typeof SalesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/partners': {
-      id: '/partners'
-      path: '/partners'
-      fullPath: '/partners'
-      preLoaderRoute: typeof PartnersRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/new-client': {
-      id: '/new-client'
-      path: '/new-client'
-      fullPath: '/new-client'
-      preLoaderRoute: typeof NewClientRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/marketing': {
-      id: '/marketing'
-      path: '/marketing'
-      fullPath: '/marketing'
-      preLoaderRoute: typeof MarketingRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/growth-reset': {
-      id: '/growth-reset'
-      path: '/growth-reset'
-      fullPath: '/growth-reset'
-      preLoaderRoute: typeof GrowthResetRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/deliverables': {
-      id: '/deliverables'
-      path: '/deliverables'
-      fullPath: '/deliverables'
-      preLoaderRoute: typeof DeliverablesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/business-support': {
-      id: '/business-support'
-      path: '/business-support'
-      fullPath: '/business-support'
-      preLoaderRoute: typeof BusinessSupportRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/bizsite': {
-      id: '/bizsite'
-      path: '/bizsite'
-      fullPath: '/bizsite'
-      preLoaderRoute: typeof BizsiteRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/bizphone': {
@@ -225,11 +176,60 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BizphoneRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/bizsite': {
+      id: '/bizsite'
+      path: '/bizsite'
+      fullPath: '/bizsite'
+      preLoaderRoute: typeof BizsiteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-support': {
+      id: '/business-support'
+      path: '/business-support'
+      fullPath: '/business-support'
+      preLoaderRoute: typeof BusinessSupportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/deliverables': {
+      id: '/deliverables'
+      path: '/deliverables'
+      fullPath: '/deliverables'
+      preLoaderRoute: typeof DeliverablesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/growth-reset': {
+      id: '/growth-reset'
+      path: '/growth-reset'
+      fullPath: '/growth-reset'
+      preLoaderRoute: typeof GrowthResetRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/marketing': {
+      id: '/marketing'
+      path: '/marketing'
+      fullPath: '/marketing'
+      preLoaderRoute: typeof MarketingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/new-client': {
+      id: '/new-client'
+      path: '/new-client'
+      fullPath: '/new-client'
+      preLoaderRoute: typeof NewClientRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/partners': {
+      id: '/partners'
+      path: '/partners'
+      fullPath: '/partners'
+      preLoaderRoute: typeof PartnersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sales': {
+      id: '/sales'
+      path: '/sales'
+      fullPath: '/sales'
+      preLoaderRoute: typeof SalesRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
