@@ -44,14 +44,14 @@ function Field({
   children: React.ReactNode;
 }) {
   return (
-    <div>
-      <label className="mb-1.5 block text-sm font-semibold text-foreground">
+    <label className="form-field">
+      <span className="mb-1.5 block text-sm font-semibold text-foreground">
         {label}
         {required && <span className="ml-1 text-primary">*</span>}
-      </label>
+      </span>
       {hint && <p className="mb-2 text-xs text-muted-foreground">{hint}</p>}
       {children}
-    </div>
+    </label>
   );
 }
 
@@ -89,78 +89,11 @@ function FormSection({
 
 /* ---------- page ---------- */
 
-function NewClient() {
-  const [submitted, setSubmitted] = useState(false);
-  const [traits, setTraits] = useState<string[]>([]);
+function NewClient() { return <main className="bg-background"><IntroAndForm /></main>; }
 
-  const toggleTrait = (t: string) =>
-    setTraits((prev) => (prev.includes(t) ? prev.filter((x) => x !== t) : [...prev, t]));
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const data = Object.fromEntries(new FormData(e.currentTarget).entries());
-    console.log("New client onboarding submission:", { ...data, traits });
-    setSubmitted(true);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
-  return (
-    <div className="min-h-screen bg-background">
-      <Nav />
-
-      {submitted ? <SuccessScreen /> : <IntroAndForm traits={traits} toggleTrait={toggleTrait} onSubmit={handleSubmit} />}
-
-      <footer className="border-t border-border/60 py-10 text-center text-sm text-muted-foreground">
-        <p>
-          Questions? Reach us any time — we're happy to walk through it with you.
-        </p>
-        <p className="mt-2">
-          <Link to="/bizphone" className="font-semibold text-primary hover:underline">BizPhone</Link>
-          {" · "}
-          <Link to="/bizsite" className="font-semibold text-primary hover:underline">BizSite</Link>
-          {" · KGHQ"}
-        </p>
-      </footer>
-    </div>
-  );
-}
-
-function Nav() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link to="/" aria-label="KGHQ home" className="flex items-center gap-2">
-          <span className="text-2xl font-black tracking-tighter text-primary">»»</span>
-          <span className="text-lg font-black tracking-tight text-foreground">
-            KGHQ
-            <span className="ml-1.5 text-xs font-medium text-muted-foreground">New Client</span>
-          </span>
-        </Link>
-        <nav className="hidden items-center gap-8 text-sm font-medium text-foreground/70 md:flex">
-          <Link to="/bizphone" className="transition-colors hover:text-primary">BizPhone</Link>
-          <Link to="/bizsite" className="transition-colors hover:text-primary">BizSite</Link>
-          <a href="#form" className="transition-colors hover:text-primary">The Form</a>
-        </nav>
-        <a
-          href="#form"
-          className="inline-flex items-center gap-1.5 rounded-full bg-gradient-primary px-5 py-2.5 text-sm font-bold text-primary-foreground transition-transform hover:-translate-y-0.5"
-        >
-          Start Now
-        </a>
-      </div>
-    </header>
-  );
-}
-
-function IntroAndForm({
-  traits,
-  toggleTrait,
-  onSubmit,
-}: {
-  traits: string[];
-  toggleTrait: (t: string) => void;
-  onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
-}) {
+function IntroAndForm() {
   return (
     <>
       {/* intro hero */}
@@ -183,7 +116,7 @@ function IntroAndForm({
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a
-              href="#"
+              href="#form"
               className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-bold text-primary shadow-glow transition-all hover:-translate-y-0.5 hover:bg-white/90"
             >
               <CalendarCheck className="size-4" /> Schedule Kick-Off Call
@@ -307,19 +240,7 @@ function IntroAndForm({
               <Field label="Which words describe your brand personality?" hint="Pick all that apply — or tell us your own in the field below.">
                 <div className="flex flex-wrap gap-2">
                   {["Friendly", "Professional", "Bold", "Luxury", "Playful", "Trustworthy", "Local & Hometown", "High-Tech", "Family-Run", "No-Nonsense"].map((t) => (
-                    <button
-                      key={t}
-                      type="button"
-                      onClick={() => toggleTrait(t)}
-                      className={`rounded-full border px-4 py-2 text-sm font-semibold transition-all ${
-                        traits.includes(t)
-                          ? "border-primary bg-gradient-primary text-primary-foreground shadow-glow"
-                          : "border-border bg-background text-foreground/70 hover:border-primary/40 hover:text-primary"
-                      }`}
-                    >
-                      {traits.includes(t) && <Check className="mr-1.5 inline size-3.5" />}
-                      {t}
-                    </button>
+                    <label className="trait-option"><input type="checkbox" name="traits" value={t} />{t}</label>
                   ))}
                 </div>
               </Field>
@@ -387,36 +308,4 @@ function IntroAndForm({
   );
 }
 
-function SuccessScreen() {
-  return (
-    <section className="px-6 py-24">
-      <div className="mx-auto max-w-xl rounded-3xl border border-border bg-card p-10 text-center shadow-card">
-        <span className="mx-auto flex size-16 items-center justify-center rounded-full bg-gradient-primary text-primary-foreground shadow-glow">
-          <Check className="size-8" />
-        </span>
-        <h1 className="mt-6 text-3xl font-black tracking-tight text-foreground">
-          Thank You — We've Got It
-        </h1>
-        <p className="mt-4 text-sm leading-relaxed text-muted-foreground md:text-base">
-          Your answers are in. Our team will review everything and put together your
-          marketing brief, then we'll see you on the kick-off call. If anything comes to
-          mind later, just send it over — more detail is always welcome.
-        </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-bold text-primary-foreground shadow-glow transition-all hover:-translate-y-0.5"
-          >
-            <CalendarCheck className="size-4" /> Schedule Kick-Off Call
-          </a>
-          <Link
-            to="/"
-            className="inline-flex items-center gap-2 rounded-full border border-border px-7 py-3.5 text-sm font-bold text-foreground transition-colors hover:bg-secondary"
-          >
-            Back to Home
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
-}
+

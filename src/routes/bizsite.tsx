@@ -29,14 +29,7 @@ export const Route = createFileRoute("/bizsite")({
           "Modern small business websites with copy, design, lead capture, SEO, hosting, and ongoing support — without the months-long website process.",
       },
     ],
-    links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap",
-      },
-    ],
+    
   }),
 });
 
@@ -100,36 +93,7 @@ function CTAButtons({ light = false }: { light?: boolean }) {
 
 /* ---------- sections ---------- */
 
-function Nav() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-bs-dark-line bg-bs-navy-deep">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link to="/" aria-label="KGHQ home" className="flex items-center gap-2.5">
-          <span className="flex size-8 items-center justify-center bg-bs-gradient font-display text-sm font-extrabold text-bs-on-dark">
-            B
-          </span>
-          <span className="font-display text-lg font-bold tracking-tight text-bs-on-dark">
-            BizSite
-            <span className="ml-1.5 font-body text-xs font-medium text-bs-on-dark-muted">by KGHQ</span>
-          </span>
-        </Link>
-        <nav className="hidden items-center gap-8 text-sm font-semibold text-bs-on-dark-muted md:flex">
-          <a href="#how" className="transition-colors hover:text-bs-teal-bright">How It Works</a>
-          <a href="#features" className="transition-colors hover:text-bs-teal-bright">Features</a>
-          <a href="#pricing" className="transition-colors hover:text-bs-teal-bright">Pricing</a>
-          <a href="#faq" className="transition-colors hover:text-bs-teal-bright">FAQ</a>
-          <Link to="/new-client" className="text-bs-teal-bright transition-colors hover:text-bs-on-dark">New Client</Link>
-        </nav>
-        <a
-          href="#pricing"
-          className="inline-flex items-center gap-1.5 bg-bs-teal-bright px-5 py-2.5 text-sm font-bold text-bs-navy-deep transition-transform hover:-translate-y-0.5"
-        >
-          Get Your BizSite
-        </a>
-      </div>
-    </header>
-  );
-}
+
 
 function Hero() {
   return (
@@ -819,35 +783,12 @@ function FinalCTA() {
   );
 }
 
-function Footer() {
-  return (
-    <footer className="border-t border-bs-dark-line bg-bs-navy-deep px-6 py-10">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-sm text-bs-on-dark-muted md:flex-row">
-        <div className="flex items-center gap-2.5">
-          <span className="flex size-7 items-center justify-center bg-bs-gradient font-display text-xs font-extrabold text-bs-on-dark">
-            B
-          </span>
-          <span className="font-display font-bold text-bs-on-dark">BizSite</span>
-          <span>by KGHQ</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <MessageSquare className="size-4" /> Websites that bring you business, managed for you.
-        </div>
-        <div className="flex items-center gap-4">
-          <Link to="/bizphone" className="inline-flex items-center gap-1.5 transition-colors hover:text-bs-teal-bright">
-            <Phone className="size-4" /> BizPhone
-          </Link>
-          <span>© {new Date().getFullYear()} KGHQ. All rights reserved.</span>
-        </div>
-      </div>
-    </footer>
-  );
-}
+
 
 function BizSite() {
   return (
     <main className="bg-bs-paper font-body text-bs-ink antialiased">
-      <Nav />
+      
       <Hero />
       <Problem />
       <HowItWorks />
@@ -858,7 +799,7 @@ function BizSite() {
       <MoreThan />
       <FAQ />
       <FinalCTA />
-      <Footer />
+      
     </main>
   );
 }

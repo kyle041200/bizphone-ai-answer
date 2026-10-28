@@ -31,11 +31,7 @@ export const Route = createFileRoute("/partners")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" },
-    ],
+    
   }),
 });
 
@@ -82,23 +78,7 @@ const examples = [
   [Users, "You’re a Chamber.", "Your members need help with AI, marketing, sales, and technology. KGHQ can provide programming and hands-on support."],
 ] as const;
 
-function Header() {
-  const [open, setOpen] = useState(false);
-  const links = [["Who It’s For", "#who"], ["Partner Tracks", "#tracks"], ["Ways to Partner", "#ways"], ["Examples", "#examples"]];
-  return (
-    <header className="sticky top-0 z-50 border-b border-kh-dark-line bg-kh-ink">
-      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 md:px-8">
-        <Link to="/" aria-label="KGHQ home"><img src={logoLightAsset.url} alt="KGHQ" width={249} height={66} className="h-8 w-auto md:h-9" /></Link>
-        <nav className="hidden items-center gap-7 lg:flex" aria-label="Partner Network navigation">
-          {links.map(([label, href]) => <a key={label} href={href} className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">{label}</a>)}
-        </nav>
-        <a href="#partner-form" className="hidden min-h-11 items-center gap-2 bg-kh-lime px-5 font-display text-sm font-bold text-kh-ink md:inline-flex">Explore a Partnership <ArrowRight className="size-4" /></a>
-        <Button type="button" variant="ghost" size="icon" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(value => !value)} className="text-kh-white hover:bg-kh-white/10 hover:text-kh-white lg:hidden">{open ? <X /> : <Menu />}</Button>
-      </div>
-      {open && <nav className="border-t border-kh-dark-line bg-kh-ink px-5 py-5 lg:hidden">{links.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">{label}</a>)}<a href="#partner-form" onClick={() => setOpen(false)} className="mt-5 inline-flex min-h-12 items-center bg-kh-lime px-5 font-display text-sm font-bold text-kh-ink">Explore a Partnership</a></nav>}
-    </header>
-  );
-}
+
 
 function Hero() {
   return (
@@ -145,20 +125,17 @@ function Examples() {
 }
 
 function PartnerForm() {
-  const [sent, setSent] = useState(false);
+
   const interests = ["Referrals", "Client Execution", "Workshops & Events", "Member Benefits", "Co-Marketing", "Other"];
-  const submit = (event: FormEvent<HTMLFormElement>) => { event.preventDefault(); setSent(true); };
-  return <section id="partner-form" className="bg-kh-ink px-5 py-20 text-kh-white md:px-8 md:py-28"><div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.8fr_1.2fr]"><div><p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-kh-lime">KGHQ Partner Network</p><h2 className="mt-5 font-display text-4xl font-extrabold tracking-normal md:text-6xl">Let’s find a way to work together.</h2><p className="mt-6 text-lg leading-relaxed text-kh-dark-muted">Every partnership is a little different. Tell us who you serve and what you have in mind. We’ll explore where KGHQ can create value for you, your clients, or your members.</p><div className="mt-9 border-t border-kh-dark-line pt-7"><p className="font-display text-xl font-bold">An ecosystem of people and organizations helping small businesses move forward.</p></div></div>{sent ? <div className="flex min-h-[500px] flex-col items-start justify-center bg-kh-lime p-8 text-kh-ink shadow-kh md:p-12"><span className="grid size-12 place-items-center bg-kh-ink text-kh-lime"><Check className="size-6" /></span><h3 className="mt-7 font-display text-3xl font-extrabold">Thanks for starting the conversation.</h3><p className="mt-4 max-w-lg leading-relaxed">Your partnership idea is ready for review. Connect this form to your preferred inbox before launch so A.J. can respond directly.</p><Button type="button" onClick={() => setSent(false)} className="mt-8 rounded-none bg-kh-ink px-6 text-kh-white hover:bg-kh-ink-soft">Send another idea</Button></div> : <form onSubmit={submit} className="bg-kh-white p-6 text-kh-ink shadow-kh md:p-9"><div className="grid gap-5 sm:grid-cols-2"><Field label="Name" name="name" required /><Field label="Organization" name="organization" required /><Field label="Website" name="website" type="url" /><Field label="Email" name="email" type="email" required /><label className="sm:col-span-2"><span className="font-display text-sm font-bold">Type of Partner</span><select name="partnerType" required defaultValue="" className="mt-2 min-h-12 w-full border border-kh-line bg-kh-paper px-4 text-sm outline-none focus:border-kh-green"><option value="" disabled>Select one</option><option>Professional Partner</option><option>Chamber or Association</option><option>Entrepreneur Community</option><option>Financial Institution</option><option>Other Organization</option></select></label><label className="sm:col-span-2"><span className="font-display text-sm font-bold">Who do you serve?</span><textarea name="audience" required rows={3} className="mt-2 w-full resize-y border border-kh-line bg-kh-paper p-4 text-sm outline-none focus:border-kh-green" /></label></div><fieldset className="mt-6"><legend className="font-display text-sm font-bold">I’m interested in</legend><div className="mt-3 grid gap-2 sm:grid-cols-2">{interests.map(interest => <label key={interest} className="flex min-h-11 items-center gap-3 border border-kh-line bg-kh-paper px-4 text-sm font-semibold"><input type="checkbox" name="interests" value={interest} className="size-4 accent-primary" />{interest}</label>)}</div></fieldset><label className="mt-6 block"><span className="font-display text-sm font-bold">Tell us about your idea</span><textarea name="idea" required rows={5} className="mt-2 w-full resize-y border border-kh-line bg-kh-paper p-4 text-sm outline-none focus:border-kh-green" placeholder="What could we create together?" /></label><Button type="submit" className="mt-7 min-h-12 rounded-none bg-kh-green px-6 font-display font-bold text-kh-white hover:bg-kh-green-deep">Explore a Partnership <ArrowRight /></Button><p className="mt-3 text-xs text-kh-muted">Submitting this preview does not send or store your information yet.</p></form>}</div></section>;
+  return <section id="partner-form" className="bg-kh-ink px-5 py-20 text-kh-white md:px-8 md:py-28"><div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.8fr_1.2fr]"><div><p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-kh-lime">KGHQ Partner Network</p><h2 className="mt-5 font-display text-4xl font-extrabold tracking-normal md:text-6xl">Let’s find a way to work together.</h2><p className="mt-6 text-lg leading-relaxed text-kh-dark-muted">Every partnership is a little different. Tell us who you serve and what you have in mind. We’ll explore where KGHQ can create value for you, your clients, or your members.</p><div className="mt-9 border-t border-kh-dark-line pt-7"><p className="font-display text-xl font-bold">An ecosystem of people and organizations helping small businesses move forward.</p></div></div><form onSubmit={submit} className="bg-kh-white p-6 text-kh-ink shadow-kh md:p-9"><div className="grid gap-5 sm:grid-cols-2"><Field label="Name" name="name" required /><Field label="Organization" name="organization" required /><Field label="Website" name="website" type="url" /><Field label="Email" name="email" type="email" required /><label className="sm:col-span-2"><span className="font-display text-sm font-bold">Type of Partner</span><select name="partnerType" required defaultValue="" className="mt-2 min-h-12 w-full border border-kh-line bg-kh-paper px-4 text-sm outline-none focus:border-kh-green"><option value="" disabled>Select one</option><option>Professional Partner</option><option>Chamber or Association</option><option>Entrepreneur Community</option><option>Financial Institution</option><option>Other Organization</option></select></label><label className="sm:col-span-2"><span className="font-display text-sm font-bold">Who do you serve?</span><textarea name="audience" required rows={3} className="mt-2 w-full resize-y border border-kh-line bg-kh-paper p-4 text-sm outline-none focus:border-kh-green" /></label></div><fieldset className="mt-6"><legend className="font-display text-sm font-bold">I’m interested in</legend><div className="mt-3 grid gap-2 sm:grid-cols-2">{interests.map(interest => <label key={interest} className="flex min-h-11 items-center gap-3 border border-kh-line bg-kh-paper px-4 text-sm font-semibold"><input type="checkbox" name="interests" value={interest} className="size-4 accent-primary" />{interest}</label>)}</div></fieldset><label className="mt-6 block"><span className="font-display text-sm font-bold">Tell us about your idea</span><textarea name="idea" required rows={5} className="mt-2 w-full resize-y border border-kh-line bg-kh-paper p-4 text-sm outline-none focus:border-kh-green" placeholder="What could we create together?" /></label><Button type="submit" className="mt-7 min-h-12 rounded-none bg-kh-green px-6 font-display font-bold text-kh-white hover:bg-kh-green-deep">Explore a Partnership <ArrowRight /></Button></form></div></section>;
 }
 
 function Field({ label, name, type = "text", required = false }: { label: string; name: string; type?: string; required?: boolean }) {
   return <label><span className="font-display text-sm font-bold">{label}</span><input name={name} type={type} required={required} className="mt-2 min-h-12 w-full border border-kh-line bg-kh-paper px-4 text-sm outline-none focus:border-kh-green" /></label>;
 }
 
-function Footer() {
-  return <footer className="border-t border-kh-dark-line bg-kh-ink px-5 py-10 text-kh-white md:px-8"><div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 sm:flex-row sm:items-center"><Link to="/" aria-label="KGHQ home"><img src={logoLightAsset.url} alt="KGHQ" width={249} height={66} className="h-8 w-auto" /></Link><p className="text-sm text-kh-dark-muted">© {new Date().getFullYear()} KGHQ · Know what to do next. Then get it done.</p></div></footer>;
-}
+
 
 function PartnersPage() {
-  return <main className="bg-kh-paper font-body text-kh-ink antialiased"><Header /><Hero /><AudienceBand /><Tracks /><Ways /><WhyKghq /><Examples /><PartnerForm /><Footer /></main>;
+  return <main className="bg-kh-paper font-body text-kh-ink antialiased"><Hero /><AudienceBand /><Tracks /><Ways /><WhyKghq /><Examples /><PartnerForm /></main>;
 }

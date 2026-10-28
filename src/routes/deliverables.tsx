@@ -20,18 +20,11 @@ export const Route = createFileRoute("/deliverables")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" },
-    ],
+    
   }),
 });
 
-function Header() {
-  const [open, setOpen] = useState(false);
-  return <header className="sticky top-0 z-50 border-b border-kh-dark-line bg-kh-ink text-kh-white"><div className="mx-auto flex h-18 max-w-[1480px] items-center justify-between px-5 md:px-8"><Link to="/" aria-label="KGHQ home"><img src={logoLightAsset.url} alt="KGHQ" width={249} height={66} className="h-8 w-auto md:h-9" /></Link><nav className="hidden items-center gap-7 lg:flex" aria-label="Deliverables navigation"><Link to="/" className="text-sm font-semibold text-kh-dark-muted hover:text-kh-lime">Home</Link><a href="#library" className="text-sm font-semibold text-kh-white">Library</a><Link to="/growth-reset" className="text-sm font-semibold text-kh-dark-muted hover:text-kh-lime">Growth Reset</Link><Link to="/partners" className="text-sm font-semibold text-kh-dark-muted hover:text-kh-lime">Partners</Link></nav><Link to="/new-client" className="hidden min-h-11 items-center gap-2 bg-kh-lime px-5 font-display text-sm font-bold text-kh-ink md:inline-flex">Get Started <ArrowRight className="size-4" /></Link><Button type="button" variant="ghost" size="icon" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)} className="text-kh-white hover:bg-kh-white/10 hover:text-kh-white lg:hidden">{open ? <X /> : <Menu />}</Button></div>{open && <nav className="border-t border-kh-dark-line px-5 py-5 lg:hidden"><Link to="/" className="block border-b border-kh-dark-line py-3 font-semibold">Home</Link><a href="#library" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-semibold">Library</a><Link to="/growth-reset" className="block border-b border-kh-dark-line py-3 font-semibold">Growth Reset</Link><Link to="/partners" className="block border-b border-kh-dark-line py-3 font-semibold">Partners</Link><Link to="/new-client" className="mt-5 inline-flex min-h-11 items-center bg-kh-lime px-5 font-bold text-kh-ink">Get Started</Link></nav>}</header>;
-}
+
 
 function BricksYourWay() {
   return <section className="mt-12 bg-kh-mist p-6 md:p-8"><div className="grid gap-6 md:grid-cols-2 md:items-center"><div><StackedBricks className="size-8 text-kh-green-deep" /><h2 className="mt-4 font-display text-xl font-extrabold md:text-2xl">Use your Bricks your way.</h2><p className="mt-2 text-sm font-semibold text-kh-green-deep">Mix and match deliverables every month.</p></div><ul className="grid gap-3 text-xs text-kh-muted sm:grid-cols-2">{["Choose what your business needs now", "Clear scope and Brick amounts", "Expert support across all categories", "Real progress, every month"].map(item => <li key={item} className="flex gap-2"><Check className="size-4 shrink-0 text-kh-green" />{item}</li>)}</ul></div></section>;
@@ -62,5 +55,5 @@ function FinalCta() {
 
 function DeliverablesPage() {
   const [query, setQuery] = useState("");
-  return <main className="min-h-screen bg-kh-paper font-body text-kh-ink antialiased"><Header /><Hero query={query} setQuery={setQuery} /><Library query={query} setQuery={setQuery} /><FinalCta /></main>;
+  return <main className="min-h-screen bg-kh-paper font-body text-kh-ink antialiased"><Hero query={query} setQuery={setQuery} /><Library query={query} setQuery={setQuery} /><FinalCta /></main>;
 }

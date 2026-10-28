@@ -86,35 +86,7 @@ function CTAButtons({ light = false }: { light?: boolean }) {
 
 /* ---------- sections ---------- */
 
-function Nav() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link to="/" aria-label="KGHQ home" className="flex items-center gap-2">
-          <span className="text-2xl font-black tracking-tighter text-primary">»»</span>
-          <span className="text-lg font-black tracking-tight text-foreground">
-            BizPhone
-            <span className="ml-1.5 text-xs font-medium text-muted-foreground">by KGHQ</span>
-          </span>
-        </Link>
-        <nav className="hidden items-center gap-8 text-sm font-medium text-foreground/70 md:flex">
-          <a href="#modes" className="transition-colors hover:text-primary">Modes</a>
-          <a href="#how" className="transition-colors hover:text-primary">How It Works</a>
-          <a href="#pricing" className="transition-colors hover:text-primary">Pricing</a>
-          <a href="#faq" className="transition-colors hover:text-primary">FAQ</a>
-          <Link to="/bizsite" className="transition-colors hover:text-primary">BizSite</Link>
-          <Link to="/new-client" className="font-semibold text-primary transition-colors hover:text-primary/80">New Client</Link>
-        </nav>
-        <a
-          href="#pricing"
-          className="inline-flex items-center gap-1.5 rounded-full bg-gradient-primary px-5 py-2.5 text-sm font-bold text-primary-foreground transition-transform hover:-translate-y-0.5"
-        >
-          Get BizPhone
-        </a>
-      </div>
-    </header>
-  );
-}
+
 
 function Hero() {
   return (
@@ -671,28 +643,12 @@ function FinalCTA() {
   );
 }
 
-function Footer() {
-  return (
-    <footer className="border-t border-border bg-background px-6 py-10">
-      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-sm text-muted-foreground md:flex-row">
-        <div className="flex items-center gap-2">
-          <span className="text-xl font-black tracking-tighter text-primary">»»</span>
-          <Link to="/" className="font-bold text-foreground">BizPhone</Link>
-          <span>by KGHQ</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <Phone className="size-4" /> AI reception, set up and managed for you.
-        </div>
-        <span>© {new Date().getFullYear()} KGHQ. All rights reserved.</span>
-      </div>
-    </footer>
-  );
-}
+
 
 function Index() {
   return (
     <main className="bg-background">
-      <Nav />
+      
       <Hero />
       <Problem />
       <Modes />
@@ -703,7 +659,7 @@ function Index() {
       <Value />
       <FAQ />
       <FinalCTA />
-      <Footer />
+      
     </main>
   );
 }

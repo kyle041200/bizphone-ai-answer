@@ -23,11 +23,7 @@ export const Route = createFileRoute("/")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" },
-    ],
+    
   }),
 });
 
@@ -59,31 +55,7 @@ function Kicker({ children, dark = false }: { children: React.ReactNode; dark?: 
   return <div className={cx("flex items-center gap-3 font-display text-xs font-bold uppercase tracking-[0.18em]", dark ? "text-kh-lime" : "text-kh-green-deep")}><span className={cx("h-0.5 w-8", dark ? "bg-kh-lime" : "bg-kh-green")} />{children}</div>;
 }
 
-function Nav() {
-  const [open, setOpen] = useState(false);
-  const links = [["Programs", "#programs"], ["Tools", "#tools"], ["How It Works", "#how-it-works"], ["Resources", "#resources"]];
-  return (
-    <header className="sticky top-0 z-50 border-b border-kh-dark-line bg-kh-ink">
-      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 md:px-8">
-        <Logo light />
-        <nav className="hidden items-center gap-4 2xl:flex" aria-label="Main navigation">
-          <Link to="/marketing" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Marketing</Link>
-          <Link to="/sales" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Sales</Link>
-          <Link to="/business-support" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Business Support</Link>
-          {links.map(([label, href]) => <a key={label} href={href} className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">{label}</a>)}
-          <Link to="/growth-reset" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Growth Reset</Link>
-          <Link to="/deliverables" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Deliverables</Link>
-          <Link to="/articles" search={{ category: "All", q: "" }} className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Articles</Link>
-          <Link to="/training" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Training</Link>
-          <Link to="/partners" className="font-display text-sm font-semibold text-kh-dark-muted transition-colors hover:text-kh-lime">Partners</Link>
-        </nav>
-        <div className="hidden md:block"><PrimaryCTA light /></div>
-        <Button variant="ghost" size="icon" type="button" aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)} className="grid size-11 place-items-center text-kh-white 2xl:hidden">{open ? <X /> : <Menu />}</Button>
-      </div>
-      {open && <nav className="border-t border-kh-dark-line bg-kh-ink px-5 py-5 2xl:hidden"><Link to="/marketing" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Marketing</Link><Link to="/sales" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Sales</Link><Link to="/business-support" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Business Support</Link>{links.map(([label, href]) => <a key={label} href={href} onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">{label}</a>)}<Link to="/growth-reset" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Growth Reset</Link><Link to="/deliverables" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Deliverables</Link><Link to="/articles" search={{ category: "All", q: "" }} onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Articles</Link><Link to="/training" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Training</Link><Link to="/partners" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-display font-semibold text-kh-white">Partners</Link><div className="mt-5"><PrimaryCTA light /></div></nav>}
-    </header>
-  );
-}
+
 
 function Hero() {
   return (
@@ -197,11 +169,8 @@ function FinalCTA() {
   return <Section dark><div className="grid items-end gap-10 lg:grid-cols-[1fr_auto]"><div><Kicker dark>Something has been sitting on your list long enough</Kicker><h2 className="mt-6 max-w-4xl font-display text-5xl font-extrabold tracking-normal md:text-7xl">Let's get it <span className="text-kh-lime">moving.</span></h2><p className="mt-6 max-w-2xl text-lg text-kh-dark-muted">Tell us what you're trying to accomplish. We'll help you figure out the next move — and turn it into action.</p></div><div className="flex flex-col gap-3"><PrimaryCTA light /><Link to="/new-client" className="inline-flex min-h-12 items-center justify-center border border-kh-dark-line px-6 py-3 font-display text-sm font-bold text-kh-white">Book a Growth Planning Session</Link></div></div><div className="mt-14 flex flex-wrap gap-x-8 gap-y-3 border-t border-kh-dark-line pt-6 text-sm text-kh-dark-muted">{["No giant team required.", "No endless strategy deck.", "No need to figure everything out first."].map(x => <span key={x} className="flex items-center gap-2"><Check className="size-4 text-kh-lime" />{x}</span>)}</div></Section>;
 }
 
-function Footer() {
-  const groups = [{ title: "Services", items: ["Websites", "SEO", "Lead Generation", "Sales Development", "Automation", "Marketing"] }, { title: "Programs", items: ["Growth Planning", "Workshops", "Growth Evaluation", "AI Programs"] }, { title: "Tools", items: ["Execution Engine", "BizPhone", "BizSite", "Growth Assessment"] }, { title: "Company", items: ["About", "Resources", "Deliverables", "Contact", "Careers"] }];
-  return <footer className="border-t border-kh-dark-line bg-kh-ink px-5 py-16 text-kh-white md:px-8"><div className="mx-auto max-w-7xl"><div className="grid gap-12 lg:grid-cols-[1.2fr_2fr]"><div><Logo light /><p className="mt-5 max-w-xs text-sm leading-relaxed text-kh-dark-muted">The Execution Engine for Small Businesses &amp; Entrepreneurs.</p><div className="mt-8 flex gap-3"><Link to="/bizphone" className="border border-kh-dark-line px-4 py-2 text-sm font-bold">BizPhone</Link><Link to="/bizsite" className="border border-kh-dark-line px-4 py-2 text-sm font-bold">BizSite</Link></div></div><div className="grid grid-cols-2 gap-8 sm:grid-cols-4">{groups.map(group => <div key={group.title}><h3 className="font-display text-sm font-bold text-kh-lime">{group.title}</h3><ul className="mt-4 space-y-2.5 text-sm text-kh-dark-muted">{group.items.map(item => <li key={item}>{item}</li>)}</ul></div>)}</div></div><div className="mt-14 flex flex-col justify-between gap-4 border-t border-kh-dark-line pt-7 text-sm text-kh-dark-muted sm:flex-row"><span className="font-display font-bold text-kh-white">Know what to do next. Then get it done.</span><span>© {new Date().getFullYear()} KGHQ. AI-assisted. Human-executed.</span></div></div></footer>;
-}
+
 
 function Home() {
-  return <main className="bg-kh-paper font-body text-kh-ink antialiased"><Nav /><Hero /><Problem /><Engine /><Capacity /><Pillars /><HumanAI /><UseCases /><Skyscraper /><HowItWorks /><Difference /><OnDemand /><Dashboard /><Outcomes /><Founder /><FinalCTA /><Footer /></main>;
+  return <main className="bg-kh-paper font-body text-kh-ink antialiased"><Hero /><Problem /><Engine /><Capacity /><Pillars /><HumanAI /><UseCases /><Skyscraper /><HowItWorks /><Difference /><OnDemand /><Dashboard /><Outcomes /><Founder /><FinalCTA /></main>;
 }

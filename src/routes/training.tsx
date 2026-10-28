@@ -18,11 +18,7 @@ export const Route = createFileRoute("/training")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" },
-    ],
+    
   }),
 });
 
@@ -71,17 +67,14 @@ const sessions = [
   },
 ];
 
-function Header() {
-  const [open, setOpen] = useState(false);
-  return <header className="sticky top-0 z-50 border-b border-kh-dark-line bg-kh-ink text-kh-white"><div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 md:px-8"><Link to="/" aria-label="KGHQ home"><img src={logoLightAsset.url} alt="KGHQ" width={249} height={66} className="h-8 w-auto md:h-9" /></Link><nav className="hidden items-center gap-7 lg:flex" aria-label="Training navigation"><a href="#sessions" className="text-sm font-semibold text-kh-dark-muted hover:text-kh-lime">Sessions</a><Link to="/deliverables" className="text-sm font-semibold text-kh-dark-muted hover:text-kh-lime">Deliverables</Link><Link to="/articles" search={{ category: "All", q: "" }} className="text-sm font-semibold text-kh-dark-muted hover:text-kh-lime">Articles</Link><Link to="/partners" className="text-sm font-semibold text-kh-dark-muted hover:text-kh-lime">Partners</Link></nav><Link to="/new-client" className="hidden min-h-11 items-center gap-2 bg-kh-lime px-5 font-display text-sm font-bold text-kh-ink md:inline-flex">Get Started <ArrowRight className="size-4" /></Link><Button type="button" variant="ghost" size="icon" onClick={() => setOpen(!open)} aria-label={open ? "Close menu" : "Open menu"} className="text-kh-white hover:bg-kh-white/10 hover:text-kh-white lg:hidden">{open ? <X /> : <Menu />}</Button></div>{open && <nav className="border-t border-kh-dark-line px-5 py-5 lg:hidden"><a href="#sessions" onClick={() => setOpen(false)} className="block border-b border-kh-dark-line py-3 font-semibold">Sessions</a><Link to="/deliverables" className="block border-b border-kh-dark-line py-3 font-semibold">Deliverables</Link><Link to="/articles" search={{ category: "All", q: "" }} className="block border-b border-kh-dark-line py-3 font-semibold">Articles</Link><Link to="/partners" className="block border-b border-kh-dark-line py-3 font-semibold">Partners</Link><Link to="/new-client" className="mt-5 inline-flex min-h-11 items-center bg-kh-lime px-5 font-bold text-kh-ink">Get Started</Link></nav>}</header>;
-}
+
 
 function Hero() {
   return <section className="bg-kh-ink px-5 pb-20 pt-24 text-kh-white md:px-8 md:pb-28 md:pt-32"><div className="mx-auto max-w-7xl"><p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-kh-lime">KGHQ Training — Free sessions</p><h1 className="mt-6 max-w-4xl font-display text-5xl font-extrabold leading-[1.02] sm:text-6xl md:text-7xl">Training that pays for itself <span className="text-kh-lime">in an afternoon.</span></h1><p className="mt-6 max-w-2xl text-lg leading-relaxed text-kh-dark-muted md:text-xl">Short, practical sessions from the KGHQ team — free to watch, built for entrepreneurs who want results, not theory. Watch one, apply it the same day, and keep the momentum going.</p><div className="mt-9 flex flex-wrap gap-3"><a href="#sessions" className="inline-flex min-h-12 items-center gap-2 bg-kh-lime px-6 font-display text-sm font-bold text-kh-ink"><Play className="size-4" />Watch the Sessions</a><Link to="/new-client" className="inline-flex min-h-12 items-center gap-2 border border-kh-dark-line px-6 font-display text-sm font-bold text-kh-white hover:bg-kh-white/10">Get Something Done <ArrowRight className="size-4" /></Link></div><div className="mt-12 flex flex-wrap items-center gap-x-7 gap-y-3 border-t border-kh-dark-line pt-6 text-sm font-semibold text-kh-dark-muted"><span className="flex items-center gap-2"><Check className="size-4 text-kh-lime" />Free to watch</span><span className="flex items-center gap-2"><Check className="size-4 text-kh-lime" />No fluff</span><span className="flex items-center gap-2"><Check className="size-4 text-kh-lime" />New sessions added regularly</span></div></div></section>;
 }
 
 function SessionCard({ session }: { session: (typeof sessions)[number] }) {
-  const [requested, setRequested] = useState(false);
+
   return <article className="grid overflow-hidden border border-kh-line bg-kh-white shadow-kh lg:grid-cols-[0.9fr_1.1fr]">
     <div className="relative min-h-64 overflow-hidden bg-kh-mist lg:min-h-full">
       <img src={session.image} alt={session.alt} loading="lazy" width={1024} height={1024} className="absolute inset-0 size-full object-cover" />
@@ -94,10 +87,10 @@ function SessionCard({ session }: { session: (typeof sessions)[number] }) {
         {session.takeaways.map(item => <li key={item} className="flex gap-2.5 text-sm font-semibold"><Check className="mt-0.5 size-4 shrink-0 text-kh-green" />{item}</li>)}
       </ul>
       <div className="mt-8 flex flex-wrap items-center gap-4 border-t border-kh-line pt-6">
-        <button type="button" onClick={() => setRequested(true)} className="inline-flex min-h-12 items-center gap-2 bg-kh-ink px-6 font-display text-sm font-bold text-kh-white transition-transform hover:-translate-y-0.5"><Play className="size-4 text-kh-lime" />Watch Now</button>
+        <a href="/new-client/" className="wp-button">Ask About This Session</a>
         <span className="flex items-center gap-2 text-sm font-bold text-kh-muted"><Clock className="size-4" />{session.minutes} · Free</span>
       </div>
-      {requested && <p aria-live="polite" className="mt-4 border-l-4 border-kh-yellow bg-kh-mist px-4 py-3 text-sm text-kh-muted">The recording link is being connected — check back shortly. In the meantime, <Link to="/new-client" className="font-bold text-kh-green-deep underline underline-offset-2">tell us what you're working on</Link> and we'll point you to the right session first.</p>}
+      
     </div>
   </article>;
 }
@@ -114,10 +107,8 @@ function FinalCTA() {
   return <section className="bg-kh-paper px-5 py-20 text-kh-ink md:px-8 md:py-28"><div className="mx-auto max-w-7xl"><div className="border-t-8 border-kh-green bg-kh-white p-8 shadow-kh md:p-14"><p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-kh-green-deep">From learning to doing</p><h2 className="mt-4 max-w-3xl font-display text-3xl font-extrabold md:text-5xl">When you're ready to turn what you learned into real progress, we're here.</h2><p className="mt-4 max-w-2xl text-kh-muted">KGHQ pairs the strategy from these sessions with the people, AI, and systems to actually execute it — one priority at a time.</p><div className="mt-8 flex flex-wrap gap-3"><Link to="/new-client" className="inline-flex min-h-12 items-center gap-2 bg-kh-ink px-6 font-display text-sm font-bold text-kh-white">Start With Your Biggest Priority <ArrowRight className="size-4" /></Link><Link to="/deliverables" className="inline-flex min-h-12 items-center gap-2 border border-kh-line px-6 font-display text-sm font-bold text-kh-green-deep">Browse the Deliverables Library</Link></div></div></div></section>;
 }
 
-function Footer() {
-  return <footer className="border-t border-kh-dark-line bg-kh-ink px-5 py-14 text-kh-white md:px-8"><div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 sm:flex-row sm:items-center"><div><img src={logoLightAsset.url} alt="KGHQ" width={249} height={66} className="h-8 w-auto" /><p className="mt-3 text-sm text-kh-dark-muted">Free training sessions for small businesses &amp; entrepreneurs.</p></div><div className="flex flex-wrap gap-3 text-sm font-bold"><Link to="/" className="border border-kh-dark-line px-4 py-2">Home</Link><Link to="/deliverables" className="border border-kh-dark-line px-4 py-2">Deliverables</Link><Link to="/articles" search={{ category: "All", q: "" }} className="border border-kh-dark-line px-4 py-2">Articles</Link><Link to="/new-client" className="bg-kh-lime px-4 py-2 text-kh-ink">Get Started</Link></div></div><div className="mx-auto mt-10 max-w-7xl border-t border-kh-dark-line pt-6 text-sm text-kh-dark-muted"><span className="font-display font-bold text-kh-white">Know what to do next. Then get it done.</span><span className="float-right">© {new Date().getFullYear()} KGHQ. AI-assisted. Human-executed.</span></div></footer>;
-}
+
 
 function TrainingPage() {
-  return <main className="bg-kh-paper font-body text-kh-ink antialiased"><Header /><Hero /><Sessions /><MoreComing /><FinalCTA /><Footer /></main>;
+  return <main className="bg-kh-paper font-body text-kh-ink antialiased"><Hero /><Sessions /><MoreComing /><FinalCTA /></main>;
 }
