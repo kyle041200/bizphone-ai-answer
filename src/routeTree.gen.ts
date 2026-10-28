@@ -20,6 +20,7 @@ import { Route as MarketingRouteImport } from './routes/marketing'
 import { Route as NewClientRouteImport } from './routes/new-client'
 import { Route as PartnersRouteImport } from './routes/partners'
 import { Route as SalesRouteImport } from './routes/sales'
+import { Route as TrainingRouteImport } from './routes/training'
 import { Route as ArticlesSlugRouteImport } from './routes/articles_.$slug'
 
 const IndexRoute = IndexRouteImport.update({
@@ -77,6 +78,11 @@ const SalesRoute = SalesRouteImport.update({
   path: '/sales',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TrainingRoute = TrainingRouteImport.update({
+  id: '/training',
+  path: '/training',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ArticlesSlugRoute = ArticlesSlugRouteImport.update({
   id: '/articles_/$slug',
   path: '/articles/$slug',
@@ -95,6 +101,7 @@ export interface FileRoutesByFullPath {
   '/new-client': typeof NewClientRoute
   '/partners': typeof PartnersRoute
   '/sales': typeof SalesRoute
+  '/training': typeof TrainingRoute
   '/articles/$slug': typeof ArticlesSlugRoute
 }
 export interface FileRoutesByTo {
@@ -109,6 +116,7 @@ export interface FileRoutesByTo {
   '/new-client': typeof NewClientRoute
   '/partners': typeof PartnersRoute
   '/sales': typeof SalesRoute
+  '/training': typeof TrainingRoute
   '/articles/$slug': typeof ArticlesSlugRoute
 }
 export interface FileRoutesById {
@@ -124,6 +132,7 @@ export interface FileRoutesById {
   '/new-client': typeof NewClientRoute
   '/partners': typeof PartnersRoute
   '/sales': typeof SalesRoute
+  '/training': typeof TrainingRoute
   '/articles_/$slug': typeof ArticlesSlugRoute
 }
 export interface FileRouteTypes {
@@ -140,6 +149,7 @@ export interface FileRouteTypes {
     | '/new-client'
     | '/partners'
     | '/sales'
+    | '/training'
     | '/articles/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -154,6 +164,7 @@ export interface FileRouteTypes {
     | '/new-client'
     | '/partners'
     | '/sales'
+    | '/training'
     | '/articles/$slug'
   id:
     | '__root__'
@@ -168,6 +179,7 @@ export interface FileRouteTypes {
     | '/new-client'
     | '/partners'
     | '/sales'
+    | '/training'
     | '/articles_/$slug'
   fileRoutesById: FileRoutesById
 }
@@ -183,6 +195,7 @@ export interface RootRouteChildren {
   NewClientRoute: typeof NewClientRoute
   PartnersRoute: typeof PartnersRoute
   SalesRoute: typeof SalesRoute
+  TrainingRoute: typeof TrainingRoute
   ArticlesSlugRoute: typeof ArticlesSlugRoute
 }
 
@@ -265,6 +278,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SalesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/training': {
+      id: '/training'
+      path: '/training'
+      fullPath: '/training'
+      preLoaderRoute: typeof TrainingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/articles_/$slug': {
       id: '/articles_/$slug'
       path: '/articles/$slug'
@@ -287,6 +307,7 @@ const rootRouteChildren: RootRouteChildren = {
   NewClientRoute: NewClientRoute,
   PartnersRoute: PartnersRoute,
   SalesRoute: SalesRoute,
+  TrainingRoute: TrainingRoute,
   ArticlesSlugRoute: ArticlesSlugRoute,
 }
 export const routeTree = rootRouteImport
