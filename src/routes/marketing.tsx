@@ -56,10 +56,10 @@ const expertise = [
 ] as const;
 
 const plans = [
-  { name: "Lite", price: "$250", tokens: "250", copy: "For entrepreneurs who want occasional execution support.", features: ["Quarterly strategy session", "Standard execution queue", "Full access to deliverables"] },
-  { name: "Starter", price: "$650", tokens: "700", copy: "For growing businesses that need consistent support.", features: ["Quarterly strategy session", "Standard execution queue", "Monthly activity summary", "Full access to deliverables"] },
-  { name: "Growth", price: "$1,750", tokens: "2,000", copy: "For businesses ready to build serious momentum.", features: ["Monthly strategy sessions", "Priority execution queue", "Bi-weekly performance review", "Dedicated account manager", "Full access to deliverables"], badge: "Most Popular" },
-  { name: "Scale", price: "$7,500", tokens: "9,000", copy: "For established businesses that want KGHQ as an extension of their team.", features: ["Bi-weekly strategy sessions", "VIP execution queue", "Real-time KPI dashboard", "Dedicated account manager", "Project management support", "Full access to deliverables"], badge: "Best Value" },
+  { name: "Lite", price: "$250", bricks: "250", copy: "For entrepreneurs who want occasional execution support.", features: ["Standard execution queue", "Monthly activity summary"] },
+  { name: "Starter", price: "$650", bricks: "700", copy: "For growing businesses that need consistent support.", features: ["Quarterly strategy session", "Standard execution queue", "Monthly activity summary"] },
+  { name: "Growth", price: "$1,250", bricks: "1,500", copy: "For businesses ready to build serious momentum.", features: ["Monthly strategy sessions", "Priority execution queue", "Bi-weekly performance review", "Dedicated account manager"], badge: "Most Popular" },
+  { name: "Scale", price: "$2,250", bricks: "3,000", copy: "For established businesses that want KGHQ as an extension of their team.", features: ["Bi-weekly strategy sessions", "VIP execution queue", "Real-time KPI dashboard", "Dedicated account manager", "Project management assistance"], badge: "Best Value" },
 ];
 
 const popular = [
