@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ArticlesRouteImport } from './routes/articles'
 import { Route as BizphoneRouteImport } from './routes/bizphone'
 import { Route as BizsiteRouteImport } from './routes/bizsite'
 import { Route as BusinessSupportRouteImport } from './routes/business-support'
@@ -19,10 +20,16 @@ import { Route as MarketingRouteImport } from './routes/marketing'
 import { Route as NewClientRouteImport } from './routes/new-client'
 import { Route as PartnersRouteImport } from './routes/partners'
 import { Route as SalesRouteImport } from './routes/sales'
+import { Route as ArticlesSlugRouteImport } from './routes/articles_.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ArticlesRoute = ArticlesRouteImport.update({
+  id: '/articles',
+  path: '/articles',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BizphoneRoute = BizphoneRouteImport.update({
@@ -70,9 +77,15 @@ const SalesRoute = SalesRouteImport.update({
   path: '/sales',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ArticlesSlugRoute = ArticlesSlugRouteImport.update({
+  id: '/articles_/$slug',
+  path: '/articles/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/articles': typeof ArticlesRoute
   '/bizphone': typeof BizphoneRoute
   '/bizsite': typeof BizsiteRoute
   '/business-support': typeof BusinessSupportRoute
@@ -82,9 +95,11 @@ export interface FileRoutesByFullPath {
   '/new-client': typeof NewClientRoute
   '/partners': typeof PartnersRoute
   '/sales': typeof SalesRoute
+  '/articles/$slug': typeof ArticlesSlugRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/articles': typeof ArticlesRoute
   '/bizphone': typeof BizphoneRoute
   '/bizsite': typeof BizsiteRoute
   '/business-support': typeof BusinessSupportRoute
@@ -94,10 +109,12 @@ export interface FileRoutesByTo {
   '/new-client': typeof NewClientRoute
   '/partners': typeof PartnersRoute
   '/sales': typeof SalesRoute
+  '/articles/$slug': typeof ArticlesSlugRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/articles': typeof ArticlesRoute
   '/bizphone': typeof BizphoneRoute
   '/bizsite': typeof BizsiteRoute
   '/business-support': typeof BusinessSupportRoute
@@ -107,11 +124,13 @@ export interface FileRoutesById {
   '/new-client': typeof NewClientRoute
   '/partners': typeof PartnersRoute
   '/sales': typeof SalesRoute
+  '/articles_/$slug': typeof ArticlesSlugRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/articles'
     | '/bizphone'
     | '/bizsite'
     | '/business-support'
@@ -121,9 +140,11 @@ export interface FileRouteTypes {
     | '/new-client'
     | '/partners'
     | '/sales'
+    | '/articles/$slug'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/articles'
     | '/bizphone'
     | '/bizsite'
     | '/business-support'
@@ -133,9 +154,11 @@ export interface FileRouteTypes {
     | '/new-client'
     | '/partners'
     | '/sales'
+    | '/articles/$slug'
   id:
     | '__root__'
     | '/'
+    | '/articles'
     | '/bizphone'
     | '/bizsite'
     | '/business-support'
@@ -145,10 +168,12 @@ export interface FileRouteTypes {
     | '/new-client'
     | '/partners'
     | '/sales'
+    | '/articles_/$slug'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ArticlesRoute: typeof ArticlesRoute
   BizphoneRoute: typeof BizphoneRoute
   BizsiteRoute: typeof BizsiteRoute
   BusinessSupportRoute: typeof BusinessSupportRoute
@@ -158,6 +183,7 @@ export interface RootRouteChildren {
   NewClientRoute: typeof NewClientRoute
   PartnersRoute: typeof PartnersRoute
   SalesRoute: typeof SalesRoute
+  ArticlesSlugRoute: typeof ArticlesSlugRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -167,6 +193,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/articles': {
+      id: '/articles'
+      path: '/articles'
+      fullPath: '/articles'
+      preLoaderRoute: typeof ArticlesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/bizphone': {
@@ -232,11 +265,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SalesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/articles_/$slug': {
+      id: '/articles_/$slug'
+      path: '/articles/$slug'
+      fullPath: '/articles/$slug'
+      preLoaderRoute: typeof ArticlesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ArticlesRoute: ArticlesRoute,
   BizphoneRoute: BizphoneRoute,
   BizsiteRoute: BizsiteRoute,
   BusinessSupportRoute: BusinessSupportRoute,
@@ -246,6 +287,7 @@ const rootRouteChildren: RootRouteChildren = {
   NewClientRoute: NewClientRoute,
   PartnersRoute: PartnersRoute,
   SalesRoute: SalesRoute,
+  ArticlesSlugRoute: ArticlesSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
