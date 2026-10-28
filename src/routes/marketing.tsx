@@ -63,14 +63,14 @@ const plans = [
 ];
 
 const popular = [
-  { title: "Landing Page", body: "A conversion-focused page for a campaign, event, or offer.", tokens: "4", time: "3–5 days", preview: "site" },
-  { title: "Lead Magnet", body: "A useful resource designed to attract and capture leads.", tokens: "4", time: "3–5 days", preview: "doc" },
-  { title: "Email Nurture Sequence", body: "A sequence that keeps prospects engaged and moving forward.", tokens: "5", time: "5–7 days", preview: "email" },
-  { title: "Social Content Pack", body: "Branded content that keeps your business top of mind.", tokens: "4", time: "3–5 days", preview: "social" },
-  { title: "SEO Article", body: "Search-optimized content built around what customers seek.", tokens: "3", time: "3–5 days", preview: "search" },
-  { title: "Google Business Profile", body: "Improve your local visibility and attract nearby customers.", tokens: "3", time: "3–5 days", preview: "local" },
-  { title: "Brand Refresh", body: "Update your visual direction and key brand assets.", tokens: "6", time: "5–10 days", preview: "brand" },
-  { title: "Website", body: "A modern, mobile-ready website built to bring you business.", tokens: "8", time: "10–14 days", preview: "story" },
+  { title: "Landing Page", body: "A full landing page with copy, design, and development, including 1–2 calls to action.", bricks: "350", time: "3–5 days", preview: "site" },
+  { title: "Lead Magnet", body: "A downloadable PDF or guide of up to 5 pages, designed to attract leads, deliver value, and support conversions.", bricks: "250", time: "3–5 days", preview: "doc" },
+  { title: "Email Nurture Sequence", body: "10 compelling emails, written and set up in your email or CRM platform with timing, basic segmentation, and testing.", bricks: "350", time: "5–7 days", preview: "email" },
+  { title: "Social Content Pack", body: "Up to 10 custom social media posts designed to match your brand.", bricks: "250", time: "3–5 days", preview: "social" },
+  { title: "SEO Article", body: "A 500-word article showcasing your expertise, primarily AI-written and edited by a human.", bricks: "100", time: "3–5 days", preview: "search" },
+  { title: "Google Business Profile", body: "Create or refresh your business profile with a business description, cover image, contact information, and consistent branding.", bricks: "250", time: "3–5 days", preview: "local" },
+  { title: "Brand Refresh", body: "Modernize your existing brand with logo refinements, updated colors and fonts, a simple style guide, and refreshed supporting materials.", bricks: "950", time: "5–10 days", preview: "brand" },
+  { title: "Website", body: "A fully designed and developed website of up to 5 pages, including professional copy, visual design, domain connection, and SSL.", bricks: "1,200", time: "10–14 days", preview: "story" },
 ] as const;
 
 type PreviewType = (typeof popular)[number]["preview"];
