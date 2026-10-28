@@ -2,6 +2,8 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, BarChart3, Bot, Check, ChevronDown, CircleDollarSign, ClipboardCheck, Database, FileSpreadsheet, FileText, FolderKanban, Menu, MessageSquareText, MonitorCog, PenTool, Receipt, RefreshCw, Search, Settings2, Sparkles, Upload, Users, Workflow, Wrench, X, Zap } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { DeliverableCard } from "@/components/deliverable-card";
+import { featuredDeliverables, supportFeaturedIds } from "@/lib/deliverables-catalog";
 import logoLightAsset from "@/assets/kghq-logo-light.png.asset.json";
 import supportHero from "@/assets/business-support-team-hq.jpg";
 
@@ -42,16 +44,7 @@ const plans = [
   { name: "Scale", price: "$7,500", tokens: "9,000", copy: "Significant ongoing operational and systems support.", features: ["Bi-weekly sessions", "VIP execution queue", "Real-time KPI dashboard", "Dedicated account manager", "Project management assistance", "Full access to deliverables"], badge: "Best Value" },
 ];
 
-const deliverables = [
-  [Search, "Web Research", "Organized research and data collection from specified sources.", "40", "Admin"],
-  [FileSpreadsheet, "Data Cleanup", "Clean and organize up to 500 spreadsheet records.", "100", "Admin"],
-  [Receipt, "Invoicing", "Prepare, send, and track one client invoice.", "10", "Operations"],
-  [FileText, "Customized Proposal", "Scope, pricing, timeline, terms, and next steps.", "25", "Operations"],
-  [Upload, "Video Publishing", "Publish one ready-to-post video to three platforms.", "10", "Content"],
-  [RefreshCw, "Content Repurposing", "Turn one written piece into up to ten reusable assets.", "25", "Content"],
-  [MonitorCog, "CRM Pipeline Setup", "Configure stages, statuses, and deal flow for your process.", "150–300", "Systems"],
-  [Workflow, "Automation Setup", "Build a workflow that reduces repetitive business work.", "550+", "Automation"],
-] as const;
+const deliverables = featuredDeliverables(supportFeaturedIds);
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -76,7 +69,7 @@ function Plans() {
 }
 
 function Deliverables() {
-  return <section className="overflow-hidden bg-kh-mist px-5 py-20 text-kh-ink md:px-8 md:py-28"><div className="mx-auto max-w-7xl"><div className="grid gap-8 lg:grid-cols-[1fr_320px] lg:items-end"><div><p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-kh-green-deep">Put your tokens to work</p><h2 className="mt-4 max-w-4xl font-display text-4xl font-extrabold md:text-6xl">Your “can someone please <span className="text-kh-green-deep">handle this?</span>” menu.</h2><p className="mt-4 max-w-3xl text-kh-muted">Browse popular tasks, search the full library, or let BizPal help decide what makes sense to hand off.</p></div><div className="bg-kh-ink p-6 text-kh-white"><Bot className="size-8 text-kh-lime"/><h3 className="mt-4 font-display text-xl font-extrabold">Not sure what to delegate?</h3><p className="mt-2 text-sm text-kh-dark-muted">Tell BizPal what’s piling up and get a focused support plan.</p><Link to="/deliverables" className="mt-5 inline-flex items-center gap-2 font-display text-sm font-bold text-kh-lime">Ask BizPal <ArrowRight className="size-4"/></Link></div></div><div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{deliverables.map(([Icon,title,body,tokens,type],i) => <article key={title} className="overflow-hidden border border-kh-line bg-kh-white shadow-kh"><div className={`flex h-28 items-end justify-between p-4 ${i % 4 === 0 ? "bg-kh-ink" : i % 4 === 1 ? "bg-kh-green" : i % 4 === 2 ? "bg-kh-yellow" : "bg-kh-coral"}`}><Icon className={`size-10 ${i % 4 === 2 ? "text-kh-ink" : "text-kh-white"}`}/><span className={`text-xs font-bold ${i % 4 === 2 ? "text-kh-ink" : "text-kh-white"}`}>{type}</span></div><div className="p-5"><h3 className="font-display font-extrabold">{title}</h3><p className="mt-2 min-h-14 text-xs leading-relaxed text-kh-muted">{body}</p><div className="mt-5 border-t border-kh-line pt-3 text-xs font-bold">{tokens} tokens</div></div></article>)}</div><div className="mt-10 text-center"><Link to="/deliverables" className="inline-flex min-h-12 items-center gap-2 bg-kh-green px-7 font-display text-sm font-bold text-kh-white">View All Business Support Deliverables <ArrowRight className="size-4"/></Link></div></div></section>;
+  return <section id="support-library" className="scroll-mt-18 overflow-hidden bg-kh-mist px-5 py-20 text-kh-ink md:px-8 md:py-28"><div className="mx-auto max-w-7xl"><div className="grid gap-8 lg:grid-cols-[1fr_320px] lg:items-end"><div><p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-kh-green-deep">Put your Bricks to work</p><h2 className="mt-4 max-w-4xl font-display text-4xl font-extrabold md:text-6xl">Your “can someone please <span className="text-kh-green-deep">handle this?</span>” menu.</h2><p className="mt-4 max-w-3xl text-kh-muted">Browse popular tasks, search the full library, or let BizPal help decide what makes sense to hand off.</p></div><div className="bg-kh-ink p-6 text-kh-white"><Bot className="size-8 text-kh-lime"/><h3 className="mt-4 font-display text-xl font-extrabold">Not sure what to delegate?</h3><p className="mt-2 text-sm text-kh-dark-muted">Tell BizPal what’s piling up and get a focused support plan.</p><Link to="/deliverables" className="mt-5 inline-flex items-center gap-2 font-display text-sm font-bold text-kh-lime">Ask BizPal <ArrowRight className="size-4"/></Link></div></div><div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{deliverables.map(item => <DeliverableCard key={item.id} item={item} />)}</div><div className="mt-10 text-center"><Link to="/deliverables" className="inline-flex min-h-12 items-center gap-2 bg-kh-green px-7 font-display text-sm font-bold text-kh-white">View All Business Support Deliverables <ArrowRight className="size-4"/></Link></div></div></section>;
 }
 
 const steps = [[MessageSquareText,"Tell us what’s slowing you down.","Pick a deliverable or simply describe what’s taking up your time."],[ClipboardCheck,"Decide what to hand off.","Browse the library or let BizPal and your KGHQ team identify the right work."],[CircleDollarSign,"Put your tokens to work.","Use tokens on one-time tasks, recurring execution, systems projects, or all three."],[Zap,"We handle the work.","Our team coordinates and executes what is needed to cross the finish line."],[Check,"Clear the next thing.","Move your tokens to whatever needs attention as the business changes."]] as const;

@@ -6,6 +6,8 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { DeliverableCard } from "@/components/deliverable-card";
+import { featuredDeliverables, salesFeaturedIds } from "@/lib/deliverables-catalog";
 import logoLightAsset from "@/assets/kghq-logo-light.png.asset.json";
 import salesHero from "@/assets/sales-team-pipeline-hq-fix.jpg";
 
@@ -53,16 +55,7 @@ const plans = [
   { name: "Scale", price: "$7,500", tokens: "9,000", copy: "For businesses building a larger, ongoing outbound engine.", features: ["Bi-weekly sessions", "VIP execution queue", "Real-time KPI dashboard", "Dedicated account manager", "Project management assistance", "Full access to deliverables"], badge: "Best Value" },
 ];
 
-const popular = [
-  [Target, "Lead List — Express", "250 qualified prospects matched to your ideal customer profile.", "250", "Prospect data"],
-  [Building2, "Lead List — Signature", "1,000 qualified prospects with key company and contact details.", "750", "Prospect data"],
-  [Flame, "Buyer Intent List", "150 priority prospects showing relevant buyer intent signals.", "250", "Buyer intent"],
-  [PhoneCall, "Outbound Dialing", "Up to 40 hours of targeted outbound calling and activity tracking.", "1,500", "Outreach"],
-  [Mail, "Outbound Email Sequence", "A customized 4–6 email sequence with strategic follow-ups.", "500", "Messaging"],
-  [MessageSquareText, "LinkedIn Sequence", "Prospecting, follow-up, meeting-request, and engagement messages.", "350", "Messaging"],
-  [PhoneCall, "Outbound Call Script", "A complete cold-calling framework with discovery and objections.", "350", "Enablement"],
-  [BarChart3, "Sales Deck", "A professionally structured presentation of up to 10 slides.", "750", "Enablement"],
-] as const;
+const popular = featuredDeliverables(salesFeaturedIds);
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -88,7 +81,7 @@ function Plans() {
 }
 
 function Deliverables() {
-  return <section id="sales-library" className="bg-kh-mist px-5 py-20 text-kh-ink md:px-8 md:py-28"><div className="mx-auto max-w-7xl"><div className="grid gap-8 lg:grid-cols-[1fr_320px] lg:items-end"><div><p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-kh-green-deep">Put your tokens to work</p><h2 className="mt-4 max-w-4xl font-display text-4xl font-extrabold md:text-6xl">Browse the Sales <span className="text-kh-green-deep">Deliverables Library</span></h2><p className="mt-4 max-w-3xl text-kh-muted">Build your outbound engine one focused deliverable at a time.</p></div><div className="bg-kh-ink p-6 text-kh-white"><Bot className="size-8 text-kh-lime"/><h3 className="mt-4 font-display text-xl font-extrabold">Not sure where to start?</h3><p className="mt-2 text-sm text-kh-dark-muted">Tell BizAI your sales goal and get a focused starting plan.</p><Link to="/deliverables" className="mt-5 inline-flex items-center gap-2 font-display text-sm font-bold text-kh-lime">Ask BizAI <ArrowRight className="size-4"/></Link></div></div><div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{popular.map(([Icon,title,body,tokens,type],i) => <article key={title} className="overflow-hidden border border-kh-line bg-kh-white shadow-kh"><div className={`flex h-28 items-end justify-between p-4 ${i % 3 === 0 ? "bg-kh-ink" : i % 3 === 1 ? "bg-kh-green" : "bg-kh-yellow"}`}><Icon className={`size-10 ${i % 3 === 2 ? "text-kh-ink" : "text-kh-white"}`}/><span className={`text-xs font-bold ${i % 3 === 2 ? "text-kh-ink" : "text-kh-white"}`}>{type}</span></div><div className="p-5"><h3 className="font-display font-extrabold">{title}</h3><p className="mt-2 min-h-14 text-xs leading-relaxed text-kh-muted">{body}</p><div className="mt-5 border-t border-kh-line pt-3 text-xs font-bold">{tokens} tokens</div></div></article>)}</div><div className="mt-10 text-center"><Link to="/deliverables" className="inline-flex min-h-12 items-center gap-2 bg-kh-green px-7 font-display text-sm font-bold text-kh-white">View All Sales Deliverables <ArrowRight className="size-4"/></Link></div></div></section>;
+  return <section id="sales-library" className="bg-kh-mist px-5 py-20 text-kh-ink md:px-8 md:py-28"><div className="mx-auto max-w-7xl"><div className="grid gap-8 lg:grid-cols-[1fr_320px] lg:items-end"><div><p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-kh-green-deep">Put your Bricks to work</p><h2 className="mt-4 max-w-4xl font-display text-4xl font-extrabold md:text-6xl">Browse the Sales <span className="text-kh-green-deep">Deliverables Library</span></h2><p className="mt-4 max-w-3xl text-kh-muted">Build your outbound engine one focused deliverable at a time.</p></div><div className="bg-kh-ink p-6 text-kh-white"><Bot className="size-8 text-kh-lime"/><h3 className="mt-4 font-display text-xl font-extrabold">Not sure where to start?</h3><p className="mt-2 text-sm text-kh-dark-muted">Tell BizAI your sales goal and get a focused starting plan.</p><Link to="/deliverables" className="mt-5 inline-flex items-center gap-2 font-display text-sm font-bold text-kh-lime">Ask BizAI <ArrowRight className="size-4"/></Link></div></div><div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{popular.map(item => <DeliverableCard key={item.id} item={item} />)}</div><div className="mt-10 text-center"><Link to="/deliverables" className="inline-flex min-h-12 items-center gap-2 bg-kh-green px-7 font-display text-sm font-bold text-kh-white">View All Sales Deliverables <ArrowRight className="size-4"/></Link></div></div></section>;
 }
 
 const steps = [[Target,"Define who you want to reach.","Start with your market, growth goal, or sales challenge. We can help build the ICP."],[Search,"Build the target list.","Identify companies, buyer roles, decision-makers, and signals that deserve attention."],[MessageSquareText,"Build the message.","Create scripts, email, LinkedIn, objections, and collateral around the people you need to reach."],[PhoneCall,"Put outreach into motion.","Execute internally or use KGHQ for outbound dialing and coordinated support."],[TrendingUp,"Learn and improve.","Review activity, refine the target market and message, then focus the next round of tokens."]] as const;

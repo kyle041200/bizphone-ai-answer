@@ -18,6 +18,17 @@ export type Deliverable = {
 export const deliverables = catalog as Deliverable[];
 export const categories: Category[] = ["Marketing", "Sales", "Business Support"];
 
+export const salesFeaturedIds = ["deliverable-155", "deliverable-157", "deliverable-162", "deliverable-158", "deliverable-170", "deliverable-167", "deliverable-169", "deliverable-161"];
+export const supportFeaturedIds = ["deliverable-083", "deliverable-080", "deliverable-082", "deliverable-087", "deliverable-090", "deliverable-105", "deliverable-129", "deliverable-118"];
+
+export function featuredDeliverables(ids: string[]) {
+  return ids.map(id => {
+    const item = deliverables.find(entry => entry.id === id);
+    if (!item) throw new Error(`Unknown featured deliverable: ${id}`);
+    return item;
+  });
+}
+
 export function deliverableImage(item: Deliverable) {
   return images[`../assets/library/${item.image}.jpg`];
 }
