@@ -30,3 +30,5 @@
 - [x] Add every Growth Service Menu deliverable to the full library with booklet Brick costs
 - [x] Add distinct coordinated realistic photos and stacked-brick icons, without timeframes
 - [x] Verify the complete catalog, search, categories, sorting, and page layout
+- [ ] Match Sales and Business Support preview cards to library descriptions, photos, and Brick amounts
+- [ ] Verify both updated service libraries on desktop and mobile
