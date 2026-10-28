@@ -1,0 +1,14 @@
+{
+  "zip_integrity": "PASS",
+  "recursive_nested_archive_checks": "PASS",
+  "high_confidence_credential_signatures": 0,
+  "excluded": [
+    "installed dependencies",
+    "test theme clones and Git metadata",
+    "working outputs",
+    "diagnostic logs",
+    "staging job and preview metadata"
+  ],
+  "maximum_file_bytes": 34611576,
+  "split_required": false
+}
