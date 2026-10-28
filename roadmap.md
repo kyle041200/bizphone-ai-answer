@@ -25,3 +25,5 @@
 - [x] Replace Marketing, Sales, and Business Support header photos with sharper high-resolution images
 - [x] Verify all three service headers across desktop and mobile
 - [x] Review the uploaded Growth Service Menu for the Marketing page
+- [x] Update existing Marketing deliverable descriptions and Brick costs from the booklet
+- [x] Verify all eight Marketing deliverable costs and page layout
