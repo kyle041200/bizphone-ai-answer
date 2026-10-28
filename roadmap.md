@@ -24,3 +24,4 @@
 - [x] Verify the Business Support page interactions and responsive layouts
 - [x] Replace Marketing, Sales, and Business Support header photos with sharper high-resolution images
 - [x] Verify all three service headers across desktop and mobile
+- [ ] Review the uploaded Growth Service Menu for the Marketing page
