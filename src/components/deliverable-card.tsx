@@ -18,18 +18,18 @@ function itemIcon(item: Deliverable) {
   return FileText;
 }
 
-export function DeliverableCard({ item }: {item: Deliverable;}) {
+export function DeliverableCard({ item }: { item: Deliverable }) {
   const Icon = itemIcon(item);
-  return <article data-deliverable-id={item.id} className="layout-group layout-flex layout-min-w-0 layout-flex-col layout-overflow-hidden layout-rounded-lg layout-border layout-border-kh-line layout-bg-kh-white layout-shadow-kh service-card">
-    <div className="">
-      <div className="layout-aspect-4-3 layout-overflow-hidden layout-bg-kh-mist"><img src={deliverableImage(item)} alt={`${item.title} deliverable mockup`} loading="lazy" width={474} height={474} className="layout-size-full layout-object-cover content-image" /></div>
-      <span className="layout-grid layout-size-12 layout-place-items-center layout-rounded-full layout-border layout-border-kh-line layout-bg-kh-white layout-text-kh-green-deep layout-shadow-kh"><Icon className="layout-size-5" /></span>
+  return <article data-deliverable-id={item.id} className="group flex min-w-0 flex-col overflow-hidden rounded-lg border border-kh-line bg-kh-white shadow-kh transition-transform motion-safe:hover:-translate-y-1">
+    <div className="relative">
+      <div className="aspect-[4/3] overflow-hidden bg-kh-mist"><img src={deliverableImage(item)} alt={`${item.title} deliverable mockup`} loading="lazy" width={474} height={474} className="size-full object-cover transition-transform duration-500 motion-safe:group-hover:scale-105" /></div>
+      <span className="absolute -bottom-6 left-5 grid size-12 place-items-center rounded-full border border-kh-line bg-kh-white text-kh-green-deep shadow-kh"><Icon className="size-5" /></span>
     </div>
-    <div className="layout-flex layout-flex-1 layout-flex-col layout-p-5 layout-pt-9">
-      <p className="layout-text-10px layout-font-bold layout-uppercase layout-text-kh-green-deep">{item.subcategory}</p>
-      <h3 className="layout-mt-2 layout-font-display layout-text-base layout-font-extrabold layout-leading-snug">{item.title}</h3>
-      <p className="layout-mt-3 layout-flex-1 layout-text-xs layout-leading-relaxed layout-text-kh-muted">{item.description}</p>
-      <div className="layout-mt-5 layout-flex layout-items-center layout-gap-2 layout-border-t layout-border-kh-line layout-pt-4 layout-font-display layout-text-sm layout-font-bold layout-text-kh-green-deep"><StackedBricks className="layout-size-6 layout-shrink-0" /><span data-brick-amount>{brickAmount(item)} Bricks</span></div>
+    <div className="flex flex-1 flex-col p-5 pt-9">
+      <p className="text-[10px] font-bold uppercase tracking-[0.1em] text-kh-green-deep">{item.subcategory}</p>
+      <h3 className="mt-2 font-display text-base font-extrabold leading-snug">{item.title}</h3>
+      <p className="mt-3 flex-1 text-xs leading-relaxed text-kh-muted">{item.description}</p>
+      <div className="mt-5 flex items-center gap-2 border-t border-kh-line pt-4 font-display text-sm font-bold text-kh-green-deep"><StackedBricks className="size-6 shrink-0" /><span data-brick-amount>{brickAmount(item)} Bricks</span></div>
     </div>
   </article>;
 }

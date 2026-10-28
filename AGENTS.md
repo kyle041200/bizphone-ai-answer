@@ -5,6 +5,4 @@
 - Render full-library and Sales/Business Support preview cards with the shared DeliverableCard and canonical catalog selections so descriptions, images, scope variants, and Brick ranges cannot drift between pages.
 - Resolve Marketing preview and matching booklet-scope photos through a shared browser-safe image map so both pages use identical assets without changing catalog scope or pricing.
 - Keep article content and filtering in a browser-safe catalog; use a searchable index and unnested article detail routes so every post has its own URL and metadata without duplicating the index layout.
-- Store supplied article paragraphs and lists as ordered content blocks and distinguish supplied content from editorial drafts in data so full submissions retain their structure without exposing production notes.
-- Render the shared SiteHeader and SiteFooter in the root shell so every WordPress capture has identical global navigation and footer.
-- Keep all substantive content rendered without client state, use native disclosures and labelled form placeholders, and keep layouts in descriptive normal CSS classes so ClonewebX can transfer editable elements.
+- Store supplied article paragraphs and lists as ordered content blocks and distinguish supplied content from editorial drafts so full submissions retain their structure without changing other posts.
