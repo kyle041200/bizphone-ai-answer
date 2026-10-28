@@ -9,12 +9,56 @@ import outsourcing from "@/assets/business-support-team-hq.jpg";
 import agency from "@/assets/sales-team-conversation.jpg";
 
 export const articleCategories = ["Entrepreneurship", "Leadership", "Mindset", "Sales", "Technology"];
-export type Article = { slug: string; title: string; categories: string[]; image: string; excerpt: string; sections: { title: string; body: string }[] };
+export type ArticleBlock = { type: "paragraph"; text: string } | { type: "list"; items: string[] };
+export type Article = { slug: string; title: string; categories: string[]; image: string; excerpt: string; suppliedContent?: boolean; introduction?: string[]; sections: { title: string; body?: string; blocks?: ArticleBlock[] }[] };
 export const articles: Article[] = [
-  { slug: "strategic-planning-before-scaling", title: "Why Every Entrepreneur Needs Strategic Planning Before Scaling", categories: ["Entrepreneurship", "Leadership", "Mindset"], image: strategy, excerpt: "Build a stronger foundation before adding more people, channels, and complexity.", sections: [
-    { title: "Know what you are scaling", body: "Growth amplifies the way your business already works. Before investing in more activity, clarify your offer, your ideal customer, and the problem you solve. A plan should connect those fundamentals to a specific business outcome." },
-    { title: "Find the constraint", body: "Look at the customer journey from first contact to delivery. Is the biggest obstacle visibility, conversion, follow-up, or capacity? Choose the bottleneck that deserves attention before spreading resources across unrelated projects." },
-    { title: "Turn priorities into execution", body: "Give each priority an owner, a practical next action, and a measure of progress. Review what happened regularly and change the plan when evidence changes. Strategic planning is a working discipline, not a document that sits in a folder." },
+  { slug: "strategic-planning-before-scaling", title: "Why Every Entrepreneur Needs Strategic Planning Before Scaling", categories: ["Entrepreneurship", "Leadership", "Mindset"], image: strategy, excerpt: "Strategic planning gives entrepreneurs a clear roadmap for scaling sustainably—aligning vision, operations, marketing, and technology before momentum turns into chaos.", suppliedContent: true, introduction: [
+    "Growth is exciting—but it’s also where many businesses quietly break. Entrepreneurs often assume scaling means doing more: more marketing, more hires, more tools. In reality, successful scaling starts with strategic planning. Without it, growth magnifies inefficiencies, misalignment, and decision fatigue.",
+    "Strategic planning gives entrepreneurs a clear roadmap for scaling sustainably—aligning vision, operations, marketing, and technology before momentum turns into chaos.",
+  ], sections: [
+    { title: "What Strategic Planning Really Means", blocks: [
+      { type: "paragraph", text: "Strategic planning isn’t a one-page goal list or a vague vision statement. It’s a structured process that defines:" },
+      { type: "list", items: ["Where your business is going", "How it will get there", "What not to focus on"] },
+      { type: "paragraph", text: "True strategy answers hard questions:" },
+      { type: "list", items: ["Who is our ideal customer right now?", "What channels drive predictable growth?", "Which systems will break at the next stage?"] },
+      { type: "paragraph", text: "Without clarity on these points, scaling becomes guesswork." },
+    ] },
+    { title: "The Hidden Cost of Scaling Without a Plan", blocks: [
+      { type: "paragraph", text: "Many businesses grow revenue but lose control. According to Harvard Business Review, organizations without strategic alignment suffer from fragmented decision-making and wasted resources." },
+      { type: "paragraph", text: "Common consequences include:" },
+      { type: "list", items: ["Hiring before defining roles", "Marketing without clear positioning", "Disconnected technology tools", "Founders trapped in day-to-day operations"] },
+      { type: "paragraph", text: "Scaling without strategy doesn’t remove problems—it amplifies them." },
+    ] },
+    { title: "Strategic Planning Creates Focus in a Noisy Market", blocks: [
+      { type: "paragraph", text: "Entrepreneurs are constantly exposed to new platforms, AI tools, sales tactics, and growth “hacks.” Strategy acts as a filter." },
+      { type: "paragraph", text: "A strong plan:" },
+      { type: "list", items: ["Establishes clear priorities", "Aligns teams and vendors", "Reduces reactive decisions", "Creates consistency across departments"] },
+      { type: "paragraph", text: "This focus allows leaders to move faster without losing control." },
+    ] },
+    { title: "The Role of Strategic Planning in Revenue Growth", blocks: [
+      { type: "paragraph", text: "Revenue growth isn’t driven by activity alone—it’s driven by alignment." },
+      { type: "paragraph", text: "Strategic planning connects:" },
+      { type: "list", items: ["Marketing leadership through structured marketing solutions", "Predictable lead generation using outbound outreach systems", "Operational leverage using virtual support and automation, supported by virtual assistance"] },
+      { type: "paragraph", text: "When strategy leads, execution becomes simpler and more effective." },
+    ] },
+    { title: "Planning for Scalability, Not Just Survival", blocks: [
+      { type: "paragraph", text: "Many businesses plan to survive the next quarter—but not the next stage." },
+      { type: "paragraph", text: "Strategic planning helps entrepreneurs:" },
+      { type: "list", items: ["Prepare systems for higher volume", "Anticipate hiring needs", "Reduce dependency on the founder", "Build resilience into operations"] },
+      { type: "paragraph", text: "Research from McKinsey shows that companies with structured planning processes outperform peers during periods of growth and change." },
+    ] },
+    { title: "Strategic Planning Is Not a One-Time Event", blocks: [
+      { type: "paragraph", text: "Strategy isn’t static. Markets shift, customers evolve, and businesses mature." },
+      { type: "paragraph", text: "Effective planning includes:" },
+      { type: "list", items: ["Regular strategy reviews", "KPI tracking", "Iterative optimization"] },
+      { type: "paragraph", text: "Entrepreneurs who revisit strategy quarterly consistently make stronger long-term decisions than those who rely on instinct alone." },
+    ] },
+    { title: "Conclusion", blocks: [
+      { type: "paragraph", text: "Scaling without strategic planning is one of the most expensive mistakes entrepreneurs make. Growth should feel challenging—but not chaotic." },
+      { type: "paragraph", text: "A clear strategy provides:" },
+      { type: "list", items: ["Direction", "Confidence", "Sustainable momentum"] },
+      { type: "paragraph", text: "If you want growth that lasts, strategy isn’t optional—it’s the foundation." },
+    ] },
   ] },
   { slug: "digital-marketing-tactics-small-business", title: "5 Proven Digital Marketing Tactics to Boost Small Business Conversions", categories: ["Entrepreneurship", "Mindset", "Sales"], image: marketing, excerpt: "Five practical places to focus when attention isn’t turning into enquiries.", sections: [
     { title: "1. Make the next step obvious", body: "Give each important page a clear purpose and a prominent call to action. Explain what happens after someone enquires, and remove fields that are not needed to start the conversation." },
