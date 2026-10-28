@@ -36,3 +36,10 @@
 - [x] Verify both updated service libraries on desktop and mobile
 - [x] Add Articles page with the nine supplied titles, category filters, and article reading pages
 - [x] Link Articles in homepage navigation and verify search, filters, reading, and phone layouts
+
+## WordPress transfer
+- [ ] Make every content page render all content without JavaScript-only reveals
+- [ ] Standardize native navigation, FAQs, form placeholders, and shared header/footer
+- [ ] Replace positioning and utility styling with portable named CSS and requested fonts/colours
+- [ ] Verify direct-page loads, assets, links, and 375px/mobile/tablet layouts without JavaScript
+- [ ] Identify missing recording and scheduling URLs for final WordPress connections
