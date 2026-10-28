@@ -1,4 +1,6 @@
 # Roadmap
+- [x] Cool-tone the eight Marketing deliverable photos and share them with matching full-library entries
+- [x] Verify matching photos render on both pages
 - [x] Build the new KGHQ homepage from the supplied content
 - [x] Preserve and reconnect BizPhone, BizSite, and New Client pages
 - [x] Add KGHQ styling, imagery, metadata, and favicon

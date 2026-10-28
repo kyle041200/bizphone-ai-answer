@@ -9,14 +9,7 @@ import { Button } from "@/components/ui/button";
 import logoLightAsset from "@/assets/kghq-logo-light.png.asset.json";
 import heroImage from "@/assets/marketing-team-studio-hq.jpg";
 
-import imgLanding from "@/assets/deliv-landing.jpg";
-import imgLead from "@/assets/deliv-leadmagnet.jpg";
-import imgEmail from "@/assets/deliv-email.jpg";
-import imgSocial from "@/assets/deliv-social.jpg";
-import imgSeo from "@/assets/deliv-seo.jpg";
-import imgLocal from "@/assets/deliv-local.jpg";
-import imgBrand from "@/assets/deliv-brand.jpg";
-import imgWebsite from "@/assets/deliv-website.jpg";
+import { marketingPreviewImages } from "@/lib/marketing-deliverable-images";
 
 export const Route = createFileRoute("/marketing")({
   component: MarketingPage,
@@ -98,7 +91,7 @@ function Plans() {
   return <section id="plans" className="bg-kh-paper px-5 py-20 text-kh-ink md:px-8 md:py-28"><div className="mx-auto max-w-7xl"><p className="font-display text-xs font-bold uppercase tracking-[0.18em] text-kh-green-deep">Plans &amp; Bricks</p><div className="mt-4 flex flex-col justify-between gap-4 md:flex-row md:items-end"><div><h2 className="font-display text-4xl font-extrabold md:text-6xl">Choose the plan that fits your goals.</h2><p className="mt-4 max-w-3xl text-kh-muted">Every plan includes access to the full KGHQ deliverables library. Use your Bricks for whatever matters most now.</p></div><div className="flex gap-2 text-xs font-bold"><span className="bg-kh-mist px-3 py-2">Marketing</span><span className="bg-kh-yellow px-3 py-2">Sales</span><span className="bg-kh-coral px-3 py-2">Admin</span><span className="bg-kh-lime px-3 py-2">Tech</span></div></div><div className="mt-12 grid gap-5 lg:grid-cols-4">{plans.map(plan => <article key={plan.name} className={`relative flex flex-col border bg-kh-white p-6 shadow-kh ${plan.badge ? "border-kh-green" : "border-kh-line"}`}>{plan.badge && <span className="absolute -top-3 right-4 bg-kh-green px-3 py-1 text-xs font-bold text-kh-white">{plan.badge}</span>}<h3 className="font-display text-xl font-extrabold">{plan.name}</h3><p className="mt-2 min-h-12 text-sm text-kh-muted">{plan.copy}</p><p className="mt-6 font-display text-4xl font-extrabold">{plan.price}<span className="text-sm font-semibold text-kh-muted"> / month</span><span className="mt-1 block text-xs font-medium text-kh-muted">3-month minimum</span></p><p className="mt-4 bg-kh-mist px-3 py-2 font-display text-sm font-bold text-kh-green-deep">{plan.bricks} Bricks / month</p><ul className="mt-6 flex-1 space-y-3">{plan.features.map(item => <li key={item} className="flex gap-2 text-sm"><Check className="mt-0.5 size-4 shrink-0 text-kh-green"/>{item}</li>)}</ul><Link to="/new-client" className={`mt-8 inline-flex min-h-11 items-center justify-center gap-2 border font-display text-sm font-bold ${plan.name === "Growth" ? "border-kh-green bg-kh-green text-kh-white" : "border-kh-line text-kh-green-deep"}`}>{plan.name === "Growth" ? "Choose Growth" : "Get Started"}<ArrowRight className="size-4"/></Link></article>)}</div></div></section>;
 }
 
-const previewImages: Record<PreviewType, string> = { site: imgLanding, doc: imgLead, email: imgEmail, social: imgSocial, search: imgSeo, local: imgLocal, brand: imgBrand, story: imgWebsite };
+const previewImages: Record<PreviewType, string> = marketingPreviewImages;
 
 function PreviewArt({ type, Icon }: { type: PreviewType; Icon: typeof Globe2 }) {
   return <div className="relative"><div className="h-40 overflow-hidden bg-kh-mist"><img src={previewImages[type]} alt="" loading="lazy" width={1024} height={640} className="size-full object-cover transition-transform duration-500 group-hover:scale-105" /></div><span className="absolute -bottom-6 left-4 grid size-12 place-items-center rounded-full border border-kh-line bg-kh-white text-kh-green-deep shadow-md"><Icon className="size-5" /></span></div>;

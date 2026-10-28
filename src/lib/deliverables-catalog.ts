@@ -1,4 +1,5 @@
 import catalog from "@/data/deliverables.json";
+import { marketingCatalogImages } from "@/lib/marketing-deliverable-images";
 
 const images = import.meta.glob<string>("../assets/library/*.jpg", { eager: true, import: "default", query: "?url" });
 
@@ -30,7 +31,7 @@ export function featuredDeliverables(ids: string[]) {
 }
 
 export function deliverableImage(item: Deliverable) {
-  return images[`../assets/library/${item.image}.jpg`];
+  return marketingCatalogImages[item.id] ?? images[`../assets/library/${item.image}.jpg`];
 }
 
 export function brickAmount(item: Deliverable) {
