@@ -1,0 +1,222 @@
+{
+  "sourceCommit": "4a66da501bbda92dd9fc318864decb215e8b3089",
+  "excluded": [
+    "/bizphone",
+    "/bizsite"
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "title": "KGHQ — The Execution Engine for Small Business",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "1 cross-origin stylesheets could not be read; export them as same-origin CSS before relying on font/style fidelity.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/articles",
+      "title": "Articles — Small Business Insights | KGHQ",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only.",
+        "INPUT requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/articles/appointment-setting-guide",
+      "title": "Step-by-Step Guide to Appointment Setting for Small Business Owners — KGHQ Articles",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/articles/digital-marketing-tactics-small-business",
+      "title": "5 Proven Digital Marketing Tactics to Boost Small Business Conversions — KGHQ Articles",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/articles/evolution-of-growth-services",
+      "title": "The Evolution of Growth Services for Small Business Owners: What’s Next? — KGHQ Articles",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/articles/future-of-virtual-assistant-services",
+      "title": "The Future of Virtual Assistant Services: AI, Automation, and Human Touch — KGHQ Articles",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/articles/outbound-outreach-book-more-clients",
+      "title": "How to Use Outbound Outreach Services to Consistently Book More Clients — KGHQ Articles",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/articles/outsourcing-helps-entrepreneurs",
+      "title": "From Data Entry to Growth Services: How Outsourcing Helps Entrepreneurs Win — KGHQ Articles",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/articles/reasons-entrepreneurs-need-marketing-agency",
+      "title": "5 Reasons Entrepreneurs Need a Marketing Agency for Small Business Success — KGHQ Articles",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/articles/social-media-virtual-assistants",
+      "title": "How Small Business Owners Can Leverage Social Media Virtual Assistants for Growth — KGHQ Articles",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/articles/strategic-planning-before-scaling",
+      "title": "Why Every Entrepreneur Needs Strategic Planning Before Scaling — KGHQ Articles",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/business-support",
+      "title": "Business Support That Keeps Work Moving — KGHQ",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "1 cross-origin stylesheets could not be read; export them as same-origin CSS before relying on font/style fidelity.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/deliverables",
+      "title": "Deliverables Library — KGHQ",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "1 cross-origin stylesheets could not be read; export them as same-origin CSS before relying on font/style fidelity.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n14",
+        "Hidden SVG icon omitted: n2317",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only.",
+        "FORM requires an accessible custom block or WordPress form integration; static content only.",
+        "INPUT requires an accessible custom block or WordPress form integration; static content only.",
+        "SELECT requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/growth-reset",
+      "title": "Growth Reset Workshop — KGHQ",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "1 cross-origin stylesheets could not be read; export them as same-origin CSS before relying on font/style fidelity.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n13",
+        "Missing source image /__l5e/assets-v1/f8d380ad-ef2b-4dd2-b201-d40f745f341b/ScaleScraper.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/marketing",
+      "title": "Marketing Solutions That Get Done — KGHQ",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "1 cross-origin stylesheets could not be read; export them as same-origin CSS before relying on font/style fidelity.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/new-client",
+      "title": "New Client Onboarding — KGHQ",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "FORM requires an accessible custom block or WordPress form integration; static content only.",
+        "INPUT requires an accessible custom block or WordPress form integration; static content only.",
+        "TEXTAREA requires an accessible custom block or WordPress form integration; static content only.",
+        "SELECT requires an accessible custom block or WordPress form integration; static content only.",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/partners",
+      "title": "KGHQ Partner Network — Help Small Businesses Execute",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "1 cross-origin stylesheets could not be read; export them as same-origin CSS before relying on font/style fidelity.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n14",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only.",
+        "FORM requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/sales",
+      "title": "Sales Development That Gets Done — KGHQ",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "1 cross-origin stylesheets could not be read; export them as same-origin CSS before relying on font/style fidelity.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n16",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    },
+    {
+      "route": "/training",
+      "title": "Free Training Sessions for Small Business Owners — KGHQ",
+      "warnings": [
+        "React event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.",
+        "1 cross-origin stylesheets could not be read; export them as same-origin CSS before relying on font/style fidelity.",
+        "Missing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.",
+        "Hidden SVG icon omitted: n14",
+        "BUTTON requires an accessible custom block or WordPress form integration; static content only."
+      ]
+    }
+  ],
+  "failed": [],
+  "assetCount": 333,
+  "decodedAssetBytes": 11800096,
+  "bundleBytes": 21615781,
+  "sha256": "d80bcd4e277001fddc4f7eee26dfd0c9df7acd2c162ecce2fe594d0dd0596d84",
+  "nativeBlockValidation": "PASS: all 19 pages round-trip without recovery",
+  "utilityNormalization": "Ampersand utility class tokens renamed consistently in block attributes and CSS for WordPress sanitizer compatibility"
+}

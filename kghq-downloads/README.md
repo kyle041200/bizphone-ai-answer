@@ -1,5 +1,9 @@
 # KGHQ Lovable Importer downloads
 
+## New: remaining-pages bundle (BizPhone and BizSite excluded)
+
+Download `KGHQ-Remaining-Pages-Import-Bundle.zip`, extract it, and upload its `bundle.json` through the installed importer. It contains 19 pages and 333 embedded media assets. Read [REMAINING-PAGES-IMPORT.md](REMAINING-PAGES-IMPORT.md) for exact steps, missing-source-image/font limitations and unsupported interactions. The original two-page example ZIP below still contains BizPhone/BizSite; use the new bundle for this import.
+
 Download this branch using **Code → Download ZIP**, or open an individual ZIP and click **Download raw file** (the download arrow).
 
 - `KGHQ-WordPress-Importer-Plugin.zip`: install in WordPress Plugins → Add New → Upload Plugin.
