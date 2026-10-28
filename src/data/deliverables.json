@@ -255,7 +255,7 @@
   {
     "id": "deliverable-024",
     "title": "Vehicles Graphics/Wrap Design (Signature)",
-    "description": "Branded vehicle graphics design using the client’s existing brand. Iincludes one primary design concept.",
+    "description": "Branded vehicle graphics design using the client’s existing brand. Includes one primary design concept.",
     "category": "Marketing",
     "subcategory": "Brand Identity",
     "bricksMin": 250,
@@ -387,7 +387,7 @@
   {
     "id": "deliverable-036",
     "title": "Podcast Script - Express",
-    "description": "Up to 1,500 words (about 10 minutes ) of a structured script tailored to your topic, audience, and key talking points. Iincludes 15 minute consultation.",
+    "description": "Up to 1,500 words (about 10 minutes ) of a structured script tailored to your topic, audience, and key talking points. Includes 15 minute consultation.",
     "category": "Marketing",
     "subcategory": "Content Creation",
     "bricksMin": 125,
@@ -398,7 +398,7 @@
   {
     "id": "deliverable-037",
     "title": "Podcast Script - Premium",
-    "description": "Up to 6,000 words (about 40-50 minutes) of a structured script tailored to your topic, audience, and key talking points. Iincludes 30 minute consultation.",
+    "description": "Up to 6,000 words (about 40-50 minutes) of a structured script tailored to your topic, audience, and key talking points. Includes 30 minute consultation.",
     "category": "Marketing",
     "subcategory": "Content Creation",
     "bricksMin": 350,
@@ -409,7 +409,7 @@
   {
     "id": "deliverable-038",
     "title": "Podcast Script - Signature",
-    "description": "Up to 3,000 words (about 20-25 minutes) of a structured script tailored to your topic, audience, and key talking points. Iincludes 30 minute consultation.",
+    "description": "Up to 3,000 words (about 20-25 minutes) of a structured script tailored to your topic, audience, and key talking points. Includes 30 minute consultation.",
     "category": "Marketing",
     "subcategory": "Content Creation",
     "bricksMin": 250,
@@ -728,7 +728,7 @@
   {
     "id": "deliverable-067",
     "title": "Paid Ads - Setup",
-    "description": "Campaigns built and ready to launch, including strategy, targeting, campaign structure, ad copy, tracking, budget settings, and initial optimization. Iincludes setup of up to 2 campaigns on one advertising platform.",
+    "description": "Campaigns built and ready to launch, including strategy, targeting, campaign structure, ad copy, tracking, budget settings, and initial optimization. Includes setup of up to 2 campaigns on one advertising platform.",
     "category": "Marketing",
     "subcategory": "Digital Presence",
     "bricksMin": 750,
@@ -750,7 +750,7 @@
   {
     "id": "deliverable-069",
     "title": "Social Media Management - Express",
-    "description": "4 posts on 1 platform. Iincludes content creation, caption writing, scheduling, posting, and basic strategy.",
+    "description": "4 posts on 1 platform. Includes content creation, caption writing, scheduling, posting, and basic strategy.",
     "category": "Marketing",
     "subcategory": "Digital Presence",
     "bricksMin": 250,
@@ -761,7 +761,7 @@
   {
     "id": "deliverable-070",
     "title": "Social Media Management - Premium",
-    "description": "20 posts on up to 3 platforms. Iincludes advanced content creation, captions, scheduling, posting, and growth-focused strategy.",
+    "description": "20 posts on up to 3 platforms. Includes advanced content creation, captions, scheduling, posting, and growth-focused strategy.",
     "category": "Marketing",
     "subcategory": "Digital Presence",
     "bricksMin": 950,
@@ -772,7 +772,7 @@
   {
     "id": "deliverable-071",
     "title": "Social Media Management - Signature",
-    "description": "8 posts on up to 2 platforms. Iincludes content creation, captions, scheduling, posting, and structured strategy.",
+    "description": "8 posts on up to 2 platforms. Includes content creation, captions, scheduling, posting, and structured strategy.",
     "category": "Marketing",
     "subcategory": "Digital Presence",
     "bricksMin": 500,
@@ -794,7 +794,7 @@
   {
     "id": "deliverable-073",
     "title": "Webinar Kit",
-    "description": "Iincludes webinar or event positioning, outline, promotional copy, landing page/email support as scoped, and supporting creative assets.",
+    "description": "Includes webinar or event positioning, outline, promotional copy, landing page/email support as scoped, and supporting creative assets.",
     "category": "Marketing",
     "subcategory": "Digital Presence",
     "bricksMin": 750,
@@ -805,7 +805,7 @@
   {
     "id": "deliverable-074",
     "title": "Website Kit - Premium",
-    "description": "A fully designed and developed website up to 10 pages including professional copy and visual design. This iincludes domain connection and SSL certification.",
+    "description": "A fully designed and developed website up to 10 pages including professional copy and visual design. This includes domain connection and SSL certification.",
     "category": "Marketing",
     "subcategory": "Digital Presence",
     "bricksMin": 1750,
@@ -827,7 +827,7 @@
   {
     "id": "deliverable-076",
     "title": "Website Kit - Signature",
-    "description": "A fully designed and developed website up to 5 pages including professional copy and visual design. This iincludes domain connection and SSL certification.",
+    "description": "A fully designed and developed website up to 5 pages including professional copy and visual design. This includes domain connection and SSL certification.",
     "category": "Marketing",
     "subcategory": "Digital Presence",
     "bricksMin": 1200,
@@ -1267,7 +1267,7 @@
   {
     "id": "deliverable-116",
     "title": "Proposals System Setup",
-    "description": "Set up proposal system for creating, sending, signing, and tracking client proposals, iincludes a customized training video.",
+    "description": "Set up proposal system for creating, sending, signing, and tracking client proposals, includes a customized training video.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
     "bricksMin": 100,
@@ -1281,14 +1281,8 @@
     "description": "Create an AI-powered assistant or workflow for a specific business process.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
-    "bricksMin": {
-      "min": 550,
-      "max": 5000
-    },
-    "bricksMax": {
-      "min": 550,
-      "max": 5000
-    },
+    "bricksMin": 550,
+    "bricksMax": 5000,
     "sourcePage": 10,
     "image": "117"
   },
@@ -1298,14 +1292,8 @@
     "description": "Customized automation setup designed to streamline workflows, reduce manual tasks, and improve business efficiency.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
-    "bricksMin": {
-      "min": 550,
-      "max": 5000
-    },
-    "bricksMax": {
-      "min": 550,
-      "max": 5000
-    },
+    "bricksMin": 550,
+    "bricksMax": 5000,
     "sourcePage": 10,
     "image": "118"
   },
@@ -1326,14 +1314,8 @@
     "description": "Set up your CRM so leads, contacts, and follow-ups are easier to manage.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
-    "bricksMin": {
-      "min": 750,
-      "max": 2500
-    },
-    "bricksMax": {
-      "min": 750,
-      "max": 2500
-    },
+    "bricksMin": 750,
+    "bricksMax": 2500,
     "sourcePage": 10,
     "image": "120"
   },
@@ -1343,14 +1325,8 @@
     "description": "Custom system setup for workflows that do not fit neatly into a standard package.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
-    "bricksMin": {
-      "min": 100,
-      "max": 5000
-    },
-    "bricksMax": {
-      "min": 100,
-      "max": 5000
-    },
+    "bricksMin": 100,
+    "bricksMax": 5000,
     "sourcePage": 10,
     "image": "121"
   },
@@ -1426,14 +1402,8 @@
     "description": "1 employee time-tracking system configured with users, projects or jobs, time-entry settings, basic permissions, and reporting.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
-    "bricksMin": {
-      "min": 150,
-      "max": 300
-    },
-    "bricksMax": {
-      "min": 150,
-      "max": 300
-    },
+    "bricksMin": 150,
+    "bricksMax": 300,
     "sourcePage": 11,
     "image": "128"
   },
@@ -1443,14 +1413,8 @@
     "description": "1 CRM sales pipeline configured with customized stages, statuses, and deal flow based on your sales process.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
-    "bricksMin": {
-      "min": 150,
-      "max": 300
-    },
-    "bricksMax": {
-      "min": 150,
-      "max": 300
-    },
+    "bricksMin": 150,
+    "bricksMax": 300,
     "sourcePage": 11,
     "image": "129"
   },
@@ -1482,14 +1446,8 @@
     "description": "1 existing website, lead, or intake form connected to your CRM to automatically create or update records from submissions.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
-    "bricksMin": {
-      "min": 150,
-      "max": 350
-    },
-    "bricksMax": {
-      "min": 150,
-      "max": 350
-    },
+    "bricksMin": 150,
+    "bricksMax": 350,
     "sourcePage": 11,
     "image": "132"
   },
@@ -1510,14 +1468,8 @@
     "description": "1 business phone number set up and configured with basic calling, routing, and account settings.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
-    "bricksMin": {
-      "min": 75,
-      "max": 150
-    },
-    "bricksMax": {
-      "min": 75,
-      "max": 150
-    },
+    "bricksMin": 75,
+    "bricksMax": 150,
     "sourcePage": 11,
     "image": "134"
   },
@@ -1560,14 +1512,8 @@
     "description": "1 automated SMS notification workflow configured for leads, appointments, form submissions, orders, or another defined trigger.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
-    "bricksMin": {
-      "min": 150,
-      "max": 350
-    },
-    "bricksMax": {
-      "min": 150,
-      "max": 350
-    },
+    "bricksMin": 150,
+    "bricksMax": 350,
     "sourcePage": 11,
     "image": "138"
   },
@@ -1643,14 +1589,8 @@
     "description": "Automated email and/or SMS reminders configured for 1 appointment workflow, including reminder timing and basic messaging.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
-    "bricksMin": {
-      "min": 100,
-      "max": 250
-    },
-    "bricksMax": {
-      "min": 100,
-      "max": 250
-    },
+    "bricksMin": 100,
+    "bricksMax": 250,
     "sourcePage": 12,
     "image": "145"
   },
@@ -1726,14 +1666,8 @@
     "description": "1 project management workspace configured with projects, statuses, users, task structure, and basic templates.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
-    "bricksMin": {
-      "min": 300,
-      "max": 750
-    },
-    "bricksMax": {
-      "min": 300,
-      "max": 750
-    },
+    "bricksMin": 300,
+    "bricksMax": 750,
     "sourcePage": 12,
     "image": "152"
   },
@@ -1743,14 +1677,8 @@
     "description": "1 online course set up with provided content, including modules, lessons, basic branding, user settings, and course structure.",
     "category": "Business Support",
     "subcategory": "Tech Setup",
-    "bricksMin": {
-      "min": 350,
-      "max": 1000
-    },
-    "bricksMax": {
-      "min": 350,
-      "max": 1000
-    },
+    "bricksMin": 350,
+    "bricksMax": 1000,
     "sourcePage": 12,
     "image": "153"
   },
@@ -1801,7 +1729,7 @@
   {
     "id": "deliverable-158",
     "title": "Outbound Dialing - Express",
-    "description": "Up to 40 hours/month of targeted outbound calling to qualified prospects. Iincludes prospect outreach, interest identification, and activity tracking.",
+    "description": "Up to 40 hours/month of targeted outbound calling to qualified prospects. Includes prospect outreach, interest identification, and activity tracking.",
     "category": "Sales",
     "subcategory": "Lead Generation",
     "bricksMin": 1500,
@@ -1922,7 +1850,7 @@
   {
     "id": "deliverable-169",
     "title": "Outbound Call Script",
-    "description": "A completely customized cold calling framework built around your brand, offerings, and target prospects. Iincludes opening, discovery, qualification, meeting-setting, voicemail, objection handling, and alternate talk tracks.",
+    "description": "A completely customized cold calling framework built around your brand, offerings, and target prospects. Includes opening, discovery, qualification, meeting-setting, voicemail, objection handling, and alternate talk tracks.",
     "category": "Sales",
     "subcategory": "Sales Enablement",
     "bricksMin": 350,
@@ -1933,7 +1861,7 @@
   {
     "id": "deliverable-170",
     "title": "Outbound Email Sequence",
-    "description": "A customized 4–6 email sequence designed around your brand, offering, and target prospects to generate sales conversations. Iincludes initial outreach, strategic follow-ups, subject lines, calls to action, and personalization recommendations.",
+    "description": "A customized 4–6 email sequence designed around your brand, offering, and target prospects to generate sales conversations. Includes initial outreach, strategic follow-ups, subject lines, calls to action, and personalization recommendations.",
     "category": "Sales",
     "subcategory": "Sales Enablement",
     "bricksMin": 500,

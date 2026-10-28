@@ -698,26 +698,14 @@
   {
     "id": "deliverable-117",
     "title": "AI Agent Setup",
-    "min": {
-      "min": 550,
-      "max": 5000
-    },
-    "max": {
-      "min": 550,
-      "max": 5000
-    }
+    "min": 550,
+    "max": 5000
   },
   {
     "id": "deliverable-118",
     "title": "Automation Setup",
-    "min": {
-      "min": 550,
-      "max": 5000
-    },
-    "max": {
-      "min": 550,
-      "max": 5000
-    }
+    "min": 550,
+    "max": 5000
   },
   {
     "id": "deliverable-119",
@@ -728,26 +716,14 @@
   {
     "id": "deliverable-120",
     "title": "CRM Setup",
-    "min": {
-      "min": 750,
-      "max": 2500
-    },
-    "max": {
-      "min": 750,
-      "max": 2500
-    }
+    "min": 750,
+    "max": 2500
   },
   {
     "id": "deliverable-121",
     "title": "Custom Tech Setup",
-    "min": {
-      "min": 100,
-      "max": 5000
-    },
-    "max": {
-      "min": 100,
-      "max": 5000
-    }
+    "min": 100,
+    "max": 5000
   },
   {
     "id": "deliverable-122",
@@ -788,26 +764,14 @@
   {
     "id": "deliverable-128",
     "title": "Employee Time Tracking Setup",
-    "min": {
-      "min": 150,
-      "max": 300
-    },
-    "max": {
-      "min": 150,
-      "max": 300
-    }
+    "min": 150,
+    "max": 300
   },
   {
     "id": "deliverable-129",
     "title": "CRM Pipeline Setup",
-    "min": {
-      "min": 150,
-      "max": 300
-    },
-    "max": {
-      "min": 150,
-      "max": 300
-    }
+    "min": 150,
+    "max": 300
   },
   {
     "id": "deliverable-130",
@@ -824,14 +788,8 @@
   {
     "id": "deliverable-132",
     "title": "CRM Form Integration",
-    "min": {
-      "min": 150,
-      "max": 350
-    },
-    "max": {
-      "min": 150,
-      "max": 350
-    }
+    "min": 150,
+    "max": 350
   },
   {
     "id": "deliverable-133",
@@ -842,14 +800,8 @@
   {
     "id": "deliverable-134",
     "title": "Virtual Phone Number Setup",
-    "min": {
-      "min": 75,
-      "max": 150
-    },
-    "max": {
-      "min": 75,
-      "max": 150
-    }
+    "min": 75,
+    "max": 150
   },
   {
     "id": "deliverable-135",
@@ -872,14 +824,8 @@
   {
     "id": "deliverable-138",
     "title": "SMS Notification Setup",
-    "min": {
-      "min": 150,
-      "max": 350
-    },
-    "max": {
-      "min": 150,
-      "max": 350
-    }
+    "min": 150,
+    "max": 350
   },
   {
     "id": "deliverable-139",
@@ -920,14 +866,8 @@
   {
     "id": "deliverable-145",
     "title": "Appointment Reminder Setup",
-    "min": {
-      "min": 100,
-      "max": 250
-    },
-    "max": {
-      "min": 100,
-      "max": 250
-    }
+    "min": 100,
+    "max": 250
   },
   {
     "id": "deliverable-146",
@@ -968,26 +908,14 @@
   {
     "id": "deliverable-152",
     "title": "Project Management System Setup",
-    "min": {
-      "min": 300,
-      "max": 750
-    },
-    "max": {
-      "min": 300,
-      "max": 750
-    }
+    "min": 300,
+    "max": 750
   },
   {
     "id": "deliverable-153",
     "title": "Online Course Platform Setup",
-    "min": {
-      "min": 350,
-      "max": 1000
-    },
-    "max": {
-      "min": 350,
-      "max": 1000
-    }
+    "min": 350,
+    "max": 1000
   },
   {
     "id": "deliverable-154",
