@@ -27,6 +27,6 @@
 - [x] Review the uploaded Growth Service Menu for the Marketing page
 - [x] Update existing Marketing deliverable descriptions and Brick costs from the booklet
 - [x] Verify all eight Marketing deliverable costs and page layout
-- [ ] Add every Growth Service Menu deliverable to the full library with booklet Brick costs
-- [ ] Add distinct coordinated realistic photos and stacked-brick icons, without timeframes
-- [ ] Verify the complete catalog, search, categories, sorting, and page layout
+- [x] Add every Growth Service Menu deliverable to the full library with booklet Brick costs
+- [x] Add distinct coordinated realistic photos and stacked-brick icons, without timeframes
+- [x] Verify the complete catalog, search, categories, sorting, and page layout

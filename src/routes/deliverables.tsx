@@ -7,7 +7,7 @@ import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import logoLightAsset from "@/assets/kghq-logo-light.png.asset.json";
 import { StackedBricks } from "@/components/stacked-bricks";
-import { brickAmount, categories, deliverables, deliverableImage, filterDeliverables, type Category, type Deliverable } from "@/lib/deliverables-catalog";
+import { brickAmount, categories, deliverables, deliverableImage, filterDeliverables, type Deliverable } from "@/lib/deliverables-catalog";
 
 export const Route = createFileRoute("/deliverables")({
   component: DeliverablesPage,
@@ -27,12 +27,6 @@ export const Route = createFileRoute("/deliverables")({
     ],
   }),
 });
-
-const categoryStyles: Record<Category, string> = {
-  Marketing: "bg-kh-mist text-kh-green-deep",
-  Sales: "bg-kh-yellow text-kh-ink",
-  "Business Support": "bg-kh-coral text-kh-ink",
-};
 
 function itemIcon(item: Deliverable) {
   const title = item.title.toLowerCase();
