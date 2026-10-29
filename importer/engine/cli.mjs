@@ -24,7 +24,7 @@ let checkout;
 if (args.github) {
   if (args.repo) throw Error("Choose --repo or --github");
   const { checkout: clone } = await import("./github.mjs");
-  checkout = await clone(args.github, args.ref || "main");
+  checkout = await clone(args.github, args.ref);
   args.repo = checkout.repo;
   args.repository = args.github;
 }

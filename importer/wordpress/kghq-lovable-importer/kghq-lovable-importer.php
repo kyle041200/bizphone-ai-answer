@@ -2,7 +2,7 @@
 /**
  * Plugin Name: KGHQ Lovable Importer
  * Description: Imports selected converter bundles into editable native Gutenberg draft pages. Requires the independent KGHQ Import Styles companion for styling.
- * Version: 0.3.0
+ * Version: 0.4.0
  * Requires at least: 6.6
  * Requires PHP: 8.1
  * Author: KGHQ
@@ -15,8 +15,8 @@ final class Plugin {
  const ALLOWED = ['core/group','core/heading','core/paragraph','core/image','core/buttons','core/button','core/columns','core/column','core/list','core/list-item','core/separator','core/details','kghq/link-group'];
  static function boot() {
   add_action('admin_menu', fn()=>add_management_page('KGHQ Lovable Importer','KGHQ Lovable Importer','manage_options','kghq-importer',[self::class,'screen']));
-  add_action('admin_enqueue_scripts',function($hook){if($hook!=='tools_page_kghq-importer')return; wp_enqueue_style('kghq-import-admin',plugins_url('admin.css',__FILE__),[], '0.3.0');wp_enqueue_script('kghq-import-admin',plugins_url('admin.js',__FILE__),[], '0.3.0',true);wp_localize_script('kghq-import-admin','KGHQ_IMPORT',['api'=>rest_url('kghq-importer/v1/'),'nonce'=>wp_create_nonce('wp_rest')]);});
-  add_action('rest_api_init',function(){foreach(['scan','stage','import'] as $action)register_rest_route('kghq-importer/v1','/'.$action,['methods'=>'POST','permission_callback'=>[self::class,'permission'],'callback'=>[self::class,$action]]);});
+  add_action('admin_enqueue_scripts',function($hook){if($hook!=='tools_page_kghq-importer')return; wp_enqueue_style('kghq-import-admin',plugins_url('admin.css',__FILE__),[], '0.4.0');wp_enqueue_script('kghq-import-admin',plugins_url('admin.js',__FILE__),[], '0.4.0',true);wp_localize_script('kghq-import-admin','KGHQ_IMPORT',['api'=>rest_url('kghq-importer/v1/'),'nonce'=>wp_create_nonce('wp_rest')]);});
+  add_action('rest_api_init',function(){foreach(['stage','import'] as $action)register_rest_route('kghq-importer/v1','/'.$action,['methods'=>'POST','permission_callback'=>[self::class,'permission'],'callback'=>[self::class,$action]]);});
  }
  static function permission(){return current_user_can('manage_options')&&current_user_can('edit_pages')&&current_user_can('upload_files')&&current_user_can('unfiltered_html');}
  static function error($message,$status=400){return new \WP_Error('kghq_import',$message,['status'=>$status]);}
@@ -76,7 +76,9 @@ final class Plugin {
 
  static function stage($request){
   $files=$request->get_file_params();$file=$files['bundle']??null;if(!$file||$file['error']||$file['size']>48*1024*1024)return self::error('Upload a JSON bundle under 48 MB (also subject to server upload limits).');
-  $bundle=json_decode(file_get_contents($file['tmp_name']),true);$valid=self::validate_bundle($bundle);if(is_wp_error($valid))return $valid;
+  $bundle=json_decode(file_get_contents($file['tmp_name']),true);$valid=self::validate_bundle($bundle);if(is_wp_error($valid))return $valid;return self::store_bundle($bundle);
+ }
+ static function store_bundle($bundle){
   $job=wp_generate_password(32,false,false);set_transient('kghq_job_'.get_current_user_id().'_'.$job,$bundle,HOUR_IN_SECONDS);
   return ['job'=>$job,'repository'=>$bundle['repository'],'pages'=>array_map(fn($p)=>['path'=>$p['route'],'title'=>$p['title'],'warnings'=>$p['warnings']??[],'existing'=>self::existing($bundle['repository'],$p['route'])],$bundle['pages'])];
  }
@@ -84,7 +86,7 @@ final class Plugin {
  static function existing($repository,$route){$ids=get_posts(['post_type'=>'page','post_status'=>['publish','draft','pending','private','future','trash'],'meta_key'=>self::META,'meta_value'=>self::key($repository,$route),'fields'=>'ids','numberposts'=>2]);return count($ids)>1?-1:($ids[0]??0);}
  static function import($request){
   if(!function_exists('kghq_import_styles_version'))return self::error('Activate the independent KGHQ Import Styles companion before import.');
-  $job=(string)$request->get_param('job');if(!preg_match('/^[A-Za-z0-9]{32}$/',$job))return self::error('Invalid job.');$bundle=get_transient('kghq_job_'.get_current_user_id().'_'.$job);if(!$bundle)return self::error('Bundle expired. Upload it again.');
+  $job=(string)$request->get_param('job');if(!preg_match('/^[A-Za-z0-9]{32}$/',$job))return self::error('Invalid job.');$bundle=get_transient('kghq_job_'.get_current_user_id().'_'.$job);if(!$bundle)return self::error('Conversion expired. Scan and convert again.');
   $route=(string)$request->get_param('route');$page=null;foreach($bundle['pages'] as $p)if($p['route']===$route)$page=$p;if(!$page)return self::error('Route was not in this bundle.');
   $settings=$request->get_param('settings')?:[];if(!is_array($settings))return self::error('Settings must be an object.');$width=absint($settings['width']??1200);if($width<320||$width>2560)return self::error('Content width must be 320–2560 pixels.');
   $key=self::key($bundle['repository'],$route);$lock='kghq_lock_'.$key;
@@ -134,12 +136,21 @@ final class Plugin {
  static function screen(){
   $theme=wp_get_theme();$parent=$theme->parent();$known=in_array(strtolower($theme->get_template()),['generatepress','neve','astra','kadence','oceanwp'],true);
   ?>
-  <div class="wrap kghq-admin"><div class="kghq-hero"><span class="kghq-badge">KGHQ / IMPORT TOOLS · MVP 0.1</span><h1>Lovable → WordPress</h1><p>Your pages. Native blocks. A clear path to review.</p></div>
-  <div class="kghq-grid"><section class="kghq-card"><h2>1. Connect & scan</h2><label>GitHub repository <input id="kghq-repository" placeholder="owner/repository" autocomplete="off"></label><label>Branch, tag, or commit <input id="kghq-ref" value="main"></label><button class="button" id="kghq-scan">Scan website</button><p>Private access uses <code>KGHQ_GITHUB_TOKEN</code> in server configuration. Tokens never enter this dashboard.</p><h2>2. Load converted pages</h2><p>Run the independent CLI against a trusted local checkout and running source site, then upload its <code>bundle.json</code>. WordPress does not execute React.</p><input type="file" id="kghq-bundle" accept="application/json,.json"><p id="kghq-job-info"></p></section>
-  <section class="kghq-card"><h2>Theme compatibility</h2><p><strong><?php echo esc_html($theme->get('Name')); ?></strong><?php echo $parent?' · child of '.esc_html($parent->get('Name')):''; ?></p><p><?php echo $known?'Recognized classic-theme family; this is detection, not a compatibility certification.':'Theme-specific layout has not been certified.'; ?></p><p>Theme content containers, titles, sidebars, and navigation can change the result. The optional canvas template controls only imported pages and never changes theme files or global navigation.</p><p>Styling companion: <strong><?php echo function_exists('kghq_import_styles_version')?'active':'required — activate KGHQ Import Styles'; ?></strong></p><h2>Import settings</h2><label>Content width (px) <input id="kghq-width" type="number" min="320" max="2560" value="1200"></label><label><input id="kghq-canvas" type="checkbox"> Use independent canvas page template</label><label><input id="kghq-full" type="checkbox"> Full viewport width (canvas)</label><label><input id="kghq-header" type="checkbox" checked> Include theme header (canvas)</label><label><input id="kghq-footer" type="checkbox" checked> Include theme footer (canvas)</label><label class="kghq-warning"><input id="kghq-replace" type="checkbox"> I approve replacing selected existing imported pages, including their edits, and returning them to drafts.</label></section></div>
-  <section class="kghq-card"><div class="kghq-row"><h2>3. Select pages</h2><button class="button" id="kghq-all">Select all</button><button class="button" id="kghq-none">Deselect all</button></div><div id="kghq-pages"><p>Scan a repository or load a converter bundle to begin.</p></div><button class="button button-primary button-hero" id="kghq-import" disabled>Import selected pages as drafts</button><progress id="kghq-progress" max="100" value="0"></progress><div id="kghq-log" role="status" aria-live="polite"></div></section>
-  <section class="kghq-card"><h2>Safe uninstall & styling report</h2><p>Deleting this importer leaves pages, Media Library items, and per-page styling metadata intact. Keep <strong>KGHQ Import Styles</strong> active to serve CSS and the optional canvas template. Removing that companion keeps native content but removes styling and canvas behavior. Linked cards can use the reusable KGHQ Linked Layout block; its visual editor controls require the independent styling companion. No source React runtime is installed. Interactive components are reported for a separate integration; they are not silently embedded.</p><p>Always inspect draft previews and Gutenberg validation before publishing. Internal source-route links need a destination review; imported slugs are prefixed to protect existing pages.</p></section></div>
+  <div class="wrap kghq-admin"><div class="kghq-hero"><span class="kghq-badge">KGHQ / LOVABLE IMPORTER</span><h1>Repository to editable WordPress drafts</h1><p>Connect a project, choose pages, and review the resulting drafts.</p></div>
+  <?php if(!Worker::configured()): ?><div class="notice notice-warning inline"><p>The site operator must connect a secure conversion worker before importing. No hosted worker is included automatically. See the worker setup instructions.</p></div><?php endif; ?>
+  <section class="kghq-card"><h2>1. Enter Lovable GitHub repository</h2><label>GitHub repository URL or owner/repository <input id="kghq-repository" placeholder="https://github.com/owner/repository" autocomplete="off"></label><button class="button button-primary" id="kghq-scan">Scan Website</button><p>The default branch is detected automatically. Public and authorized private repositories use the worker’s server-side GitHub connection; no access token is entered here.</p><p id="kghq-job-info" aria-live="polite"></p></section>
+  <section class="kghq-card"><div class="kghq-row"><h2>2. Select pages and import</h2><button class="button" id="kghq-all">Select All</button><button class="button" id="kghq-none">Deselect All</button></div><div id="kghq-pages"><p>Scan a repository to discover its pages.</p></div>
+  <details><summary>Compatibility report and import options</summary><pre id="kghq-compatibility" style="white-space:pre-wrap;max-height:360px;overflow:auto">No scan yet.</pre>
+  <p>Active theme: <strong><?php echo esc_html($theme->get('Name')); ?></strong><?php echo $parent?' · child of '.esc_html($parent->get('Name')):''; ?>. Theme detection is not a compatibility certification.</p><p>Independent styling companion: <strong><?php echo function_exists('kghq_import_styles_version')?'active':'required — activate KGHQ Import Styles'; ?></strong></p>
+  <label>Content width (px) <input id="kghq-width" type="number" min="320" max="2560" value="1200"></label><label><input id="kghq-canvas" type="checkbox"> Use independent canvas template for imported pages</label><label><input id="kghq-full" type="checkbox"> Full viewport width (canvas)</label><label><input id="kghq-header" type="checkbox" checked> Include existing theme header (canvas)</label><label><input id="kghq-footer" type="checkbox" checked> Include existing theme footer (canvas)</label><p>These options affect imported pages only; existing navigation and global theme settings stay intact.</p>
+  <label class="kghq-warning"><input id="kghq-replace" type="checkbox"> I explicitly approve replacing selected previously imported pages and their edits, returning them to drafts.</label>
+  <label class="kghq-warning"><input id="kghq-missing-assets" type="checkbox"> Allow reported missing fonts/CSS assets; fidelity will require review.</label><label class="kghq-warning"><input id="kghq-missing-images" type="checkbox"> Allow reported missing images as explicit placeholders.</label></details>
+  <label class="kghq-warning" id="kghq-interaction-warning" hidden><input id="kghq-interactions" type="checkbox"> I have reviewed unsupported interactions and integrations. Import static editable content; these features will require WordPress integrations before publishing.</label>
+  <button class="button button-primary button-hero" id="kghq-import" disabled>Convert &amp; Import Selected Pages</button><progress id="kghq-progress" max="100" value="0"></progress><div id="kghq-log" role="status" aria-live="polite"></div></section>
+  <?php if(defined('KGHQ_IMPORTER_DEVELOPER_MODE')&&KGHQ_IMPORTER_DEVELOPER_MODE): ?><details class="kghq-card"><summary>Developer troubleshooting only</summary><label>Load a reviewed conversion bundle <input type="file" id="kghq-bundle" accept="application/json,.json"></label></details><?php endif; ?>
+  <p>Imported pages are drafts. Removing the importer preserves pages and media; keep KGHQ Import Styles active for project styling, canvas templates, and Linked Layout editor controls. Review unsupported features, internal links, preview appearance, and editor validation before publishing.</p></div>
   <?php
  }
 }
 Plugin::boot();
+require_once __DIR__.'/worker.php';

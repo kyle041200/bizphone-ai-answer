@@ -3,8 +3,9 @@
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED, ZipInfo
 import shutil
+import argparse
 ROOT=Path(__file__).resolve().parent
-VERSION='0.3.0'
+parser=argparse.ArgumentParser();parser.add_argument('--version',default='0.4.0-preview');VERSION=parser.parse_args().version
 DIST=ROOT/'dist';DIST.mkdir(exist_ok=True)
 def archive(target, entries):
     with ZipFile(target,'w',ZIP_DEFLATED) as out:

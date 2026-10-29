@@ -1,155 +1,24 @@
 /* global KGHQ_IMPORT */
-/* No credentials or source execution in the browser. */
-(() => {
-  const $ = (id) => document.getElementById("kghq-" + id);
-  let job = null;
-  let pages = [];
-  let busy = false;
-  const log = (message, error = false) => {
-    const p = document.createElement("p");
-    p.textContent = message;
-    p.className = error ? "kghq-error" : "";
-    $("log").append(p);
-  };
-  async function api(endpoint, data) {
-    const options = { method: "POST", headers: { "X-WP-Nonce": KGHQ_IMPORT.nonce } };
-    if (data instanceof FormData) options.body = data;
-    else {
-      options.headers["Content-Type"] = "application/json";
-      options.body = JSON.stringify(data);
-    }
-    const response = await fetch(KGHQ_IMPORT.api + endpoint, options);
-    const result = await response.json();
-    if (!response.ok) throw Error(result.message || "Request failed");
-    return result;
+(()=>{
+ const $=id=>document.getElementById('kghq-'+id);let pages=[],scan=null,bundle=null,busy=false,needsReview=false;
+ const requestID=()=>Array.from(crypto.getRandomValues(new Uint8Array(16)),b=>b.toString(16).padStart(2,'0')).join('');
+ function log(message,error=false){const p=document.createElement('p');p.textContent=message;p.className=error?'kghq-error':'';$('log').append(p);}
+ async function api(endpoint,data,retries=0){
+  for(let attempt=0;;attempt++){
+   try{const form=data instanceof FormData,r=await fetch(KGHQ_IMPORT.api+endpoint,{method:'POST',headers:{'X-WP-Nonce':KGHQ_IMPORT.nonce,...(!form?{'Content-Type':'application/json'}:{})},body:form?data:JSON.stringify(data)});const result=await r.json();if(!r.ok){const e=Error(result.message||'Request failed');e.retry=r.status>=500||r.status===429;throw e;}return result;}
+   catch(e){if(attempt>=retries||e.retry===false)throw e;log('Connection interrupted; retrying safely…');await new Promise(r=>setTimeout(r,Math.min(8000,1000*2**attempt)));}
   }
-  function render() {
-    const host = $("pages");
-    host.replaceChildren();
-    for (const page of pages) {
-      const row = document.createElement("label");
-      row.className = "kghq-page-row";
-      const checkbox = document.createElement("input");
-      checkbox.type = "checkbox";
-      checkbox.value = page.path;
-      checkbox.checked = true;
-      const text = document.createElement("span");
-      text.textContent =
-        page.title +
-        " — " +
-        page.path +
-        (page.existing ? " · existing page #" + page.existing : "");
-      row.append(checkbox, text);
-      host.append(row);
-      for (const warning of page.warnings || []) {
-        const p = document.createElement("p");
-        p.className = "kghq-warning";
-        p.textContent = warning;
-        host.append(p);
-      }
-    }
-    $("import").disabled = !job || busy;
-  }
-  $("scan").onclick = async () => {
-    if (busy) return;
-    busy = true;
-    $("scan").disabled = true;
-    try {
-      const result = await api("scan", { repository: $("repository").value, ref: $("ref").value });
-      job = null;
-      pages = result.pages;
-      render();
-      for (const w of result.warnings) log(w);
-      log("Scan complete. Convert these routes with the CLI and load the bundle.");
-    } catch (e) {
-      log(e.message, true);
-    } finally {
-      busy = false;
-      $("scan").disabled = false;
-    }
-  };
-  $("bundle").onchange = async () => {
-    if (busy) return;
-    const file = $("bundle").files[0];
-    if (!file) return;
-    const form = new FormData();
-    form.append("bundle", file);
-    busy = true;
-    try {
-      const result = await api("stage", form);
-      job = result.job;
-      pages = result.pages;
-      $("repository").value = result.repository;
-      $("job-info").textContent =
-        pages.length + " converted pages ready. Bundle expires in one hour.";
-      log("Bundle validated. Choose which pages to import.");
-    } catch (e) {
-      job = null;
-      pages = [];
-      log(e.message, true);
-    } finally {
-      busy = false;
-      render();
-    }
-  };
-  $("all").onclick = () => {
-    if (!busy)
-      $("pages")
-        .querySelectorAll("input")
-        .forEach((el) => (el.checked = true));
-  };
-  $("none").onclick = () => {
-    if (!busy)
-      $("pages")
-        .querySelectorAll("input")
-        .forEach((el) => (el.checked = false));
-  };
-  $("import").onclick = async () => {
-    if (busy || !job) return;
-    const selected = [...$("pages").querySelectorAll("input:checked")].map((el) => el.value);
-    if (!selected.length) {
-      log("Select at least one page.", true);
-      return;
-    }
-    const replace = $("replace").checked;
-    const settings = {
-      width: Number($("width").value),
-      canvas: $("canvas").checked,
-      full: $("full").checked,
-      header: $("header").checked,
-      footer: $("footer").checked,
-    };
-    busy = true;
-    $("import").disabled = true;
-    $("bundle").disabled = true;
-    let done = 0;
-    for (const route of selected) {
-      try {
-        const result = await api("import", { job, route, replace, settings });
-        log(route + ": " + result.status + " — " + result.message);
-        const p = document.createElement("p");
-        for (const [label, url] of [
-          ["Preview", result.preview],
-          ["Edit blocks", result.edit],
-        ]) {
-          if (!url) continue;
-          const link = document.createElement("a");
-          link.textContent = label + " ";
-          link.href = url;
-          link.target = "_blank";
-          link.rel = "noopener";
-          p.append(link);
-        }
-        $("log").append(p);
-      } catch (e) {
-        log(route + ": " + e.message, true);
-      }
-      done++;
-      $("progress").value = (done / selected.length) * 100;
-    }
-    busy = false;
-    $("bundle").disabled = false;
-    $("import").disabled = false;
-    log("Import batch finished. Review every draft and conversion warning.");
-  };
+ }
+ function controls(){for(const id of ['scan','repository','all','none','replace','width','canvas','full','header','footer','interactions','missing-assets','missing-images','bundle'])if($(id))$(id).disabled=busy;$('pages').querySelectorAll('input').forEach(el=>el.disabled=busy);$('import').disabled=busy||(!scan&&!bundle);}
+ function render(){const host=$('pages');host.replaceChildren();for(const p of pages){const row=document.createElement('label');row.className='kghq-page-row';const input=document.createElement('input');input.type='checkbox';input.value=p.path;const title=document.createElement('span');title.textContent=(p.title||p.path)+' — '+p.path+(p.existing?' · existing imported page #'+p.existing+' will be preserved unless replacement is approved':'')+(p.existingContent?' · another WordPress page already uses this path; a separate prefixed draft will be created':'');row.append(input,title);host.append(row);}controls();}
+ async function poll(id){let errors=0,last='';const end=Date.now()+25*60*1000;while(Date.now()<end){let r;try{r=await api('worker-status',{job:id},2);errors=0;}catch(e){if(++errors>3)throw e;await new Promise(r=>setTimeout(r,5000));continue;}if(r.phase!==last){last=r.phase;log('Conversion worker: '+last);}if(Number.isFinite(r.progress))$('progress').value=r.progress*.8;if(r.status==='failed')throw Error(r.error||'Worker job failed. Existing pages were not changed.');if(r.status==='ready')return r;await new Promise(r=>setTimeout(r,2000));}throw Error('Job exceeded the polling time limit. Existing pages are preserved. Scan again to retry.');}
+ $('repository').oninput=()=>{if(busy)return;scan=null;bundle=null;pages=[];needsReview=false;$('interaction-warning').hidden=true;$('interactions').checked=false;$('job-info').textContent='Repository changed. Scan again.';render();};
+ $('scan').onclick=async()=>{if(busy)return;busy=true;scan=null;bundle=null;pages=[];render();$('log').replaceChildren();$('progress').value=0;try{const start=await api('scan',{repository:$('repository').value.trim(),request:requestID()},2),r=await poll(start.job);scan=start.job;pages=r.pages;needsReview=Boolean(r.compatibility?.requiresInteractionAcknowledgment);$('interaction-warning').hidden=!needsReview;$('interactions').checked=false;$('compatibility').textContent=JSON.stringify(r.compatibility||{},null,2);$('job-info').textContent=pages.length+' pages detected on default branch '+(r.ref||'')+' at '+r.commit.slice(0,12)+'. Select pages below.';for(const w of r.warnings||[])log(w);if(needsReview)log('Unsupported interactions or integrations were detected. Review the report and acknowledge static-content conversion before importing.',true);render();}catch(e){log(e.message,true);}finally{busy=false;controls();}};
+ $('all').onclick=()=>{if(!busy)$('pages').querySelectorAll('input').forEach(el=>el.checked=true);};$('none').onclick=()=>{if(!busy)$('pages').querySelectorAll('input').forEach(el=>el.checked=false);};
+ if($('bundle'))$('bundle').onchange=async()=>{const file=$('bundle').files[0];if(!file||busy)return;busy=true;controls();try{const data=new FormData();data.append('bundle',file);const r=await api('stage',data);bundle=r.job;scan=null;pages=r.pages;needsReview=false;render();log('Developer bundle staged.');}catch(e){log(e.message,true);}finally{busy=false;controls();}};
+ $('import').onclick=async()=>{if(busy||(!scan&&!bundle))return;const selected=[...$('pages').querySelectorAll('input:checked')].map(el=>el.value);if(!selected.length)return log('Select at least one page.',true);if(needsReview&&!$('interactions').checked)return log('Review the compatibility report and acknowledge unsupported features first.',true);
+  busy=true;controls();try{let job=bundle;if(!job){const start=await api('convert',{scan,routes:selected,request:requestID(),acceptInteractionLoss:$('interactions').checked,allowMissingAssets:$('missing-assets').checked,allowMissingImages:$('missing-images').checked},2),r=await poll(start.job);job=r.job;for(const w of r.warnings||[])log(w);}
+   let done=0;for(const route of selected){try{const r=await api('import',{job,route,replace:$('replace').checked,settings:{width:Number($('width').value),canvas:$('canvas').checked,full:$('full').checked,header:$('header').checked,footer:$('footer').checked}});log(route+': '+r.status+' — '+r.message);for(const w of r.warnings||[])log(w);const p=document.createElement('p');for(const [name,url]of [['Preview draft',r.preview],['Edit in Gutenberg',r.edit]]){if(!url)continue;const parsed=new URL(url,location.href);if(parsed.origin!==location.origin)continue;const a=document.createElement('a');a.textContent=name+' ';a.href=parsed.href;a.target='_blank';a.rel='noopener';p.append(a);}$('log').append(p);}catch(e){log(route+': '+e.message,true);}done++;$('progress').value=80+20*done/selected.length;}
+  }catch(e){log(e.message,true);}finally{busy=false;controls();}
+ };
 })();

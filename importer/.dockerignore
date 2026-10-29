@@ -1,0 +1,7 @@
+**
+!engine/
+!engine/**
+engine/node_modules/
+!worker/
+!worker/runner.mjs
+!worker/Dockerfile
