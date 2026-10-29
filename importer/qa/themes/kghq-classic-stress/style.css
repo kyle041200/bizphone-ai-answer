@@ -1,0 +1,13 @@
+/*
+Theme Name: KGHQ Classic Stress (QA only)
+Template: twentyseventeen
+Version: 0.1.0
+*/
+body{color:#941c00;background:#f5e5ff}
+h1,h2,h3{font-family:Georgia,serif;font-size:42px;color:#be0000;line-height:1.8}
+p{margin-bottom:43px;line-height:2}
+a{color:#c60077;text-decoration:underline}
+button,.button,.wp-block-button__link{border-radius:80px;background:#db0505;color:#fff;padding:30px 60px;font-size:25px}
+img{max-width:55%;height:auto;border-radius:35px}
+.entry-content{max-width:720px;margin:auto}
+.wp-block-group{gap:49px}

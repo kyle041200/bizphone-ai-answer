@@ -1,0 +1,12 @@
+{
+ "$schema":"https://schemas.wp.org/trunk/block.json",
+ "apiVersion":3,
+ "name":"kghq/link-group",
+ "version":"0.3.0",
+ "title":"KGHQ Linked Layout",
+ "category":"design",
+ "description":"An editable linked card or layout containing native blocks. Requires KGHQ Import Styles in the editor.",
+ "attributes":{"url":{"type":"string","default":""},"linkTarget":{"type":"string","default":""},"rel":{"type":"string","default":""}},
+ "supports":{"html":false,"anchor":true,"color":{"text":true,"background":true,"gradients":true},"spacing":{"padding":true,"margin":true,"blockGap":true},"typography":{"fontSize":true,"lineHeight":true},"__experimentalBorder":{"radius":true}},
+ "editorScript":"kghq-link-group-editor"
+}

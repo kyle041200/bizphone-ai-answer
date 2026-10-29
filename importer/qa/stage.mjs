@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';
+import {execFile} from 'node:child_process';
+import {promisify} from 'node:util';
+const exec=promisify(execFile);
+const [file,label]=process.argv.slice(2);
+if(!file||!label)throw Error('Usage: node qa/stage.mjs BUNDLE LABEL');
+await exec('docker',['cp','importer/qa/staging.php','kghq-visual-wp:/tmp/kghq-visual-staging.php']);
+await exec('docker',['cp',file,'kghq-visual-wp:/tmp/kghq-visual-bundle.json']);
+const {stdout}=await exec('docker',['exec','kghq-visual-wp','php','/tmp/kghq-visual-staging.php','import','/tmp/kghq-visual-bundle.json'],{maxBuffer:2*1024*1024});
+const result=JSON.parse(stdout);
+const bundle=JSON.parse(await fs.readFile(file,'utf8'));
+for(const r of result.results) r.sourceRoute=bundle.pages.find(p=>p.route===r.route)?.sourceRoute || r.route.replace(/^\/visual-baseline/,'').replace(/^\/home$/,'/') || '/';
+await fs.writeFile('importer/work/'+label+'-staged.json',JSON.stringify(result,null,2));
+console.log(label+': '+result.results.length+' drafts created; existing pages unchanged.');

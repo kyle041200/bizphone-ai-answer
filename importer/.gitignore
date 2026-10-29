@@ -1,0 +1,4 @@
+engine/node_modules/
+work/
+dist/*
+!dist/.gitkeep

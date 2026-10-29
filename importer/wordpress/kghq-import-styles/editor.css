@@ -1,0 +1,15 @@
+/* Editor-only wrappers are transparent to source flex/grid layouts. */
+.kghq-import-root .kghq-button-host,
+.kghq-import-root .wp-block-button,
+.kghq-import-root figure.wp-block-image,
+.kghq-import-root .kghq-source-node > .block-editor-inner-blocks,
+.kghq-import-root .kghq-source-node > .block-editor-inner-blocks > .block-editor-block-list__layout {
+ display: contents !important;
+}
+.kghq-import-root .block-editor-block-list__block { position: relative; }
+.kghq-import-root .kghq-button-host > .block-editor-inner-blocks,
+.kghq-import-root .kghq-button-host > .block-editor-inner-blocks > .block-editor-block-list__layout {
+ display: contents !important;
+}
+/* The native summary editor retains its RichText span; avoid a UA list line. */
+.kghq-import-root .wp-block-details > summary:has(> span) { display: block; list-style: none; }
