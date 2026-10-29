@@ -56,3 +56,7 @@ The lifecycle test deactivates the importer and removes its installed plugin fil
 ## Next phase
 
 Implement and verify the secure asynchronous external worker and two-step normal dashboard: repository URL/default branch detection → checkbox selection → Convert & Import Selected Pages → progress → editable draft. No JSON/CLI steps for end users. Current 0.3.0 checkpoint still uses the earlier manual dashboard; no hosted worker is deployed or certified. Worker build isolation, disk quotas, server-side private credentials, authentication, bounded retries, and public staging E2E remain required. Do not install an unfinished worker in production.
+
+### Completed additional staging results
+
+All nine independent editor checks also passed for Source B and for Source A with the QA classic child theme active. Child-theme front-end changed-pixel metrics matched parent results for Source A home and Source B landing at all three widths. A lazy-image capture race initially produced a false photo mismatch; final capture explicitly waits for image decoding identically on both sides. The importer lifecycle check passed with 22 styled staging pages and 120 media attachments preserved at the test snapshot. These are QA-only drafts/media, not production counts.
