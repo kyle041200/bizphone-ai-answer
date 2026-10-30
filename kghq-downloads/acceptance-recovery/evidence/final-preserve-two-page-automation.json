@@ -1,0 +1,48 @@
+{
+  "repository": "kyle041200/bizphone-ai-answer",
+  "routes": [
+    "/business-support",
+    "/marketing"
+  ],
+  "workflow": "PASS",
+  "imports": [
+    {
+      "id": 65,
+      "status": "preserved",
+      "message": "Existing page and edits preserved; explicit replacement was not approved.",
+      "preview": "http://localhost:8087/?page_id=65&preview=true",
+      "edit": "http://localhost:8087/wp-admin/post.php?post=65&action=edit"
+    },
+    {
+      "id": 102,
+      "status": "preserved",
+      "message": "Existing page and edits preserved; explicit replacement was not approved.",
+      "preview": "http://localhost:8087/?page_id=102&preview=true",
+      "edit": "http://localhost:8087/wp-admin/post.php?post=102&action=edit"
+    }
+  ],
+  "started": "2026-10-30T21:57:25.593Z",
+  "twoStepDashboard": true,
+  "manualUploadHidden": true,
+  "detectedPages": [
+    "/",
+    "/articles",
+    "/bizphone",
+    "/bizsite",
+    "/business-support",
+    "/deliverables",
+    "/growth-reset",
+    "/marketing",
+    "/new-client",
+    "/partners",
+    "/sales",
+    "/training"
+  ],
+  "defaultBranchInfo": "12 pages detected on default branch main at 4a66da501bbd. Select pages below.",
+  "exactSelection": true,
+  "log": "Conversion worker: cloning\n\nConversion worker: ready\n\nDynamic route requires explicit concrete URLs via --routes.\n\nUnsupported interactions or integrations were detected. Review the report and acknowledge static-content conversion before importing.\n\nConversion worker: queued\n\nConversion worker: preparing\n\nConversion worker: installing\n\nConversion worker: converting\n\nConversion worker: ready\n\nReact event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.\n\n1 cross-origin stylesheets could not be read; export them as same-origin CSS before relying on font/style fidelity.\n\nUnreadable source stylesheet: https://fonts.googleapis.com/css2. Its fonts/styles are not certified by this export.\n\nMissing source image /__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png: a transparent placeholder was imported. Restore the original graphic manually; it was unavailable in the source checkout.\n\nLinked card/layout uses the reusable KGHQ Linked Layout block. Keep KGHQ Import Styles active for its visual editor controls; saved front-end markup is static and native child blocks remain editable.\n\n7 JavaScript buttons are preserved as editable native buttons, but source event handlers are not imported. Configure WordPress actions before publishing.\n\n/business-support: preserved — Existing page and edits preserved; explicit replacement was not approved.\n\nPreview draft Edit in Gutenberg\n\n/marketing: preserved — Existing page and edits preserved; explicit replacement was not approved.\n\nPreview draft Edit in Gutenberg",
+  "workerAutomaticallyInvoked": true,
+  "noManualBundleOrCLI": true,
+  "unapprovedExistingPagesUnchanged": true,
+  "finished": "2026-10-30T21:58:15.993Z"
+}

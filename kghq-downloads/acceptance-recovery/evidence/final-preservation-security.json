@@ -1,0 +1,578 @@
+{
+    "results": [
+        {
+            "name": "Import permissions: administrator",
+            "status": "PASS",
+            "details": {
+                "httpStatus": 400
+            }
+        },
+        {
+            "name": "Import permissions: editor",
+            "status": "PASS",
+            "details": {
+                "httpStatus": 403
+            }
+        },
+        {
+            "name": "Import permissions: anonymous",
+            "status": "PASS",
+            "details": {
+                "httpStatus": 401
+            }
+        },
+        {
+            "name": "Protected existing bizphone",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "Protected existing bizsite",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "Reimport preserves edits: \/marketing",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "Draft status: \/marketing",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "No HTML\/React substitute: \/marketing",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "Reimport preserves edits: \/",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "Draft status: \/",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "No HTML\/React substitute: \/",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "Reimport preserves edits: \/business-support",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "Draft status: \/business-support",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "No HTML\/React substitute: \/business-support",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "Minimal canonical bundle accepted",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "Reject script",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "Reject html-block",
+            "status": "PASS",
+            "details": []
+        },
+        {
+            "name": "Reject external-css",
+            "status": "PASS",
+            "details": []
+        }
+    ],
+    "inventory": [
+        {
+            "id": 102,
+            "repository": "kyle041200\/bizphone-ai-answer",
+            "route": "\/marketing",
+            "scope": "kghq-page-9a9fe96349c7",
+            "contentAndStyleHash": "06532bd718bbb37173bb341d99618bc7d076960ebc0dcb3ae5afebc5546b1af7",
+            "blockCounts": {
+                "core\/group": 209,
+                "kghq\/link-group": 1,
+                "core\/image": 91,
+                "core\/buttons": 31,
+                "core\/button": 31,
+                "core\/paragraph": 146,
+                "core\/heading": 51,
+                "core\/details": 5
+            }
+        },
+        {
+            "id": 115,
+            "repository": "GuidoPenta\/TrackZilla",
+            "route": "\/",
+            "scope": "kghq-page-6b48641acfe2",
+            "contentAndStyleHash": "8a02d269402d89ed87b56ba0e06cec5dab43eb751be2009c053ff3b549f6fce0",
+            "blockCounts": {
+                "core\/group": 79,
+                "core\/list": 1,
+                "core\/list-item": 1,
+                "core\/image": 12,
+                "core\/heading": 11,
+                "core\/buttons": 7,
+                "core\/button": 7,
+                "core\/paragraph": 20
+            }
+        },
+        {
+            "id": 65,
+            "repository": "kyle041200\/bizphone-ai-answer",
+            "route": "\/business-support",
+            "scope": "kghq-page-00fc222f33fa",
+            "contentAndStyleHash": "01480ca764fb20770b1c8faece34593e7e6df386ac779c7a93d4a6b1fd90d82e",
+            "blockCounts": {
+                "core\/group": 215,
+                "kghq\/link-group": 1,
+                "core\/image": 89,
+                "core\/buttons": 35,
+                "core\/button": 35,
+                "core\/paragraph": 156,
+                "core\/heading": 47,
+                "core\/details": 5
+            }
+        }
+    ],
+    "media": [
+        {
+            "id": 104,
+            "fileExists": true
+        },
+        {
+            "id": 105,
+            "fileExists": true
+        },
+        {
+            "id": 106,
+            "fileExists": true
+        },
+        {
+            "id": 107,
+            "fileExists": true
+        },
+        {
+            "id": 108,
+            "fileExists": true
+        },
+        {
+            "id": 109,
+            "fileExists": true
+        },
+        {
+            "id": 110,
+            "fileExists": true
+        },
+        {
+            "id": 111,
+            "fileExists": true
+        },
+        {
+            "id": 112,
+            "fileExists": true
+        },
+        {
+            "id": 113,
+            "fileExists": true
+        },
+        {
+            "id": 114,
+            "fileExists": true
+        },
+        {
+            "id": 103,
+            "fileExists": true
+        },
+        {
+            "id": 83,
+            "fileExists": true
+        },
+        {
+            "id": 84,
+            "fileExists": true
+        },
+        {
+            "id": 85,
+            "fileExists": true
+        },
+        {
+            "id": 86,
+            "fileExists": true
+        },
+        {
+            "id": 87,
+            "fileExists": true
+        },
+        {
+            "id": 88,
+            "fileExists": true
+        },
+        {
+            "id": 89,
+            "fileExists": true
+        },
+        {
+            "id": 90,
+            "fileExists": true
+        },
+        {
+            "id": 91,
+            "fileExists": true
+        },
+        {
+            "id": 92,
+            "fileExists": true
+        },
+        {
+            "id": 93,
+            "fileExists": true
+        },
+        {
+            "id": 94,
+            "fileExists": true
+        },
+        {
+            "id": 95,
+            "fileExists": true
+        },
+        {
+            "id": 96,
+            "fileExists": true
+        },
+        {
+            "id": 97,
+            "fileExists": true
+        },
+        {
+            "id": 98,
+            "fileExists": true
+        },
+        {
+            "id": 99,
+            "fileExists": true
+        },
+        {
+            "id": 100,
+            "fileExists": true
+        },
+        {
+            "id": 101,
+            "fileExists": true
+        },
+        {
+            "id": 67,
+            "fileExists": true
+        },
+        {
+            "id": 68,
+            "fileExists": true
+        },
+        {
+            "id": 69,
+            "fileExists": true
+        },
+        {
+            "id": 70,
+            "fileExists": true
+        },
+        {
+            "id": 71,
+            "fileExists": true
+        },
+        {
+            "id": 72,
+            "fileExists": true
+        },
+        {
+            "id": 73,
+            "fileExists": true
+        },
+        {
+            "id": 74,
+            "fileExists": true
+        },
+        {
+            "id": 75,
+            "fileExists": true
+        },
+        {
+            "id": 76,
+            "fileExists": true
+        },
+        {
+            "id": 77,
+            "fileExists": true
+        },
+        {
+            "id": 78,
+            "fileExists": true
+        },
+        {
+            "id": 79,
+            "fileExists": true
+        },
+        {
+            "id": 80,
+            "fileExists": true
+        },
+        {
+            "id": 81,
+            "fileExists": true
+        },
+        {
+            "id": 82,
+            "fileExists": true
+        },
+        {
+            "id": 36,
+            "fileExists": true
+        },
+        {
+            "id": 37,
+            "fileExists": true
+        },
+        {
+            "id": 38,
+            "fileExists": true
+        },
+        {
+            "id": 39,
+            "fileExists": true
+        },
+        {
+            "id": 40,
+            "fileExists": true
+        },
+        {
+            "id": 41,
+            "fileExists": true
+        },
+        {
+            "id": 42,
+            "fileExists": true
+        },
+        {
+            "id": 43,
+            "fileExists": true
+        },
+        {
+            "id": 44,
+            "fileExists": true
+        },
+        {
+            "id": 45,
+            "fileExists": true
+        },
+        {
+            "id": 46,
+            "fileExists": true
+        },
+        {
+            "id": 47,
+            "fileExists": true
+        },
+        {
+            "id": 48,
+            "fileExists": true
+        },
+        {
+            "id": 49,
+            "fileExists": true
+        },
+        {
+            "id": 50,
+            "fileExists": true
+        },
+        {
+            "id": 51,
+            "fileExists": true
+        },
+        {
+            "id": 52,
+            "fileExists": true
+        },
+        {
+            "id": 53,
+            "fileExists": true
+        },
+        {
+            "id": 54,
+            "fileExists": true
+        },
+        {
+            "id": 55,
+            "fileExists": true
+        },
+        {
+            "id": 56,
+            "fileExists": true
+        },
+        {
+            "id": 57,
+            "fileExists": true
+        },
+        {
+            "id": 58,
+            "fileExists": true
+        },
+        {
+            "id": 59,
+            "fileExists": true
+        },
+        {
+            "id": 60,
+            "fileExists": true
+        },
+        {
+            "id": 61,
+            "fileExists": true
+        },
+        {
+            "id": 62,
+            "fileExists": true
+        },
+        {
+            "id": 63,
+            "fileExists": true
+        },
+        {
+            "id": 64,
+            "fileExists": true
+        },
+        {
+            "id": 66,
+            "fileExists": true
+        },
+        {
+            "id": 13,
+            "fileExists": true
+        },
+        {
+            "id": 14,
+            "fileExists": true
+        },
+        {
+            "id": 15,
+            "fileExists": true
+        },
+        {
+            "id": 16,
+            "fileExists": true
+        },
+        {
+            "id": 17,
+            "fileExists": true
+        },
+        {
+            "id": 18,
+            "fileExists": true
+        },
+        {
+            "id": 19,
+            "fileExists": true
+        },
+        {
+            "id": 20,
+            "fileExists": true
+        },
+        {
+            "id": 21,
+            "fileExists": true
+        },
+        {
+            "id": 22,
+            "fileExists": true
+        },
+        {
+            "id": 23,
+            "fileExists": true
+        },
+        {
+            "id": 24,
+            "fileExists": true
+        },
+        {
+            "id": 25,
+            "fileExists": true
+        },
+        {
+            "id": 26,
+            "fileExists": true
+        },
+        {
+            "id": 27,
+            "fileExists": true
+        },
+        {
+            "id": 28,
+            "fileExists": true
+        },
+        {
+            "id": 29,
+            "fileExists": true
+        },
+        {
+            "id": 30,
+            "fileExists": true
+        },
+        {
+            "id": 31,
+            "fileExists": true
+        },
+        {
+            "id": 32,
+            "fileExists": true
+        },
+        {
+            "id": 33,
+            "fileExists": true
+        },
+        {
+            "id": 34,
+            "fileExists": true
+        },
+        {
+            "id": 35,
+            "fileExists": true
+        },
+        {
+            "id": 9,
+            "fileExists": true
+        },
+        {
+            "id": 10,
+            "fileExists": true
+        },
+        {
+            "id": 11,
+            "fileExists": true
+        },
+        {
+            "id": 12,
+            "fileExists": true
+        }
+    ],
+    "theme": {
+        "name": "Twenty Seventeen",
+        "version": "1.0"
+    },
+    "wordpress": "7.1.4",
+    "php": "8.3.36",
+    "allPassed": true
+}

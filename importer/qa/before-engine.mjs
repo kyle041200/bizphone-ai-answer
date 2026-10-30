@@ -1,0 +1,4 @@
+// Recover trusted published engine code as an immutable comparison baseline.
+import fs from'node:fs/promises';import path from'node:path';import{execFile}from'node:child_process';import{promisify}from'node:util';const exec=promisify(execFile),ref='9689f4c497f3591bfdf864b8db3130b34f8c4a30',out=path.resolve('importer/work/before-engine');await fs.mkdir(out,{recursive:true});
+const files=(await exec('git',['ls-tree','--name-only',ref+':importer/engine'])).stdout.split('\n').filter(f=>f.endsWith('.mjs')||f==='package.json');for(const file of files){const data=(await exec('git',['show',ref+':importer/engine/'+file],{maxBuffer:8*1024*1024})).stdout;await fs.writeFile(path.join(out,file),data);}
+await fs.symlink(path.resolve('importer/engine/node_modules'),path.join(out,'node_modules'),'dir').catch(e=>{if(e.code!=='EEXIST')throw e});console.log('Recovered comparison engine',ref);

@@ -3,12 +3,14 @@ import selectorParser from '../engine/node_modules/postcss-selector-parser/dist/
 /** Validate untrusted runner output on the trusted host, before WordPress sees it. */
 export function verifyCSSIsolation(page) {
  const scope=page.scope;if(!/^kghq-page-[a-f0-9]{12}$/.test(scope))throw Error('Invalid output CSS scope');
- const root=postcss.parse(page.css),resolved=new WeakMap();
+ if(typeof page.css!=='string'||Buffer.byteLength(page.css)>3*1024*1024)throw Error('Excessive output CSS');
+ const root=postcss.parse(page.css),resolved=new WeakMap();let rules=0;
  root.walkAtRules(rule=>{
   if(!['media','supports','container','font-face','keyframes','-webkit-keyframes','property','starting-style'].includes(rule.name))throw Error('Unsupported output CSS at-rule');
   if((rule.name.endsWith('keyframes')||rule.name==='property')&&!rule.params.startsWith((rule.name==='property'?'--':'')+scope+'-'))throw Error('Unscoped CSS definition');
  });
  root.walkRules(rule=>{
+  if(++rules>25000||rule.selector.length>65536)throw Error('Excessive CSS selector inventory');
   let keyframe=false;for(let p=rule.parent;p;p=p.parent)if(p.type==='atrule'&&p.name.endsWith('keyframes'))keyframe=true;
   if(keyframe){if(!/^(?:from|to|\d+(?:\.\d+)?%)(?:\s*,\s*(?:from|to|\d+(?:\.\d+)?%))*$/.test(rule.selector))throw Error('Invalid keyframe selector');return;}
   const canvas=`body.kghq-import-canvas:has(.${scope})`;

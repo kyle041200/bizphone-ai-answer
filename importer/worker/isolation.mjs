@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';import path from 'node:path';import{execFile}from'node:child_process';import{promisify}from'node:util';import{spawn}from'node:child_process';import{once}from'node:events';import ts from'../engine/node_modules/typescript/lib/typescript.js';
+import{installWithRetry}from'./retry.mjs';
 const exec=promisify(execFile);
 /** No repository code executes on the host. All writable build state is bounded tmpfs. */
 export async function isolatedConversion(job,phase){
@@ -34,7 +35,10 @@ export async function isolatedConversion(job,phase){
   phase('preparing',20);await docker(args);
   await streamSource(source,name);
   await docker(['exec',name,'mkdir','-p','/job/tmp']);
-  phase('installing',30);const install=npmLock?['npm','ci','--ignore-scripts','--no-audit','--no-fund']:['bun','install','--frozen-lockfile','--ignore-scripts','--network-concurrency','8'];await docker(['exec','-w','/job/source',name,...install],360000);
+  phase('installing',30);const install=npmLock?['npm','ci','--ignore-scripts','--no-audit','--no-fund','--fetch-retries=0','--fetch-timeout=30000']:['bun','install','--frozen-lockfile','--ignore-scripts','--network-concurrency','8'];await installWithRetry(async timeout=>{
+   const script=`const{spawn}=require('child_process');const cmd=${JSON.stringify(install)};const child=spawn(cmd[0],cmd.slice(1),{stdio:'inherit',detached:true});const kill=()=>{try{process.kill(-child.pid,'SIGKILL')}catch{}};const timer=setTimeout(()=>{console.error('KGHQ_INSTALL_TIMEOUT');kill()},${timeout});process.on('SIGTERM',()=>{kill();process.exit(1)});child.on('error',e=>{clearTimeout(timer);console.error(e.code||'Installer failed');process.exit(1)});child.on('exit',code=>{clearTimeout(timer);process.exit(code??1)});`;
+   return docker(['exec','-w','/job/source',name,'node','-e',script],timeout+10000);
+  });
   await docker(['exec',name,'rm','-rf','/job/.npm-cache','/job/.bun-cache']);
   // No untrusted build/render process starts until the network has been detached.
   await docker(['network','disconnect',network,name]);

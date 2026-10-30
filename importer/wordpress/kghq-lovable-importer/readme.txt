@@ -3,21 +3,39 @@ Contributors: kghq
 Requires at least: 6.6
 Tested up to: 7.1
 Requires PHP: 8.1
-Stable tag: 0.1.0
+Stable tag: 0.5.0-rc1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Import selected rendered Lovable pages as editable native Gutenberg drafts.
+Scan a Lovable GitHub project and automatically import selected native Gutenberg drafts.
 
 == Installation ==
-Install and activate the separate KGHQ Import Styles companion first, then this plugin.
-Open Tools > KGHQ Lovable Importer. Scan a GitHub repository, convert selected routes with the independent Node CLI, upload bundle.json, select pages, and import as drafts.
-A server-side KGHQ_GITHUB_TOKEN constant can enable private GitHub tree scanning. Never put credentials into browser code.
-Use the supplied bundle for the initial BizPhone/BizSite MVP. See the converter package README and test report for complete instructions and limitations.
+Development candidate; install on isolated staging only.
+Install and activate the independent KGHQ Import Styles companion first.
+A server operator must provision the authenticated external conversion worker and
+configure KGHQ_WORKER_URL and KGHQ_WORKER_TOKEN in server-side wp-config.php.
+See the distributed worker/README.md for Docker, TLS, repository access and quotas.
 
-== Scope ==
-Classic-theme architecture; not universal theme certification. Native text/images/buttons/groups/columns/lists/details. No embedded React app, iframe page, or full-page Custom HTML conversion. Unsupported React behavior is reported for a separate integration.
-Existing pages and edits require explicit replacement approval. New and replaced pages are drafts. Existing navigation and theme files are not changed.
+Open Tools > KGHQ Lovable Importer:
+1. Paste a full GitHub repository URL or owner/repository, then Scan Website.
+2. Select exact pages, review compatibility warnings, and Convert & Import Selected Pages.
 
-== Safe removal ==
-Deleting this importer retains all imported pages, Media Library assets, and page metadata. Keep KGHQ Import Styles active for CSS, classic Group compatibility, and canvas templates. Removing the companion retains native content but changes appearance.
+The worker automatically detects the default branch and converts selected pages.
+No CLI execution or JSON upload is required in the regular import flow.
+Pages are drafts. Existing pages and edits are preserved unless the separate
+replacement approval is checked. Theme navigation/global settings are not changed.
+Manual bundle staging is hidden unless the operator enables developer mode.
+
+Private GitHub access requires a restricted read-only worker-side credential.
+Never expose access tokens in browser code. There is no automatic OAuth setup UI.
+
+== Removal and dependencies ==
+Deleting this importer retains pages and Media Library attachments.
+Keep KGHQ Import Styles active for scoped project styling, canvas templates and
+Linked Layout editor controls. Deleting both plugins does not retain that styling.
+Source React interactions/integrations are reported, not automatically migrated.
+
+== Acceptance status ==
+See the dated acceptance evidence, PASS/PARTIAL/NOT TESTED scorecard and limitations
+in the full project downloads. Classic-theme compatibility is not universally certified.
+No production WordPress site was deployed by this project.
