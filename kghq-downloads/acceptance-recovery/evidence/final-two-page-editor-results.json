@@ -1,0 +1,46 @@
+{
+  "postId": 65,
+  "results": [
+    {
+      "name": "No invalid/recovery blocks on initial open",
+      "status": "PASS"
+    },
+    {
+      "name": "Heading can be clicked and typed directly in visual canvas",
+      "status": "PASS"
+    },
+    {
+      "name": "Paragraph text and alignment remain visually editable",
+      "status": "PASS"
+    },
+    {
+      "name": "Button text is editable directly, with native link/style controls",
+      "status": "PASS"
+    },
+    {
+      "name": "Custom colors, padding and button link visibly update",
+      "status": "PASS"
+    },
+    {
+      "name": "Native image replacement control and Media Library are available",
+      "status": "PASS"
+    },
+    {
+      "name": "Native Group grid columns, spacing and background visibly update",
+      "status": "PASS"
+    },
+    {
+      "name": "Sections can be added, duplicated, reordered and removed as native blocks",
+      "status": "PASS"
+    },
+    {
+      "name": "Save draft and reopen without block recovery errors",
+      "status": "PASS"
+    },
+    {
+      "name": "Saved native styles also appear on front-end draft preview",
+      "status": "PASS"
+    }
+  ],
+  "allPassed": true
+}

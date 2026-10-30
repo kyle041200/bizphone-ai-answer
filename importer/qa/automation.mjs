@@ -5,7 +5,7 @@ const base=process.env.KGHQ_WP_URL||'http://localhost:8086';if(!['localhost','12
 const repository=process.env.KGHQ_TEST_REPOSITORY||'GuidoPenta/TrackZilla',routes=(process.env.KGHQ_TEST_ROUTES||'/').split(','),label=process.env.KGHQ_TEST_LABEL||'acceptance';
 const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox']}),page=await browser.newPage({viewport:{width:1440,height:1000}});page.setDefaultNavigationTimeout(90000);let result={repository,routes,workflow:'NOT COMPLETED',imports:[],started:new Date().toISOString()};
 await page.route('**/*',r=>['localhost','127.0.0.1'].includes(new URL(r.request().url()).hostname)?r.continue():r.abort());
-const snapshot=async()=>JSON.parse((await promisify(execFile)('docker',['exec','kghq-visual-wp','php','/tmp/kghq-visual-staging.php','snapshot'])).stdout);const before=await snapshot();
+const snapshot=async()=>JSON.parse((await promisify(execFile)('docker',['exec',process.env.KGHQ_WP_CONTAINER||'kghq-visual-wp','php','/tmp/kghq-visual-staging.php','snapshot'])).stdout);const before=await snapshot();
 page.on('response',async response=>{if(response.url().includes('/kghq-importer/v1/import')){try{result.imports.push(await response.json());}catch{}}});
 try{
  await page.goto(base+'/wp-login.php');await page.locator('#user_login').fill('kghq-admin');await page.locator('#user_pass').fill(process.env.KGHQ_STAGING_PASSWORD||'automation-staging-admin-only');await Promise.all([page.waitForURL('**/wp-admin/**'),page.locator('#wp-submit').click()]);

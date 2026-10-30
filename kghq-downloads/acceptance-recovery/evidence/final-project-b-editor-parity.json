@@ -1,0 +1,1105 @@
+{
+  "method": "Compare up to twenty native headings, paragraphs and buttons per type by stable source node class, before edits. Computed typography, color and padding; full layout parity is evaluated separately.",
+  "results": [
+    {
+      "id": 115,
+      "route": "/",
+      "status": "PASS",
+      "sampledFrontElements": 34,
+      "sampledEditorElements": 34,
+      "differences": [],
+      "front": {
+        "heading:kghq-n11": {
+          "text": "TrackZilla",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "24px",
+            "font-weight": "700",
+            "line-height": "32px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n23": {
+          "text": "TAME THE JOB HUNT Grrrawww!",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "72px",
+            "font-weight": "700",
+            "line-height": "72px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n40": {
+          "text": "Everything you need for epic job hunting",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "60px",
+            "font-weight": "700",
+            "line-height": "60px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n47": {
+          "text": "Track every application",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n54": {
+          "text": "Advanced analytics",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n61": {
+          "text": "Automatic follow-ups",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n68": {
+          "text": "Intuitive dashboard",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n75": {
+          "text": "Customizable statuses",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n82": {
+          "text": "Lightning-fast setup",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n93": {
+          "text": "Monster-Slaying 101",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "48px",
+            "font-weight": "700",
+            "line-height": "48px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n115": {
+          "text": "Ready to level up your job hunting game?",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "60px",
+            "font-weight": "700",
+            "line-height": "60px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n27": {
+          "text": "Job hunt got you feeling like you’re fighting a Gila monster with a spoon? Meet ",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "300",
+            "line-height": "32.5px",
+            "color": "rgba(255, 255, 255, 0.8)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n41": {
+          "text": "Because job hunting is a multi-headed hydra and your memory is not a database.",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "300",
+            "line-height": "28px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n49": {
+          "text": "Organize all your job applications in one place. Monitor status, dates, and deta",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n56": {
+          "text": "View detailed stats on your response rates, feedback times, and overall performa",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n63": {
+          "text": "Never miss an opportunity. The system automatically detects ghosted applications",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n70": {
+          "text": "See your progress at a glance with clear metrics and informative charts. Beautif",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n77": {
+          "text": "Track every phase of the process: applications, interviews, feedback, and job of",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n84": {
+          "text": "Get started in seconds. Simple and intuitive interface designed to maximize your",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n94": {
+          "text": "TrackZilla gives you detailed insights into your response rates, helps you spot ",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "300",
+            "line-height": "32.5px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n99": {
+          "text": "Automatic response time tracking (because who has time to count days?)",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "rgba(255, 255, 255, 0.8)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n103": {
+          "text": "Identify the most responsive companies (find the keepers!)",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "rgba(255, 255, 255, 0.8)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n107": {
+          "text": "Smart suggestions to level up your approach (like having a job hunt mentor)",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "rgba(255, 255, 255, 0.8)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n116": {
+          "text": "Join thousands of smart professionals who’ve already upgraded their job hunting ",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "300",
+            "line-height": "32.5px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n123": {
+          "text": "Made with love (and Lovable) by Guido Penta and Salvatore Campagnese",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "20px",
+            "color": "rgba(255, 255, 255, 0.6)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n126": {
+          "text": "© 2025 TrackZilla. Supercharge your job hunt like a boss! 🚀",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "20px",
+            "color": "rgba(255, 255, 255, 0.6)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n128": {
+          "text": "This is an Open Source Project, come and contribute",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "20px",
+            "color": "rgba(255, 255, 255, 0.6)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n13": {
+          "text": "Contribute",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "20px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n14": {
+          "text": "Sign In",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "20px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "8px",
+            "padding-right": "16px",
+            "padding-bottom": "8px",
+            "padding-left": "16px",
+            "border-radius": "12px"
+          }
+        },
+        "button:kghq-n15": {
+          "text": "Hunt now!",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "rgb(17, 24, 39)",
+            "background-color": "rgb(255, 255, 255)",
+            "padding-top": "8px",
+            "padding-right": "16px",
+            "padding-bottom": "8px",
+            "padding-left": "16px",
+            "border-radius": "12px"
+          }
+        },
+        "button:kghq-n29": {
+          "text": "Start the hunt now",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "600",
+            "line-height": "28px",
+            "color": "rgb(17, 24, 39)",
+            "background-color": "rgb(255, 255, 255)",
+            "padding-top": "16px",
+            "padding-right": "32px",
+            "padding-bottom": "16px",
+            "padding-left": "32px",
+            "border-radius": "16px"
+          }
+        },
+        "button:kghq-n108": {
+          "text": "Hunt now with TrackZilla",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "rgb(17, 24, 39)",
+            "background-color": "rgb(255, 255, 255)",
+            "padding-top": "16px",
+            "padding-right": "32px",
+            "padding-bottom": "16px",
+            "padding-left": "32px",
+            "border-radius": "16px"
+          }
+        },
+        "button:kghq-n118": {
+          "text": "Start hunting for free",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "600",
+            "line-height": "28px",
+            "color": "rgb(17, 24, 39)",
+            "background-color": "rgb(255, 255, 255)",
+            "padding-top": "16px",
+            "padding-right": "40px",
+            "padding-bottom": "16px",
+            "padding-left": "40px",
+            "border-radius": "16px"
+          }
+        },
+        "button:kghq-n129": {
+          "text": "",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "20px",
+            "color": "rgb(248, 113, 113)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        }
+      },
+      "editor": {
+        "heading:kghq-n11": {
+          "text": "TrackZilla",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "24px",
+            "font-weight": "700",
+            "line-height": "32px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n23": {
+          "text": "TAME THE JOB HUNT Grrrawww!",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "72px",
+            "font-weight": "700",
+            "line-height": "72px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n40": {
+          "text": "Everything you need for epic job hunting",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "60px",
+            "font-weight": "700",
+            "line-height": "60px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n47": {
+          "text": "Track every application",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n54": {
+          "text": "Advanced analytics",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n61": {
+          "text": "Automatic follow-ups",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n68": {
+          "text": "Intuitive dashboard",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n75": {
+          "text": "Customizable statuses",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n82": {
+          "text": "Lightning-fast setup",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "600",
+            "line-height": "25px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n93": {
+          "text": "Monster-Slaying 101",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "48px",
+            "font-weight": "700",
+            "line-height": "48px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n115": {
+          "text": "Ready to level up your job hunting game?",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "60px",
+            "font-weight": "700",
+            "line-height": "60px",
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n27": {
+          "text": "Job hunt got you feeling like you're fighting a Gila monster with a spoon? Meet ",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "300",
+            "line-height": "32.5px",
+            "color": "rgba(255, 255, 255, 0.8)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n41": {
+          "text": "Because job hunting is a multi-headed hydra and your memory is not a database.",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "300",
+            "line-height": "28px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n49": {
+          "text": "Organize all your job applications in one place. Monitor status, dates, and deta",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n56": {
+          "text": "View detailed stats on your response rates, feedback times, and overall performa",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n63": {
+          "text": "Never miss an opportunity. The system automatically detects ghosted applications",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n70": {
+          "text": "See your progress at a glance with clear metrics and informative charts. Beautif",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n77": {
+          "text": "Track every phase of the process: applications, interviews, feedback, and job of",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n84": {
+          "text": "Get started in seconds. Simple and intuitive interface designed to maximize your",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n94": {
+          "text": "TrackZilla gives you detailed insights into your response rates, helps you spot ",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "300",
+            "line-height": "32.5px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n99": {
+          "text": "Automatic response time tracking (because who has time to count days?)",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "rgba(255, 255, 255, 0.8)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n103": {
+          "text": "Identify the most responsive companies (find the keepers!)",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "rgba(255, 255, 255, 0.8)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n107": {
+          "text": "Smart suggestions to level up your approach (like having a job hunt mentor)",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "rgba(255, 255, 255, 0.8)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n116": {
+          "text": "Join thousands of smart professionals who've already upgraded their job hunting ",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "300",
+            "line-height": "32.5px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n123": {
+          "text": "Made with love (and Lovable) by Guido Penta and Salvatore Campagnese",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "20px",
+            "color": "rgba(255, 255, 255, 0.6)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n126": {
+          "text": "© 2025 TrackZilla. Supercharge your job hunt like a boss! 🚀",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "20px",
+            "color": "rgba(255, 255, 255, 0.6)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n128": {
+          "text": "This is an Open Source Project, come and contribute",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "20px",
+            "color": "rgba(255, 255, 255, 0.6)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n13": {
+          "text": "Contribute",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "20px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n14": {
+          "text": "Sign In",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "20px",
+            "color": "rgba(255, 255, 255, 0.7)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "8px",
+            "padding-right": "16px",
+            "padding-bottom": "8px",
+            "padding-left": "16px",
+            "border-radius": "12px"
+          }
+        },
+        "button:kghq-n15": {
+          "text": "Hunt now!",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "rgb(17, 24, 39)",
+            "background-color": "rgb(255, 255, 255)",
+            "padding-top": "8px",
+            "padding-right": "16px",
+            "padding-bottom": "8px",
+            "padding-left": "16px",
+            "border-radius": "12px"
+          }
+        },
+        "button:kghq-n29": {
+          "text": "Start the hunt now",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "600",
+            "line-height": "28px",
+            "color": "rgb(17, 24, 39)",
+            "background-color": "rgb(255, 255, 255)",
+            "padding-top": "16px",
+            "padding-right": "32px",
+            "padding-bottom": "16px",
+            "padding-left": "32px",
+            "border-radius": "16px"
+          }
+        },
+        "button:kghq-n108": {
+          "text": "Hunt now with TrackZilla",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "rgb(17, 24, 39)",
+            "background-color": "rgb(255, 255, 255)",
+            "padding-top": "16px",
+            "padding-right": "32px",
+            "padding-bottom": "16px",
+            "padding-left": "32px",
+            "border-radius": "16px"
+          }
+        },
+        "button:kghq-n118": {
+          "text": "Start hunting for free",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "600",
+            "line-height": "28px",
+            "color": "rgb(17, 24, 39)",
+            "background-color": "rgb(255, 255, 255)",
+            "padding-top": "16px",
+            "padding-right": "40px",
+            "padding-bottom": "16px",
+            "padding-left": "40px",
+            "border-radius": "16px"
+          }
+        },
+        "button:kghq-n129": {
+          "text": "",
+          "styles": {
+            "font-family": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "20px",
+            "color": "rgb(248, 113, 113)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        }
+      }
+    }
+  ]
+}

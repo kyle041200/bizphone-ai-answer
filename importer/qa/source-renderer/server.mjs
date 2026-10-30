@@ -1,0 +1,4 @@
+// QA-only static renderer: never installed in WordPress.
+import http from 'node:http';import fs from 'node:fs/promises';import path from 'node:path';
+const root='/job/source/dist',mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp','.jpg':'image/jpeg','.woff2':'font/woff2'};
+http.createServer(async(req,res)=>{try{let file=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://source').pathname));if(!file.startsWith(root+'/'))file=root+'/index.html';const stat=await fs.stat(file).catch(()=>null);if(!stat?.isFile())file=root+'/index.html';const real=await fs.realpath(file);if(!real.startsWith(root+'/'))throw Error();res.writeHead(200,{'Content-Type':mime[path.extname(real)]||'application/octet-stream'});res.end(await fs.readFile(real));}catch{res.writeHead(404);res.end();}}).listen(5173,'0.0.0.0');

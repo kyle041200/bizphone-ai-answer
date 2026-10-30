@@ -1,0 +1,3869 @@
+{
+  "method": "Compare up to twenty native headings, paragraphs and buttons per type by stable source node class, before edits. Computed typography, color and padding; full layout parity is evaluated separately.",
+  "results": [
+    {
+      "id": 65,
+      "route": "/business-support",
+      "status": "PASS",
+      "sampledFrontElements": 60,
+      "sampledEditorElements": 60,
+      "differences": [],
+      "front": {
+        "heading:kghq-n23": {
+          "text": "The extra support your business has been missing.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "72px",
+            "font-weight": "800",
+            "line-height": "73.44px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n55": {
+          "text": "What do you need help with?",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n61": {
+          "text": "Get Work Off My Plate",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n71": {
+          "text": "Get More Organized",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n81": {
+          "text": "Keep My Content Moving",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n91": {
+          "text": "Get More From My Content",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n101": {
+          "text": "Improve How My Business Runs",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n111": {
+          "text": "Automate More Busywork",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n122": {
+          "text": "Three ways KGHQ keeps your business moving.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n129": {
+          "text": "Get the day-to-day work off your list.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "24px",
+            "font-weight": "800",
+            "line-height": "32px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n138": {
+          "text": "Keep the content you create moving.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "24px",
+            "font-weight": "800",
+            "line-height": "32px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n147": {
+          "text": "Build, connect, and automate your systems.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "24px",
+            "font-weight": "800",
+            "line-height": "32px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n157": {
+          "text": "Choose how much support you need.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n166": {
+          "text": "Lite",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n181": {
+          "text": "Starter",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n199": {
+          "text": "Growth",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n219": {
+          "text": "Scale",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n244": {
+          "text": "Your “can someone please handle this?” menu.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n249": {
+          "text": "Not sure what to delegate?",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n262": {
+          "text": "Web Research and Data Collection",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "16px",
+            "font-weight": "800",
+            "line-height": "22px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n22": {
+          "text": "Business Support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(64.2181 42.8529 -72.7241)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n25": {
+          "text": "Admin. Content. Systems. The day-to-day work that keeps your business moving.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "24px",
+            "font-weight": "700",
+            "line-height": "32px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n26": {
+          "text": "KGHQ gives growing businesses flexible, on-demand support across Admin & Operati",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "29.25px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n37": {
+          "text": "Extra Capacity",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n38": {
+          "text": "Another set of hands.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n43": {
+          "text": "Real Execution",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n44": {
+          "text": "Move tomorrow’s work today.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n49": {
+          "text": "Flexible Tokens",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n50": {
+          "text": "Use them where needed.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n54": {
+          "text": "Start with what needs to get done",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n56": {
+          "text": "You don’t need to know what department a task belongs in. Tell us what is taking",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n62": {
+          "text": "Hand off the administrative and operational work that keeps eating into your day",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n63": {
+          "text": "Data Entry · Research · Invoicing · A/R Follow-Up · Proposals · General Admin",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n72": {
+          "text": "Clean, organize, update, and maintain the data and documents your business relie",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n73": {
+          "text": "Data Cleanup · Spreadsheets · Records · Forms · Documentation",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n82": {
+          "text": "Get approved content formatted, scheduled, published, updated, and organized.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n83": {
+          "text": "Blogs · Video · Social · Email · Podcasts · Website Updates",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n92": {
+          "text": "Turn one podcast, video, article, presentation, or interview into more useful co",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n93": {
+          "text": "Video Clips · Social Posts · Emails · Slide Decks · Thumbnails",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n102": {
+          "text": "Set up and improve the tools and workflows behind your day-to-day operations.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n7": {
+          "text": "Support",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n8": {
+          "text": "Plans",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n9": {
+          "text": "Deliverables",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n10": {
+          "text": "How It Works",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n11": {
+          "text": "Marketing",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n12": {
+          "text": "Sales",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n13": {
+          "text": "Get Started",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "lab(64.2181 42.8529 -72.7241)",
+            "padding-top": "0px",
+            "padding-right": "20px",
+            "padding-bottom": "0px",
+            "padding-left": "20px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n15": {
+          "text": "",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "10px"
+          }
+        },
+        "button:kghq-n28": {
+          "text": "Explore Business Support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "lab(64.2181 42.8529 -72.7241)",
+            "padding-top": "0px",
+            "padding-right": "24px",
+            "padding-bottom": "0px",
+            "padding-left": "24px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n30": {
+          "text": "Help Me Decide What to Delegate",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "24px",
+            "padding-bottom": "0px",
+            "padding-left": "24px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n65": {
+          "text": "Explore support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n67": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n75": {
+          "text": "Explore support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n77": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n85": {
+          "text": "Explore support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n87": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n95": {
+          "text": "Explore support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n97": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n105": {
+          "text": "Explore support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n107": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        }
+      },
+      "editor": {
+        "heading:kghq-n23": {
+          "text": "The extra support your business has been missing.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "72px",
+            "font-weight": "800",
+            "line-height": "73.44px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n55": {
+          "text": "What do you need help with?",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n61": {
+          "text": "Get Work Off My Plate",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n71": {
+          "text": "Get More Organized",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n81": {
+          "text": "Keep My Content Moving",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n91": {
+          "text": "Get More From My Content",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n101": {
+          "text": "Improve How My Business Runs",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n111": {
+          "text": "Automate More Busywork",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n122": {
+          "text": "Three ways KGHQ keeps your business moving.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n129": {
+          "text": "Get the day-to-day work off your list.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "24px",
+            "font-weight": "800",
+            "line-height": "32px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n138": {
+          "text": "Keep the content you create moving.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "24px",
+            "font-weight": "800",
+            "line-height": "32px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n147": {
+          "text": "Build, connect, and automate your systems.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "24px",
+            "font-weight": "800",
+            "line-height": "32px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n157": {
+          "text": "Choose how much support you need.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n166": {
+          "text": "Lite",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n181": {
+          "text": "Starter",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n199": {
+          "text": "Growth",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n219": {
+          "text": "Scale",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n244": {
+          "text": "Your “can someone please handle this?” menu.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n249": {
+          "text": "Not sure what to delegate?",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n262": {
+          "text": "Web Research and Data Collection",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "16px",
+            "font-weight": "800",
+            "line-height": "22px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n22": {
+          "text": "Business Support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(64.2181 42.8529 -72.7241)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n25": {
+          "text": "Admin. Content. Systems. The day-to-day work that keeps your business moving.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "24px",
+            "font-weight": "700",
+            "line-height": "32px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n26": {
+          "text": "KGHQ gives growing businesses flexible, on-demand support across Admin & Operati",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "29.25px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n37": {
+          "text": "Extra Capacity",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n38": {
+          "text": "Another set of hands.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n43": {
+          "text": "Real Execution",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n44": {
+          "text": "Move tomorrow’s work today.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n49": {
+          "text": "Flexible Tokens",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n50": {
+          "text": "Use them where needed.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n54": {
+          "text": "Start with what needs to get done",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n56": {
+          "text": "You don’t need to know what department a task belongs in. Tell us what is taking",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n62": {
+          "text": "Hand off the administrative and operational work that keeps eating into your day",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n63": {
+          "text": "Data Entry · Research · Invoicing · A/R Follow-Up · Proposals · General Admin",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n72": {
+          "text": "Clean, organize, update, and maintain the data and documents your business relie",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n73": {
+          "text": "Data Cleanup · Spreadsheets · Records · Forms · Documentation",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n82": {
+          "text": "Get approved content formatted, scheduled, published, updated, and organized.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n83": {
+          "text": "Blogs · Video · Social · Email · Podcasts · Website Updates",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n92": {
+          "text": "Turn one podcast, video, article, presentation, or interview into more useful co",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n93": {
+          "text": "Video Clips · Social Posts · Emails · Slide Decks · Thumbnails",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n102": {
+          "text": "Set up and improve the tools and workflows behind your day-to-day operations.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n7": {
+          "text": "Support",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n8": {
+          "text": "Plans",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n9": {
+          "text": "Deliverables",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n10": {
+          "text": "How It Works",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n11": {
+          "text": "Marketing",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n12": {
+          "text": "Sales",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n13": {
+          "text": "Get Started",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "lab(64.2181 42.8529 -72.7241)",
+            "padding-top": "0px",
+            "padding-right": "20px",
+            "padding-bottom": "0px",
+            "padding-left": "20px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n15": {
+          "text": "",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "10px"
+          }
+        },
+        "button:kghq-n28": {
+          "text": "Explore Business Support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "lab(64.2181 42.8529 -72.7241)",
+            "padding-top": "0px",
+            "padding-right": "24px",
+            "padding-bottom": "0px",
+            "padding-left": "24px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n30": {
+          "text": "Help Me Decide What to Delegate",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "24px",
+            "padding-bottom": "0px",
+            "padding-left": "24px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n65": {
+          "text": "Explore support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n67": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n75": {
+          "text": "Explore support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n77": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n85": {
+          "text": "Explore support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n87": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n95": {
+          "text": "Explore support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n97": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n105": {
+          "text": "Explore support",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n107": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        }
+      }
+    },
+    {
+      "id": 102,
+      "route": "/marketing",
+      "status": "PASS",
+      "sampledFrontElements": 60,
+      "sampledEditorElements": 60,
+      "differences": [],
+      "front": {
+        "heading:kghq-n23": {
+          "text": "Marketing thatactually gets done.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "72px",
+            "font-weight": "800",
+            "line-height": "73.44px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n55": {
+          "text": "What are you trying to accomplish?",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n61": {
+          "text": "Generate More Leads",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n71": {
+          "text": "Improve My Website",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n81": {
+          "text": "Get Found Online",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n91": {
+          "text": "Look More Professional",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n101": {
+          "text": "Stay Visible",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n111": {
+          "text": "Build More Trust",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n121": {
+          "text": "All the marketing expertise you need. In one place.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n127": {
+          "text": "Website & SEO",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "800",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n132": {
+          "text": "Content & Creative",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "800",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n137": {
+          "text": "Email & Campaigns",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "800",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n142": {
+          "text": "Lead Generation",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "800",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n147": {
+          "text": "Reputation & Trust",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "800",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n152": {
+          "text": "Strategy & Planning",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "800",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n159": {
+          "text": "Choose the plan that fits your goals.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n168": {
+          "text": "Lite",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n182": {
+          "text": "Starter",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n199": {
+          "text": "Growth",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n218": {
+          "text": "Scale",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n22": {
+          "text": "Marketing Solutions",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(64.2181 42.8529 -72.7241)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n25": {
+          "text": "Get found. Look better. Generate more leads. Keep growing.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "24px",
+            "font-weight": "700",
+            "line-height": "32px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n26": {
+          "text": "From websites and content to SEO, campaigns, creative, and lead generation, KGHQ",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "29.25px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n37": {
+          "text": "AI + Human",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n38": {
+          "text": "Smart execution.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n43": {
+          "text": "One Flexible Team",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n44": {
+          "text": "Strategy + specialists.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n49": {
+          "text": "Use Bricks Your Way",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n50": {
+          "text": "Put them where they matter.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n54": {
+          "text": "Start with your goal",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n56": {
+          "text": "You don’t need to know which marketing services to order. Start with the outcome",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n62": {
+          "text": "Build campaigns and offers that attract the right people and give them a reason ",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n63": {
+          "text": "Landing pages · Lead magnets · Campaigns · Email sequences",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n72": {
+          "text": "Turn your website from an online brochure into a stronger marketing and sales to",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n73": {
+          "text": "Website pages · Copy · Calls to action · Conversion improvements",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n82": {
+          "text": "Help more of the right customers discover your business when they are actively s",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n83": {
+          "text": "SEO articles · Keyword research · Local SEO · Google Business Profile",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n92": {
+          "text": "Build a polished, consistent brand presence everywhere potential customers encou",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n93": {
+          "text": "Brand identity · Visual design · Brand guidelines · Sales collateral",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n102": {
+          "text": "Keep your business top of mind without constantly wondering what to post, write,",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n7": {
+          "text": "Solutions",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n8": {
+          "text": "Plans",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n9": {
+          "text": "Deliverables",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n10": {
+          "text": "How It Works",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n11": {
+          "text": "Partners",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n12": {
+          "text": "Business Support",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n13": {
+          "text": "Get Started",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "lab(64.2181 42.8529 -72.7241)",
+            "padding-top": "0px",
+            "padding-right": "20px",
+            "padding-bottom": "0px",
+            "padding-left": "20px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n15": {
+          "text": "",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "10px"
+          }
+        },
+        "button:kghq-n28": {
+          "text": "Explore Marketing Services",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "lab(64.2181 42.8529 -72.7241)",
+            "padding-top": "0px",
+            "padding-right": "24px",
+            "padding-bottom": "0px",
+            "padding-left": "24px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n30": {
+          "text": "Help Me Decide",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "24px",
+            "padding-bottom": "0px",
+            "padding-left": "24px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n65": {
+          "text": "Explore services",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n67": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n75": {
+          "text": "Explore services",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n77": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n85": {
+          "text": "Explore services",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n87": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n95": {
+          "text": "Explore services",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n97": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n105": {
+          "text": "Explore services",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n107": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        }
+      },
+      "editor": {
+        "heading:kghq-n23": {
+          "text": "Marketing thatactually gets done.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "72px",
+            "font-weight": "800",
+            "line-height": "73.44px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n55": {
+          "text": "What are you trying to accomplish?",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n61": {
+          "text": "Generate More Leads",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n71": {
+          "text": "Improve My Website",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n81": {
+          "text": "Get Found Online",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n91": {
+          "text": "Look More Professional",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n101": {
+          "text": "Stay Visible",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n111": {
+          "text": "Build More Trust",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n121": {
+          "text": "All the marketing expertise you need. In one place.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n127": {
+          "text": "Website & SEO",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "800",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n132": {
+          "text": "Content & Creative",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "800",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n137": {
+          "text": "Email & Campaigns",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "800",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n142": {
+          "text": "Lead Generation",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "800",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n147": {
+          "text": "Reputation & Trust",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "800",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n152": {
+          "text": "Strategy & Planning",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "800",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n159": {
+          "text": "Choose the plan that fits your goals.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "60px",
+            "font-weight": "800",
+            "line-height": "60px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n168": {
+          "text": "Lite",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n182": {
+          "text": "Starter",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n199": {
+          "text": "Growth",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "heading:kghq-n218": {
+          "text": "Scale",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "20px",
+            "font-weight": "800",
+            "line-height": "28px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n22": {
+          "text": "Marketing Solutions",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(64.2181 42.8529 -72.7241)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n25": {
+          "text": "Get found. Look better. Generate more leads. Keep growing.",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "24px",
+            "font-weight": "700",
+            "line-height": "32px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n26": {
+          "text": "From websites and content to SEO, campaigns, creative, and lead generation, KGHQ",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "29.25px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n37": {
+          "text": "AI + Human",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n38": {
+          "text": "Smart execution.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n43": {
+          "text": "One Flexible Team",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n44": {
+          "text": "Strategy + specialists.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n49": {
+          "text": "Use Bricks Your Way",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n50": {
+          "text": "Put them where they matter.",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "400",
+            "line-height": "16px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n54": {
+          "text": "Start with your goal",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n56": {
+          "text": "You don’t need to know which marketing services to order. Start with the outcome",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n62": {
+          "text": "Build campaigns and offers that attract the right people and give them a reason ",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n63": {
+          "text": "Landing pages · Lead magnets · Campaigns · Email sequences",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n72": {
+          "text": "Turn your website from an online brochure into a stronger marketing and sales to",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n73": {
+          "text": "Website pages · Copy · Calls to action · Conversion improvements",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n82": {
+          "text": "Help more of the right customers discover your business when they are actively s",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n83": {
+          "text": "SEO articles · Keyword research · Local SEO · Google Business Profile",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n92": {
+          "text": "Build a polished, consistent brand presence everywhere potential customers encou",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n93": {
+          "text": "Brand identity · Visual design · Brand guidelines · Sales collateral",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "600",
+            "line-height": "19.5px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "paragraph:kghq-n102": {
+          "text": "Keep your business top of mind without constantly wondering what to post, write,",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "22.75px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n7": {
+          "text": "Solutions",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n8": {
+          "text": "Plans",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n9": {
+          "text": "Deliverables",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n10": {
+          "text": "How It Works",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n11": {
+          "text": "Partners",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n12": {
+          "text": "Business Support",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "600",
+            "line-height": "20px",
+            "color": "lab(74.1309 4.51335 -12.2699)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n13": {
+          "text": "Get Started",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "lab(64.2181 42.8529 -72.7241)",
+            "padding-top": "0px",
+            "padding-right": "20px",
+            "padding-bottom": "0px",
+            "padding-left": "20px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n15": {
+          "text": "",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "10px"
+          }
+        },
+        "button:kghq-n28": {
+          "text": "Explore Marketing Services",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(3.22509 6.08467 -16.301)",
+            "background-color": "lab(64.2181 42.8529 -72.7241)",
+            "padding-top": "0px",
+            "padding-right": "24px",
+            "padding-bottom": "0px",
+            "padding-left": "24px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n30": {
+          "text": "Help Me Decide",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(99.42 -0.0000298023 0)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "24px",
+            "padding-bottom": "0px",
+            "padding-left": "24px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n65": {
+          "text": "Explore services",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n67": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n75": {
+          "text": "Explore services",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n77": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n85": {
+          "text": "Explore services",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n87": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n95": {
+          "text": "Explore services",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n97": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n105": {
+          "text": "Explore services",
+          "styles": {
+            "font-family": "Sora, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "14px",
+            "font-weight": "700",
+            "line-height": "20px",
+            "color": "lab(26.0772 61.3114 -84.4288)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        },
+        "button:kghq-n107": {
+          "text": "Help me choose",
+          "styles": {
+            "font-family": "Manrope, ui-sans-serif, system-ui, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "16px",
+            "color": "lab(38.1836 3.82489 -12.4968)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "padding-top": "0px",
+            "padding-right": "0px",
+            "padding-bottom": "0px",
+            "padding-left": "0px",
+            "border-radius": "0px"
+          }
+        }
+      }
+    }
+  ]
+}

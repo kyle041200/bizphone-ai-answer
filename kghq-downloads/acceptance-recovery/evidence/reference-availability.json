@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://bizphone-ai-answer.lovable.app/",
+    "httpStatus": "000",
+    "exitCode": 56,
+    "error": "curl: (56) CONNECT tunnel failed, response 403\n"
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap",
+    "httpStatus": "000",
+    "exitCode": 56,
+    "error": "curl: (56) CONNECT tunnel failed, response 403\n"
+  },
+  {
+    "url": "https://downloads.wordpress.org/theme/generatepress.latest-stable.zip",
+    "httpStatus": "000",
+    "exitCode": 56,
+    "error": "curl: (56) CONNECT tunnel failed, response 403\n"
+  },
+  {
+    "url": "https://downloads.wordpress.org/theme/neve.latest-stable.zip",
+    "httpStatus": "000",
+    "exitCode": 56,
+    "error": "curl: (56) CONNECT tunnel failed, response 403\n"
+  },
+  {
+    "url": "https://downloads.wordpress.org/theme/astra.latest-stable.zip",
+    "httpStatus": "000",
+    "exitCode": 56,
+    "error": "curl: (56) CONNECT tunnel failed, response 403\n"
+  }
+]

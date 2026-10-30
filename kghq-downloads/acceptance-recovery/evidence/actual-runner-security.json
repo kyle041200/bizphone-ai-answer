@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "observations": [
+    {
+      "container": "kghq-convert-d8fa6fecea5226c7fa4e4c49962cd29b",
+      "phase": "converting",
+      "readOnlyRootfs": true,
+      "user": "1000:1000",
+      "capDrop": [
+        "ALL"
+      ],
+      "securityOpt": [
+        "no-new-privileges"
+      ],
+      "memoryBytes": 4294967296,
+      "cpuNano": 2000000000,
+      "pidsLimit": 256,
+      "tmpfs": {
+        "/job": "rw,exec,nosuid,nodev,size=2g,uid=1000,gid=1000,mode=0700",
+        "/tmp": "rw,nosuid,nodev,size=256m"
+      },
+      "mounts": [
+        {
+          "destination": "/run/npm-ca.pem",
+          "readWrite": false,
+          "type": "bind"
+        }
+      ],
+      "connectedNetworks": [],
+      "forbiddenCredentialNamesPresent": [],
+      "checksPassed": true,
+      "filesystemProbe": {
+        "exitCode": 0,
+        "result": "root-write-blocked; bounded-job-write-works"
+      }
+    }
+  ],
+  "limits": "Container configuration and filesystem probes only; not a kernel escape audit or host-clone disk/inode quota certification."
+}

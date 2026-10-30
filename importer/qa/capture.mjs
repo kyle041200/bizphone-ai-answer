@@ -7,7 +7,7 @@ const staged=JSON.parse(await fs.readFile('importer/work/'+label+'-staged.json',
 const out=path.resolve('importer/work/visual/'+label);await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({executablePath:process.env.KGHQ_CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox','--disable-lcd-text']});
 const context=await browser.newContext({viewport:{width:1440,height:1000},deviceScaleFactor:1,locale:'en-US',timezoneId:'UTC',colorScheme:'light',reducedMotion:'reduce'});
-await context.route('**/*',r=>['localhost','127.0.0.1'].includes(new URL(r.request().url()).hostname)?r.continue():r.abort('blockedbyclient'));
+await context.route('**/*',r=>['localhost','127.0.0.1',new URL(sourceBase).hostname].includes(new URL(r.request().url()).hostname)?r.continue():r.abort('blockedbyclient'));
 const page=await context.newPage();
 await page.goto(wpBase+'/wp-login.php');await page.locator('#user_login').fill(process.env.KGHQ_WP_USER||'kghq-admin');await page.locator('#user_pass').fill(process.env.KGHQ_STAGING_PASSWORD||'automation-staging-admin-only');
 await Promise.all([page.waitForURL('**/wp-admin/**'),page.locator('#wp-submit').click()]);
@@ -20,12 +20,11 @@ for(const result of staged.results){
  for(const width of [1440,768,390]){
   const record={width};
   for(const [kind,url]of [['source',new URL(route,sourceBase).href],['imported',`${wpBase}/?page_id=${result.id}&preview=true`]]){
-   await page.setViewportSize({width,height:1000});await page.goto(url,{waitUntil:'networkidle',timeout:60000});await page.evaluate(()=>document.fonts.ready);
+   await page.setViewportSize({width,height:1000});const response=await page.goto(url,{waitUntil:'networkidle',timeout:60000});if(!response?.ok()||/^(Domain forbidden|Access denied)$/i.test((await page.locator('body').innerText()).trim()))throw Error('Invalid '+kind+' reference response; no visual score is valid.');await page.evaluate(()=>document.fonts.ready);
    await page.addStyleTag({content:'html{scroll-behavior:auto!important}*,*::before,*::after{animation:none!important;transition:none!important;caret-color:transparent!important}#wpadminbar{display:none!important}html{margin-top:0!important}'});
-   await page.evaluate(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=800){scrollTo(0,y);await new Promise(r=>setTimeout(r,10));}scrollTo(0,0);});
-   // Full-page captures must wait for lazy image decoding after scroll. Browser
-   // screenshots do not wait for WordPress loading=lazy automatically.
+   // Decode before scrolling so offscreen lazy layers cannot race capture.
    await page.evaluate(async()=>{await Promise.all([...document.images].map(async image=>{image.loading='eager';await Promise.race([image.decode().catch(()=>{}),new Promise(r=>setTimeout(r,10000))]);}));});
+   await page.evaluate(async()=>{for(let y=0;y<document.documentElement.scrollHeight;y+=800){scrollTo(0,y);await new Promise(r=>setTimeout(r,100));}scrollTo(0,0);});
    await page.evaluate(()=>new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r))));
    const data=await page.evaluate((kind)=>{
     const root=kind==='imported'?document.querySelector('.kghq-import-root'):document.body;

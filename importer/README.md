@@ -1,8 +1,16 @@
-# Current development head: two-step worker preview
+# KGHQ Lovable Importer — acceptance development branch
 
-The branch now also contains the two-step WordPress dashboard and asynchronous authenticated worker source. Read [worker setup and actual test status](worker/README.md). The real UI scan/selection/worker-invocation test passed those stages, then stopped safely because no runner image is installed. **Automatic conversion-to-editable-draft E2E remains BLOCKED**, with insufficient cloud disk space for the runner build. Do not treat the preview as release-ready. The preserved 0.3.0 Phase 2 checkpoint ZIPs remain separately available and unchanged under `kghq-downloads/phase-2/`.
+Fresh automatic dashboard imports have passed on isolated staging using two
+structurally different Lovable repositories. The recovered worker supports
+frozen npm/Bun installs, isolated source execution and host-side CSS containment.
+Native Gutenberg editing is tested separately from front-end rendering.
 
-The normal preview dashboard removes JSON upload and branch entry, detects the default branch, and requires no user CLI steps after one-time operator worker setup. It does not deploy itself or a hosted worker automatically.
+Read [worker setup](worker/README.md) and [recovery status](docs/RECOVERY-STATUS.md).
+Current evidence and development packages are published separately under
+`kghq-downloads/acceptance-recovery/`. This is not a production-ready certification;
+the classic-theme matrix, live fonts/reference access and other limitations must
+be assessed in the acceptance report. Older checkpoint documentation below is
+historical and its manual bundle workflow is not the normal dashboard workflow.
 
 ---
 

@@ -1,0 +1,5 @@
+import{test}from'node:test';import assert from'node:assert/strict';import{verifyCSSIsolation}from'./output.mjs';
+const scope='kghq-page-123456abcdef',check=css=>verifyCSSIsolation({scope,css});
+test('scoped responsive selectors and nested descendant rules remain allowed',()=>{assert.equal(check(`.${scope}{--x:red;&:hover{color:red}& .child{&+p{color:blue}}}@media(max-width:600px){.${scope} p{padding:1rem}}@keyframes ${scope}-spin{to{opacity:0}}`),true)});
+test('global, root-sibling, and nested escaping CSS are rejected',()=>{for(const css of [`body{color:red}.${scope}{color:blue}`,`.${scope}+footer{display:none}`,`:is(.${scope},body){display:none}`,`:where(.${scope})+footer{display:none}`,`.${scope}{&~*{display:none}}`,`@import 'evil.css';.${scope}{color:red}`,`@keyframes global{to{opacity:0}}`])assert.throws(()=>check(css));});
+test('only the explicit imported canvas paint exception is permitted',()=>{assert.equal(check(`body.kghq-import-canvas:has(.${scope}){background-color:rgb(0,0,0)}`),true);assert.throws(()=>check(`body.kghq-import-canvas:has(.${scope}){display:none}`));});

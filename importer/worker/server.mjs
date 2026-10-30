@@ -1,6 +1,7 @@
 import http from 'node:http';import crypto from 'node:crypto';import fs from 'node:fs/promises';import path from 'node:path';
 import{checkout,normalizeRepository}from'../engine/github.mjs';import{analyze}from'../engine/analyze.mjs';import{isolatedConversion}from'./isolation.mjs';
 import { repositoryPolicy } from './policy.mjs';
+import { verifyCSSIsolation } from './output.mjs';
 const token=process.env.KGHQ_WORKER_TOKEN||'';if(token.length<32)throw Error('Configure KGHQ_WORKER_TOKEN (minimum 32 characters)');
 const allowsRepository=repositoryPolicy();
 const root=path.resolve(process.env.KGHQ_WORKER_DATA||'worker-data');await fs.mkdir(root,{recursive:true,mode:0o700});
@@ -24,6 +25,7 @@ async function execute(j){try{
   await copySource(path.join(source.directory,'source'),path.join(j.directory,'source'));
   const bundle=await isolatedConversion(j,(phase,progress)=>{j.phase=phase;j.progress=progress;void persist(j).catch(()=>{});});
   if(bundle.repository!==j.repository||bundle.pages?.length!==j.routes.length||bundle.pages.some(p=>!j.routes.includes(p.route)))throw Error('Conversion source/route mismatch');
+  for(const page of bundle.pages)verifyCSSIsolation(page);
   bundle.sourceCommit=j.commit;await fs.writeFile(path.join(j.directory,'bundle.json'),JSON.stringify(bundle),{mode:0o600});
   j.warnings=[...new Set(bundle.pages.flatMap(p=>p.warnings||[]))];await fs.rm(path.join(j.directory,'source'),{recursive:true,force:true});
  }

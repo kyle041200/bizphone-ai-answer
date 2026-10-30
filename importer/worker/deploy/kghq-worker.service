@@ -1,0 +1,22 @@
+# Example only; not installed or publicly deployed by this project.
+[Unit]
+Description=KGHQ isolated Lovable conversion worker
+After=network-online.target docker.service
+Requires=docker.service
+[Service]
+Type=simple
+User=kghq-worker
+Group=kghq-worker
+SupplementaryGroups=docker
+WorkingDirectory=/opt/kghq
+EnvironmentFile=/etc/kghq-worker.env
+ExecStart=/usr/bin/node /opt/kghq/importer/worker/server.mjs
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=strict
+ReadWritePaths=/var/lib/kghq-worker
+[Install]
+WantedBy=multi-user.target
