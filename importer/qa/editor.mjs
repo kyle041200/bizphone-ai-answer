@@ -4,7 +4,7 @@ const label=process.argv[2]||'editor',data=JSON.parse(await fs.readFile('importe
 const browser=await chromium.launch({executablePath:'/usr/bin/chromium',args:['--no-sandbox']});const page=await browser.newPage({viewport:{width:1440,height:1000}});page.on('dialog',d=>d.accept());await page.route('**/*',r=>['localhost','127.0.0.1'].includes(new URL(r.request().url()).hostname)?r.continue():r.abort('blockedbyclient'));const results=[];
 const check=async(name,fn)=>{try{await fn();results.push({name,status:'PASS'});console.log('PASS '+name);}catch(e){results.push({name,status:'FAIL',error:e.message.slice(0,1000)});console.log('FAIL '+name+': '+e.message.slice(0,140));}};
 try{
- await page.goto(base+'/wp-login.php');await page.locator('#user_login').fill('kghq-admin');await page.locator('#user_pass').fill(process.env.KGHQ_STAGING_PASSWORD||'automation-staging-admin-only');await Promise.all([page.waitForURL('**/wp-admin/**'),page.locator('#wp-submit').click()]);
+ await page.goto(base+'/wp-login.php');await page.locator('#user_login').fill('kghq-admin');await page.locator('#user_pass').fill(process.env.KGHQ_STAGING_PASSWORD||'automation-staging-admin-only');await Promise.all([page.waitForURL('**/wp-admin/**',{waitUntil:'domcontentloaded',timeout:90000}),page.locator('#wp-submit').click()]);
  await page.goto(`${base}/wp-admin/post.php?post=${id}&action=edit`,{waitUntil:'domcontentloaded',timeout:60000});
  for(const name of ['Close','Get started','Got it']){const close=page.getByRole('button',{name,exact:true});if(await close.count())await close.first().click().catch(()=>{});}
  await page.waitForFunction(()=>window.wp?.data?.select('core/block-editor')?.getBlocks().length>0,{timeout:60000});

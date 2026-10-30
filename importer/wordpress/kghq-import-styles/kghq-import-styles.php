@@ -2,18 +2,18 @@
 /**
  * Plugin Name: KGHQ Import Styles
  * Description: Independent persistent styling and optional canvas template for KGHQ native-block imports. Keep active after deleting the importer.
- * Version: 0.5.0-rc1
+ * Version: 0.5.0-rc2
  * Requires at least: 6.6
  * Requires PHP: 8.1
  * Author: KGHQ
  * License: GPL-2.0-or-later
  */
 if(!defined('ABSPATH'))exit;
-function kghq_import_styles_version(){return '0.5.0-rc1';}
+function kghq_import_styles_version(){return '0.5.0-rc2';}
 function kghq_import_styles_css($id){$css=get_post_meta($id,'_kghq_css',true);return is_string($css)&&!preg_match('~</?style~i',$css)?$css:'';}
-add_action('wp_enqueue_scripts',function(){if(!is_singular('page'))return;$id=get_queried_object_id();$css=kghq_import_styles_css($id);if(!$css)return;wp_enqueue_style('wp-block-library');wp_register_style('kghq-durable-styles',false,[],'0.5.0-rc1');wp_enqueue_style('kghq-durable-styles');wp_add_inline_style('kghq-durable-styles',$css);},100);
+add_action('wp_enqueue_scripts',function(){if(!is_singular('page'))return;$id=get_queried_object_id();$css=kghq_import_styles_css($id);if(!$css)return;wp_enqueue_style('wp-block-library');wp_register_style('kghq-durable-styles',false,[],'0.5.0-rc2');wp_enqueue_style('kghq-durable-styles');wp_add_inline_style('kghq-durable-styles',$css);},100);
 // Block editor iframe receives the same scoped CSS; native block controls remain available.
-add_action('enqueue_block_assets',function(){if(!is_admin())return;$id=isset($_GET['post'])?absint($_GET['post']):0;if(!$id||!current_user_can('edit_post',$id))return;$css=kghq_import_styles_css($id);if(!$css)return;wp_register_style('kghq-editor-styles',false,[],'0.5.0-rc1');wp_enqueue_style('kghq-editor-styles');wp_add_inline_style('kghq-editor-styles',$css);});
+add_action('enqueue_block_assets',function(){if(!is_admin())return;$id=isset($_GET['post'])?absint($_GET['post']):0;if(!$id||!current_user_can('edit_post',$id))return;$css=kghq_import_styles_css($id);if(!$css)return;wp_register_style('kghq-editor-styles',false,[],'0.5.0-rc2');wp_enqueue_style('kghq-editor-styles');wp_add_inline_style('kghq-editor-styles',$css);});
 add_filter('theme_page_templates',function($templates){$templates['kghq-canvas.php']='KGHQ imported canvas (companion)';return $templates;});
 add_filter('template_include',function($template){if(is_singular('page')&&get_page_template_slug()==='kghq-canvas.php'&&get_post_meta(get_queried_object_id(),'_kghq_source_key',true))return __DIR__.'/canvas.php';return $template;},99);
 // Classic themes without theme.json receive an extra core Group inner wrapper.
@@ -80,17 +80,17 @@ add_filter('render_block',function($html,$block){
 add_action('enqueue_block_assets',function(){
  if(!is_admin())return;
  $id=isset($_GET['post'])?absint($_GET['post']):0;if(!$id||!get_post_meta($id,'_kghq_source_key',true))return;
- wp_register_style('kghq-editor-bridge',plugins_url('editor.css',__FILE__),[],'0.5.0-rc1');wp_enqueue_style('kghq-editor-bridge');
+ wp_register_style('kghq-editor-bridge',plugins_url('editor.css',__FILE__),[],'0.5.0-rc2');wp_enqueue_style('kghq-editor-bridge');
 });
 // Persistent, static custom block for linked cards that core Group cannot model.
 // Native child blocks remain editable; no React application is embedded on the front end.
 add_action('init',function(){
- wp_register_script('kghq-link-group-editor',plugins_url('blocks/link-group/editor.js',__FILE__),['wp-blocks','wp-element','wp-block-editor','wp-components'],'0.5.0-rc1',true);
+ wp_register_script('kghq-link-group-editor',plugins_url('blocks/link-group/editor.js',__FILE__),['wp-blocks','wp-element','wp-block-editor','wp-components'],'0.5.0-rc2',true);
  register_block_type(__DIR__.'/blocks/link-group');
 });
 add_action('enqueue_block_editor_assets',function(){
  $id=isset($_GET['post'])?absint($_GET['post']):0;
- if($id&&get_post_meta($id,'_kghq_source_key',true))wp_enqueue_script('kghq-native-editor-bridge',plugins_url('editor.js',__FILE__),['wp-data','wp-block-editor'],'0.5.0-rc1',true);
+ if($id&&get_post_meta($id,'_kghq_source_key',true))wp_enqueue_script('kghq-native-editor-bridge',plugins_url('editor.js',__FILE__),['wp-data','wp-block-editor'],'0.5.0-rc2',true);
 });
 // Core Details stores its summary as RichText. Promote the source summary
 // classes to the semantic <summary>, avoiding an extra list-item line box.
@@ -112,3 +112,20 @@ add_filter('wp_content_img_tag',function($html){
  if($tag->has_class('kghq-loading-lazy'))$tag->set_attribute('loading','lazy');else $tag->set_attribute('loading','eager');
  return $tag->get_updated_html();
 },20);
+
+// Preserve the source's actual typography in imported content. WordPress's
+// automatic smart quotes/dashes otherwise change glyphs and text widths after
+// native blocks render. Other content and other pages retain their normal filter.
+function kghq_source_texturize($content){
+ $id=get_the_ID();
+ if(is_string($content)&&str_contains($content,'kghq-import-root')&&get_post_meta($id,'_kghq_source_key',true)&&apply_filters('kghq_preserve_source_punctuation',true,$id))return $content;
+ return wptexturize($content);
+}
+add_action('wp',function(){
+ if(!is_singular('page')||!get_post_meta(get_queried_object_id(),'_kghq_source_key',true))return;
+ $priority=has_filter('the_content','wptexturize');
+ // Respect another plugin/site that deliberately removed the default formatter.
+ if($priority===false)return;
+ remove_filter('the_content','wptexturize',$priority);
+ add_filter('the_content','kghq_source_texturize',$priority);
+});

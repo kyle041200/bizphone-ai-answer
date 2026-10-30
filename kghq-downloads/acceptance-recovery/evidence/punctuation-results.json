@@ -1,0 +1,11 @@
+{
+  "ordinaryId": 126,
+  "markedId": 127,
+  "original": "It's a \"quoted\" test -- source punctuation...",
+  "normalWordPressExpected": "It’s a “quoted” test — source punctuation…",
+  "companionVersion": "0.5.0-rc2",
+  "importerClassPresent": false,
+  "ordinaryActual": "It’s a “quoted” test — source punctuation…",
+  "markedActual": "It's a \"quoted\" test -- source punctuation...",
+  "status": "PASS"
+}

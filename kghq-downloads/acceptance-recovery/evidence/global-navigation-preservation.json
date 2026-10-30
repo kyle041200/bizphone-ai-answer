@@ -1,0 +1,8 @@
+{
+    "status": "PASS",
+    "menuId": 3,
+    "canaryDraftId": 121,
+    "globalSettingsAndExistingMenuHashBefore": "6b56d45291dbc76b86253b505e655ce1e0d159eb0eaed39379d92f2563bf411e",
+    "globalSettingsAndExistingMenuHashAfter": "6b56d45291dbc76b86253b505e655ce1e0d159eb0eaed39379d92f2563bf411e",
+    "fixtureScope": "QA-only native import canary, not counted as a third Lovable repository or source-page automation test."
+}

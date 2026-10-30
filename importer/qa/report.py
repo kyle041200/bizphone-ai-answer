@@ -2,8 +2,22 @@
 from pathlib import Path
 from PIL import Image, ImageChops
 import numpy as np
-import json, sys, html
+import json, sys, html, re
 root=Path(sys.argv[1]);data=json.loads((root/'capture.json').read_text());rows=[];gallery=[]
+def source_tag(element):
+ # Native Paragraph/Group wrappers may change the HTML tag deliberately. The
+ # converter preserves source tag identity as metadata on the rendered leaf.
+ for token in element.get('classes','').split():
+  if token.startswith('kghq-tag-'):return token.removeprefix('kghq-tag-').upper()
+ return element['tag']
+def text_key(element):
+ text=element.get('textKey',element.get('text',''))
+ return re.sub(r'\s+','',text.translate(str.maketrans({'’':"'",'‘':"'",'“':'"','”':'"','–':'-','—':'--','…':'...'})))
+def text_equivalent(source,target):
+ a,b=text_key(source),text_key(target)
+ return a==b or min(len(a),len(b))>=60 and (a.startswith(b) or b.startswith(a))
+def native_equivalent(source,target):
+ return source_tag(target)==source['tag'] or source['tag']=='BUTTON' and target['tag']=='SUMMARY'
 def crop(image,box):
  x=max(0,int(box['x']));y=max(0,int(box['y']));return image.crop((x,y,min(image.width,int(box['x']+box['width']+.5)),min(image.height,int(box['y']+box['height']+.5))))
 def compare(a,b,name):
@@ -38,22 +52,24 @@ for page in data['pages']:
    t=candidates[0] if candidates else (v['imported']['sections'][i] if i<len(v['imported']['sections']) else None)
    if not t:sections.append({'title':s['title'],'status':'missing'});continue
    sa=crop(a,s['box']);sb=crop(b,t['box']);sa.save(root/s['screenshot']);sb.save(root/t['screenshot']);key=f'{slug}-{width}-section-{i}'
-   pixels=compare(sa,sb,key);changes=[];unmatched=0;used=set()
+   pixels=compare(sa,sb,key);changes=[];text_mutations=[];unmatched=0;unmatched_elements=[];used=set()
    for element in s['elements']:
-    candidates=[(n,e) for n,e in enumerate(t['elements']) if n not in used and e['tag']==element['tag'] and e['text']==element['text']]
-    if not candidates:unmatched+=1;continue
+    candidates=[(n,e) for n,e in enumerate(t['elements']) if n not in used and native_equivalent(element,e) and text_equivalent(element,e)]
+    if not candidates:unmatched+=1;unmatched_elements.append({'tag':element['tag'],'text':element['text'],'box':element['box']});continue
     def signature(el):return {c for c in el.get('classes','').split() if not c.startswith(('kghq-','wp-','has-','is-'))}
     n,e=max(candidates,key=lambda pair:len(signature(pair[1]) & signature(element)) / max(1,len(signature(pair[1]) | signature(element))));used.add(n)
+    if element['tag'] not in ['SECTION','DIV'] and element['text']!=e['text']:
+     text_mutations.append({'sourceTag':element['tag'],'renderedTag':e['tag'],'source':element['text'],'imported':e['text'],'likelyCause':'WordPress typography/content filters or a native-block text mutation; review actual glyphs.'})
     props={p:{'source':value,'imported':e['styles'].get(p)} for p,value in element['styles'].items() if value!=e['styles'].get(p) and p not in ['height','width','grid-template-columns']}
     delta={k:round(e['box'][k]-element['box'][k],2) for k in ['x','y','width','height']}
     if props or any(abs(d)>1 for d in delta.values()):changes.append({'tag':element['tag'],'text':element['text'],'geometryDelta':delta,'styleDifferences':props,'likelyCauses':causes(props)})
    geo={k:round(t['box'][k]-s['box'][k],2) for k in ['x','y','width','height']}
    geometry_pass=all(abs(d)<=2 for d in geo.values())
-   goal=bool(pixels and pixels['changedPixelsRGBDeltaAbove25Percent']<=5 and pixels['localLuminanceSSIM16px']>=.95 and geometry_pass and not unmatched)
-   sections.append({'index':i,'title':s['title'],'geometryDelta':geo,'pixels':pixels,'sourceScreenshot':s['screenshot'],'importedScreenshot':t['screenshot'],'unmatchedSourceElements':unmatched,'elementDifferences':changes,'qualityGoalMet':goal})
+   goal=bool(pixels and pixels['changedPixelsRGBDeltaAbove25Percent']<=5 and pixels['localLuminanceSSIM16px']>=.95 and geometry_pass and not unmatched and not text_mutations)
+   sections.append({'index':i,'title':s['title'],'geometryDelta':geo,'pixels':pixels,'sourceScreenshot':s['screenshot'],'importedScreenshot':t['screenshot'],'unmatchedSourceElements':unmatched,'unmatchedElements':unmatched_elements,'elementDifferences':changes,'textMutations':text_mutations,'qualityGoalMet':goal})
    gallery.append(f'<section><h3>{html.escape(page["route"])} · {width}px · {html.escape(s["title"])}</h3><p>Changed pixels: {pixels["changedPixelsRGBDeltaAbove25Percent"] if pixels else "n/a"}% · section geometry Δ {geo} · {"PASS" if goal else "REVIEW"}</p><div><img loading="lazy" src="{s["screenshot"]}"><img loading="lazy" src="{t["screenshot"]}"><img loading="lazy" src="{pixels["diff"] if pixels else ""}"></div></section>')
-  rows.append({'route':page['route'],'width':width,'fullPage':full,'heightDelta':v['imported']['height']-v['source']['height'],'horizontalOverflow':v['imported']['scrollWidth']>width,'sourceMissingImages':v['source']['missingImages'],'importedMissingImages':v['imported']['missingImages'],'sourceFonts':v['source']['fonts'],'importedFonts':v['imported']['fonts'],'sections':sections,'qualityGoalMet':bool(sections) and all(s.get('qualityGoalMet',False) for s in sections)})
-result={'label':data['label'],'conditions':data['conditions'],'method':'Unmasked full-page and section RGB differences (any channel delta >25); 16px local luminance SSIM; DOM box and computed-style diffs. No scaling, registration, filtering or hidden-content masks.','internalGoal':'At least 95% pixels within RGB tolerance AND local SSIM >=0.95 AND section x/y/width/height within 2px AND no unmatched source elements. Missing fonts/assets/interactions remain separate review blockers; similarity alone is not certification.','results':rows}
+  rows.append({'route':page['route'],'width':width,'fullPage':full,'heightDelta':v['imported']['height']-v['source']['height'],'scrollWidthDelta':v['imported']['scrollWidth']-v['source']['scrollWidth'],'sourceHorizontalOverflow':v['source']['scrollWidth']>width,'horizontalOverflow':v['imported']['scrollWidth']>width,'sourceMissingImages':v['source']['missingImages'],'importedMissingImages':v['imported']['missingImages'],'sourceFonts':v['source']['fonts'],'importedFonts':v['imported']['fonts'],'sections':sections,'qualityGoalMet':bool(sections) and all(s.get('qualityGoalMet',False) for s in sections) and full['changedPixelsRGBDeltaAbove25Percent']<=5 and full['localLuminanceSSIM16px']>=.95 and abs(v['imported']['height']-v['source']['height'])<=2 and abs(v['imported']['scrollWidth']-v['source']['scrollWidth'])<=2})
+result={'label':data['label'],'conditions':data['conditions'],'semanticMatching':'Match source tag identity carried by kghq-tag-* metadata; native Details summary is the documented equivalent of its source disclosure button. Match text and report actual geometry/styles, never erase pixel differences.', 'method':'Unmasked full-page and section RGB differences (any channel delta >25); 16px local luminance SSIM; DOM box and computed-style diffs. No scaling, registration, filtering or hidden-content masks.','internalGoal':'At least 95% pixels within RGB tolerance AND local SSIM >=0.95 AND section x/y/width/height within 2px AND no unmatched source elements AND no observed leaf-text mutations. Missing fonts/assets/interactions remain separate review blockers; similarity alone is not certification.','results':rows}
 (root/'report.json').write_text(json.dumps(result,indent=2))
 (root/'index.html').write_text('<!doctype html><meta charset="utf-8"><title>KGHQ visual regression</title><style>body{font:16px system-ui;margin:24px;background:#eee}section{background:white;padding:16px;margin:20px 0}section div{display:flex;gap:8px;align-items:start}img{width:32%;height:auto}p{overflow-wrap:anywhere}</style><h1>'+html.escape(data['label'])+' · Source / WordPress / pixel difference</h1><p>Full-page screenshots and machine-readable section/element findings are included alongside this gallery. See report.json for the combined quality gate and all unresolved differences.</p>'+''.join(gallery))
 for row in rows:
