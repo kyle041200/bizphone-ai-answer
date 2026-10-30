@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "beforeVisiblePromptCount": 4,
+  "afterVisiblePromptCount": 0,
+  "scope": "Importer-marked native empty Groups only. Ordinary newly added Groups keep their picker.",
+  "after": [
+    {
+      "text": "Group blocks together. Select a layout:",
+      "display": "none",
+      "width": 0,
+      "height": 0,
+      "html": "<div class=\"components-placeholder is-small\"><div aria-hidden=\"true\" style=\"position: absolute; inset: 0px; pointer-events: none; opacity: 0; overflow: hidden; z-index: -1;\"></div><div class=\"components-placeholder__label\"></div><div class=\"components-placeholder__instructions\">Group blocks together. Select a layout:</div><div class=\"components-placeholder__fieldset\"><ul role=\"list\" class=\"wp-block-group-placeholder__variations\" aria-label=\"Block variations\"><li><button type=\"button\" class=\"components-button wp-block-group-placeholder__variation-button is-next-40px-default-size is-tertiary has",
+      "parent": "<div tabindex=\"0\" draggable=\"true\" class=\"block-editor-block-list__block wp-block absolute top-1/4 left-1/4 w-72 h-72 bg-red-500/20 rounded-full blur-3xl kghq-source-node kghq-tag-div kghq-n18 wp-block-group__placeholder wp-block-group\" id=\"block-d18643b4-9b26-4842-aa28-3ee71768c4f2\" role=\"document\" aria-label=\"Block: Group\" data-block=\"d18643b4-9b26-4842-aa28-3ee71768c4f2\" data-type=\"core/group\" data-title=\"Group\"><div class=\"components-placeholder is-small\"><div aria-hidden=\"true\" style=\"position: absolute; inset: 0px; pointer-events: none; opacity: 0; overflow: hidden; z-index: -1;\"></div><"
+    },
+    {
+      "text": "Group blocks together. Select a layout:",
+      "display": "none",
+      "width": 0,
+      "height": 0,
+      "html": "<div class=\"components-placeholder is-small\"><div aria-hidden=\"true\" style=\"position: absolute; inset: 0px; pointer-events: none; opacity: 0; overflow: hidden; z-index: -1;\"></div><div class=\"components-placeholder__label\"></div><div class=\"components-placeholder__instructions\">Group blocks together. Select a layout:</div><div class=\"components-placeholder__fieldset\"><ul role=\"list\" class=\"wp-block-group-placeholder__variations\" aria-label=\"Block variations\"><li><button type=\"button\" class=\"components-button wp-block-group-placeholder__variation-button is-next-40px-default-size is-tertiary has",
+      "parent": "<div tabindex=\"0\" draggable=\"true\" class=\"block-editor-block-list__block wp-block absolute bottom-1/4 right-1/4 w-96 h-96 bg-gray-500/20 rounded-full blur-3xl kghq-source-node kghq-tag-div kghq-n19 wp-block-group__placeholder wp-block-group\" id=\"block-d132612a-f172-4432-b1ba-96e494c39fd1\" role=\"document\" aria-label=\"Block: Group\" data-block=\"d132612a-f172-4432-b1ba-96e494c39fd1\" data-type=\"core/group\" data-title=\"Group\"><div class=\"components-placeholder is-small\"><div aria-hidden=\"true\" style=\"position: absolute; inset: 0px; pointer-events: none; opacity: 0; overflow: hidden; z-index: -1;\"></"
+    },
+    {
+      "text": "Group blocks together. Select a layout:",
+      "display": "none",
+      "width": 0,
+      "height": 0,
+      "html": "<div class=\"components-placeholder is-small\"><div aria-hidden=\"true\" style=\"position: absolute; inset: 0px; pointer-events: none; opacity: 0; overflow: hidden; z-index: -1;\"></div><div class=\"components-placeholder__label\"></div><div class=\"components-placeholder__instructions\">Group blocks together. Select a layout:</div><div class=\"components-placeholder__fieldset\"><ul role=\"list\" class=\"wp-block-group-placeholder__variations\" aria-label=\"Block variations\"><li><button type=\"button\" class=\"components-button wp-block-group-placeholder__variation-button is-next-40px-default-size is-tertiary has",
+      "parent": "<div tabindex=\"0\" draggable=\"true\" class=\"block-editor-block-list__block wp-block absolute inset-0 bg-gradient-to-b from-transparent via-black/20 to-transparent kghq-source-node kghq-tag-div kghq-n36 wp-block-group__placeholder wp-block-group\" id=\"block-7ab4d990-c823-4340-8627-bb877108a62c\" role=\"document\" aria-label=\"Block: Group\" data-block=\"7ab4d990-c823-4340-8627-bb877108a62c\" data-type=\"core/group\" data-title=\"Group\"><div class=\"components-placeholder is-small\"><div aria-hidden=\"true\" style=\"position: absolute; inset: 0px; pointer-events: none; opacity: 0; overflow: hidden; z-index: -1;\">"
+    },
+    {
+      "text": "Group blocks together. Select a layout:",
+      "display": "none",
+      "width": 0,
+      "height": 0,
+      "html": "<div class=\"components-placeholder is-small\"><div aria-hidden=\"true\" style=\"position: absolute; inset: 0px; pointer-events: none; opacity: 0; overflow: hidden; z-index: -1;\"></div><div class=\"components-placeholder__label\"></div><div class=\"components-placeholder__instructions\">Group blocks together. Select a layout:</div><div class=\"components-placeholder__fieldset\"><ul role=\"list\" class=\"wp-block-group-placeholder__variations\" aria-label=\"Block variations\"><li><button type=\"button\" class=\"components-button wp-block-group-placeholder__variation-button is-next-40px-default-size is-tertiary has",
+      "parent": "<div tabindex=\"0\" draggable=\"true\" class=\"block-editor-block-list__block wp-block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-red-500/20 rounded-full blur-3xl kghq-source-node kghq-tag-div kghq-n111 wp-block-group__placeholder wp-block-group\" id=\"block-ef4385d4-ceb7-4c92-8c1c-b13c04feeb9a\" role=\"document\" aria-label=\"Block: Group\" data-block=\"ef4385d4-ceb7-4c92-8c1c-b13c04feeb9a\" data-type=\"core/group\" data-title=\"Group\"><div class=\"components-placeholder is-small\"><div aria-hidden=\"true\" style=\"position: absolute; inset: 0px; pointer-events: none; opacit"
+    }
+  ]
+}

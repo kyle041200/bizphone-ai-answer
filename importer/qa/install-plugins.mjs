@@ -9,7 +9,7 @@ const page=await browser.newPage({viewport:{width:1440,height:1000}}),results=[]
 try{
  await page.goto(base+'/wp-login.php');await page.locator('#user_login').fill('kghq-admin');await page.locator('#user_pass').fill(process.env.KGHQ_STAGING_PASSWORD||'automation-staging-admin-only');await Promise.all([page.waitForURL('**/wp-admin/**',{waitUntil:'domcontentloaded',timeout:90000}),page.locator('#wp-submit').click()]);
  for(const slug of (process.env.KGHQ_INSTALL_PLUGIN_SLUGS||'kghq-import-styles,kghq-lovable-importer').split(',')){
-  const version=slug==='kghq-import-styles'?(process.env.KGHQ_STYLES_VERSION||'0.5.0-rc2'):'0.5.0-rc1';
+  const version=slug==='kghq-import-styles'?(process.env.KGHQ_STYLES_VERSION||'0.5.0-rc3'):'0.5.0-rc1';
   await page.goto(base+'/wp-admin/plugin-install.php?tab=upload');await page.locator('#pluginzip').setInputFiles(`importer/dist/${slug}-${version}.zip`);await page.locator('#install-plugin-submit').click();
   await page.getByRole('link',{name:'Activate Plugin',exact:true}).or(page.getByRole('link',{name:'Replace current with uploaded',exact:true})).waitFor({timeout:120000});
   const replace=page.getByRole('link',{name:'Replace current with uploaded',exact:true});if(await replace.count())await replace.click();await page.screenshot({path:`importer/work/install-${slug}.png`,fullPage:true});const activate=page.getByRole('link',{name:'Activate Plugin',exact:true});if(await activate.count())await activate.click();results.push({plugin:slug,status:'PASS',version});

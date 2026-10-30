@@ -1,0 +1,28 @@
+{
+  "pages": [
+    {
+      "id": 65,
+      "repository": "kyle041200/bizphone-ai-answer",
+      "route": "/business-support",
+      "onlyOwnScopeLoaded": true,
+      "scope": "kghq-page-00fc222f33fa"
+    },
+    {
+      "id": 102,
+      "repository": "kyle041200/bizphone-ai-answer",
+      "route": "/marketing",
+      "onlyOwnScopeLoaded": true,
+      "scope": "kghq-page-9a9fe96349c7"
+    },
+    {
+      "id": 115,
+      "repository": "GuidoPenta/TrackZilla",
+      "route": "/",
+      "onlyOwnScopeLoaded": true,
+      "scope": "kghq-page-6b48641acfe2"
+    }
+  ],
+  "nativeDetailsMouseAndKeyboard": true,
+  "editedNativeButtonURLPersistsOnFrontend": true,
+  "status": "PASS"
+}

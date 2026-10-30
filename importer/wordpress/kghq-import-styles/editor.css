@@ -13,3 +13,9 @@
 }
 /* The native summary editor retains its RichText span; avoid a UA list line. */
 .kghq-import-root .wp-block-details > summary:has(> span) { display: block; list-style: none; }
+/* Imported decorative layers are native empty Groups. Keep the Group selectable
+   and its inspector controls available, without drawing a layout-picker inside
+   a background circle/overlay. Newly added ordinary Groups keep their picker. */
+.kghq-import-root .wp-block-group.kghq-source-node.wp-block-group__placeholder > .components-placeholder {
+ display: none !important;
+}

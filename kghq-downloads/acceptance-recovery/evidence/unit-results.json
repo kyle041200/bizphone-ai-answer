@@ -1,0 +1,32 @@
+[
+  {
+    "file": "engine/test.mjs",
+    "exitCode": 0,
+    "namedTestCount": 12
+  },
+  {
+    "file": "engine/analysis.test.mjs",
+    "exitCode": 0,
+    "namedTestCount": 1
+  },
+  {
+    "file": "worker/policy.test.mjs",
+    "exitCode": 0,
+    "namedTestCount": 3
+  },
+  {
+    "file": "worker/output.test.mjs",
+    "exitCode": 0,
+    "namedTestCount": 3
+  },
+  {
+    "file": "worker/retry.test.mjs",
+    "exitCode": 0,
+    "namedTestCount": 2
+  },
+  {
+    "file": "worker/test.mjs",
+    "exitCode": 0,
+    "namedTestCount": 2
+  }
+]
