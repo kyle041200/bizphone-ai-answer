@@ -1,7 +1,8 @@
 import http from 'node:http';import crypto from 'node:crypto';import fs from 'node:fs/promises';import path from 'node:path';
 import{checkout,normalizeRepository}from'../engine/github.mjs';import{analyze}from'../engine/analyze.mjs';import{isolatedConversion}from'./isolation.mjs';
+import { repositoryPolicy } from './policy.mjs';
 const token=process.env.KGHQ_WORKER_TOKEN||'';if(token.length<32)throw Error('Configure KGHQ_WORKER_TOKEN (minimum 32 characters)');
-const allow=(process.env.KGHQ_ALLOWED_REPOSITORIES||'').toLowerCase().split(',').map(s=>s.trim()).filter(Boolean);if(!allow.length)throw Error('Configure an explicit KGHQ_ALLOWED_REPOSITORIES allowlist');
+const allowsRepository=repositoryPolicy();
 const root=path.resolve(process.env.KGHQ_WORKER_DATA||'worker-data');await fs.mkdir(root,{recursive:true,mode:0o700});
 const jobs=new Map(),pending=[],ttl=3600000;let active=false;
 const routeOK=r=>typeof r==='string'&&/^\/(?!\/)[A-Za-z0-9/_-]*$/.test(r);
@@ -42,7 +43,7 @@ const server=http.createServer(async(req,res)=>{
   if(jobs.size>=50)return send(429,{message:'Worker queue capacity reached'});
   if(!['scan','convert'].includes(data.kind))return send(400,{message:'Invalid job kind'});
   let repository,commit,policy;
-  if(data.kind==='scan'){repository=normalizeRepository(data.repository);if(!allow.includes(repository.toLowerCase()))return send(403,{message:'Repository not in operator allowlist'});}
+  if(data.kind==='scan'){repository=normalizeRepository(data.repository);if(!allowsRepository(repository))return send(403,{message:'Repository not in operator allowlist'});}
   else{const scan=jobs.get(data.scan);if(!scan||scan.kind!=='scan'||scan.status!=='ready')return send(400,{message:'Scan expired or unavailable'});
    if(!Array.isArray(data.routes)||!data.routes.length||data.routes.length>20||new Set(data.routes).size!==data.routes.length||data.routes.some(r=>!routeOK(r)||!scan.pages.some(p=>p.path===r)))return send(400,{message:'Select 1–20 scanned pages'});
    if(scan.compatibility.requiresInteractionAcknowledgment&&data.acceptInteractionLoss!==true)return send(409,{message:'Review and acknowledge the unsupported interactions report before conversion'});
