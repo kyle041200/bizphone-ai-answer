@@ -16,6 +16,12 @@ try{
  const inventory=await page.evaluate(()=>{const all=[];function walk(bs){for(const b of bs){all.push({id:b.clientId,name:b.name,attributes:b.attributes});walk(b.innerBlocks||[]);}}walk(wp.data.select('core/block-editor').getBlocks());return all;});
  headingId=inventory.find(b=>b.name==='core/heading')?.id;buttonId=inventory.find(b=>b.name==='core/button')?.id;imageId=inventory.find(b=>b.name==='core/image'&&!b.attributes.className?.includes('kghq-source-svg'))?.id;groupId=inventory.find(b=>b.name==='core/group'&&/\bgrid\b/.test(b.attributes.className||''))?.id;
  await check('Heading can be clicked and typed directly in visual canvas',async()=>{const heading=canvas.locator('[data-block="'+headingId+'"][contenteditable="true"], [data-block="'+headingId+'"] [contenteditable="true"]').first();originalHeading=await heading.innerText();await heading.fill('QA editable heading');await page.waitForFunction(id=>wp.data.select('core/block-editor').getBlock(id)?.attributes.content.includes('QA editable heading'),headingId);});
+ await check('Paragraph text and alignment remain visually editable',async()=>{
+  const paragraphId=inventory.find(b=>b.name==='core/paragraph')?.id;assert.ok(paragraphId);
+  const paragraph=canvas.locator('[data-block="'+paragraphId+'"][contenteditable="true"], [data-block="'+paragraphId+'"] [contenteditable="true"]').first();await paragraph.fill('QA editable paragraph');
+  await page.evaluate(id=>wp.data.dispatch('core/block-editor').updateBlockAttributes(id,{align:'center'}),paragraphId);
+  assert.equal(await paragraph.evaluate(e=>getComputedStyle(e).textAlign),'center');
+ });
  await check('Button text is editable directly, with native link/style controls',async()=>{assert.ok(buttonId);await page.evaluate(id=>wp.data.dispatch('core/block-editor').selectBlock(id),buttonId);const link=canvas.locator('[data-block="'+buttonId+'"] .wp-block-button__link[contenteditable="true"]').first();await link.fill('QA button text');await page.waitForFunction(id=>wp.data.select('core/block-editor').getBlock(id)?.attributes.text.includes('QA button text'),buttonId);});
  await check('Custom colors, padding and button link visibly update',async()=>{
   await page.evaluate(id=>{const store=wp.data.select('core/block-editor'),b=store.getBlock(id);wp.data.dispatch('core/block-editor').updateBlockAttributes(id,{url:'https://example.com/qa',style:{...b.attributes.style,color:{background:'#123456',text:'#ffffff'},spacing:{padding:{top:'17px',bottom:'17px',left:'29px',right:'29px'}}}});},buttonId);

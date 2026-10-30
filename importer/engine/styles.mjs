@@ -68,7 +68,8 @@ export async function scopeCSS(css, scope, options = {}) {
   root.walkRules((rule) => {
     if (rule.parent.type === "atrule" && /keyframes$/.test(rule.parent.name)) return;
     rule.selector = selectorParser(selectors=>selectors.walkTags(node=>{
-      if(node.value === "svg")node.replaceWith(selectorParser().astSync(":is(svg,img.kghq-source-svg)").first.first.clone());
+      if(["a","button"].includes(node.value))node.replaceWith(selectorParser().astSync(`:is(${node.value},:where(.kghq-tag-${node.value}))`).first.first.clone());
+      else if(node.value === "svg")node.replaceWith(selectorParser().astSync(":is(svg,img.kghq-source-svg)").first.first.clone());
     })).processSync(rule.selector);
     let nested = false;
     selectorParser((selectors) =>
@@ -101,7 +102,7 @@ export async function scopeCSS(css, scope, options = {}) {
         }
       });
     }).processSync(rule.selector);
-    rule.selector = selectorParser(selectors => { const nodes=[];selectors.walkClasses(node=>{if(node.value===scope)nodes.push(node);});for(const node of nodes){node.parent.insertAfter(node,selectorParser.className({value:scope}));node.parent.insertAfter(node,selectorParser.className({value:scope}));} }).processSync(rule.selector);
+    rule.selector = selectorParser(selectors => { const nodes=[];selectors.walkClasses(node=>{if(node.value===scope)nodes.push(node);});for(const node of nodes){for(let i=0;i<5;i++)node.parent.insertAfter(node,selectorParser.className({value:scope}));} }).processSync(rule.selector);
   });
   return (options.rootFontSize ? `.${scope}{--${scope}-root-rem:${options.rootFontSize}}\n` : "") + root.toString();
 }

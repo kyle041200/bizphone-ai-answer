@@ -239,7 +239,7 @@ try {
           return {...attrs,type:"text",html:`<${el.tagName.toLowerCase()} style="${bold?'font-weight':'font-style'}:inherit">${inline(el)}</${el.tagName.toLowerCase()}>`};
         }
         if (el.tagName === "IMG")
-          return { ...attrs, type: "image", src: el.currentSrc || el.src, alt: el.alt };
+          return { ...attrs, classes:attrs.classes+(el.hasAttribute("srcset")?" kghq-authored-srcset":"")+(el.hasAttribute("loading")?" kghq-loading-"+el.getAttribute("loading"):""), type: "image", src: el.currentSrc || el.src, alt: el.alt };
         if (el.tagName.toUpperCase() === "SVG")
           return {
             ...attrs,
@@ -460,7 +460,11 @@ try {
     }
     compatibility.design.renderedBreakpoints ||= [];
     postcss.parse(css).walkAtRules("media",rule=>{if(!compatibility.design.renderedBreakpoints.includes(rule.params))compatibility.design.renderedBreakpoints.push(rule.params);});
-    css = iconDefaults.join("\n") + "\n" + css;
+    const buttonDefaults=await page.evaluate(()=>[...document.querySelectorAll('a[data-kghq-node],button[data-kghq-node]')].map(el=>`:where(.kghq-${el.dataset.kghqNode}){background-color:${getComputedStyle(el).backgroundColor}}`).join('\n'));
+    // Native Buttons use a DIV RichText surface in the editor. Its WordPress
+    // default paint must not leak through. Authored rules follow and override
+    // these zero-specificity source defaults, including responsive/hover rules.
+    css = buttonDefaults + "\n" + iconDefaults.join("\n") + "\n" + css;
     const rootFontSize=await page.evaluate(()=>getComputedStyle(document.documentElement).fontSize);
     const sourceRoot=await page.evaluate(()=>{
       const html=document.documentElement,body=document.body,a=getComputedStyle(html),b=getComputedStyle(body);
@@ -474,7 +478,7 @@ try {
     // Only our opt-in canvas document receives the original viewport paint.
     // Overflow outside the source body must not reveal a theme's white background.
     css+=`\nbody.kghq-import-canvas:has(.${scope}){background-color:${sourceRoot.canvasColor}}`;
-    const ns=`.${scope}.${scope}.${scope}`;
+    const ns=Array(6).fill(`.${scope}`).join("");
     // A source-only cascade boundary prevents theme defaults leaking into native
     // content. Source declarations follow it; user-edited inline block styles win.
     css = `${ns},${ns} :where(.kghq-source-node){all:revert;box-sizing:border-box}\n` +

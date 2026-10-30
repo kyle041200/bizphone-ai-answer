@@ -1,0 +1,13 @@
+✔ exact repositories do not implicitly authorize an owner (2.144497ms)
+✔ owner access requires explicit opt-in and matches whole owner names (0.593499ms)
+✔ empty or malformed policy fails closed (0.281117ms)
+✔ repository inputs accept full GitHub URLs and reject credentials/hosts/path injection (1.130164ms)
+✔ authenticated async API rejects invalid jobs and replays idempotently; optional real default-branch scan (380.623922ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 470.360058

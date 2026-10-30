@@ -28,7 +28,7 @@ async function execute(j){try{
   j.warnings=[...new Set(bundle.pages.flatMap(p=>p.warnings||[]))];await fs.rm(path.join(j.directory,'source'),{recursive:true,force:true});
  }
  j.status='ready';j.phase='ready';j.progress=100;
-}catch(e){j.failurePhase=j.phase;j.status='failed';j.phase='failed';j.error=e.publicMessage||'Job failed. Check repository support, available source assets, dependency installation, runner image/resources and server operator logs. Existing pages were not changed.';console.error(JSON.stringify({job:j.id,phase:j.failurePhase,error:e instanceof Error?e.name:'Error'}));}await persist(j);}
+}catch(e){await fs.rm(path.join(j.directory,'source'),{recursive:true,force:true}).catch(()=>{});j.failurePhase=j.phase;j.status='failed';j.phase='failed';j.error=e.publicMessage||'Job failed. Check repository support, available source assets, dependency installation, runner image/resources and server operator logs. Existing pages were not changed.';console.error(JSON.stringify({job:j.id,phase:j.failurePhase,error:e instanceof Error?e.name:'Error'}));}await persist(j);}
 async function pump(){if(active||!pending.length)return;active=true;const j=pending.shift();j.status='running';try{await execute(j);}finally{active=false;void pump();}}
 function view(j){return{id:j.id,kind:j.kind,status:j.status,phase:j.phase,progress:j.progress||0,repository:j.repository,commit:j.commit,ref:j.ref,pages:j.kind==='scan'?j.pages:undefined,compatibility:j.kind==='scan'?j.compatibility:undefined,warnings:j.warnings||[],error:j.error};}
 const server=http.createServer(async(req,res)=>{

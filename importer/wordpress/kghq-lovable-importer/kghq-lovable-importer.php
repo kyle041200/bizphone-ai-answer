@@ -2,7 +2,7 @@
 /**
  * Plugin Name: KGHQ Lovable Importer
  * Description: Imports selected converter bundles into editable native Gutenberg draft pages. Requires the independent KGHQ Import Styles companion for styling.
- * Version: 0.4.0
+ * Version: 0.5.0-rc1
  * Requires at least: 6.6
  * Requires PHP: 8.1
  * Author: KGHQ
@@ -15,7 +15,7 @@ final class Plugin {
  const ALLOWED = ['core/group','core/heading','core/paragraph','core/image','core/buttons','core/button','core/columns','core/column','core/list','core/list-item','core/separator','core/details','kghq/link-group'];
  static function boot() {
   add_action('admin_menu', fn()=>add_management_page('KGHQ Lovable Importer','KGHQ Lovable Importer','manage_options','kghq-importer',[self::class,'screen']));
-  add_action('admin_enqueue_scripts',function($hook){if($hook!=='tools_page_kghq-importer')return; wp_enqueue_style('kghq-import-admin',plugins_url('admin.css',__FILE__),[], '0.4.0');wp_enqueue_script('kghq-import-admin',plugins_url('admin.js',__FILE__),[], '0.4.0',true);wp_localize_script('kghq-import-admin','KGHQ_IMPORT',['api'=>rest_url('kghq-importer/v1/'),'nonce'=>wp_create_nonce('wp_rest')]);});
+  add_action('admin_enqueue_scripts',function($hook){if($hook!=='tools_page_kghq-importer')return; wp_enqueue_style('kghq-import-admin',plugins_url('admin.css',__FILE__),[], '0.5.0-rc1');wp_enqueue_script('kghq-import-admin',plugins_url('admin.js',__FILE__),[], '0.5.0-rc1',true);wp_localize_script('kghq-import-admin','KGHQ_IMPORT',['api'=>rest_url('kghq-importer/v1/'),'nonce'=>wp_create_nonce('wp_rest')]);});
   add_action('rest_api_init',function(){foreach(['stage','import'] as $action)register_rest_route('kghq-importer/v1','/'.$action,['methods'=>'POST','permission_callback'=>[self::class,'permission'],'callback'=>[self::class,$action]]);});
  }
  static function permission(){return current_user_can('manage_options')&&current_user_can('edit_pages')&&current_user_can('upload_files')&&current_user_can('unfiltered_html');}

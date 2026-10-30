@@ -19,9 +19,9 @@ test("scoping contains reset, root variables, media selectors, hover, layers, an
     "@layer utilities{.red:hover{color:red}} :root{--color:red} @media(max-width:600px){.a{display:none}} @keyframes spin{to{transform:rotate(1turn)}} .animate{animation:spin 1s}",
     "kghq-page-123456abcdef",
   );
-  assert.match(css, /(?:\.kghq-page-123456abcdef){3} \.red:hover/);
-  assert.match(css, /(?:\.kghq-page-123456abcdef){3}\{--kghq-page-123456abcdef-color/);
-  assert.match(css, /(?:\.kghq-page-123456abcdef){3} \.a/);
+  assert.match(css, /(?:\.kghq-page-123456abcdef){6} \.red:hover/);
+  assert.match(css, /(?:\.kghq-page-123456abcdef){6}\{--kghq-page-123456abcdef-color/);
+  assert.match(css, /(?:\.kghq-page-123456abcdef){6} \.a/);
   assert.match(css, /@keyframes kghq-page-123456abcdef-spin/);
   assert.doesNotMatch(css, /@layer/);
   assert.doesNotMatch(css, /\.kghq-page-123456abcdef to/);
@@ -67,7 +67,7 @@ test("native Details preserves editable summary, inline icons, and child content
 });
 test("escaped ampersands in utility class names do not bypass selector scoping", async () => {
   const css = await scopeCSS(".\\[\\&\\>svg\\]\\:size-4>svg{width:1rem}", "kghq-page-123456abcdef");
-  assert.match(css, /^(?:\.kghq-page-123456abcdef){3} /);
+  assert.match(css, /^(?:\.kghq-page-123456abcdef){6} /);
 });
 test("font-face names and font family variables are namespaced together", async () => {
   const css = await scopeCSS(
