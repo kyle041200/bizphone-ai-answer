@@ -1,0 +1,124 @@
+{
+    "results": [
+        {
+            "name": "Same-origin normalization drops query and fragment",
+            "status": "PASS"
+        },
+        {
+            "name": "Foreign links rejected",
+            "status": "PASS"
+        },
+        {
+            "name": "Asset links rejected",
+            "status": "PASS"
+        },
+        {
+            "name": "Query-only links rejected",
+            "status": "PASS"
+        },
+        {
+            "name": "Private source URL rejected",
+            "status": "PASS"
+        },
+        {
+            "name": "Cross-origin redirect rejected before following",
+            "status": "PASS"
+        },
+        {
+            "name": "Sitemap discovers only same-origin pages",
+            "status": "PASS"
+        },
+        {
+            "name": "Empty sitemap falls back without a PHP XML exception",
+            "status": "PASS"
+        },
+        {
+            "name": "Safe source fetch reads HTML fixture",
+            "status": "PASS"
+        },
+        {
+            "name": "Rendered document supported",
+            "status": "PASS"
+        },
+        {
+            "name": "Imported as draft",
+            "status": "PASS"
+        },
+        {
+            "name": "No HTML, custom block or executable substitutes",
+            "status": "PASS"
+        },
+        {
+            "name": "Unsupported form reported",
+            "status": "PASS"
+        },
+        {
+            "name": "Media sideloaded into attachment",
+            "status": "PASS"
+        },
+        {
+            "name": "Media has source alt text",
+            "status": "PASS"
+        },
+        {
+            "name": "No hotlinked image remains",
+            "status": "PASS"
+        },
+        {
+            "name": "Root is native full-width Group",
+            "status": "PASS"
+        },
+        {
+            "name": "Exact source padding uses editable native attribute",
+            "status": "PASS"
+        },
+        {
+            "name": "Exact source color uses editable native attribute",
+            "status": "PASS"
+        },
+        {
+            "name": "Reimport updates same draft ID",
+            "status": "PASS"
+        },
+        {
+            "name": "WordPress save marks manual edit",
+            "status": "PASS"
+        },
+        {
+            "name": "Stale unchecked Gutenberg metabox cannot clear new protection",
+            "status": "PASS"
+        },
+        {
+            "name": "Reimport preserves manual edit",
+            "status": "PASS"
+        },
+        {
+            "name": "Unrelated existing slug preserved",
+            "status": "PASS"
+        },
+        {
+            "name": "Queue imports a second page without conversion CLI",
+            "status": "PASS"
+        },
+        {
+            "name": "Title-only edits are preserved",
+            "status": "PASS"
+        },
+        {
+            "name": "Existing bizphone content unchanged",
+            "status": "PASS"
+        },
+        {
+            "name": "Existing bizsite content unchanged",
+            "status": "PASS"
+        }
+    ],
+    "count": 28,
+    "pageIds": [
+        140,
+        144
+    ],
+    "wordpress": "7.1.4",
+    "php": "8.3.36",
+    "limitations": "Mocked source HTTP and existing isolated staging; not clean-install UI or published-site acceptance."
+}

@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "name": "kghq-lovable-importer installed and activated through WordPress upload UI",
+      "status": "PASS"
+    },
+    {
+      "name": "kghq-published-styles installed and activated through WordPress upload UI",
+      "status": "PASS"
+    },
+    {
+      "name": "Settings-only import finishes without CLI, JSON or external conversion service",
+      "status": "PASS"
+    },
+    {
+      "name": "Both synthetic source pages created as drafts",
+      "status": "PASS"
+    },
+    {
+      "name": "Dashboard reimport keeps both page IDs",
+      "status": "PASS"
+    },
+    {
+      "name": "Page 1: all editor blocks valid and native",
+      "status": "PASS"
+    },
+    {
+      "name": "Page 1: direct text edit survives save/reopen with valid blocks",
+      "status": "PASS"
+    },
+    {
+      "name": "Page 2: all editor blocks valid and native",
+      "status": "PASS"
+    },
+    {
+      "name": "Page 2: direct text edit survives save/reopen with valid blocks",
+      "status": "PASS"
+    },
+    {
+      "name": "Dashboard reimport reports both manually edited pages preserved",
+      "status": "PASS"
+    }
+  ],
+  "source": "Synthetic server-rendered fixture intercepted in staging PHP",
+  "theme": "Twenty Seventeen",
+  "base": "http://localhost:8089",
+  "originalPublishedSiteTested": false
+}

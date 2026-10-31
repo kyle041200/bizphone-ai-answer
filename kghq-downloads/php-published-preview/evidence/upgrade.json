@@ -1,0 +1,103 @@
+{
+  "checks": [
+    "kghq-lovable-importer: current ZIP installed through UI",
+    "kghq-published-styles: current ZIP installed through UI",
+    "Modular controller loads its admin script and preserves both edited drafts",
+    "Import saves the newly typed URL automatically without a separate Save action",
+    "AJAX import without nonce rejected with HTTP 403",
+    "Both synthetic pages use full available canvas width at all three viewports",
+    "Shared stylesheet loads in editor and root uses available iframe width"
+  ],
+  "measurements": [
+    {
+      "id": 9,
+      "kind": "front-end",
+      "rootWidth": 1440,
+      "viewport": 1440,
+      "fontFamily": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif"
+    },
+    {
+      "id": 9,
+      "kind": "front-end",
+      "rootWidth": 768,
+      "viewport": 768,
+      "fontFamily": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif"
+    },
+    {
+      "id": 9,
+      "kind": "front-end",
+      "rootWidth": 390,
+      "viewport": 390,
+      "fontFamily": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif"
+    },
+    {
+      "id": 8,
+      "kind": "front-end",
+      "rootWidth": 1440,
+      "viewport": 1440,
+      "fontFamily": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif"
+    },
+    {
+      "id": 8,
+      "kind": "front-end",
+      "rootWidth": 768,
+      "viewport": 768,
+      "fontFamily": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif"
+    },
+    {
+      "id": 8,
+      "kind": "front-end",
+      "rootWidth": 390,
+      "viewport": 390,
+      "fontFamily": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif"
+    },
+    {
+      "kind": "editor",
+      "rootWidth": 1160,
+      "viewport": 1160,
+      "fontFamily": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif"
+    }
+  ],
+  "editorAncestors": [
+    {
+      "tag": "DIV",
+      "class": "block-editor-block-list__block kghq-published kghq-site-93--184--216--34 wp-block-group",
+      "width": 1160,
+      "maxWidth": "none",
+      "padding": "0px",
+      "margin": "0px"
+    },
+    {
+      "tag": "DIV",
+      "class": "wp-block",
+      "width": 1160,
+      "maxWidth": "none",
+      "padding": "0px",
+      "margin": "0px -8px"
+    },
+    {
+      "tag": "DIV",
+      "class": "is-root-container is-desktop-preview is-layout-flow wp-block-post-content block-editor-block-list__layout",
+      "width": 1160,
+      "maxWidth": "none",
+      "padding": "0px",
+      "margin": "0px"
+    },
+    {
+      "tag": "BODY",
+      "class": "block-editor-iframe__body editor-styles-wrapper post-type-page admin-color-modern wp-embed-responsive",
+      "width": 1160,
+      "maxWidth": "none",
+      "padding": "0px",
+      "margin": "0px"
+    },
+    {
+      "tag": "HTML",
+      "class": "block-editor-iframe__html",
+      "width": 1160,
+      "maxWidth": "none",
+      "padding": "0px",
+      "margin": "0px"
+    }
+  ]
+}

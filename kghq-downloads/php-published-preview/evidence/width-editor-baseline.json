@@ -1,0 +1,19 @@
+{
+  "method": "Controlled same-page browser stylesheet comparison: baseline is the shared stylesheet prefix before the canvas/editor width rules. No content edits or theme CSS patches.",
+  "baselineCssSha256": "bf13ea66de5f9249c750f8b6d36053c09cc8db0bd69942e0baa01ddf31bada7d",
+  "currentCssSha256": "b2691b8655920f2799e091020c6a25d0949955039877544d797270bc1707739e",
+  "measurements": [
+    {
+      "stage": "before",
+      "rootWidth": 616,
+      "viewport": 1160,
+      "fontFamily": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif"
+    },
+    {
+      "stage": "after",
+      "rootWidth": 1160,
+      "viewport": 1160,
+      "fontFamily": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif"
+    }
+  ]
+}

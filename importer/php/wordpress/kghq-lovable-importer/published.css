@@ -1,0 +1,30 @@
+/* Base editing styles only. Source design extraction is not implemented yet. */
+.kghq-published {
+  --kghq-content-width: 1200px;
+  --kghq-wide-width: 1440px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+}
+.kghq-published *, .kghq-published *::before, .kghq-published *::after { box-sizing: inherit; }
+.kghq-published img { max-width: 100%; height: auto; }
+.kghq-published > :where(:not(.alignwide):not(.alignfull)) {
+  max-width: var(--kghq-content-width);
+  margin-inline: auto;
+}
+.kghq-published .alignwide { max-width: var(--kghq-wide-width); margin-inline: auto; }
+.kghq-published .alignfull { max-width: none; width: 100%; }
+.editor-styles-wrapper .kghq-published { max-width: none; }
+/* Only the imported canvas bypasses the classic theme's page-content wrapper. */
+.kghq-published-page .site-content:has(.kghq-published-canvas) { padding: 0; }
+.kghq-published-canvas { width: 100%; max-width: none; margin: 0; padding: 0; }
+.editor-styles-wrapper .is-root-container:has(.kghq-published) { max-width: none; padding-inline: 0; }
+.editor-styles-wrapper .is-root-container .kghq-published {
+  width: 100%; max-width: none; margin-inline: 0;
+}
+body.editor-styles-wrapper:has(.kghq-published) {
+  box-sizing: border-box; width: 100%; max-width: none; margin: 0; padding: 0;
+}
+.editor-styles-wrapper .wp-block:has(> .kghq-published) {
+  width: 100%; max-width: none; margin: 0;
+}

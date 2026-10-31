@@ -1,0 +1,24 @@
+{
+    "pages": [
+        {
+            "id": 9,
+            "source": "https:\/\/93.184.216.34\/services",
+            "contentHash": "fcd27b20da091c5b9e6b848b3e5f9780d7434d2363f3e6e747983ad3c67b40c9",
+            "manualProtection": true,
+            "status": "draft"
+        },
+        {
+            "id": 8,
+            "source": "https:\/\/93.184.216.34\/",
+            "contentHash": "1db96528b7e2d5807b0e4d5d92ce3cf1cccd6d5a97504008c4b1d90a6da26895",
+            "manualProtection": true,
+            "status": "draft"
+        }
+    ],
+    "media": [
+        {
+            "id": 7,
+            "exists": true
+        }
+    ]
+}

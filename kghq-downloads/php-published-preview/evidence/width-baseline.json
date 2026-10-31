@@ -1,0 +1,55 @@
+{
+  "source": "Synthetic PHP fixture, not the published Lovable site",
+  "measurements": [
+    {
+      "id": 9,
+      "viewport": 1440,
+      "width": 524.3125,
+      "font": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif",
+      "headingSize": "48px"
+    },
+    {
+      "id": 9,
+      "viewport": 768,
+      "width": 389.75,
+      "font": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif",
+      "headingSize": "48px"
+    },
+    {
+      "id": 9,
+      "viewport": 390,
+      "width": 300,
+      "font": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif",
+      "headingSize": "48px"
+    },
+    {
+      "id": 8,
+      "viewport": 1440,
+      "width": 524.3125,
+      "font": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif",
+      "headingSize": "48px"
+    },
+    {
+      "id": 8,
+      "viewport": 768,
+      "width": 389.75,
+      "font": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif",
+      "headingSize": "48px"
+    },
+    {
+      "id": 8,
+      "viewport": 390,
+      "width": 300,
+      "font": "\"Libre Franklin\", \"Helvetica Neue\", helvetica, arial, sans-serif",
+      "headingSize": "48px"
+    }
+  ],
+  "checks": [
+    "Importer absent from plugin listing after WordPress UI removal",
+    "Independent styling companion remains active",
+    "Page 9: front end loads independent base stylesheet after deletion",
+    "Page 9: native blocks still valid in editor after deletion",
+    "Page 8: front end loads independent base stylesheet after deletion",
+    "Page 8: native blocks still valid in editor after deletion"
+  ]
+}

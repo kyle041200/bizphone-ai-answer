@@ -1,0 +1,17 @@
+[
+  {
+    "file": "kghq-lovable-importer-0.6.0-alpha1.zip",
+    "bytes": 35766,
+    "sha256": "70e6a7c362ce6aa7001a419801dd79f706be2c6730f9c3c68255e9d5557d9017"
+  },
+  {
+    "file": "kghq-published-styles-0.6.0-alpha1.zip",
+    "bytes": 12711,
+    "sha256": "7bc6711073403ec08214715b60f48e1c970d86f783f59dceb49a2cd62e7f23ab"
+  },
+  {
+    "file": "kghq-published-source-0.6.0-alpha1.zip",
+    "bytes": 60734,
+    "sha256": "97223dcd0913fce26012974daacfef96ffd7af054075e4a3bfcd3da3247078a4"
+  }
+]

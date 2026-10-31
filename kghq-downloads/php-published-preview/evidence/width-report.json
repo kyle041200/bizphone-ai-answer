@@ -1,0 +1,55 @@
+{
+  "scope": "Synthetic same-content canvas regression, NOT comparison with the published Lovable design",
+  "frontEnd": [
+    {
+      "id": 9,
+      "viewport": 1440,
+      "beforeRootWidth": 524.3125,
+      "afterRootWidth": 1440,
+      "withinOnePixelOfViewport": true
+    },
+    {
+      "id": 9,
+      "viewport": 768,
+      "beforeRootWidth": 389.75,
+      "afterRootWidth": 768,
+      "withinOnePixelOfViewport": true
+    },
+    {
+      "id": 9,
+      "viewport": 390,
+      "beforeRootWidth": 300,
+      "afterRootWidth": 390,
+      "withinOnePixelOfViewport": true
+    },
+    {
+      "id": 8,
+      "viewport": 1440,
+      "beforeRootWidth": 524.3125,
+      "afterRootWidth": 1440,
+      "withinOnePixelOfViewport": true
+    },
+    {
+      "id": 8,
+      "viewport": 768,
+      "beforeRootWidth": 389.75,
+      "afterRootWidth": 768,
+      "withinOnePixelOfViewport": true
+    },
+    {
+      "id": 8,
+      "viewport": 390,
+      "beforeRootWidth": 300,
+      "afterRootWidth": 390,
+      "withinOnePixelOfViewport": true
+    }
+  ],
+  "editor": {
+    "beforeRootWidth": 616,
+    "afterRootWidth": 1160,
+    "availableIframeWidth": 1160,
+    "withinTwoPixelsOfIframe": true
+  },
+  "visualSimilarityScore": null,
+  "imageMethod": "Before on left, after on right. Difference is absolute RGB difference with white bottom/right padding only, no registration or rescaling. Theme title/wrapper removal is included."
+}

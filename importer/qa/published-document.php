@@ -1,6 +1,6 @@
 <?php
 /** Standalone PHP assertions; no WordPress, network or database writes. */
-require dirname( __DIR__ ) . '/php/class-published-document.php';
+require dirname( __DIR__ ) . '/php/wordpress/kghq-lovable-importer/includes/class-published-document.php';
 
 $cases = array(
 	'empty response' => array( '', 'unsupported' ),
@@ -23,6 +23,16 @@ foreach ( $cases as $name => $case ) {
 $result = \KGHQ\Published\Published_Document::inspect( '<main><header><h1>Page title</h1></header><p>Text</p><script>alert(1)</script><nav>Menu</nav><footer>Footer</footer><form><input></form></main>' );
 if ( false !== strpos( $result['html'], '<script' ) || false !== strpos( $result['html'], '<nav' ) || false !== strpos( $result['html'], '<footer' ) || false === strpos( $result['html'], 'Page title' ) || count( $result['warnings'] ) < 2 ) {
 	throw new RuntimeException( 'Chrome removal, section header preservation or interaction reporting failed.' );
+}
+++ $count;
+$nested = \KGHQ\Published\Published_Document::inspect( '<main><header><p>Global logo</p><nav>Global menu</nav></header><section><header><h1>Keep section heading</h1></header><p>Content</p></section></main>' );
+if ( str_contains( $nested['html'], 'Global logo' ) || ! str_contains( $nested['html'], 'Keep section heading' ) ) {
+	throw new RuntimeException( 'Global header inside main was not removed, or section heading was removed.' );
+}
+++ $count;
+$banner = \KGHQ\Published\Published_Document::inspect( '<main><header role="banner"><p>Global banner</p></header><p>Main content</p></main>' );
+if ( str_contains( $banner['html'], 'Global banner' ) ) {
+	throw new RuntimeException( 'ARIA banner inside main was not removed.' );
 }
 ++ $count;
 echo json_encode( array( 'passed' => $count, 'failed' => 0, 'scope' => 'Published HTML availability only; not importer acceptance' ), JSON_PRETTY_PRINT ) . PHP_EOL;

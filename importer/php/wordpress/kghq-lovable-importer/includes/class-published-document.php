@@ -9,6 +9,8 @@
 
 namespace KGHQ\Published;
 
+// phpcs:disable WordPress.NamingConventions.ValidVariableName.UsedPropertyNotSnakeCase -- DOM API property names are fixed camelCase.
+
 /** Inspect a document before creating any WordPress content. */
 final class Published_Document {
 
@@ -59,6 +61,7 @@ final class Published_Document {
 		$remove = $xpath->query(
 			'//script | //style | //noscript | //template | //nav | //footer | '
 			. '//header[not(ancestor::main) and not(ancestor::*[@role="main"])] | '
+			. '//header[@role="banner" or descendant::nav or descendant::*[@role="navigation"]] | '
 			. '//*[@id="lovable-badge"] | //a[contains(@href,"lovable.dev/projects/")]'
 		);
 		foreach ( iterator_to_array( $remove ) as $node ) {
