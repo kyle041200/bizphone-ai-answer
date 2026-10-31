@@ -1,0 +1,10 @@
+✔ transient registry failures retry; deterministic lock failures do not (1.498894ms)
+✔ attempts and elapsed installation budget stay bounded (0.35217ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8.101534

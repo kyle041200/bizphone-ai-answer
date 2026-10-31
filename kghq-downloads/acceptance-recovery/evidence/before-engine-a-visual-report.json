@@ -1,0 +1,2395 @@
+{
+  "label": "before-engine-a",
+  "conditions": {
+    "browser": "154.0.8037.57",
+    "viewportHeight": 1000,
+    "deviceScaleFactor": 1,
+    "locale": "en-US",
+    "timezoneId": "UTC",
+    "colorScheme": "light",
+    "reducedMotion": "reduce",
+    "animations": "disabled",
+    "screenshots": "unmasked, no resizing, full-page + native section crops"
+  },
+  "semanticMatching": "Match source tag identity carried by kghq-tag-* metadata; native Details summary is the documented equivalent of its source disclosure button. Pair text after normalizing structural whitespace, smart punctuation and the documented zero-width RichText decorative-span marker; separately report actual visible punctuation mutations. Never erase pixel differences.",
+  "method": "Unmasked full-page and section RGB differences (any channel delta >25); 16px local luminance SSIM; DOM box and computed-style diffs. No scaling, registration, filtering or hidden-content masks.",
+  "internalGoal": "At least 95% pixels within RGB tolerance AND local SSIM >=0.95 AND section x/y/width/height within 2px AND no unmatched source elements AND no observed leaf-text mutations. Missing fonts/assets/interactions remain separate review blockers; similarity alone is not certification.",
+  "results": [
+    {
+      "route": "/business-support",
+      "width": 1440,
+      "fullPage": {
+        "changedPixelsRGBDeltaAbove25Percent": 0.048,
+        "meanAbsoluteRGBError": 0.051,
+        "localLuminanceSSIM16px": 0.99865,
+        "sourceSize": [
+          1440,
+          9415
+        ],
+        "importedSize": [
+          1440,
+          9415
+        ],
+        "diff": "business-support-1440-full-diff.png",
+        "overlay": "business-support-1440-full-overlay.png"
+      },
+      "heightDelta": 0,
+      "scrollWidthDelta": 0,
+      "sourceHorizontalOverflow": false,
+      "horizontalOverflow": false,
+      "sourceMissingImages": [
+        {
+          "alt": "KGHQ",
+          "url": "/__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png"
+        }
+      ],
+      "importedMissingImages": [],
+      "sourceFonts": [],
+      "importedFonts": [
+        {
+          "family": "dashicons",
+          "status": "loaded"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "title": "The extra support your business has been missing.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.009,
+            "meanAbsoluteRGBError": 0.004,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              1440,
+              805
+            ],
+            "importedSize": [
+              1440,
+              805
+            ],
+            "diff": "business-support-1440-section-0-diff.png",
+            "overlay": "business-support-1440-section-0-overlay.png"
+          },
+          "sourceScreenshot": "business-support-1440-source-section-0.png",
+          "importedScreenshot": "business-support-1440-imported-section-0.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 1,
+          "title": "What do you need help with?",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.011,
+            "meanAbsoluteRGBError": 0.005,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              1440,
+              1062
+            ],
+            "importedSize": [
+              1440,
+              1062
+            ],
+            "diff": "business-support-1440-section-1-diff.png",
+            "overlay": "business-support-1440-section-1-overlay.png"
+          },
+          "sourceScreenshot": "business-support-1440-source-section-1.png",
+          "importedScreenshot": "business-support-1440-imported-section-1.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 2,
+          "title": "Three ways KGHQ keeps your business moving.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.011,
+            "meanAbsoluteRGBError": 0.006,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              1440,
+              892
+            ],
+            "importedSize": [
+              1440,
+              892
+            ],
+            "diff": "business-support-1440-section-2-diff.png",
+            "overlay": "business-support-1440-section-2-overlay.png"
+          },
+          "sourceScreenshot": "business-support-1440-source-section-2.png",
+          "importedScreenshot": "business-support-1440-imported-section-2.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 3,
+          "title": "Choose how much support you need.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.004,
+            "meanAbsoluteRGBError": 0.003,
+            "localLuminanceSSIM16px": 0.99999,
+            "sourceSize": [
+              1440,
+              1019
+            ],
+            "importedSize": [
+              1440,
+              1019
+            ],
+            "diff": "business-support-1440-section-3-diff.png",
+            "overlay": "business-support-1440-section-3-overlay.png"
+          },
+          "sourceScreenshot": "business-support-1440-source-section-3.png",
+          "importedScreenshot": "business-support-1440-imported-section-3.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 4,
+          "title": "Your \u201ccan someone please handle this?\u201d menu.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.056,
+            "meanAbsoluteRGBError": 0.061,
+            "localLuminanceSSIM16px": 0.99924,
+            "sourceSize": [
+              1440,
+              1568
+            ],
+            "importedSize": [
+              1440,
+              1568
+            ],
+            "diff": "business-support-1440-section-4-diff.png",
+            "overlay": "business-support-1440-section-4-overlay.png"
+          },
+          "sourceScreenshot": "business-support-1440-source-section-4.png",
+          "importedScreenshot": "business-support-1440-imported-section-4.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [
+            {
+              "sourceTag": "H3",
+              "renderedTag": "H3",
+              "source": "Proposals - Signature",
+              "imported": "Proposals \u2013 Signature",
+              "likelyCause": "WordPress typography/content filters or a native-block text mutation; review actual glyphs."
+            }
+          ],
+          "qualityGoalMet": false
+        },
+        {
+          "index": 5,
+          "title": "Here\u2019s how Business Support works.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.011,
+            "meanAbsoluteRGBError": 0.004,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              1440,
+              678
+            ],
+            "importedSize": [
+              1440,
+              678
+            ],
+            "diff": "business-support-1440-section-5-diff.png",
+            "overlay": "business-support-1440-section-5-overlay.png"
+          },
+          "sourceScreenshot": "business-support-1440-source-section-5.png",
+          "importedScreenshot": "business-support-1440-imported-section-5.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 6,
+          "title": "More support. Less operational drag.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.027,
+            "meanAbsoluteRGBError": 0.01,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              1440,
+              751
+            ],
+            "importedSize": [
+              1440,
+              751
+            ],
+            "diff": "business-support-1440-section-6-diff.png",
+            "overlay": "business-support-1440-section-6-overlay.png"
+          },
+          "sourceScreenshot": "business-support-1440-source-section-6.png",
+          "importedScreenshot": "business-support-1440-imported-section-6.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 7,
+          "title": "It doesn\u2019t all have to stay on your list.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.023,
+            "meanAbsoluteRGBError": 0.011,
+            "localLuminanceSSIM16px": 0.99996,
+            "sourceSize": [
+              1440,
+              628
+            ],
+            "importedSize": [
+              1440,
+              628
+            ],
+            "diff": "business-support-1440-section-7-diff.png",
+            "overlay": "business-support-1440-section-7-overlay.png"
+          },
+          "sourceScreenshot": "business-support-1440-source-section-7.png",
+          "importedScreenshot": "business-support-1440-imported-section-7.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 8,
+          "title": "Your tokens aren\u2019t locked into one department.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.009,
+            "meanAbsoluteRGBError": 0.003,
+            "localLuminanceSSIM16px": 0.99999,
+            "sourceSize": [
+              1440,
+              776
+            ],
+            "importedSize": [
+              1440,
+              776
+            ],
+            "diff": "business-support-1440-section-8-diff.png",
+            "overlay": "business-support-1440-section-8-overlay.png"
+          },
+          "sourceScreenshot": "business-support-1440-source-section-8.png",
+          "importedScreenshot": "business-support-1440-imported-section-8.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 9,
+          "title": "Flexible support, made clear.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.0,
+            "meanAbsoluteRGBError": 0.004,
+            "localLuminanceSSIM16px": 0.99999,
+            "sourceSize": [
+              1440,
+              571
+            ],
+            "importedSize": [
+              1440,
+              571
+            ],
+            "diff": "business-support-1440-section-9-diff.png",
+            "overlay": "business-support-1440-section-9-overlay.png"
+          },
+          "sourceScreenshot": "business-support-1440-source-section-9.png",
+          "importedScreenshot": "business-support-1440-imported-section-9.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 10,
+          "title": "Get it off your list. Keep moving.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.002,
+            "meanAbsoluteRGBError": 0.003,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              1440,
+              597
+            ],
+            "importedSize": [
+              1440,
+              597
+            ],
+            "diff": "business-support-1440-section-10-diff.png",
+            "overlay": "business-support-1440-section-10-overlay.png"
+          },
+          "sourceScreenshot": "business-support-1440-source-section-10.png",
+          "importedScreenshot": "business-support-1440-imported-section-10.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        }
+      ],
+      "qualityGoalMet": false
+    },
+    {
+      "route": "/business-support",
+      "width": 768,
+      "fullPage": {
+        "changedPixelsRGBDeltaAbove25Percent": 0.069,
+        "meanAbsoluteRGBError": 0.093,
+        "localLuminanceSSIM16px": 0.99876,
+        "sourceSize": [
+          768,
+          14769
+        ],
+        "importedSize": [
+          768,
+          14769
+        ],
+        "diff": "business-support-768-full-diff.png",
+        "overlay": "business-support-768-full-overlay.png"
+      },
+      "heightDelta": 0,
+      "scrollWidthDelta": 0,
+      "sourceHorizontalOverflow": false,
+      "horizontalOverflow": false,
+      "sourceMissingImages": [
+        {
+          "alt": "KGHQ",
+          "url": "/__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png"
+        }
+      ],
+      "importedMissingImages": [],
+      "sourceFonts": [],
+      "importedFonts": [
+        {
+          "family": "dashicons",
+          "status": "loaded"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "title": "The extra support your business has been missing.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.009,
+            "meanAbsoluteRGBError": 0.005,
+            "localLuminanceSSIM16px": 0.99996,
+            "sourceSize": [
+              768,
+              805
+            ],
+            "importedSize": [
+              768,
+              805
+            ],
+            "diff": "business-support-768-section-0-diff.png",
+            "overlay": "business-support-768-section-0-overlay.png"
+          },
+          "sourceScreenshot": "business-support-768-source-section-0.png",
+          "importedScreenshot": "business-support-768-imported-section-0.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 1,
+          "title": "What do you need help with?",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.015,
+            "meanAbsoluteRGBError": 0.006,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              768,
+              1490
+            ],
+            "importedSize": [
+              768,
+              1490
+            ],
+            "diff": "business-support-768-section-1-diff.png",
+            "overlay": "business-support-768-section-1-overlay.png"
+          },
+          "sourceScreenshot": "business-support-768-source-section-1.png",
+          "importedScreenshot": "business-support-768-imported-section-1.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 2,
+          "title": "Three ways KGHQ keeps your business moving.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.008,
+            "meanAbsoluteRGBError": 0.005,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              768,
+              1636
+            ],
+            "importedSize": [
+              768,
+              1636
+            ],
+            "diff": "business-support-768-section-2-diff.png",
+            "overlay": "business-support-768-section-2-overlay.png"
+          },
+          "sourceScreenshot": "business-support-768-source-section-2.png",
+          "importedScreenshot": "business-support-768-imported-section-2.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 3,
+          "title": "Choose how much support you need.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.003,
+            "meanAbsoluteRGBError": 0.002,
+            "localLuminanceSSIM16px": 0.99999,
+            "sourceSize": [
+              768,
+              2536
+            ],
+            "importedSize": [
+              768,
+              2536
+            ],
+            "diff": "business-support-768-section-3-diff.png",
+            "overlay": "business-support-768-section-3-overlay.png"
+          },
+          "sourceScreenshot": "business-support-768-source-section-3.png",
+          "importedScreenshot": "business-support-768-imported-section-3.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 4,
+          "title": "Your \u201ccan someone please handle this?\u201d menu.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.057,
+            "meanAbsoluteRGBError": 0.062,
+            "localLuminanceSSIM16px": 0.99911,
+            "sourceSize": [
+              768,
+              2904
+            ],
+            "importedSize": [
+              768,
+              2904
+            ],
+            "diff": "business-support-768-section-4-diff.png",
+            "overlay": "business-support-768-section-4-overlay.png"
+          },
+          "sourceScreenshot": "business-support-768-source-section-4.png",
+          "importedScreenshot": "business-support-768-imported-section-4.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [
+            {
+              "sourceTag": "H3",
+              "renderedTag": "H3",
+              "source": "Proposals - Signature",
+              "imported": "Proposals \u2013 Signature",
+              "likelyCause": "WordPress typography/content filters or a native-block text mutation; review actual glyphs."
+            }
+          ],
+          "qualityGoalMet": false
+        },
+        {
+          "index": 5,
+          "title": "Here\u2019s how Business Support works.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.015,
+            "meanAbsoluteRGBError": 0.006,
+            "localLuminanceSSIM16px": 0.99993,
+            "sourceSize": [
+              768,
+              913
+            ],
+            "importedSize": [
+              768,
+              913
+            ],
+            "diff": "business-support-768-section-5-diff.png",
+            "overlay": "business-support-768-section-5-overlay.png"
+          },
+          "sourceScreenshot": "business-support-768-source-section-5.png",
+          "importedScreenshot": "business-support-768-imported-section-5.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 6,
+          "title": "More support. Less operational drag.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.035,
+            "meanAbsoluteRGBError": 0.013,
+            "localLuminanceSSIM16px": 0.99992,
+            "sourceSize": [
+              768,
+              1067
+            ],
+            "importedSize": [
+              768,
+              1067
+            ],
+            "diff": "business-support-768-section-6-diff.png",
+            "overlay": "business-support-768-section-6-overlay.png"
+          },
+          "sourceScreenshot": "business-support-768-source-section-6.png",
+          "importedScreenshot": "business-support-768-imported-section-6.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 7,
+          "title": "It doesn\u2019t all have to stay on your list.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.028,
+            "meanAbsoluteRGBError": 0.013,
+            "localLuminanceSSIM16px": 0.99996,
+            "sourceSize": [
+              768,
+              948
+            ],
+            "importedSize": [
+              768,
+              948
+            ],
+            "diff": "business-support-768-section-7-diff.png",
+            "overlay": "business-support-768-section-7-overlay.png"
+          },
+          "sourceScreenshot": "business-support-768-source-section-7.png",
+          "importedScreenshot": "business-support-768-imported-section-7.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 8,
+          "title": "Your tokens aren\u2019t locked into one department.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.016,
+            "meanAbsoluteRGBError": 0.006,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              768,
+              884
+            ],
+            "importedSize": [
+              768,
+              884
+            ],
+            "diff": "business-support-768-section-8-diff.png",
+            "overlay": "business-support-768-section-8-overlay.png"
+          },
+          "sourceScreenshot": "business-support-768-source-section-8.png",
+          "importedScreenshot": "business-support-768-imported-section-8.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 9,
+          "title": "Flexible support, made clear.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.0,
+            "meanAbsoluteRGBError": 0.005,
+            "localLuminanceSSIM16px": 0.99999,
+            "sourceSize": [
+              768,
+              699
+            ],
+            "importedSize": [
+              768,
+              699
+            ],
+            "diff": "business-support-768-section-9-diff.png",
+            "overlay": "business-support-768-section-9-overlay.png"
+          },
+          "sourceScreenshot": "business-support-768-source-section-9.png",
+          "importedScreenshot": "business-support-768-imported-section-9.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 10,
+          "title": "Get it off your list. Keep moving.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.003,
+            "meanAbsoluteRGBError": 0.005,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              768,
+              817
+            ],
+            "importedSize": [
+              768,
+              817
+            ],
+            "diff": "business-support-768-section-10-diff.png",
+            "overlay": "business-support-768-section-10-overlay.png"
+          },
+          "sourceScreenshot": "business-support-768-source-section-10.png",
+          "importedScreenshot": "business-support-768-imported-section-10.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        }
+      ],
+      "qualityGoalMet": false
+    },
+    {
+      "route": "/business-support",
+      "width": 390,
+      "fullPage": {
+        "changedPixelsRGBDeltaAbove25Percent": 0.038,
+        "meanAbsoluteRGBError": 0.036,
+        "localLuminanceSSIM16px": 0.99937,
+        "sourceSize": [
+          390,
+          19593
+        ],
+        "importedSize": [
+          390,
+          19593
+        ],
+        "diff": "business-support-390-full-diff.png",
+        "overlay": "business-support-390-full-overlay.png"
+      },
+      "heightDelta": 0,
+      "scrollWidthDelta": 0,
+      "sourceHorizontalOverflow": false,
+      "horizontalOverflow": false,
+      "sourceMissingImages": [
+        {
+          "alt": "KGHQ",
+          "url": "/__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png"
+        }
+      ],
+      "importedMissingImages": [],
+      "sourceFonts": [],
+      "importedFonts": [
+        {
+          "family": "dashicons",
+          "status": "loaded"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "title": "The extra support your business has been missing.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.015,
+            "meanAbsoluteRGBError": 0.009,
+            "localLuminanceSSIM16px": 0.99996,
+            "sourceSize": [
+              390,
+              997
+            ],
+            "importedSize": [
+              390,
+              997
+            ],
+            "diff": "business-support-390-section-0-diff.png",
+            "overlay": "business-support-390-section-0-overlay.png"
+          },
+          "sourceScreenshot": "business-support-390-source-section-0.png",
+          "importedScreenshot": "business-support-390-imported-section-0.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 1,
+          "title": "What do you need help with?",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.018,
+            "meanAbsoluteRGBError": 0.008,
+            "localLuminanceSSIM16px": 0.99991,
+            "sourceSize": [
+              390,
+              2364
+            ],
+            "importedSize": [
+              390,
+              2364
+            ],
+            "diff": "business-support-390-section-1-diff.png",
+            "overlay": "business-support-390-section-1-overlay.png"
+          },
+          "sourceScreenshot": "business-support-390-source-section-1.png",
+          "importedScreenshot": "business-support-390-imported-section-1.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 2,
+          "title": "Three ways KGHQ keeps your business moving.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.014,
+            "meanAbsoluteRGBError": 0.008,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              390,
+              1825
+            ],
+            "importedSize": [
+              390,
+              1825
+            ],
+            "diff": "business-support-390-section-2-diff.png",
+            "overlay": "business-support-390-section-2-overlay.png"
+          },
+          "sourceScreenshot": "business-support-390-source-section-2.png",
+          "importedScreenshot": "business-support-390-imported-section-2.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 3,
+          "title": "Choose how much support you need.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.007,
+            "meanAbsoluteRGBError": 0.004,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              390,
+              2445
+            ],
+            "importedSize": [
+              390,
+              2445
+            ],
+            "diff": "business-support-390-section-3-diff.png",
+            "overlay": "business-support-390-section-3-overlay.png"
+          },
+          "sourceScreenshot": "business-support-390-source-section-3.png",
+          "importedScreenshot": "business-support-390-imported-section-3.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 4,
+          "title": "Your \u201ccan someone please handle this?\u201d menu.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.067,
+            "meanAbsoluteRGBError": 0.073,
+            "localLuminanceSSIM16px": 0.99918,
+            "sourceSize": [
+              390,
+              4869
+            ],
+            "importedSize": [
+              390,
+              4869
+            ],
+            "diff": "business-support-390-section-4-diff.png",
+            "overlay": "business-support-390-section-4-overlay.png"
+          },
+          "sourceScreenshot": "business-support-390-source-section-4.png",
+          "importedScreenshot": "business-support-390-imported-section-4.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [
+            {
+              "sourceTag": "H3",
+              "renderedTag": "H3",
+              "source": "Proposals - Signature",
+              "imported": "Proposals \u2013 Signature",
+              "likelyCause": "WordPress typography/content filters or a native-block text mutation; review actual glyphs."
+            }
+          ],
+          "qualityGoalMet": false
+        },
+        {
+          "index": 5,
+          "title": "Here\u2019s how Business Support works.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.018,
+            "meanAbsoluteRGBError": 0.008,
+            "localLuminanceSSIM16px": 0.99996,
+            "sourceSize": [
+              390,
+              1406
+            ],
+            "importedSize": [
+              390,
+              1406
+            ],
+            "diff": "business-support-390-section-5-diff.png",
+            "overlay": "business-support-390-section-5-overlay.png"
+          },
+          "sourceScreenshot": "business-support-390-source-section-5.png",
+          "importedScreenshot": "business-support-390-imported-section-5.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 6,
+          "title": "More support. Less operational drag.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.046,
+            "meanAbsoluteRGBError": 0.017,
+            "localLuminanceSSIM16px": 0.99991,
+            "sourceSize": [
+              390,
+              1607
+            ],
+            "importedSize": [
+              390,
+              1607
+            ],
+            "diff": "business-support-390-section-6-diff.png",
+            "overlay": "business-support-390-section-6-overlay.png"
+          },
+          "sourceScreenshot": "business-support-390-source-section-6.png",
+          "importedScreenshot": "business-support-390-imported-section-6.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 7,
+          "title": "It doesn\u2019t all have to stay on your list.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.046,
+            "meanAbsoluteRGBError": 0.022,
+            "localLuminanceSSIM16px": 0.99994,
+            "sourceSize": [
+              390,
+              1136
+            ],
+            "importedSize": [
+              390,
+              1136
+            ],
+            "diff": "business-support-390-section-7-diff.png",
+            "overlay": "business-support-390-section-7-overlay.png"
+          },
+          "sourceScreenshot": "business-support-390-source-section-7.png",
+          "importedScreenshot": "business-support-390-imported-section-7.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 8,
+          "title": "Your tokens aren\u2019t locked into one department.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.022,
+            "meanAbsoluteRGBError": 0.008,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              390,
+              1230
+            ],
+            "importedSize": [
+              390,
+              1230
+            ],
+            "diff": "business-support-390-section-8-diff.png",
+            "overlay": "business-support-390-section-8-overlay.png"
+          },
+          "sourceScreenshot": "business-support-390-source-section-8.png",
+          "importedScreenshot": "business-support-390-imported-section-8.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 9,
+          "title": "Flexible support, made clear.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.0,
+            "meanAbsoluteRGBError": 0.01,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              390,
+              750
+            ],
+            "importedSize": [
+              390,
+              750
+            ],
+            "diff": "business-support-390-section-9-diff.png",
+            "overlay": "business-support-390-section-9-overlay.png"
+          },
+          "sourceScreenshot": "business-support-390-source-section-9.png",
+          "importedScreenshot": "business-support-390-imported-section-9.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 10,
+          "title": "Get it off your list. Keep moving.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.006,
+            "meanAbsoluteRGBError": 0.008,
+            "localLuminanceSSIM16px": 0.99996,
+            "sourceSize": [
+              390,
+              896
+            ],
+            "importedSize": [
+              390,
+              896
+            ],
+            "diff": "business-support-390-section-10-diff.png",
+            "overlay": "business-support-390-section-10-overlay.png"
+          },
+          "sourceScreenshot": "business-support-390-source-section-10.png",
+          "importedScreenshot": "business-support-390-imported-section-10.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        }
+      ],
+      "qualityGoalMet": false
+    },
+    {
+      "route": "/marketing",
+      "width": 1440,
+      "fullPage": {
+        "changedPixelsRGBDeltaAbove25Percent": 0.123,
+        "meanAbsoluteRGBError": 0.166,
+        "localLuminanceSSIM16px": 0.99646,
+        "sourceSize": [
+          1440,
+          8954
+        ],
+        "importedSize": [
+          1440,
+          8954
+        ],
+        "diff": "marketing-1440-full-diff.png",
+        "overlay": "marketing-1440-full-overlay.png"
+      },
+      "heightDelta": 0,
+      "scrollWidthDelta": 0,
+      "sourceHorizontalOverflow": false,
+      "horizontalOverflow": false,
+      "sourceMissingImages": [
+        {
+          "alt": "KGHQ",
+          "url": "/__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png"
+        }
+      ],
+      "importedMissingImages": [],
+      "sourceFonts": [],
+      "importedFonts": [
+        {
+          "family": "dashicons",
+          "status": "loaded"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "title": "Marketing that actually gets done.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.01,
+            "meanAbsoluteRGBError": 0.005,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              1440,
+              720
+            ],
+            "importedSize": [
+              1440,
+              720
+            ],
+            "diff": "marketing-1440-section-0-diff.png",
+            "overlay": "marketing-1440-section-0-overlay.png"
+          },
+          "sourceScreenshot": "marketing-1440-source-section-0.png",
+          "importedScreenshot": "marketing-1440-imported-section-0.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 1,
+          "title": "What are you trying to accomplish?",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.018,
+            "meanAbsoluteRGBError": 0.008,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              1440,
+              1062
+            ],
+            "importedSize": [
+              1440,
+              1062
+            ],
+            "diff": "marketing-1440-section-1-diff.png",
+            "overlay": "marketing-1440-section-1-overlay.png"
+          },
+          "sourceScreenshot": "marketing-1440-source-section-1.png",
+          "importedScreenshot": "marketing-1440-imported-section-1.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 2,
+          "title": "All the marketing expertise you need. In one place.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.017,
+            "meanAbsoluteRGBError": 0.009,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              1440,
+              637
+            ],
+            "importedSize": [
+              1440,
+              637
+            ],
+            "diff": "marketing-1440-section-2-diff.png",
+            "overlay": "marketing-1440-section-2-overlay.png"
+          },
+          "sourceScreenshot": "marketing-1440-source-section-2.png",
+          "importedScreenshot": "marketing-1440-imported-section-2.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 3,
+          "title": "Choose the plan that fits your goals.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.004,
+            "meanAbsoluteRGBError": 0.002,
+            "localLuminanceSSIM16px": 0.99999,
+            "sourceSize": [
+              1440,
+              1006
+            ],
+            "importedSize": [
+              1440,
+              1006
+            ],
+            "diff": "marketing-1440-section-3-diff.png",
+            "overlay": "marketing-1440-section-3-overlay.png"
+          },
+          "sourceScreenshot": "marketing-1440-source-section-3.png",
+          "importedScreenshot": "marketing-1440-imported-section-3.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 4,
+          "title": "Browse the Marketing Deliverables Library",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.025,
+            "meanAbsoluteRGBError": 0.011,
+            "localLuminanceSSIM16px": 0.99996,
+            "sourceSize": [
+              1440,
+              1379
+            ],
+            "importedSize": [
+              1440,
+              1379
+            ],
+            "diff": "marketing-1440-section-4-diff.png",
+            "overlay": "marketing-1440-section-4-overlay.png"
+          },
+          "sourceScreenshot": "marketing-1440-source-section-4.png",
+          "importedScreenshot": "marketing-1440-imported-section-4.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 5,
+          "title": "From idea to impact.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.017,
+            "meanAbsoluteRGBError": 0.007,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              1440,
+              715
+            ],
+            "importedSize": [
+              1440,
+              715
+            ],
+            "diff": "marketing-1440-section-5-diff.png",
+            "overlay": "marketing-1440-section-5-overlay.png"
+          },
+          "sourceScreenshot": "marketing-1440-source-section-5.png",
+          "importedScreenshot": "marketing-1440-imported-section-5.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 6,
+          "title": "More execution. A smarter way to grow.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.032,
+            "meanAbsoluteRGBError": 0.012,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              1440,
+              729
+            ],
+            "importedSize": [
+              1440,
+              729
+            ],
+            "diff": "marketing-1440-section-6-diff.png",
+            "overlay": "marketing-1440-section-6-overlay.png"
+          },
+          "sourceScreenshot": "marketing-1440-source-section-6.png",
+          "importedScreenshot": "marketing-1440-imported-section-6.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 7,
+          "title": "Real businesses. Real results.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 1.285,
+            "meanAbsoluteRGBError": 1.977,
+            "localLuminanceSSIM16px": 0.97145,
+            "sourceSize": [
+              1440,
+              527
+            ],
+            "importedSize": [
+              1440,
+              527
+            ],
+            "diff": "marketing-1440-section-7-diff.png",
+            "overlay": "marketing-1440-section-7-overlay.png"
+          },
+          "sourceScreenshot": "marketing-1440-source-section-7.png",
+          "importedScreenshot": "marketing-1440-imported-section-7.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 8,
+          "title": "More than marketing. Support for your whole business.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.008,
+            "meanAbsoluteRGBError": 0.005,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              1440,
+              764
+            ],
+            "importedSize": [
+              1440,
+              764
+            ],
+            "diff": "marketing-1440-section-8-diff.png",
+            "overlay": "marketing-1440-section-8-overlay.png"
+          },
+          "sourceScreenshot": "marketing-1440-source-section-8.png",
+          "importedScreenshot": "marketing-1440-imported-section-8.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 9,
+          "title": "A flexible model made to be clear.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.0,
+            "meanAbsoluteRGBError": 0.004,
+            "localLuminanceSSIM16px": 0.99999,
+            "sourceSize": [
+              1440,
+              571
+            ],
+            "importedSize": [
+              1440,
+              571
+            ],
+            "diff": "marketing-1440-section-9-diff.png",
+            "overlay": "marketing-1440-section-9-overlay.png"
+          },
+          "sourceScreenshot": "marketing-1440-source-section-9.png",
+          "importedScreenshot": "marketing-1440-imported-section-9.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 10,
+          "title": "Less talking about it. More making it happen.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.002,
+            "meanAbsoluteRGBError": 0.002,
+            "localLuminanceSSIM16px": 0.99999,
+            "sourceSize": [
+              1440,
+              777
+            ],
+            "importedSize": [
+              1440,
+              777
+            ],
+            "diff": "marketing-1440-section-10-diff.png",
+            "overlay": "marketing-1440-section-10-overlay.png"
+          },
+          "sourceScreenshot": "marketing-1440-source-section-10.png",
+          "importedScreenshot": "marketing-1440-imported-section-10.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        }
+      ],
+      "qualityGoalMet": true
+    },
+    {
+      "route": "/marketing",
+      "width": 768,
+      "fullPage": {
+        "changedPixelsRGBDeltaAbove25Percent": 0.173,
+        "meanAbsoluteRGBError": 0.25,
+        "localLuminanceSSIM16px": 0.99612,
+        "sourceSize": [
+          768,
+          13627
+        ],
+        "importedSize": [
+          768,
+          13627
+        ],
+        "diff": "marketing-768-full-diff.png",
+        "overlay": "marketing-768-full-overlay.png"
+      },
+      "heightDelta": 0,
+      "scrollWidthDelta": 0,
+      "sourceHorizontalOverflow": false,
+      "horizontalOverflow": false,
+      "sourceMissingImages": [
+        {
+          "alt": "KGHQ",
+          "url": "/__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png"
+        }
+      ],
+      "importedMissingImages": [],
+      "sourceFonts": [],
+      "importedFonts": [
+        {
+          "family": "dashicons",
+          "status": "loaded"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "title": "Marketing that actually gets done.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.012,
+            "meanAbsoluteRGBError": 0.006,
+            "localLuminanceSSIM16px": 0.99995,
+            "sourceSize": [
+              768,
+              732
+            ],
+            "importedSize": [
+              768,
+              732
+            ],
+            "diff": "marketing-768-section-0-diff.png",
+            "overlay": "marketing-768-section-0-overlay.png"
+          },
+          "sourceScreenshot": "marketing-768-source-section-0.png",
+          "importedScreenshot": "marketing-768-imported-section-0.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 1,
+          "title": "What are you trying to accomplish?",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.024,
+            "meanAbsoluteRGBError": 0.011,
+            "localLuminanceSSIM16px": 0.99996,
+            "sourceSize": [
+              768,
+              1508
+            ],
+            "importedSize": [
+              768,
+              1508
+            ],
+            "diff": "marketing-768-section-1-diff.png",
+            "overlay": "marketing-768-section-1-overlay.png"
+          },
+          "sourceScreenshot": "marketing-768-source-section-1.png",
+          "importedScreenshot": "marketing-768-imported-section-1.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 2,
+          "title": "All the marketing expertise you need. In one place.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.02,
+            "meanAbsoluteRGBError": 0.01,
+            "localLuminanceSSIM16px": 0.99996,
+            "sourceSize": [
+              768,
+              1001
+            ],
+            "importedSize": [
+              768,
+              1001
+            ],
+            "diff": "marketing-768-section-2-diff.png",
+            "overlay": "marketing-768-section-2-overlay.png"
+          },
+          "sourceScreenshot": "marketing-768-source-section-2.png",
+          "importedScreenshot": "marketing-768-imported-section-2.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 3,
+          "title": "Choose the plan that fits your goals.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.003,
+            "meanAbsoluteRGBError": 0.002,
+            "localLuminanceSSIM16px": 0.99999,
+            "sourceSize": [
+              768,
+              2513
+            ],
+            "importedSize": [
+              768,
+              2513
+            ],
+            "diff": "marketing-768-section-3-diff.png",
+            "overlay": "marketing-768-section-3-overlay.png"
+          },
+          "sourceScreenshot": "marketing-768-source-section-3.png",
+          "importedScreenshot": "marketing-768-imported-section-3.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 4,
+          "title": "Browse the Marketing Deliverables Library",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.028,
+            "meanAbsoluteRGBError": 0.013,
+            "localLuminanceSSIM16px": 0.99995,
+            "sourceSize": [
+              768,
+              2354
+            ],
+            "importedSize": [
+              768,
+              2354
+            ],
+            "diff": "marketing-768-section-4-diff.png",
+            "overlay": "marketing-768-section-4-overlay.png"
+          },
+          "sourceScreenshot": "marketing-768-source-section-4.png",
+          "importedScreenshot": "marketing-768-imported-section-4.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 5,
+          "title": "From idea to impact.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.026,
+            "meanAbsoluteRGBError": 0.011,
+            "localLuminanceSSIM16px": 0.99996,
+            "sourceSize": [
+              768,
+              862
+            ],
+            "importedSize": [
+              768,
+              862
+            ],
+            "diff": "marketing-768-section-5-diff.png",
+            "overlay": "marketing-768-section-5-overlay.png"
+          },
+          "sourceScreenshot": "marketing-768-source-section-5.png",
+          "importedScreenshot": "marketing-768-imported-section-5.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 6,
+          "title": "More execution. A smarter way to grow.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.043,
+            "meanAbsoluteRGBError": 0.016,
+            "localLuminanceSSIM16px": 0.99994,
+            "sourceSize": [
+              768,
+              1022
+            ],
+            "importedSize": [
+              768,
+              1022
+            ],
+            "diff": "marketing-768-section-6-diff.png",
+            "overlay": "marketing-768-section-6-overlay.png"
+          },
+          "sourceScreenshot": "marketing-768-source-section-6.png",
+          "importedScreenshot": "marketing-768-imported-section-6.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 7,
+          "title": "Real businesses. Real results.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 1.474,
+            "meanAbsoluteRGBError": 2.247,
+            "localLuminanceSSIM16px": 0.96173,
+            "sourceSize": [
+              768,
+              974
+            ],
+            "importedSize": [
+              768,
+              974
+            ],
+            "diff": "marketing-768-section-7-diff.png",
+            "overlay": "marketing-768-section-7-overlay.png"
+          },
+          "sourceScreenshot": "marketing-768-source-section-7.png",
+          "importedScreenshot": "marketing-768-imported-section-7.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 8,
+          "title": "More than marketing. Support for your whole business.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.013,
+            "meanAbsoluteRGBError": 0.008,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              768,
+              883
+            ],
+            "importedSize": [
+              768,
+              883
+            ],
+            "diff": "marketing-768-section-8-diff.png",
+            "overlay": "marketing-768-section-8-overlay.png"
+          },
+          "sourceScreenshot": "marketing-768-source-section-8.png",
+          "importedScreenshot": "marketing-768-imported-section-8.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 9,
+          "title": "A flexible model made to be clear.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.0,
+            "meanAbsoluteRGBError": 0.005,
+            "localLuminanceSSIM16px": 0.99999,
+            "sourceSize": [
+              768,
+              747
+            ],
+            "importedSize": [
+              768,
+              747
+            ],
+            "diff": "marketing-768-section-9-diff.png",
+            "overlay": "marketing-768-section-9-overlay.png"
+          },
+          "sourceScreenshot": "marketing-768-source-section-9.png",
+          "importedScreenshot": "marketing-768-imported-section-9.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 10,
+          "title": "Less talking about it. More making it happen.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.003,
+            "meanAbsoluteRGBError": 0.003,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              768,
+              965
+            ],
+            "importedSize": [
+              768,
+              965
+            ],
+            "diff": "marketing-768-section-10-diff.png",
+            "overlay": "marketing-768-section-10-overlay.png"
+          },
+          "sourceScreenshot": "marketing-768-source-section-10.png",
+          "importedScreenshot": "marketing-768-imported-section-10.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        }
+      ],
+      "qualityGoalMet": true
+    },
+    {
+      "route": "/marketing",
+      "width": 390,
+      "fullPage": {
+        "changedPixelsRGBDeltaAbove25Percent": 0.152,
+        "meanAbsoluteRGBError": 0.207,
+        "localLuminanceSSIM16px": 0.99625,
+        "sourceSize": [
+          390,
+          18519
+        ],
+        "importedSize": [
+          390,
+          18519
+        ],
+        "diff": "marketing-390-full-diff.png",
+        "overlay": "marketing-390-full-overlay.png"
+      },
+      "heightDelta": 0,
+      "scrollWidthDelta": 0,
+      "sourceHorizontalOverflow": false,
+      "horizontalOverflow": false,
+      "sourceMissingImages": [
+        {
+          "alt": "KGHQ",
+          "url": "/__l5e/assets-v1/eb80ef3a-f849-4f43-b0d4-b2317f321c7b/kghq-logo-light.png"
+        }
+      ],
+      "importedMissingImages": [],
+      "sourceFonts": [],
+      "importedFonts": [
+        {
+          "family": "dashicons",
+          "status": "loaded"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "title": "Marketing that actually gets done.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.016,
+            "meanAbsoluteRGBError": 0.008,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              390,
+              995
+            ],
+            "importedSize": [
+              390,
+              995
+            ],
+            "diff": "marketing-390-section-0-diff.png",
+            "overlay": "marketing-390-section-0-overlay.png"
+          },
+          "sourceScreenshot": "marketing-390-source-section-0.png",
+          "importedScreenshot": "marketing-390-imported-section-0.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 1,
+          "title": "What are you trying to accomplish?",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.029,
+            "meanAbsoluteRGBError": 0.013,
+            "localLuminanceSSIM16px": 0.99995,
+            "sourceSize": [
+              390,
+              2467
+            ],
+            "importedSize": [
+              390,
+              2467
+            ],
+            "diff": "marketing-390-section-1-diff.png",
+            "overlay": "marketing-390-section-1-overlay.png"
+          },
+          "sourceScreenshot": "marketing-390-source-section-1.png",
+          "importedScreenshot": "marketing-390-imported-section-1.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 2,
+          "title": "All the marketing expertise you need. In one place.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.028,
+            "meanAbsoluteRGBError": 0.014,
+            "localLuminanceSSIM16px": 0.99995,
+            "sourceSize": [
+              390,
+              1422
+            ],
+            "importedSize": [
+              390,
+              1422
+            ],
+            "diff": "marketing-390-section-2-diff.png",
+            "overlay": "marketing-390-section-2-overlay.png"
+          },
+          "sourceScreenshot": "marketing-390-source-section-2.png",
+          "importedScreenshot": "marketing-390-imported-section-2.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 3,
+          "title": "Choose the plan that fits your goals.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.007,
+            "meanAbsoluteRGBError": 0.004,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              390,
+              2437
+            ],
+            "importedSize": [
+              390,
+              2437
+            ],
+            "diff": "marketing-390-section-3-diff.png",
+            "overlay": "marketing-390-section-3-overlay.png"
+          },
+          "sourceScreenshot": "marketing-390-source-section-3.png",
+          "importedScreenshot": "marketing-390-imported-section-3.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 4,
+          "title": "Browse the Marketing Deliverables Library",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.033,
+            "meanAbsoluteRGBError": 0.015,
+            "localLuminanceSSIM16px": 0.99994,
+            "sourceSize": [
+              390,
+              3877
+            ],
+            "importedSize": [
+              390,
+              3877
+            ],
+            "diff": "marketing-390-section-4-diff.png",
+            "overlay": "marketing-390-section-4-overlay.png"
+          },
+          "sourceScreenshot": "marketing-390-source-section-4.png",
+          "importedScreenshot": "marketing-390-imported-section-4.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 5,
+          "title": "From idea to impact.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.03,
+            "meanAbsoluteRGBError": 0.013,
+            "localLuminanceSSIM16px": 0.99994,
+            "sourceSize": [
+              390,
+              1426
+            ],
+            "importedSize": [
+              390,
+              1426
+            ],
+            "diff": "marketing-390-section-5-diff.png",
+            "overlay": "marketing-390-section-5-overlay.png"
+          },
+          "sourceScreenshot": "marketing-390-source-section-5.png",
+          "importedScreenshot": "marketing-390-imported-section-5.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 6,
+          "title": "More execution. A smarter way to grow.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.055,
+            "meanAbsoluteRGBError": 0.02,
+            "localLuminanceSSIM16px": 0.99993,
+            "sourceSize": [
+              390,
+              1579
+            ],
+            "importedSize": [
+              390,
+              1579
+            ],
+            "diff": "marketing-390-section-6-diff.png",
+            "overlay": "marketing-390-section-6-overlay.png"
+          },
+          "sourceScreenshot": "marketing-390-source-section-6.png",
+          "importedScreenshot": "marketing-390-imported-section-6.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 7,
+          "title": "Real businesses. Real results.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 1.953,
+            "meanAbsoluteRGBError": 2.963,
+            "localLuminanceSSIM16px": 0.95369,
+            "sourceSize": [
+              390,
+              1153
+            ],
+            "importedSize": [
+              390,
+              1153
+            ],
+            "diff": "marketing-390-section-7-diff.png",
+            "overlay": "marketing-390-section-7-overlay.png"
+          },
+          "sourceScreenshot": "marketing-390-source-section-7.png",
+          "importedScreenshot": "marketing-390-imported-section-7.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 8,
+          "title": "More than marketing. Support for your whole business.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.016,
+            "meanAbsoluteRGBError": 0.009,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              390,
+              1442
+            ],
+            "importedSize": [
+              390,
+              1442
+            ],
+            "diff": "marketing-390-section-8-diff.png",
+            "overlay": "marketing-390-section-8-overlay.png"
+          },
+          "sourceScreenshot": "marketing-390-source-section-8.png",
+          "importedScreenshot": "marketing-390-imported-section-8.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 9,
+          "title": "A flexible model made to be clear.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.0,
+            "meanAbsoluteRGBError": 0.011,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              390,
+              750
+            ],
+            "importedSize": [
+              390,
+              750
+            ],
+            "diff": "marketing-390-section-9-diff.png",
+            "overlay": "marketing-390-section-9-overlay.png"
+          },
+          "sourceScreenshot": "marketing-390-source-section-9.png",
+          "importedScreenshot": "marketing-390-imported-section-9.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 10,
+          "title": "Less talking about it. More making it happen.",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.006,
+            "meanAbsoluteRGBError": 0.007,
+            "localLuminanceSSIM16px": 0.99996,
+            "sourceSize": [
+              390,
+              904
+            ],
+            "importedSize": [
+              390,
+              904
+            ],
+            "diff": "marketing-390-section-10-diff.png",
+            "overlay": "marketing-390-section-10-overlay.png"
+          },
+          "sourceScreenshot": "marketing-390-source-section-10.png",
+          "importedScreenshot": "marketing-390-imported-section-10.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        }
+      ],
+      "qualityGoalMet": true
+    }
+  ]
+}

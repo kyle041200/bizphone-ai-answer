@@ -1,0 +1,12 @@
+[
+  {
+    "plugin": "kghq-import-styles",
+    "status": "PASS",
+    "version": "0.5.0-rc3"
+  },
+  {
+    "plugin": "kghq-lovable-importer",
+    "status": "PASS",
+    "version": "0.5.0-rc1"
+  }
+]

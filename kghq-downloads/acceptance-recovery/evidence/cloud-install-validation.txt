@@ -1,0 +1,82 @@
+npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+
+added 275 packages in 9s
+28.4.0
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.06kB done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 0.9s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/library/node:22-bookworm-slim
+#4 DONE 0.9s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 131B done
+#5 DONE 0.0s
+
+#6 [stage-0 1/6] FROM docker.io/library/node:22-bookworm-slim@sha256:4b150b48b4116e2a22f2c39cc27025fbf4f153e2078fd3b14d159fdb5c7279da
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 557B done
+#7 DONE 0.0s
+
+#8 [stage-0 2/6] WORKDIR /opt/kghq
+#8 CACHED
+
+#9 [stage-0 3/6] COPY engine/package.json engine/package-lock.json ./engine/
+#9 CACHED
+
+#10 [stage-0 5/6] COPY --chmod=0755 worker/runner.mjs ./worker/runner.mjs
+#10 CACHED
+
+#11 [stage-0 4/6] COPY --chmod=0755 engine/*.mjs ./engine/
+#11 CACHED
+
+#12 [stage-0 6/6] RUN --mount=type=secret,id=proxy_ca     apt-get update && apt-get install -y --no-install-recommends chromium ca-certificates git     && rm -rf /var/lib/apt/lists/*     && cd /opt/kghq/engine     && NODE_EXTRA_CA_CERTS=/run/secrets/proxy_ca npm ci --ignore-scripts --no-audit --no-fund     && NODE_EXTRA_CA_CERTS=/run/secrets/proxy_ca npm install --global @oven/bun-linux-x64-baseline@1.3.11 --ignore-scripts --no-audit --no-fund     && ln -s /usr/local/lib/node_modules/@oven/bun-linux-x64-baseline/bin/bun /usr/local/bin/bun     && npm cache clean --force
+#12 CACHED
+
+#13 exporting to image
+#13 exporting layers done
+#13 writing image sha256:0677d944339e2c6a00171e4eceaaeede6dc4b093888de7e5df0b8dc868177bbf done
+#13 naming to docker.io/library/kghq-converter-runner:0.5.0-rc1 done
+#13 DONE 0.0s
+[
+  {
+    "file": "engine/test.mjs",
+    "exitCode": 0,
+    "namedTestCount": 12
+  },
+  {
+    "file": "engine/analysis.test.mjs",
+    "exitCode": 0,
+    "namedTestCount": 1
+  },
+  {
+    "file": "worker/policy.test.mjs",
+    "exitCode": 0,
+    "namedTestCount": 3
+  },
+  {
+    "file": "worker/output.test.mjs",
+    "exitCode": 0,
+    "namedTestCount": 3
+  },
+  {
+    "file": "worker/retry.test.mjs",
+    "exitCode": 0,
+    "namedTestCount": 2
+  },
+  {
+    "file": "worker/test.mjs",
+    "exitCode": 0,
+    "namedTestCount": 2
+  }
+]

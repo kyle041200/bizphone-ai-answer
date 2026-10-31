@@ -1,0 +1,11 @@
+✔ exact repositories do not implicitly authorize an owner (1.155187ms)
+✔ owner access requires explicit opt-in and matches whole owner names (1.121537ms)
+✔ empty or malformed policy fails closed (0.239229ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 8.110417

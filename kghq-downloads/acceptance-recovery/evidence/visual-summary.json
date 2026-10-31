@@ -1,0 +1,314 @@
+[
+  {
+    "label": "before-engine-a",
+    "conditions": {
+      "browser": "154.0.8037.57",
+      "viewportHeight": 1000,
+      "deviceScaleFactor": 1,
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "animations": "disabled",
+      "screenshots": "unmasked, no resizing, full-page + native section crops"
+    },
+    "results": [
+      {
+        "route": "/business-support",
+        "width": 1440,
+        "changedPixels": 0.048,
+        "localSSIM": 0.99865,
+        "heightDelta": 0,
+        "localQualityGoalMet": false
+      },
+      {
+        "route": "/business-support",
+        "width": 768,
+        "changedPixels": 0.069,
+        "localSSIM": 0.99876,
+        "heightDelta": 0,
+        "localQualityGoalMet": false
+      },
+      {
+        "route": "/business-support",
+        "width": 390,
+        "changedPixels": 0.038,
+        "localSSIM": 0.99937,
+        "heightDelta": 0,
+        "localQualityGoalMet": false
+      },
+      {
+        "route": "/marketing",
+        "width": 1440,
+        "changedPixels": 0.123,
+        "localSSIM": 0.99646,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/marketing",
+        "width": 768,
+        "changedPixels": 0.173,
+        "localSSIM": 0.99612,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/marketing",
+        "width": 390,
+        "changedPixels": 0.152,
+        "localSSIM": 0.99625,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      }
+    ]
+  },
+  {
+    "label": "after-engine-a",
+    "conditions": {
+      "browser": "154.0.8037.57",
+      "viewportHeight": 1000,
+      "deviceScaleFactor": 1,
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "animations": "disabled",
+      "screenshots": "unmasked, no resizing, full-page + native section crops"
+    },
+    "results": [
+      {
+        "route": "/business-support",
+        "width": 1440,
+        "changedPixels": 0.042,
+        "localSSIM": 0.99879,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/business-support",
+        "width": 768,
+        "changedPixels": 0.062,
+        "localSSIM": 0.99895,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/business-support",
+        "width": 390,
+        "changedPixels": 0.028,
+        "localSSIM": 0.99965,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/marketing",
+        "width": 1440,
+        "changedPixels": 0.123,
+        "localSSIM": 0.99646,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/marketing",
+        "width": 768,
+        "changedPixels": 0.173,
+        "localSSIM": 0.99612,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/marketing",
+        "width": 390,
+        "changedPixels": 0.152,
+        "localSSIM": 0.99625,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      }
+    ]
+  },
+  {
+    "label": "before-engine-b",
+    "conditions": {
+      "browser": "154.0.8037.57",
+      "viewportHeight": 1000,
+      "deviceScaleFactor": 1,
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "animations": "disabled",
+      "screenshots": "unmasked, no resizing, full-page + native section crops"
+    },
+    "results": [
+      {
+        "route": "/",
+        "width": 1440,
+        "changedPixels": 0.177,
+        "localSSIM": 0.99728,
+        "heightDelta": 0,
+        "localQualityGoalMet": false
+      },
+      {
+        "route": "/",
+        "width": 768,
+        "changedPixels": 0.173,
+        "localSSIM": 0.99699,
+        "heightDelta": 0,
+        "localQualityGoalMet": false
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "changedPixels": 0.127,
+        "localSSIM": 0.99608,
+        "heightDelta": 0,
+        "localQualityGoalMet": false
+      }
+    ]
+  },
+  {
+    "label": "after-engine-b",
+    "conditions": {
+      "browser": "154.0.8037.57",
+      "viewportHeight": 1000,
+      "deviceScaleFactor": 1,
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "animations": "disabled",
+      "screenshots": "unmasked, no resizing, full-page + native section crops"
+    },
+    "results": [
+      {
+        "route": "/",
+        "width": 1440,
+        "changedPixels": 0.005,
+        "localSSIM": 0.99998,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/",
+        "width": 768,
+        "changedPixels": 0.024,
+        "localSSIM": 0.99949,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "changedPixels": 0.033,
+        "localSSIM": 0.99826,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      }
+    ]
+  },
+  {
+    "label": "verified-two-page",
+    "conditions": {
+      "browser": "154.0.8037.57",
+      "viewportHeight": 1000,
+      "deviceScaleFactor": 1,
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "animations": "disabled",
+      "screenshots": "unmasked, no resizing, full-page + native section crops"
+    },
+    "results": [
+      {
+        "route": "/business-support",
+        "width": 1440,
+        "changedPixels": 0.042,
+        "localSSIM": 0.99879,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/business-support",
+        "width": 768,
+        "changedPixels": 0.062,
+        "localSSIM": 0.99895,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/business-support",
+        "width": 390,
+        "changedPixels": 0.028,
+        "localSSIM": 0.99965,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/marketing",
+        "width": 1440,
+        "changedPixels": 0.123,
+        "localSSIM": 0.99646,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/marketing",
+        "width": 768,
+        "changedPixels": 0.173,
+        "localSSIM": 0.99612,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/marketing",
+        "width": 390,
+        "changedPixels": 0.152,
+        "localSSIM": 0.99625,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      }
+    ]
+  },
+  {
+    "label": "verified-project-b",
+    "conditions": {
+      "browser": "154.0.8037.57",
+      "viewportHeight": 1000,
+      "deviceScaleFactor": 1,
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "animations": "disabled",
+      "screenshots": "unmasked, no resizing, full-page + native section crops"
+    },
+    "results": [
+      {
+        "route": "/",
+        "width": 1440,
+        "changedPixels": 0.011,
+        "localSSIM": 0.99981,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/",
+        "width": 768,
+        "changedPixels": 0.027,
+        "localSSIM": 0.99932,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      },
+      {
+        "route": "/",
+        "width": 390,
+        "changedPixels": 0.035,
+        "localSSIM": 0.99802,
+        "heightDelta": 0,
+        "localQualityGoalMet": true
+      }
+    ]
+  }
+]

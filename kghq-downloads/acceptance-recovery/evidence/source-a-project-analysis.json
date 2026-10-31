@@ -1,0 +1,4070 @@
+{
+  "repository": "kyle041200/bizphone-ai-answer",
+  "commit": "4a66da501bbda92dd9fc318864decb215e8b3089",
+  "ref": "main",
+  "compatibility": {
+    "schemaVersion": 1,
+    "analysisVersion": "0.3.0",
+    "frameworks": [
+      {
+        "name": "@tailwindcss/vite",
+        "version": "^4.2.1"
+      },
+      {
+        "name": "@tanstack/react-router",
+        "version": "1.170.41"
+      },
+      {
+        "name": "@tanstack/react-start",
+        "version": "1.168.60"
+      },
+      {
+        "name": "class-variance-authority",
+        "version": "^0.7.1"
+      },
+      {
+        "name": "react",
+        "version": "^19.2.0"
+      },
+      {
+        "name": "tailwindcss",
+        "version": "^4.2.1"
+      },
+      {
+        "name": "vite",
+        "version": "^7.3.1"
+      }
+    ],
+    "routing": {
+      "systems": [
+        "TanStack Router"
+      ],
+      "pages": [
+        {
+          "path": "/",
+          "title": "Home",
+          "file": "src/routes/index.tsx"
+        },
+        {
+          "path": "/articles",
+          "title": "articles",
+          "file": "src/routes/articles.tsx"
+        },
+        {
+          "path": "/bizphone",
+          "title": "bizphone",
+          "file": "src/routes/bizphone.tsx"
+        },
+        {
+          "path": "/bizsite",
+          "title": "bizsite",
+          "file": "src/routes/bizsite.tsx"
+        },
+        {
+          "path": "/business-support",
+          "title": "business support",
+          "file": "src/routes/business-support.tsx"
+        },
+        {
+          "path": "/deliverables",
+          "title": "deliverables",
+          "file": "src/routes/deliverables.tsx"
+        },
+        {
+          "path": "/growth-reset",
+          "title": "growth reset",
+          "file": "src/routes/growth-reset.tsx"
+        },
+        {
+          "path": "/marketing",
+          "title": "marketing",
+          "file": "src/routes/marketing.tsx"
+        },
+        {
+          "path": "/new-client",
+          "title": "new client",
+          "file": "src/routes/new-client.tsx"
+        },
+        {
+          "path": "/partners",
+          "title": "partners",
+          "file": "src/routes/partners.tsx"
+        },
+        {
+          "path": "/sales",
+          "title": "sales",
+          "file": "src/routes/sales.tsx"
+        },
+        {
+          "path": "/training",
+          "title": "training",
+          "file": "src/routes/training.tsx"
+        }
+      ],
+      "dynamicAndUnresolvedRoutes": [
+        {
+          "route": "/articles/$slug",
+          "file": "src/routes/articles_.$slug.tsx",
+          "reason": "Dynamic route requires explicit concrete URLs via --routes."
+        }
+      ]
+    },
+    "build": {
+      "scripts": [
+        "dev",
+        "build",
+        "build:dev",
+        "preview",
+        "lint",
+        "format"
+      ],
+      "lockfiles": [
+        "bun.lock"
+      ],
+      "execution": "Analysis does not execute build/config/source code. Conversion requires a trusted rendered source URL."
+    },
+    "components": {
+      "inventory": [
+        {
+          "name": "ArticlesHeader",
+          "file": "src/components/articles-header.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/routes/articles.tsx",
+            "src/routes/articles_.$slug.tsx"
+          ]
+        },
+        {
+          "name": "DeliverableCard",
+          "file": "src/components/deliverable-card.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/routes/business-support.tsx",
+            "src/routes/deliverables.tsx",
+            "src/routes/sales.tsx"
+          ]
+        },
+        {
+          "name": "StackedBricks",
+          "file": "src/components/stacked-bricks.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/components/deliverable-card.tsx",
+            "src/routes/deliverables.tsx",
+            "src/routes/marketing.tsx"
+          ]
+        },
+        {
+          "name": "AccordionItem",
+          "file": "src/components/ui/accordion.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AccordionTrigger",
+          "file": "src/components/ui/accordion.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AccordionContent",
+          "file": "src/components/ui/accordion.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogOverlay",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogContent",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogHeader",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogFooter",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogTitle",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogDescription",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogAction",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogCancel",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Alert",
+          "file": "src/components/ui/alert.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertTitle",
+          "file": "src/components/ui/alert.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDescription",
+          "file": "src/components/ui/alert.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Avatar",
+          "file": "src/components/ui/avatar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AvatarImage",
+          "file": "src/components/ui/avatar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AvatarFallback",
+          "file": "src/components/ui/avatar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Badge",
+          "file": "src/components/ui/badge.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Breadcrumb",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "BreadcrumbList",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "BreadcrumbItem",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "BreadcrumbLink",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "BreadcrumbPage",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "BreadcrumbSeparator",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "BreadcrumbEllipsis",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Button",
+          "file": "src/components/ui/button.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/articles-header.tsx",
+            "src/components/ui/calendar.tsx",
+            "src/components/ui/carousel.tsx",
+            "src/components/ui/sidebar.tsx",
+            "src/routes/articles.tsx",
+            "src/routes/business-support.tsx",
+            "src/routes/deliverables.tsx",
+            "src/routes/index.tsx",
+            "src/routes/marketing.tsx",
+            "src/routes/partners.tsx",
+            "src/routes/sales.tsx",
+            "src/routes/training.tsx"
+          ]
+        },
+        {
+          "name": "Calendar",
+          "file": "src/components/ui/calendar.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "CalendarDayButton",
+          "file": "src/components/ui/calendar.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Card",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CardHeader",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CardTitle",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CardDescription",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CardContent",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CardFooter",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Carousel",
+          "file": "src/components/ui/carousel.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CarouselContent",
+          "file": "src/components/ui/carousel.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CarouselItem",
+          "file": "src/components/ui/carousel.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CarouselPrevious",
+          "file": "src/components/ui/carousel.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CarouselNext",
+          "file": "src/components/ui/carousel.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ChartContainer",
+          "file": "src/components/ui/chart.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ChartStyle",
+          "file": "src/components/ui/chart.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ChartTooltipContent",
+          "file": "src/components/ui/chart.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ChartLegendContent",
+          "file": "src/components/ui/chart.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Checkbox",
+          "file": "src/components/ui/checkbox.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Command",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/command.tsx"
+          ]
+        },
+        {
+          "name": "CommandDialog",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandInput",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandList",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandEmpty",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandGroup",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandSeparator",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandItem",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandShortcut",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuSubTrigger",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuSubContent",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuContent",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuItem",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuCheckboxItem",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuRadioItem",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuLabel",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuSeparator",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuShortcut",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DialogOverlay",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DialogContent",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/command.tsx"
+          ]
+        },
+        {
+          "name": "DialogHeader",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DialogFooter",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DialogTitle",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DialogDescription",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Drawer",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/drawer.tsx"
+          ]
+        },
+        {
+          "name": "DrawerOverlay",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerContent",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerHeader",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerFooter",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerTitle",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerDescription",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuSubTrigger",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuSubContent",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuContent",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuItem",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuCheckboxItem",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuRadioItem",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuLabel",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuSeparator",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuShortcut",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "FormField",
+          "file": "src/components/ui/form.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "FormItem",
+          "file": "src/components/ui/form.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "FormLabel",
+          "file": "src/components/ui/form.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "FormControl",
+          "file": "src/components/ui/form.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "FormDescription",
+          "file": "src/components/ui/form.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "FormMessage",
+          "file": "src/components/ui/form.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "HoverCardContent",
+          "file": "src/components/ui/hover-card.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "InputOTP",
+          "file": "src/components/ui/input-otp.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "InputOTPGroup",
+          "file": "src/components/ui/input-otp.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "InputOTPSlot",
+          "file": "src/components/ui/input-otp.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "InputOTPSeparator",
+          "file": "src/components/ui/input-otp.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Input",
+          "file": "src/components/ui/input.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "Label",
+          "file": "src/components/ui/label.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/form.tsx"
+          ]
+        },
+        {
+          "name": "MenubarMenu",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarGroup",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarPortal",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarRadioGroup",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarSub",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Menubar",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarTrigger",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarSubTrigger",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarSubContent",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarContent",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarItem",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarCheckboxItem",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarRadioItem",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarLabel",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarSeparator",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarShortcut",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenu",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuList",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuTrigger",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuContent",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuViewport",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuIndicator",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Pagination",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PaginationContent",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PaginationItem",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PaginationLink",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PaginationPrevious",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PaginationNext",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PaginationEllipsis",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PopoverContent",
+          "file": "src/components/ui/popover.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Progress",
+          "file": "src/components/ui/progress.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "RadioGroup",
+          "file": "src/components/ui/radio-group.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "RadioGroupItem",
+          "file": "src/components/ui/radio-group.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ResizablePanelGroup",
+          "file": "src/components/ui/resizable.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ResizableHandle",
+          "file": "src/components/ui/resizable.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ScrollArea",
+          "file": "src/components/ui/scroll-area.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ScrollBar",
+          "file": "src/components/ui/scroll-area.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SelectTrigger",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SelectScrollUpButton",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SelectScrollDownButton",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SelectContent",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SelectLabel",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SelectItem",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SelectSeparator",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Separator",
+          "file": "src/components/ui/separator.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/resizable.tsx",
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "SheetOverlay",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SheetContent",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "SheetHeader",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "SheetFooter",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SheetTitle",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "SheetDescription",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "SidebarProvider",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Sidebar",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarTrigger",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarRail",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarInset",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarInput",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarHeader",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarFooter",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarSeparator",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarContent",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarGroup",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarGroupLabel",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarGroupAction",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarGroupContent",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenu",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuItem",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuButton",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuAction",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuBadge",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuSkeleton",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuSub",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuSubItem",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuSubButton",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Skeleton",
+          "file": "src/components/ui/skeleton.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "Slider",
+          "file": "src/components/ui/slider.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Toaster",
+          "file": "src/components/ui/sonner.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/sonner.tsx"
+          ]
+        },
+        {
+          "name": "Switch",
+          "file": "src/components/ui/switch.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Table",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableHeader",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableBody",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableFooter",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableRow",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableHead",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableCell",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableCaption",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TabsList",
+          "file": "src/components/ui/tabs.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TabsTrigger",
+          "file": "src/components/ui/tabs.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TabsContent",
+          "file": "src/components/ui/tabs.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Textarea",
+          "file": "src/components/ui/textarea.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ToggleGroup",
+          "file": "src/components/ui/toggle-group.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ToggleGroupItem",
+          "file": "src/components/ui/toggle-group.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Toggle",
+          "file": "src/components/ui/toggle.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TooltipContent",
+          "file": "src/components/ui/tooltip.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "NotFoundComponent",
+          "file": "src/routes/__root.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "ErrorComponent",
+          "file": "src/routes/__root.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "RootShell",
+          "file": "src/routes/__root.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "RootComponent",
+          "file": "src/routes/__root.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "ArticlesPage",
+          "file": "src/routes/articles.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "ArticlePage",
+          "file": "src/routes/articles_.$slug.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Section",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Eyebrow",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "CTAButtons",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Nav",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Hero",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Problem",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Modes",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "HowItWorks",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Industries",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "MoreThan",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Pricing",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Value",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "FAQ",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "FinalCTA",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Footer",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Index",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Section",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Eyebrow",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "CTAButtons",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Nav",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Hero",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Problem",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "HowItWorks",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Features",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Industries",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Scenarios",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Pricing",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "MoreThan",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "FAQ",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "FinalCTA",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Footer",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "BizSite",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Hero",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Needs",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "SupportAreas",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Plans",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Deliverables",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Process",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Reasons",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "WorkStream",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "WholeBusiness",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Faq",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "FinalCta",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "BusinessSupportPage",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/deliverables.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "BricksYourWay",
+          "file": "src/routes/deliverables.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Library",
+          "file": "src/routes/deliverables.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Hero",
+          "file": "src/routes/deliverables.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "FinalCta",
+          "file": "src/routes/deliverables.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "DeliverablesPage",
+          "file": "src/routes/deliverables.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/growth-reset.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Hero",
+          "file": "src/routes/growth-reset.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Workshop",
+          "file": "src/routes/growth-reset.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "GrowthCheck",
+          "file": "src/routes/growth-reset.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "PlanningSession",
+          "file": "src/routes/growth-reset.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Footer",
+          "file": "src/routes/growth-reset.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "GrowthResetPage",
+          "file": "src/routes/growth-reset.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Logo",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "PrimaryCTA",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Section",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Kicker",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Nav",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Hero",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Problem",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Engine",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Capacity",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Pillars",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "HumanAI",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "UseCases",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Skyscraper",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "HowItWorks",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Difference",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "OnDemand",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Dashboard",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Outcomes",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Founder",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "FinalCTA",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Footer",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Home",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Hero",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Goals",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Expertise",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Plans",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "PreviewArt",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "DeliverablesPreview",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Process",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "ReasonsAndStories",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "WholeBusiness",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Faq",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "FinalCta",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "MarketingPage",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Field",
+          "file": "src/routes/new-client.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "FormSection",
+          "file": "src/routes/new-client.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "NewClient",
+          "file": "src/routes/new-client.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Nav",
+          "file": "src/routes/new-client.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "IntroAndForm",
+          "file": "src/routes/new-client.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "SuccessScreen",
+          "file": "src/routes/new-client.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Hero",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "AudienceBand",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Tracks",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Ways",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "WhyKghq",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Examples",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "PartnerForm",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Field",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Footer",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "PartnersPage",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Hero",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Goals",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Expertise",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Plans",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Deliverables",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Process",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Reasons",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "WholeBusiness",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Faq",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "FinalCta",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "SalesPage",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/training.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Hero",
+          "file": "src/routes/training.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "SessionCard",
+          "file": "src/routes/training.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Sessions",
+          "file": "src/routes/training.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "MoreComing",
+          "file": "src/routes/training.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "FinalCTA",
+          "file": "src/routes/training.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Footer",
+          "file": "src/routes/training.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "TrainingPage",
+          "file": "src/routes/training.tsx",
+          "kind": "function",
+          "importedBy": []
+        }
+      ],
+      "sharedLayoutsAndNavigation": [
+        {
+          "name": "ArticlesHeader",
+          "file": "src/components/articles-header.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/routes/articles.tsx",
+            "src/routes/articles_.$slug.tsx"
+          ]
+        },
+        {
+          "name": "DeliverableCard",
+          "file": "src/components/deliverable-card.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/routes/business-support.tsx",
+            "src/routes/deliverables.tsx",
+            "src/routes/sales.tsx"
+          ]
+        },
+        {
+          "name": "StackedBricks",
+          "file": "src/components/stacked-bricks.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/components/deliverable-card.tsx",
+            "src/routes/deliverables.tsx",
+            "src/routes/marketing.tsx"
+          ]
+        },
+        {
+          "name": "AlertDialogHeader",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogFooter",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Button",
+          "file": "src/components/ui/button.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/articles-header.tsx",
+            "src/components/ui/calendar.tsx",
+            "src/components/ui/carousel.tsx",
+            "src/components/ui/sidebar.tsx",
+            "src/routes/articles.tsx",
+            "src/routes/business-support.tsx",
+            "src/routes/deliverables.tsx",
+            "src/routes/index.tsx",
+            "src/routes/marketing.tsx",
+            "src/routes/partners.tsx",
+            "src/routes/sales.tsx",
+            "src/routes/training.tsx"
+          ]
+        },
+        {
+          "name": "CardHeader",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CardFooter",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DialogHeader",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DialogFooter",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerHeader",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerFooter",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenu",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuList",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuTrigger",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuContent",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuViewport",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuIndicator",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Separator",
+          "file": "src/components/ui/separator.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/resizable.tsx",
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "SheetHeader",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "SheetFooter",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarHeader",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarFooter",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableHeader",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableFooter",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Nav",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Footer",
+          "file": "src/routes/bizphone.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Nav",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Footer",
+          "file": "src/routes/bizsite.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/business-support.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/deliverables.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/growth-reset.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Footer",
+          "file": "src/routes/growth-reset.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Nav",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Footer",
+          "file": "src/routes/index.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/marketing.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Nav",
+          "file": "src/routes/new-client.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Footer",
+          "file": "src/routes/partners.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/sales.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Header",
+          "file": "src/routes/training.tsx",
+          "kind": "function",
+          "importedBy": []
+        },
+        {
+          "name": "Footer",
+          "file": "src/routes/training.tsx",
+          "kind": "function",
+          "importedBy": []
+        }
+      ],
+      "nativeCandidates": [
+        "headings",
+        "paragraphs and inline text",
+        "images",
+        "buttons/links",
+        "groups with exact flex/grid CSS",
+        "lists",
+        "native Details/accessibility-linked disclosures"
+      ],
+      "customBlockCandidates": [
+        "linked layout/card \u2192 KGHQ Linked Layout with native child blocks",
+        "recharts component \u2192 inspect data/interaction requirements; no automatic functional conversion is claimed"
+      ],
+      "heuristicNotice": "Component naming/import frequency suggests shared layouts; it does not certify runtime behavior."
+    },
+    "design": {
+      "tokens": [
+        {
+          "name": "--radius-sm",
+          "value": "calc(var(--radius) - 4px)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--radius-md",
+          "value": "calc(var(--radius) - 2px)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--radius-lg",
+          "value": "var(--radius)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--radius-xl",
+          "value": "calc(var(--radius) + 4px)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--radius-2xl",
+          "value": "calc(var(--radius) + 8px)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--radius-3xl",
+          "value": "calc(var(--radius) + 12px)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--radius-4xl",
+          "value": "calc(var(--radius) + 16px)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-background",
+          "value": "var(--background)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-foreground",
+          "value": "var(--foreground)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-card",
+          "value": "var(--card)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-card-foreground",
+          "value": "var(--card-foreground)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-popover",
+          "value": "var(--popover)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-popover-foreground",
+          "value": "var(--popover-foreground)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-primary",
+          "value": "var(--primary)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-primary-foreground",
+          "value": "var(--primary-foreground)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-secondary",
+          "value": "var(--secondary)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-secondary-foreground",
+          "value": "var(--secondary-foreground)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-muted",
+          "value": "var(--muted)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-muted-foreground",
+          "value": "var(--muted-foreground)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-accent",
+          "value": "var(--accent)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-accent-foreground",
+          "value": "var(--accent-foreground)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-destructive",
+          "value": "var(--destructive)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-destructive-foreground",
+          "value": "var(--destructive-foreground)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-border",
+          "value": "var(--border)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-input",
+          "value": "var(--input)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-ring",
+          "value": "var(--ring)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-ring-offset-background",
+          "value": "var(--background)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-chart-1",
+          "value": "var(--chart-1)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-chart-2",
+          "value": "var(--chart-2)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-chart-3",
+          "value": "var(--chart-3)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-chart-4",
+          "value": "var(--chart-4)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-chart-5",
+          "value": "var(--chart-5)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-sidebar",
+          "value": "var(--sidebar)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-sidebar-foreground",
+          "value": "var(--sidebar-foreground)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-sidebar-primary",
+          "value": "var(--sidebar-primary)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-sidebar-primary-foreground",
+          "value": "var(--sidebar-primary-foreground)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-sidebar-accent",
+          "value": "var(--sidebar-accent)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-sidebar-accent-foreground",
+          "value": "var(--sidebar-accent-foreground)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-sidebar-border",
+          "value": "var(--sidebar-border)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-sidebar-ring",
+          "value": "var(--sidebar-ring)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--radius",
+          "value": "0.75rem",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--background",
+          "value": "oklch(0.985 0.005 270)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--foreground",
+          "value": "oklch(0.18 0.02 270)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--card",
+          "value": "oklch(1 0 0)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--card-foreground",
+          "value": "oklch(0.18 0.02 270)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--popover",
+          "value": "oklch(1 0 0)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--popover-foreground",
+          "value": "oklch(0.18 0.02 270)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--primary",
+          "value": "oklch(0.52 0.27 285)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--primary-foreground",
+          "value": "oklch(0.99 0 0)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--primary-glow",
+          "value": "oklch(0.62 0.25 290)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--secondary",
+          "value": "oklch(0.96 0.01 270)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--secondary-foreground",
+          "value": "oklch(0.18 0.02 270)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--muted",
+          "value": "oklch(0.96 0.01 270)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--muted-foreground",
+          "value": "oklch(0.45 0.03 270)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--accent",
+          "value": "oklch(0.95 0.04 285)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--accent-foreground",
+          "value": "oklch(0.42 0.25 285)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--destructive",
+          "value": "oklch(0.577 0.245 27.325)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--destructive-foreground",
+          "value": "oklch(0.984 0.003 247.858)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--border",
+          "value": "oklch(0.929 0.013 255.508)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--input",
+          "value": "oklch(0.929 0.013 255.508)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--ring",
+          "value": "oklch(0.704 0.04 256.788)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--chart-1",
+          "value": "oklch(0.646 0.222 41.116)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--chart-2",
+          "value": "oklch(0.6 0.118 184.704)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--chart-3",
+          "value": "oklch(0.398 0.07 227.392)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--chart-4",
+          "value": "oklch(0.828 0.189 84.429)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--chart-5",
+          "value": "oklch(0.769 0.188 70.08)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar",
+          "value": "oklch(0.984 0.003 247.858)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-foreground",
+          "value": "oklch(0.129 0.042 264.695)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-primary",
+          "value": "oklch(0.208 0.042 265.755)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-primary-foreground",
+          "value": "oklch(0.984 0.003 247.858)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-accent",
+          "value": "oklch(0.968 0.007 247.896)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-accent-foreground",
+          "value": "oklch(0.208 0.042 265.755)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-border",
+          "value": "oklch(0.929 0.013 255.508)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-ring",
+          "value": "oklch(0.704 0.04 256.788)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--background",
+          "value": "oklch(0.129 0.042 264.695)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--foreground",
+          "value": "oklch(0.984 0.003 247.858)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--card",
+          "value": "oklch(0.208 0.042 265.755)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--card-foreground",
+          "value": "oklch(0.984 0.003 247.858)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--popover",
+          "value": "oklch(0.208 0.042 265.755)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--popover-foreground",
+          "value": "oklch(0.984 0.003 247.858)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--primary",
+          "value": "oklch(0.929 0.013 255.508)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--primary-foreground",
+          "value": "oklch(0.208 0.042 265.755)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--secondary",
+          "value": "oklch(0.279 0.041 260.031)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--secondary-foreground",
+          "value": "oklch(0.984 0.003 247.858)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--muted",
+          "value": "oklch(0.279 0.041 260.031)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--muted-foreground",
+          "value": "oklch(0.704 0.04 256.788)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--accent",
+          "value": "oklch(0.279 0.041 260.031)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--accent-foreground",
+          "value": "oklch(0.984 0.003 247.858)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--destructive",
+          "value": "oklch(0.704 0.191 22.216)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--destructive-foreground",
+          "value": "oklch(0.984 0.003 247.858)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--border",
+          "value": "oklch(1 0 0 / 10%)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--input",
+          "value": "oklch(1 0 0 / 15%)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--ring",
+          "value": "oklch(0.551 0.027 264.364)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--chart-1",
+          "value": "oklch(0.488 0.243 264.376)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--chart-2",
+          "value": "oklch(0.696 0.17 162.48)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--chart-3",
+          "value": "oklch(0.769 0.188 70.08)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--chart-4",
+          "value": "oklch(0.627 0.265 303.9)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--chart-5",
+          "value": "oklch(0.645 0.246 16.439)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar",
+          "value": "oklch(0.208 0.042 265.755)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-foreground",
+          "value": "oklch(0.984 0.003 247.858)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-primary",
+          "value": "oklch(0.488 0.243 264.376)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-primary-foreground",
+          "value": "oklch(0.984 0.003 247.858)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-accent",
+          "value": "oklch(0.279 0.041 260.031)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-accent-foreground",
+          "value": "oklch(0.984 0.003 247.858)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-border",
+          "value": "oklch(1 0 0 / 10%)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--sidebar-ring",
+          "value": "oklch(0.551 0.027 264.364)",
+          "selector": ".dark",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--color-primary-glow",
+          "value": "var(--primary-glow)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--gradient-primary",
+          "value": "linear-gradient(135deg, oklch(0.52 0.27 285), oklch(0.62 0.25 290))",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--gradient-hero",
+          "value": "linear-gradient(135deg, oklch(0.45 0.28 285 / 0.85), oklch(0.55 0.27 295 / 0.7))",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--shadow-glow",
+          "value": "0 20px 60px -20px oklch(0.52 0.27 285 / 0.45)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--shadow-card",
+          "value": "0 10px 30px -15px oklch(0.3 0.1 285 / 0.18)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-navy",
+          "value": "oklch(0.21 0.045 245)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-navy-deep",
+          "value": "oklch(0.155 0.038 250)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-teal",
+          "value": "oklch(0.62 0.11 205)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-teal-bright",
+          "value": "oklch(0.8 0.13 190)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-paper",
+          "value": "oklch(0.975 0.006 95)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-sand",
+          "value": "oklch(0.945 0.012 95)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-ink",
+          "value": "oklch(0.2 0.03 245)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-muted",
+          "value": "oklch(0.46 0.025 245)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-line",
+          "value": "oklch(0.895 0.008 240)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-on-dark",
+          "value": "oklch(0.96 0.008 200)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-on-dark-muted",
+          "value": "oklch(0.78 0.03 210)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-dark-line",
+          "value": "oklch(1 0 0 / 12%)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-dark-card",
+          "value": "oklch(1 0 0 / 6%)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--bs-gradient",
+          "value": "linear-gradient(135deg, var(--bs-teal), oklch(0.55 0.12 225))",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-ink",
+          "value": "oklch(0.16 0.055 285)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-ink-soft",
+          "value": "oklch(0.22 0.065 285)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-paper",
+          "value": "oklch(0.985 0.006 285)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-mist",
+          "value": "oklch(0.955 0.025 290)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-green",
+          "value": "oklch(0.4936 0.2873 285.36)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-green-deep",
+          "value": "oklch(0.41 0.245 285.36)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-lime",
+          "value": "oklch(0.72 0.22 292)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-yellow",
+          "value": "oklch(0.88 0.08 315)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-coral",
+          "value": "oklch(0.68 0.22 335)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-white",
+          "value": "oklch(0.995 0 0)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-muted",
+          "value": "oklch(0.47 0.035 285)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-line",
+          "value": "oklch(0.87 0.025 285)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-dark-line",
+          "value": "oklch(1 0 0 / 14%)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-dark-muted",
+          "value": "oklch(0.78 0.035 290)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        },
+        {
+          "name": "--kh-shadow",
+          "value": "0 22px 70px -34px oklch(0.3 0.15 285 / 45%)",
+          "selector": ":root",
+          "file": "src/styles.css"
+        }
+      ],
+      "fonts": [],
+      "componentVariants": [
+        {
+          "file": "src/components/ui/alert.tsx",
+          "axis": "variant",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "bg-background text-foreground"
+              ]
+            },
+            {
+              "name": "destructive",
+              "classes": [
+                "border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/badge.tsx",
+          "axis": "variant",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80"
+              ]
+            },
+            {
+              "name": "secondary",
+              "classes": [
+                "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+              ]
+            },
+            {
+              "name": "destructive",
+              "classes": [
+                "border-transparent bg-destructive text-destructive-foreground shadow hover:bg-destructive/80"
+              ]
+            },
+            {
+              "name": "outline",
+              "classes": [
+                "text-foreground"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/button.tsx",
+          "axis": "variant",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "bg-primary text-primary-foreground shadow hover:bg-primary/90"
+              ]
+            },
+            {
+              "name": "destructive",
+              "classes": [
+                "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90"
+              ]
+            },
+            {
+              "name": "outline",
+              "classes": [
+                "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground"
+              ]
+            },
+            {
+              "name": "secondary",
+              "classes": [
+                "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80"
+              ]
+            },
+            {
+              "name": "ghost",
+              "classes": [
+                "hover:bg-accent hover:text-accent-foreground"
+              ]
+            },
+            {
+              "name": "link",
+              "classes": [
+                "text-primary underline-offset-4 hover:underline"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/button.tsx",
+          "axis": "size",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "h-9 px-4 py-2"
+              ]
+            },
+            {
+              "name": "sm",
+              "classes": [
+                "h-8 rounded-md px-3 text-xs"
+              ]
+            },
+            {
+              "name": "lg",
+              "classes": [
+                "h-10 rounded-md px-8"
+              ]
+            },
+            {
+              "name": "icon",
+              "classes": [
+                "h-9 w-9"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/sheet.tsx",
+          "axis": "side",
+          "values": [
+            {
+              "name": "top",
+              "classes": [
+                "inset-x-0 top-0 border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top"
+              ]
+            },
+            {
+              "name": "bottom",
+              "classes": [
+                "inset-x-0 bottom-0 border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom"
+              ]
+            },
+            {
+              "name": "left",
+              "classes": [
+                "inset-y-0 left-0 h-full w-3/4 border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm"
+              ]
+            },
+            {
+              "name": "right",
+              "classes": [
+                "inset-y-0 right-0 h-full w-3/4 border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/sidebar.tsx",
+          "axis": "variant",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+              ]
+            },
+            {
+              "name": "outline",
+              "classes": [
+                "bg-background shadow-[0_0_0_1px_var(--sidebar-border)] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground hover:shadow-[0_0_0_1px_var(--sidebar-accent)]"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/sidebar.tsx",
+          "axis": "size",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "h-8 text-sm"
+              ]
+            },
+            {
+              "name": "sm",
+              "classes": [
+                "h-7 text-xs"
+              ]
+            },
+            {
+              "name": "lg",
+              "classes": [
+                "h-12 text-sm group-data-[collapsible=icon]:!p-0"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/toggle.tsx",
+          "axis": "variant",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "bg-transparent"
+              ]
+            },
+            {
+              "name": "outline",
+              "classes": [
+                "border border-input bg-transparent shadow-sm hover:bg-accent hover:text-accent-foreground"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/toggle.tsx",
+          "axis": "size",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "h-9 px-2 min-w-9"
+              ]
+            },
+            {
+              "name": "sm",
+              "classes": [
+                "h-8 px-1.5 min-w-8"
+              ]
+            },
+            {
+              "name": "lg",
+              "classes": [
+                "h-10 px-2.5 min-w-10"
+              ]
+            }
+          ]
+        }
+      ],
+      "tailwindConfigFiles": [],
+      "shadcnDetected": true,
+      "runtime": "Compiled CSS/CSS variables, media queries and actual rendered typography are authoritative. Missing/cross-origin fonts must be reported; no styles are inferred from a previous project."
+    },
+    "assets": {
+      "inventory": [
+        "public/favicon.png",
+        "public/favicon.svg",
+        "src/assets/app-call-summary.png",
+        "src/assets/articles-ai-assistant.jpg",
+        "src/assets/articles-appointments.jpg",
+        "src/assets/articles-social.jpg",
+        "src/assets/bizphone-hero.jpg",
+        "src/assets/business-support-team-hq.jpg",
+        "src/assets/business-support-team.jpg",
+        "src/assets/dashboard.png",
+        "src/assets/deliv-brand-cool.jpg",
+        "src/assets/deliv-brand.jpg",
+        "src/assets/deliv-email-cool.jpg",
+        "src/assets/deliv-email.jpg",
+        "src/assets/deliv-landing-cool.jpg",
+        "src/assets/deliv-landing.jpg",
+        "src/assets/deliv-leadmagnet-cool.jpg",
+        "src/assets/deliv-leadmagnet.jpg",
+        "src/assets/deliv-local-cool.jpg",
+        "src/assets/deliv-local.jpg",
+        "src/assets/deliv-seo-cool.jpg",
+        "src/assets/deliv-seo.jpg",
+        "src/assets/deliv-social-cool.jpg",
+        "src/assets/deliv-social.jpg",
+        "src/assets/deliv-website-cool.jpg",
+        "src/assets/deliv-website.jpg",
+        "src/assets/hero-bizsite.jpg",
+        "src/assets/hero-owner.jpg",
+        "src/assets/kghq-home-hero.jpg",
+        "src/assets/kghq-team-work.jpg",
+        "src/assets/library/001.jpg",
+        "src/assets/library/002.jpg",
+        "src/assets/library/003.jpg",
+        "src/assets/library/004.jpg",
+        "src/assets/library/005.jpg",
+        "src/assets/library/006.jpg",
+        "src/assets/library/007.jpg",
+        "src/assets/library/008.jpg",
+        "src/assets/library/009.jpg",
+        "src/assets/library/010.jpg",
+        "src/assets/library/011.jpg",
+        "src/assets/library/012.jpg",
+        "src/assets/library/013.jpg",
+        "src/assets/library/014.jpg",
+        "src/assets/library/015.jpg",
+        "src/assets/library/016.jpg",
+        "src/assets/library/017.jpg",
+        "src/assets/library/018.jpg",
+        "src/assets/library/019.jpg",
+        "src/assets/library/020.jpg",
+        "src/assets/library/021.jpg",
+        "src/assets/library/022.jpg",
+        "src/assets/library/023.jpg",
+        "src/assets/library/024.jpg",
+        "src/assets/library/025.jpg",
+        "src/assets/library/026.jpg",
+        "src/assets/library/027.jpg",
+        "src/assets/library/028.jpg",
+        "src/assets/library/029.jpg",
+        "src/assets/library/030.jpg",
+        "src/assets/library/031.jpg",
+        "src/assets/library/032.jpg",
+        "src/assets/library/033.jpg",
+        "src/assets/library/034.jpg",
+        "src/assets/library/035.jpg",
+        "src/assets/library/036.jpg",
+        "src/assets/library/037.jpg",
+        "src/assets/library/038.jpg",
+        "src/assets/library/039.jpg",
+        "src/assets/library/040.jpg",
+        "src/assets/library/041.jpg",
+        "src/assets/library/042.jpg",
+        "src/assets/library/043.jpg",
+        "src/assets/library/044.jpg",
+        "src/assets/library/045.jpg",
+        "src/assets/library/046.jpg",
+        "src/assets/library/047.jpg",
+        "src/assets/library/048.jpg",
+        "src/assets/library/049.jpg",
+        "src/assets/library/050.jpg",
+        "src/assets/library/051.jpg",
+        "src/assets/library/052.jpg",
+        "src/assets/library/053.jpg",
+        "src/assets/library/054.jpg",
+        "src/assets/library/055.jpg",
+        "src/assets/library/056.jpg",
+        "src/assets/library/057.jpg",
+        "src/assets/library/058.jpg",
+        "src/assets/library/059.jpg",
+        "src/assets/library/060.jpg",
+        "src/assets/library/061.jpg",
+        "src/assets/library/062.jpg",
+        "src/assets/library/063.jpg",
+        "src/assets/library/064.jpg",
+        "src/assets/library/065.jpg",
+        "src/assets/library/066.jpg",
+        "src/assets/library/067.jpg",
+        "src/assets/library/068.jpg",
+        "src/assets/library/069.jpg",
+        "src/assets/library/070.jpg",
+        "src/assets/library/071.jpg",
+        "src/assets/library/072.jpg",
+        "src/assets/library/073.jpg",
+        "src/assets/library/074.jpg",
+        "src/assets/library/075.jpg",
+        "src/assets/library/076.jpg",
+        "src/assets/library/077.jpg",
+        "src/assets/library/078.jpg",
+        "src/assets/library/079.jpg",
+        "src/assets/library/080.jpg",
+        "src/assets/library/081.jpg",
+        "src/assets/library/082.jpg",
+        "src/assets/library/083.jpg",
+        "src/assets/library/084.jpg",
+        "src/assets/library/085.jpg",
+        "src/assets/library/086.jpg",
+        "src/assets/library/087.jpg",
+        "src/assets/library/088.jpg",
+        "src/assets/library/089.jpg",
+        "src/assets/library/090.jpg",
+        "src/assets/library/091.jpg",
+        "src/assets/library/092.jpg",
+        "src/assets/library/093.jpg",
+        "src/assets/library/094.jpg",
+        "src/assets/library/095.jpg",
+        "src/assets/library/096.jpg",
+        "src/assets/library/097.jpg",
+        "src/assets/library/098.jpg",
+        "src/assets/library/099.jpg",
+        "src/assets/library/100.jpg",
+        "src/assets/library/101.jpg",
+        "src/assets/library/102.jpg",
+        "src/assets/library/103.jpg",
+        "src/assets/library/104.jpg",
+        "src/assets/library/105.jpg",
+        "src/assets/library/106.jpg",
+        "src/assets/library/107.jpg",
+        "src/assets/library/108.jpg",
+        "src/assets/library/109.jpg",
+        "src/assets/library/110.jpg",
+        "src/assets/library/111.jpg",
+        "src/assets/library/112.jpg",
+        "src/assets/library/113.jpg",
+        "src/assets/library/114.jpg",
+        "src/assets/library/115.jpg",
+        "src/assets/library/116.jpg",
+        "src/assets/library/117.jpg",
+        "src/assets/library/118.jpg",
+        "src/assets/library/119.jpg",
+        "src/assets/library/120.jpg",
+        "src/assets/library/121.jpg",
+        "src/assets/library/122.jpg",
+        "src/assets/library/123.jpg",
+        "src/assets/library/124.jpg",
+        "src/assets/library/125.jpg",
+        "src/assets/library/126.jpg",
+        "src/assets/library/127.jpg",
+        "src/assets/library/128.jpg",
+        "src/assets/library/129.jpg",
+        "src/assets/library/130.jpg",
+        "src/assets/library/131.jpg",
+        "src/assets/library/132.jpg",
+        "src/assets/library/133.jpg",
+        "src/assets/library/134.jpg",
+        "src/assets/library/135.jpg",
+        "src/assets/library/136.jpg",
+        "src/assets/library/137.jpg",
+        "src/assets/library/138.jpg",
+        "src/assets/library/139.jpg",
+        "src/assets/library/140.jpg",
+        "src/assets/library/141.jpg",
+        "src/assets/library/142.jpg",
+        "src/assets/library/143.jpg",
+        "src/assets/library/144.jpg",
+        "src/assets/library/145.jpg",
+        "src/assets/library/146.jpg",
+        "src/assets/library/147.jpg",
+        "src/assets/library/148.jpg",
+        "src/assets/library/149.jpg",
+        "src/assets/library/150.jpg",
+        "src/assets/library/151.jpg",
+        "src/assets/library/152.jpg",
+        "src/assets/library/153.jpg",
+        "src/assets/library/154.jpg",
+        "src/assets/library/155.jpg",
+        "src/assets/library/156.jpg",
+        "src/assets/library/157.jpg",
+        "src/assets/library/158.jpg",
+        "src/assets/library/159.jpg",
+        "src/assets/library/160.jpg",
+        "src/assets/library/161.jpg",
+        "src/assets/library/162.jpg",
+        "src/assets/library/163.jpg",
+        "src/assets/library/164.jpg",
+        "src/assets/library/165.jpg",
+        "src/assets/library/166.jpg",
+        "src/assets/library/167.jpg",
+        "src/assets/library/168.jpg",
+        "src/assets/library/169.jpg",
+        "src/assets/library/170.jpg",
+        "src/assets/library/171.jpg",
+        "src/assets/library/172.jpg",
+        "src/assets/library/173.jpg",
+        "src/assets/library/174.jpg",
+        "src/assets/library-brand-content.jpg",
+        "src/assets/library-brand-foundations.jpg",
+        "src/assets/library-content-operations.jpg",
+        "src/assets/library-content-studio.jpg",
+        "src/assets/library-content-video.jpg",
+        "src/assets/library-crm-phone.jpg",
+        "src/assets/library-digital-presence.jpg",
+        "src/assets/library-executive-support.jpg",
+        "src/assets/library-sales-development.jpg",
+        "src/assets/library-tech-launch.jpg",
+        "src/assets/library-tech-systems.jpg",
+        "src/assets/marketing-team-studio-hq.jpg",
+        "src/assets/marketing-team-studio.jpg",
+        "src/assets/sales-team-conversation.jpg",
+        "src/assets/sales-team-pipeline-hq-fix.jpg",
+        "src/assets/sales-team-pipeline-hq.jpg",
+        "src/assets/sales-team-pipeline.jpg",
+        "src/assets/texture-waves.jpg",
+        "src/assets/training-7-mistakes.jpg",
+        "src/assets/training-ai-advantage.jpg",
+        "src/assets/training-va-leverage.jpg",
+        "src/assets/website-examples.png",
+        "src/assets/website-mockup.png"
+      ],
+      "missingStaticReferences": [],
+      "renderedCheckRequired": true
+    },
+    "interactions": [
+      {
+        "file": "src/components/articles-header.tsx",
+        "events": [
+          "onClick"
+        ],
+        "hooks": [
+          "useState"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/ui/carousel.tsx",
+        "events": [
+          "onKeyDownCapture",
+          "onClick"
+        ],
+        "hooks": [
+          "useEmblaCarousel",
+          "useCarousel"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/ui/form.tsx",
+        "events": [],
+        "hooks": [
+          "useFormContext",
+          "useFormField"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/ui/sidebar.tsx",
+        "events": [
+          "onOpenChange",
+          "onClick"
+        ],
+        "hooks": [
+          "useIsMobile",
+          "useSidebar"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/routes/__root.tsx",
+        "events": [
+          "onClick"
+        ],
+        "hooks": [
+          "useRouter"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/routes/articles.tsx",
+        "events": [
+          "onClick",
+          "onChange"
+        ],
+        "hooks": [],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/routes/business-support.tsx",
+        "events": [
+          "onClick"
+        ],
+        "hooks": [
+          "useState"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/routes/deliverables.tsx",
+        "events": [
+          "onClick",
+          "onSubmit"
+        ],
+        "hooks": [
+          "useState",
+          "useEffect",
+          "useNativeFilters"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/routes/growth-reset.tsx",
+        "events": [
+          "onClick"
+        ],
+        "hooks": [
+          "useState"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/routes/index.tsx",
+        "events": [
+          "onClick"
+        ],
+        "hooks": [
+          "useState",
+          "useCases.map"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/routes/marketing.tsx",
+        "events": [
+          "onClick"
+        ],
+        "hooks": [
+          "useState"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/routes/new-client.tsx",
+        "events": [
+          "onSubmit",
+          "onClick"
+        ],
+        "hooks": [
+          "useState"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/routes/partners.tsx",
+        "events": [
+          "onClick",
+          "onSubmit"
+        ],
+        "hooks": [
+          "useState"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/routes/sales.tsx",
+        "events": [
+          "onClick"
+        ],
+        "hooks": [
+          "useState"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/routes/training.tsx",
+        "events": [
+          "onClick"
+        ],
+        "hooks": [
+          "useState"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      }
+    ],
+    "integrations": [
+      {
+        "file": "src/components/ui/input.tsx",
+        "elements": [
+          "input"
+        ],
+        "handling": "Requires a WordPress integration or custom visual block; export does not implement this functionality."
+      },
+      {
+        "file": "src/components/ui/textarea.tsx",
+        "elements": [
+          "textarea"
+        ],
+        "handling": "Requires a WordPress integration or custom visual block; export does not implement this functionality."
+      },
+      {
+        "file": "src/routes/articles.tsx",
+        "elements": [
+          "input"
+        ],
+        "handling": "Requires a WordPress integration or custom visual block; export does not implement this functionality."
+      },
+      {
+        "file": "src/routes/deliverables.tsx",
+        "elements": [
+          "select",
+          "input",
+          "form"
+        ],
+        "handling": "Requires a WordPress integration or custom visual block; export does not implement this functionality."
+      },
+      {
+        "file": "src/routes/new-client.tsx",
+        "elements": [
+          "form",
+          "input",
+          "textarea",
+          "select"
+        ],
+        "handling": "Requires a WordPress integration or custom visual block; export does not implement this functionality."
+      },
+      {
+        "file": "src/routes/partners.tsx",
+        "elements": [
+          "form",
+          "select",
+          "textarea",
+          "input"
+        ],
+        "handling": "Requires a WordPress integration or custom visual block; export does not implement this functionality."
+      },
+      {
+        "file": "src/server.ts",
+        "calls": [
+          "handler.fetch"
+        ],
+        "environmentVariableNames": [],
+        "handling": "Server/client integration must be reimplemented in WordPress; credentials are not extracted."
+      }
+    ],
+    "limitations": [
+      "Computed/rendered state does not contain content fetched only after user actions, auth or other application states.",
+      "Unknown interactions are not implemented as a React embed. Acknowledgment is required for a static-content export.",
+      "Raster SVG icons cannot preserve dynamic stroke/fill changes unless separately integrated.",
+      "Source live font/asset availability and per-theme/editor fidelity require rendered QA."
+    ],
+    "requiresInteractionAcknowledgment": true,
+    "warnings": [],
+    "status": "static-analysis-only; rendered compatibility and visual QA are required before publishing"
+  },
+  "pages": [
+    {
+      "path": "/",
+      "title": "Home",
+      "file": "src/routes/index.tsx"
+    },
+    {
+      "path": "/articles",
+      "title": "articles",
+      "file": "src/routes/articles.tsx"
+    },
+    {
+      "path": "/bizphone",
+      "title": "bizphone",
+      "file": "src/routes/bizphone.tsx"
+    },
+    {
+      "path": "/bizsite",
+      "title": "bizsite",
+      "file": "src/routes/bizsite.tsx"
+    },
+    {
+      "path": "/business-support",
+      "title": "business support",
+      "file": "src/routes/business-support.tsx"
+    },
+    {
+      "path": "/deliverables",
+      "title": "deliverables",
+      "file": "src/routes/deliverables.tsx"
+    },
+    {
+      "path": "/growth-reset",
+      "title": "growth reset",
+      "file": "src/routes/growth-reset.tsx"
+    },
+    {
+      "path": "/marketing",
+      "title": "marketing",
+      "file": "src/routes/marketing.tsx"
+    },
+    {
+      "path": "/new-client",
+      "title": "new client",
+      "file": "src/routes/new-client.tsx"
+    },
+    {
+      "path": "/partners",
+      "title": "partners",
+      "file": "src/routes/partners.tsx"
+    },
+    {
+      "path": "/sales",
+      "title": "sales",
+      "file": "src/routes/sales.tsx"
+    },
+    {
+      "path": "/training",
+      "title": "training",
+      "file": "src/routes/training.tsx"
+    }
+  ],
+  "warnings": [
+    "Dynamic route requires explicit concrete URLs via --routes."
+  ]
+}

@@ -1,0 +1,2652 @@
+{
+  "repository": "GuidoPenta/TrackZilla",
+  "commit": "d8099fdb253f0d21eaece84a2895d9d0671c8aa7",
+  "ref": "main",
+  "compatibility": {
+    "schemaVersion": 1,
+    "analysisVersion": "0.3.0",
+    "frameworks": [
+      {
+        "name": "class-variance-authority",
+        "version": "^0.7.1"
+      },
+      {
+        "name": "react",
+        "version": "^18.3.1"
+      },
+      {
+        "name": "react-router-dom",
+        "version": "^6.26.2"
+      },
+      {
+        "name": "tailwindcss",
+        "version": "^3.4.11"
+      },
+      {
+        "name": "vite",
+        "version": "^5.4.1"
+      }
+    ],
+    "routing": {
+      "systems": [
+        "React Router"
+      ],
+      "pages": [
+        {
+          "path": "/",
+          "title": "Home",
+          "file": "src/App.tsx"
+        }
+      ],
+      "dynamicAndUnresolvedRoutes": []
+    },
+    "build": {
+      "scripts": [
+        "dev",
+        "build",
+        "build:dev",
+        "lint",
+        "preview"
+      ],
+      "lockfiles": [
+        "bun.lockb",
+        "package-lock.json"
+      ],
+      "execution": "Analysis does not execute build/config/source code. Conversion requires a trusted rendered source URL."
+    },
+    "components": {
+      "inventory": [
+        {
+          "name": "App",
+          "file": "src/App.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/main.tsx"
+          ]
+        },
+        {
+          "name": "AddJobForm",
+          "file": "src/components/AddJobForm.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/JobTracker.tsx"
+          ]
+        },
+        {
+          "name": "FormContent",
+          "file": "src/components/AddJobForm.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AuthPage",
+          "file": "src/components/AuthPage.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/pages/Index.tsx"
+          ]
+        },
+        {
+          "name": "JobList",
+          "file": "src/components/JobList.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/JobTracker.tsx"
+          ]
+        },
+        {
+          "name": "JobTracker",
+          "file": "src/components/JobTracker.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/pages/Index.tsx"
+          ]
+        },
+        {
+          "name": "LandingPage",
+          "file": "src/components/LandingPage.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx"
+          ]
+        },
+        {
+          "name": "SettingsModal",
+          "file": "src/components/SettingsModal.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/JobTracker.tsx"
+          ]
+        },
+        {
+          "name": "Statistics",
+          "file": "src/components/Statistics.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/JobTracker.tsx"
+          ]
+        },
+        {
+          "name": "AnalyticsSection",
+          "file": "src/components/landing/AnalyticsSection.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/LandingPage.tsx"
+          ]
+        },
+        {
+          "name": "CTASection",
+          "file": "src/components/landing/CTASection.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/LandingPage.tsx"
+          ]
+        },
+        {
+          "name": "FeaturesSection",
+          "file": "src/components/landing/FeaturesSection.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/LandingPage.tsx"
+          ]
+        },
+        {
+          "name": "HeroSection",
+          "file": "src/components/landing/HeroSection.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/LandingPage.tsx"
+          ]
+        },
+        {
+          "name": "LandingFooter",
+          "file": "src/components/landing/LandingFooter.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/LandingPage.tsx"
+          ]
+        },
+        {
+          "name": "LandingHeader",
+          "file": "src/components/landing/LandingHeader.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/LandingPage.tsx"
+          ]
+        },
+        {
+          "name": "AccordionItem",
+          "file": "src/components/ui/accordion.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AccordionTrigger",
+          "file": "src/components/ui/accordion.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AccordionContent",
+          "file": "src/components/ui/accordion.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogOverlay",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogContent",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogHeader",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogFooter",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogTitle",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogDescription",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogAction",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogCancel",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Alert",
+          "file": "src/components/ui/alert.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertTitle",
+          "file": "src/components/ui/alert.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDescription",
+          "file": "src/components/ui/alert.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Avatar",
+          "file": "src/components/ui/avatar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AvatarImage",
+          "file": "src/components/ui/avatar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AvatarFallback",
+          "file": "src/components/ui/avatar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Badge",
+          "file": "src/components/ui/badge.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/components/JobList.tsx"
+          ]
+        },
+        {
+          "name": "Breadcrumb",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "BreadcrumbList",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "BreadcrumbItem",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "BreadcrumbLink",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "BreadcrumbPage",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "BreadcrumbSeparator",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "BreadcrumbEllipsis",
+          "file": "src/components/ui/breadcrumb.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Button",
+          "file": "src/components/ui/button.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/AuthPage.tsx",
+            "src/components/JobList.tsx",
+            "src/components/JobTracker.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/landing/AnalyticsSection.tsx",
+            "src/components/landing/CTASection.tsx",
+            "src/components/landing/HeroSection.tsx",
+            "src/components/landing/LandingHeader.tsx",
+            "src/components/ui/carousel.tsx",
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "Calendar",
+          "file": "src/components/ui/calendar.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/JobList.tsx"
+          ]
+        },
+        {
+          "name": "Card",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/JobList.tsx",
+            "src/components/JobTracker.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/Statistics.tsx",
+            "src/components/landing/FeaturesSection.tsx"
+          ]
+        },
+        {
+          "name": "CardHeader",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/JobList.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/Statistics.tsx",
+            "src/components/landing/FeaturesSection.tsx"
+          ]
+        },
+        {
+          "name": "CardTitle",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/Statistics.tsx",
+            "src/components/landing/FeaturesSection.tsx"
+          ]
+        },
+        {
+          "name": "CardDescription",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx"
+          ]
+        },
+        {
+          "name": "CardContent",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/JobList.tsx",
+            "src/components/JobTracker.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/Statistics.tsx",
+            "src/components/landing/FeaturesSection.tsx"
+          ]
+        },
+        {
+          "name": "CardFooter",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Carousel",
+          "file": "src/components/ui/carousel.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CarouselContent",
+          "file": "src/components/ui/carousel.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CarouselItem",
+          "file": "src/components/ui/carousel.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CarouselPrevious",
+          "file": "src/components/ui/carousel.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CarouselNext",
+          "file": "src/components/ui/carousel.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ChartContainer",
+          "file": "src/components/ui/chart.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ChartStyle",
+          "file": "src/components/ui/chart.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ChartTooltipContent",
+          "file": "src/components/ui/chart.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ChartLegendContent",
+          "file": "src/components/ui/chart.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Checkbox",
+          "file": "src/components/ui/checkbox.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Command",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/command.tsx"
+          ]
+        },
+        {
+          "name": "CommandDialog",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandInput",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandList",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandEmpty",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandGroup",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandSeparator",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandItem",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "CommandShortcut",
+          "file": "src/components/ui/command.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuSubTrigger",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuSubContent",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuContent",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuItem",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuCheckboxItem",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuRadioItem",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuLabel",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuSeparator",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ContextMenuShortcut",
+          "file": "src/components/ui/context-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DialogOverlay",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DialogContent",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/ui/command.tsx"
+          ]
+        },
+        {
+          "name": "DialogHeader",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/SettingsModal.tsx"
+          ]
+        },
+        {
+          "name": "DialogFooter",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DialogTitle",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/SettingsModal.tsx"
+          ]
+        },
+        {
+          "name": "DialogDescription",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Drawer",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/drawer.tsx"
+          ]
+        },
+        {
+          "name": "DrawerOverlay",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerContent",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerHeader",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerFooter",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerTitle",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerDescription",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuSubTrigger",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuSubContent",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuContent",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuItem",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuCheckboxItem",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuRadioItem",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuLabel",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuSeparator",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DropdownMenuShortcut",
+          "file": "src/components/ui/dropdown-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "FormField",
+          "file": "src/components/ui/form.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "FormItem",
+          "file": "src/components/ui/form.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "FormLabel",
+          "file": "src/components/ui/form.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "FormControl",
+          "file": "src/components/ui/form.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "FormDescription",
+          "file": "src/components/ui/form.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "FormMessage",
+          "file": "src/components/ui/form.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "HoverCardContent",
+          "file": "src/components/ui/hover-card.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "InputOTP",
+          "file": "src/components/ui/input-otp.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "InputOTPGroup",
+          "file": "src/components/ui/input-otp.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "InputOTPSlot",
+          "file": "src/components/ui/input-otp.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "InputOTPSeparator",
+          "file": "src/components/ui/input-otp.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Input",
+          "file": "src/components/ui/input.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/AuthPage.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "Label",
+          "file": "src/components/ui/label.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/AuthPage.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/ui/form.tsx"
+          ]
+        },
+        {
+          "name": "Menubar",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarTrigger",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarSubTrigger",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarSubContent",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarContent",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarItem",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarCheckboxItem",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarRadioItem",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarLabel",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarSeparator",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "MenubarShortcut",
+          "file": "src/components/ui/menubar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenu",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuList",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuTrigger",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuContent",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuViewport",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuIndicator",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Pagination",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PaginationContent",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PaginationItem",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PaginationLink",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PaginationPrevious",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PaginationNext",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PaginationEllipsis",
+          "file": "src/components/ui/pagination.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "PopoverContent",
+          "file": "src/components/ui/popover.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Progress",
+          "file": "src/components/ui/progress.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "RadioGroup",
+          "file": "src/components/ui/radio-group.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "RadioGroupItem",
+          "file": "src/components/ui/radio-group.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ResizablePanelGroup",
+          "file": "src/components/ui/resizable.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ResizableHandle",
+          "file": "src/components/ui/resizable.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ScrollArea",
+          "file": "src/components/ui/scroll-area.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx"
+          ]
+        },
+        {
+          "name": "ScrollBar",
+          "file": "src/components/ui/scroll-area.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SelectTrigger",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/JobList.tsx"
+          ]
+        },
+        {
+          "name": "SelectScrollUpButton",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SelectScrollDownButton",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SelectContent",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/JobList.tsx"
+          ]
+        },
+        {
+          "name": "SelectLabel",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SelectItem",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/JobList.tsx"
+          ]
+        },
+        {
+          "name": "SelectSeparator",
+          "file": "src/components/ui/select.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Separator",
+          "file": "src/components/ui/separator.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "SheetOverlay",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SheetContent",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "SheetHeader",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx"
+          ]
+        },
+        {
+          "name": "SheetFooter",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SheetTitle",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx"
+          ]
+        },
+        {
+          "name": "SheetDescription",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarProvider",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Sidebar",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarTrigger",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarRail",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarInset",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarInput",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarHeader",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarFooter",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarSeparator",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarContent",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarGroup",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarGroupLabel",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarGroupAction",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarGroupContent",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenu",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuItem",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuButton",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuAction",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuBadge",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuSkeleton",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuSub",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuSubItem",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarMenuSubButton",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Skeleton",
+          "file": "src/components/ui/skeleton.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "Slider",
+          "file": "src/components/ui/slider.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Toaster",
+          "file": "src/components/ui/sonner.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/App.tsx",
+            "src/components/ui/sonner.tsx"
+          ]
+        },
+        {
+          "name": "Switch",
+          "file": "src/components/ui/switch.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Table",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableHeader",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableBody",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableFooter",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableRow",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableHead",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableCell",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableCaption",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TabsList",
+          "file": "src/components/ui/tabs.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/JobTracker.tsx"
+          ]
+        },
+        {
+          "name": "TabsTrigger",
+          "file": "src/components/ui/tabs.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/JobTracker.tsx"
+          ]
+        },
+        {
+          "name": "TabsContent",
+          "file": "src/components/ui/tabs.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/JobTracker.tsx"
+          ]
+        },
+        {
+          "name": "Textarea",
+          "file": "src/components/ui/textarea.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx"
+          ]
+        },
+        {
+          "name": "ToastViewport",
+          "file": "src/components/ui/toast.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/toaster.tsx"
+          ]
+        },
+        {
+          "name": "Toast",
+          "file": "src/components/ui/toast.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/toaster.tsx"
+          ]
+        },
+        {
+          "name": "ToastAction",
+          "file": "src/components/ui/toast.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ToastClose",
+          "file": "src/components/ui/toast.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/toaster.tsx"
+          ]
+        },
+        {
+          "name": "ToastTitle",
+          "file": "src/components/ui/toast.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/toaster.tsx"
+          ]
+        },
+        {
+          "name": "ToastDescription",
+          "file": "src/components/ui/toast.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/toaster.tsx"
+          ]
+        },
+        {
+          "name": "Toaster",
+          "file": "src/components/ui/toaster.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/App.tsx",
+            "src/components/ui/sonner.tsx"
+          ]
+        },
+        {
+          "name": "ToggleGroup",
+          "file": "src/components/ui/toggle-group.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "ToggleGroupItem",
+          "file": "src/components/ui/toggle-group.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Toggle",
+          "file": "src/components/ui/toggle.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TooltipContent",
+          "file": "src/components/ui/tooltip.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "AuthProvider",
+          "file": "src/hooks/useAuth.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/App.tsx"
+          ]
+        },
+        {
+          "name": "Index",
+          "file": "src/pages/Index.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/App.tsx"
+          ]
+        },
+        {
+          "name": "NotFound",
+          "file": "src/pages/NotFound.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        }
+      ],
+      "sharedLayoutsAndNavigation": [
+        {
+          "name": "LandingFooter",
+          "file": "src/components/landing/LandingFooter.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/LandingPage.tsx"
+          ]
+        },
+        {
+          "name": "LandingHeader",
+          "file": "src/components/landing/LandingHeader.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/LandingPage.tsx"
+          ]
+        },
+        {
+          "name": "AlertDialogHeader",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "AlertDialogFooter",
+          "file": "src/components/ui/alert-dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Button",
+          "file": "src/components/ui/button.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/AuthPage.tsx",
+            "src/components/JobList.tsx",
+            "src/components/JobTracker.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/landing/AnalyticsSection.tsx",
+            "src/components/landing/CTASection.tsx",
+            "src/components/landing/HeroSection.tsx",
+            "src/components/landing/LandingHeader.tsx",
+            "src/components/ui/carousel.tsx",
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "Calendar",
+          "file": "src/components/ui/calendar.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/JobList.tsx"
+          ]
+        },
+        {
+          "name": "Card",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/JobList.tsx",
+            "src/components/JobTracker.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/Statistics.tsx",
+            "src/components/landing/FeaturesSection.tsx"
+          ]
+        },
+        {
+          "name": "CardHeader",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/JobList.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/Statistics.tsx",
+            "src/components/landing/FeaturesSection.tsx"
+          ]
+        },
+        {
+          "name": "CardTitle",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/Statistics.tsx",
+            "src/components/landing/FeaturesSection.tsx"
+          ]
+        },
+        {
+          "name": "CardContent",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/JobList.tsx",
+            "src/components/JobTracker.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/Statistics.tsx",
+            "src/components/landing/FeaturesSection.tsx"
+          ]
+        },
+        {
+          "name": "CardFooter",
+          "file": "src/components/ui/card.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DialogContent",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/ui/command.tsx"
+          ]
+        },
+        {
+          "name": "DialogHeader",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/SettingsModal.tsx"
+          ]
+        },
+        {
+          "name": "DialogFooter",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DialogTitle",
+          "file": "src/components/ui/dialog.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/SettingsModal.tsx"
+          ]
+        },
+        {
+          "name": "DrawerHeader",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "DrawerFooter",
+          "file": "src/components/ui/drawer.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Input",
+          "file": "src/components/ui/input.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/AuthPage.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "Label",
+          "file": "src/components/ui/label.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/AuthPage.tsx",
+            "src/components/SettingsModal.tsx",
+            "src/components/ui/form.tsx"
+          ]
+        },
+        {
+          "name": "NavigationMenu",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuList",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuTrigger",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuContent",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuViewport",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "NavigationMenuIndicator",
+          "file": "src/components/ui/navigation-menu.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SheetContent",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx",
+            "src/components/ui/sidebar.tsx"
+          ]
+        },
+        {
+          "name": "SheetHeader",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AddJobForm.tsx"
+          ]
+        },
+        {
+          "name": "SheetFooter",
+          "file": "src/components/ui/sheet.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarHeader",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "SidebarFooter",
+          "file": "src/components/ui/sidebar.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "Toaster",
+          "file": "src/components/ui/sonner.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/App.tsx",
+            "src/components/ui/sonner.tsx"
+          ]
+        },
+        {
+          "name": "TableHeader",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TableFooter",
+          "file": "src/components/ui/table.tsx",
+          "kind": "function-expression",
+          "importedBy": []
+        },
+        {
+          "name": "TabsList",
+          "file": "src/components/ui/tabs.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/JobTracker.tsx"
+          ]
+        },
+        {
+          "name": "TabsTrigger",
+          "file": "src/components/ui/tabs.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/JobTracker.tsx"
+          ]
+        },
+        {
+          "name": "TabsContent",
+          "file": "src/components/ui/tabs.tsx",
+          "kind": "function-expression",
+          "importedBy": [
+            "src/components/AuthPage.tsx",
+            "src/components/JobTracker.tsx"
+          ]
+        },
+        {
+          "name": "Toaster",
+          "file": "src/components/ui/toaster.tsx",
+          "kind": "function",
+          "importedBy": [
+            "src/App.tsx",
+            "src/components/ui/sonner.tsx"
+          ]
+        }
+      ],
+      "nativeCandidates": [
+        "headings",
+        "paragraphs and inline text",
+        "images",
+        "buttons/links",
+        "groups with exact flex/grid CSS",
+        "lists",
+        "native Details/accessibility-linked disclosures"
+      ],
+      "customBlockCandidates": [
+        "linked layout/card \u2192 KGHQ Linked Layout with native child blocks",
+        "@supabase/supabase-js component \u2192 inspect data/interaction requirements; no automatic functional conversion is claimed",
+        "recharts component \u2192 inspect data/interaction requirements; no automatic functional conversion is claimed"
+      ],
+      "heuristicNotice": "Component naming/import frequency suggests shared layouts; it does not certify runtime behavior."
+    },
+    "design": {
+      "tokens": [
+        {
+          "type": "breakpoint",
+          "condition": "(prefers-reduced-motion: no-preference)",
+          "file": "src/App.css"
+        },
+        {
+          "name": "--background",
+          "value": "0 0% 3%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--foreground",
+          "value": "0 0% 98%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--card",
+          "value": "0 0% 6%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--card-foreground",
+          "value": "0 0% 98%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--popover",
+          "value": "0 0% 6%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--popover-foreground",
+          "value": "0 0% 98%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--primary",
+          "value": "0 0% 98%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--primary-foreground",
+          "value": "0 0% 3%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--secondary",
+          "value": "0 0% 10%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--secondary-foreground",
+          "value": "0 0% 98%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--muted",
+          "value": "0 0% 10%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--muted-foreground",
+          "value": "0 0% 65%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--accent",
+          "value": "0 0% 10%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--accent-foreground",
+          "value": "0 0% 98%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--destructive",
+          "value": "0 62.8% 30.6%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--destructive-foreground",
+          "value": "0 0% 98%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--border",
+          "value": "0 0% 15%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--input",
+          "value": "0 0% 15%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--ring",
+          "value": "0 0% 83%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--radius",
+          "value": "0.75rem",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--sidebar-background",
+          "value": "0 0% 3%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--sidebar-foreground",
+          "value": "0 0% 98%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--sidebar-primary",
+          "value": "0 0% 98%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--sidebar-primary-foreground",
+          "value": "0 0% 3%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--sidebar-accent",
+          "value": "0 0% 10%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--sidebar-accent-foreground",
+          "value": "0 0% 98%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--sidebar-border",
+          "value": "0 0% 15%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "name": "--sidebar-ring",
+          "value": "0 0% 83%",
+          "selector": ":root",
+          "file": "src/index.css"
+        },
+        {
+          "type": "tailwind-config",
+          "name": "container",
+          "value": {
+            "center": "[computed value: use compiled CSS/rendered audit]",
+            "padding": "2rem",
+            "screens": {
+              "2xl": "1400px"
+            }
+          },
+          "file": "tailwind.config.ts"
+        },
+        {
+          "type": "tailwind-config",
+          "name": "screens",
+          "value": {
+            "2xl": "1400px"
+          },
+          "file": "tailwind.config.ts"
+        },
+        {
+          "type": "tailwind-config",
+          "name": "fontFamily",
+          "value": {
+            "sans": [
+              "Inter",
+              "ui-sans-serif",
+              "system-ui",
+              "-apple-system",
+              "BlinkMacSystemFont",
+              "Segoe UI",
+              "Roboto",
+              "Helvetica Neue",
+              "Arial",
+              "Noto Sans",
+              "sans-serif"
+            ]
+          },
+          "file": "tailwind.config.ts"
+        },
+        {
+          "type": "tailwind-config",
+          "name": "colors",
+          "value": {
+            "border": "hsl(var(--border))",
+            "input": "hsl(var(--input))",
+            "ring": "hsl(var(--ring))",
+            "background": "hsl(var(--background))",
+            "foreground": "hsl(var(--foreground))",
+            "primary": {
+              "DEFAULT": "hsl(var(--primary))",
+              "foreground": "hsl(var(--primary-foreground))"
+            },
+            "secondary": {
+              "DEFAULT": "hsl(var(--secondary))",
+              "foreground": "hsl(var(--secondary-foreground))"
+            },
+            "destructive": {
+              "DEFAULT": "hsl(var(--destructive))",
+              "foreground": "hsl(var(--destructive-foreground))"
+            },
+            "muted": {
+              "DEFAULT": "hsl(var(--muted))",
+              "foreground": "hsl(var(--muted-foreground))"
+            },
+            "accent": {
+              "DEFAULT": "hsl(var(--accent))",
+              "foreground": "hsl(var(--accent-foreground))"
+            },
+            "popover": {
+              "DEFAULT": "hsl(var(--popover))",
+              "foreground": "hsl(var(--popover-foreground))"
+            },
+            "card": {
+              "DEFAULT": "hsl(var(--card))",
+              "foreground": "hsl(var(--card-foreground))"
+            },
+            "sidebar": {
+              "DEFAULT": "hsl(var(--sidebar-background))",
+              "foreground": "hsl(var(--sidebar-foreground))",
+              "primary": "hsl(var(--sidebar-primary))",
+              "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+              "accent": "hsl(var(--sidebar-accent))",
+              "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+              "border": "hsl(var(--sidebar-border))",
+              "ring": "hsl(var(--sidebar-ring))"
+            }
+          },
+          "file": "tailwind.config.ts"
+        },
+        {
+          "type": "tailwind-config",
+          "name": "borderRadius",
+          "value": {
+            "lg": "var(--radius)",
+            "md": "calc(var(--radius) - 2px)",
+            "sm": "calc(var(--radius) - 4px)"
+          },
+          "file": "tailwind.config.ts"
+        }
+      ],
+      "fonts": [],
+      "componentVariants": [
+        {
+          "file": "src/components/ui/alert.tsx",
+          "axis": "variant",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "bg-background text-foreground"
+              ]
+            },
+            {
+              "name": "destructive",
+              "classes": [
+                "border-destructive/50 text-destructive dark:border-destructive [&>svg]:text-destructive"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/badge.tsx",
+          "axis": "variant",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "border-transparent bg-primary text-primary-foreground hover:bg-primary/80"
+              ]
+            },
+            {
+              "name": "secondary",
+              "classes": [
+                "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80"
+              ]
+            },
+            {
+              "name": "destructive",
+              "classes": [
+                "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80"
+              ]
+            },
+            {
+              "name": "outline",
+              "classes": [
+                "text-foreground"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/button.tsx",
+          "axis": "variant",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "bg-primary text-primary-foreground hover:bg-primary/90"
+              ]
+            },
+            {
+              "name": "destructive",
+              "classes": [
+                "bg-destructive text-destructive-foreground hover:bg-destructive/90"
+              ]
+            },
+            {
+              "name": "outline",
+              "classes": [
+                "border border-input bg-background hover:bg-accent hover:text-accent-foreground"
+              ]
+            },
+            {
+              "name": "secondary",
+              "classes": [
+                "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+              ]
+            },
+            {
+              "name": "ghost",
+              "classes": [
+                "hover:bg-accent hover:text-accent-foreground"
+              ]
+            },
+            {
+              "name": "link",
+              "classes": [
+                "text-primary underline-offset-4 hover:underline"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/button.tsx",
+          "axis": "size",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "h-10 px-4 py-2"
+              ]
+            },
+            {
+              "name": "sm",
+              "classes": [
+                "h-9 rounded-md px-3"
+              ]
+            },
+            {
+              "name": "lg",
+              "classes": [
+                "h-11 rounded-md px-8"
+              ]
+            },
+            {
+              "name": "icon",
+              "classes": [
+                "h-10 w-10"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/sheet.tsx",
+          "axis": "side",
+          "values": [
+            {
+              "name": "top",
+              "classes": [
+                "inset-x-0 top-0 border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top"
+              ]
+            },
+            {
+              "name": "bottom",
+              "classes": [
+                "inset-x-0 bottom-0 border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom"
+              ]
+            },
+            {
+              "name": "left",
+              "classes": [
+                "inset-y-0 left-0 h-full w-3/4 border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm"
+              ]
+            },
+            {
+              "name": "right",
+              "classes": [
+                "inset-y-0 right-0 h-full w-3/4  border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/sidebar.tsx",
+          "axis": "variant",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
+              ]
+            },
+            {
+              "name": "outline",
+              "classes": [
+                "bg-background shadow-[0_0_0_1px_hsl(var(--sidebar-border))] hover:bg-sidebar-accent hover:text-sidebar-accent-foreground hover:shadow-[0_0_0_1px_hsl(var(--sidebar-accent))]"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/sidebar.tsx",
+          "axis": "size",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "h-8 text-sm"
+              ]
+            },
+            {
+              "name": "sm",
+              "classes": [
+                "h-7 text-xs"
+              ]
+            },
+            {
+              "name": "lg",
+              "classes": [
+                "h-12 text-sm group-data-[collapsible=icon]:!p-0"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/toast.tsx",
+          "axis": "variant",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "border bg-background text-foreground"
+              ]
+            },
+            {
+              "name": "destructive",
+              "classes": [
+                "destructive group border-destructive bg-destructive text-destructive-foreground"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/toggle.tsx",
+          "axis": "variant",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "bg-transparent"
+              ]
+            },
+            {
+              "name": "outline",
+              "classes": [
+                "border border-input bg-transparent hover:bg-accent hover:text-accent-foreground"
+              ]
+            }
+          ]
+        },
+        {
+          "file": "src/components/ui/toggle.tsx",
+          "axis": "size",
+          "values": [
+            {
+              "name": "default",
+              "classes": [
+                "h-10 px-3"
+              ]
+            },
+            {
+              "name": "sm",
+              "classes": [
+                "h-9 px-2.5"
+              ]
+            },
+            {
+              "name": "lg",
+              "classes": [
+                "h-11 px-5"
+              ]
+            }
+          ]
+        }
+      ],
+      "tailwindConfigFiles": [
+        "tailwind.config.ts"
+      ],
+      "shadcnDetected": true,
+      "runtime": "Compiled CSS/CSS variables, media queries and actual rendered typography are authoritative. Missing/cross-origin fonts must be reported; no styles are inferred from a previous project."
+    },
+    "assets": {
+      "inventory": [
+        "public/lovable-uploads/0d29e982-15eb-486e-9997-62ec1f3dfc68.png",
+        "public/lovable-uploads/1ab36f2f-6f8d-4074-933d-ccee257dd3b2.png",
+        "public/lovable-uploads/1cfab0e7-65a8-4956-b798-4ac8733c8283.png",
+        "public/lovable-uploads/9220c273-bc96-45f3-9a49-e598c00750a0.png",
+        "public/lovable-uploads/95407aee-75ac-4d31-a281-db4fc0472751.png",
+        "public/lovable-uploads/dc85d098-e320-47c7-af56-a63300bf46ae.png",
+        "public/lovable-uploads/df62053e-b5a6-405f-9c75-b973cfe27a5c.jpg",
+        "public/placeholder.svg"
+      ],
+      "missingStaticReferences": [],
+      "renderedCheckRequired": true
+    },
+    "interactions": [
+      {
+        "file": "src/components/AddJobForm.tsx",
+        "events": [
+          "onChange",
+          "onFocus",
+          "onSubmit",
+          "onClick",
+          "onKeyPress",
+          "onOpenChange",
+          "onOpenAutoFocus",
+          "onPointerDownOutside",
+          "onInteractOutside"
+        ],
+        "hooks": [
+          "useIsMobile",
+          "useRef",
+          "useState",
+          "useEffect"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/AuthPage.tsx",
+        "events": [
+          "onGetStarted",
+          "onLogin",
+          "onSignup",
+          "onClick",
+          "onValueChange",
+          "onSubmit",
+          "onChange"
+        ],
+        "hooks": [
+          "useState",
+          "useAuth",
+          "useToast"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/JobList.tsx",
+        "events": [
+          "onValueChange",
+          "onClick"
+        ],
+        "hooks": [
+          "useState"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/JobTracker.tsx",
+        "events": [
+          "onClick",
+          "onAdd",
+          "onCancel",
+          "onOpenChange",
+          "onUpdateStatus",
+          "onDelete"
+        ],
+        "hooks": [
+          "useAuth",
+          "useJobApplications",
+          "useState",
+          "useGhostingUpdater"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/LandingPage.tsx",
+        "events": [
+          "onLogin",
+          "onSignup",
+          "onGetStarted"
+        ],
+        "hooks": [],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/SettingsModal.tsx",
+        "events": [
+          "onOpenChange",
+          "onChange",
+          "onClick"
+        ],
+        "hooks": [
+          "useState"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/landing/AnalyticsSection.tsx",
+        "events": [
+          "onClick"
+        ],
+        "hooks": [],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/landing/CTASection.tsx",
+        "events": [
+          "onClick"
+        ],
+        "hooks": [],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/landing/HeroSection.tsx",
+        "events": [
+          "onClick"
+        ],
+        "hooks": [],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/landing/LandingHeader.tsx",
+        "events": [
+          "onClick"
+        ],
+        "hooks": [],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/ui/carousel.tsx",
+        "events": [
+          "onKeyDownCapture",
+          "onClick"
+        ],
+        "hooks": [
+          "useEmblaCarousel",
+          "useCarousel"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/ui/form.tsx",
+        "events": [],
+        "hooks": [
+          "useFormContext",
+          "useFormField"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/components/ui/sidebar.tsx",
+        "events": [
+          "onOpenChange",
+          "onClick"
+        ],
+        "hooks": [
+          "useIsMobile",
+          "useSidebar"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/hooks/useAuth.tsx",
+        "events": [],
+        "hooks": [
+          "useState",
+          "useEffect",
+          "useContext"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/hooks/useGhostingUpdater.tsx",
+        "events": [],
+        "hooks": [
+          "useRef",
+          "useEffect"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/hooks/useJobApplications.tsx",
+        "events": [],
+        "hooks": [
+          "useAuth",
+          "useState",
+          "useEffect"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      },
+      {
+        "file": "src/pages/NotFound.tsx",
+        "events": [],
+        "hooks": [
+          "useLocation",
+          "useEffect"
+        ],
+        "handling": "Requires rendered semantic adapter or explicit WordPress integration; arbitrary React handlers are not transferred."
+      }
+    ],
+    "integrations": [
+      {
+        "file": "src/components/AddJobForm.tsx",
+        "elements": [
+          "form",
+          "select"
+        ],
+        "handling": "Requires a WordPress integration or custom visual block; export does not implement this functionality."
+      },
+      {
+        "file": "src/components/AuthPage.tsx",
+        "elements": [
+          "form"
+        ],
+        "handling": "Requires a WordPress integration or custom visual block; export does not implement this functionality."
+      },
+      {
+        "file": "src/components/AuthPage.tsx",
+        "calls": [
+          "signIn",
+          "signUp"
+        ],
+        "environmentVariableNames": [],
+        "handling": "Server/client integration must be reimplemented in WordPress; credentials are not extracted."
+      },
+      {
+        "file": "src/components/ui/input.tsx",
+        "elements": [
+          "input"
+        ],
+        "handling": "Requires a WordPress integration or custom visual block; export does not implement this functionality."
+      },
+      {
+        "file": "src/components/ui/textarea.tsx",
+        "elements": [
+          "textarea"
+        ],
+        "handling": "Requires a WordPress integration or custom visual block; export does not implement this functionality."
+      },
+      {
+        "file": "src/hooks/useAuth.tsx",
+        "calls": [
+          "supabase.auth.onAuthStateChange",
+          "supabase.auth.getSession().then",
+          "supabase.auth.getSession",
+          "supabase.auth.signInWithPassword",
+          "supabase.auth.signUp",
+          "supabase.auth.signInWithOtp",
+          "supabase.auth.signOut"
+        ],
+        "environmentVariableNames": [],
+        "handling": "Server/client integration must be reimplemented in WordPress; credentials are not extracted."
+      },
+      {
+        "file": "src/hooks/useGhostingUpdater.tsx",
+        "calls": [
+          "supabase\n        .from('job_applications')\n        .select('id, application_date, status, company_na",
+          "supabase\n        .from('job_applications')\n        .select",
+          "supabase\n        .from",
+          "supabase\n          .from('job_applications')\n          .update({ status: 'ghosting' })\n          .eq",
+          "supabase\n          .from('job_applications')\n          .update",
+          "supabase\n          .from"
+        ],
+        "environmentVariableNames": [],
+        "handling": "Server/client integration must be reimplemented in WordPress; credentials are not extracted."
+      },
+      {
+        "file": "src/hooks/useJobApplications.tsx",
+        "calls": [
+          "supabase\n        .from('job_applications')\n        .select('*')\n        .eq('deleted', false)\n      ",
+          "supabase\n        .from('job_applications')\n        .select('*')\n        .eq",
+          "supabase\n        .from('job_applications')\n        .select",
+          "supabase\n        .from",
+          "supabase\n        .from('job_applications')\n        .insert({\n          user_id: user.id,\n          j",
+          "supabase\n        .from('job_applications')\n        .insert",
+          "supabase\n        .from('job_applications')\n        .update({ status })\n        .eq('id', id)\n       ",
+          "supabase\n        .from('job_applications')\n        .update({ status })\n        .eq",
+          "supabase\n        .from('job_applications')\n        .update",
+          "supabase\n        .from('job_applications')\n        .update({ deleted: true })\n        .eq"
+        ],
+        "environmentVariableNames": [],
+        "handling": "Server/client integration must be reimplemented in WordPress; credentials are not extracted."
+      },
+      {
+        "file": "src/integrations/supabase/client.ts",
+        "calls": [
+          "createClient"
+        ],
+        "environmentVariableNames": [],
+        "handling": "Server/client integration must be reimplemented in WordPress; credentials are not extracted."
+      }
+    ],
+    "limitations": [
+      "Computed/rendered state does not contain content fetched only after user actions, auth or other application states.",
+      "Unknown interactions are not implemented as a React embed. Acknowledgment is required for a static-content export.",
+      "Raster SVG icons cannot preserve dynamic stroke/fill changes unless separately integrated.",
+      "Source live font/asset availability and per-theme/editor fidelity require rendered QA."
+    ],
+    "requiresInteractionAcknowledgment": true,
+    "warnings": [
+      "External stylesheet/font import requires rendered availability check: url('https://fonts.googleapis.com/css2')"
+    ],
+    "status": "static-analysis-only; rendered compatibility and visual QA are required before publishing"
+  },
+  "pages": [
+    {
+      "path": "/",
+      "title": "Home",
+      "file": "src/App.tsx"
+    }
+  ],
+  "warnings": [
+    "External stylesheet/font import requires rendered availability check: url('https://fonts.googleapis.com/css2')"
+  ]
+}

@@ -1,0 +1,595 @@
+{
+  "label": "before-engine-b",
+  "conditions": {
+    "browser": "154.0.8037.57",
+    "viewportHeight": 1000,
+    "deviceScaleFactor": 1,
+    "locale": "en-US",
+    "timezoneId": "UTC",
+    "colorScheme": "light",
+    "reducedMotion": "reduce",
+    "animations": "disabled",
+    "screenshots": "unmasked, no resizing, full-page + native section crops"
+  },
+  "semanticMatching": "Match source tag identity carried by kghq-tag-* metadata; native Details summary is the documented equivalent of its source disclosure button. Pair text after normalizing structural whitespace, smart punctuation and the documented zero-width RichText decorative-span marker; separately report actual visible punctuation mutations. Never erase pixel differences.",
+  "method": "Unmasked full-page and section RGB differences (any channel delta >25); 16px local luminance SSIM; DOM box and computed-style diffs. No scaling, registration, filtering or hidden-content masks.",
+  "internalGoal": "At least 95% pixels within RGB tolerance AND local SSIM >=0.95 AND section x/y/width/height within 2px AND no unmatched source elements AND no observed leaf-text mutations. Missing fonts/assets/interactions remain separate review blockers; similarity alone is not certification.",
+  "results": [
+    {
+      "route": "/",
+      "width": 1440,
+      "fullPage": {
+        "changedPixelsRGBDeltaAbove25Percent": 0.177,
+        "meanAbsoluteRGBError": 0.14,
+        "localLuminanceSSIM16px": 0.99728,
+        "sourceSize": [
+          1440,
+          3009
+        ],
+        "importedSize": [
+          1440,
+          3009
+        ],
+        "diff": "home-1440-full-diff.png",
+        "overlay": "home-1440-full-overlay.png"
+      },
+      "heightDelta": 0,
+      "scrollWidthDelta": 0,
+      "sourceHorizontalOverflow": false,
+      "horizontalOverflow": false,
+      "sourceMissingImages": [],
+      "importedMissingImages": [],
+      "sourceFonts": [],
+      "importedFonts": [
+        {
+          "family": "dashicons",
+          "status": "loaded"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "title": "TAME THE JOB HUNT Grrrawww!",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.278,
+            "meanAbsoluteRGBError": 0.281,
+            "localLuminanceSSIM16px": 0.99227,
+            "sourceSize": [
+              1400,
+              540
+            ],
+            "importedSize": [
+              1400,
+              540
+            ],
+            "diff": "home-1440-section-0-diff.png",
+            "overlay": "home-1440-section-0-overlay.png"
+          },
+          "sourceScreenshot": "home-1440-source-section-0.png",
+          "importedScreenshot": "home-1440-imported-section-0.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [
+            {
+              "tag": "DIV",
+              "text": "\ud83d\ude80 Now in Beta - Start tracking for free",
+              "geometryDelta": {
+                "x": 0,
+                "y": 0,
+                "width": 2.5,
+                "height": 0
+              },
+              "styleDifferences": {},
+              "likelyCauses": []
+            }
+          ],
+          "textMutations": [
+            {
+              "sourceTag": "P",
+              "renderedTag": "P",
+              "source": "Job hunt got you feeling like you're fighting a Gila monster with a spoon? Meet Trackzilla: your bea",
+              "imported": "Job hunt got you feeling like you\u2019re fighting a Gila monster with a spoon? Meet Trackzilla: your bea",
+              "likelyCause": "WordPress typography/content filters or a native-block text mutation; review actual glyphs."
+            }
+          ],
+          "qualityGoalMet": false
+        },
+        {
+          "index": 1,
+          "title": "Everything you need for epic job hunting",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.005,
+            "meanAbsoluteRGBError": 0.003,
+            "localLuminanceSSIM16px": 0.99998,
+            "sourceSize": [
+              1440,
+              821
+            ],
+            "importedSize": [
+              1440,
+              821
+            ],
+            "diff": "home-1440-section-1-diff.png",
+            "overlay": "home-1440-section-1-overlay.png"
+          },
+          "sourceScreenshot": "home-1440-source-section-1.png",
+          "importedScreenshot": "home-1440-imported-section-1.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 2,
+          "title": "Monster-Slaying 101",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.304,
+            "meanAbsoluteRGBError": 0.241,
+            "localLuminanceSSIM16px": 0.99537,
+            "sourceSize": [
+              1440,
+              706
+            ],
+            "importedSize": [
+              1440,
+              706
+            ],
+            "diff": "home-1440-section-2-diff.png",
+            "overlay": "home-1440-section-2-overlay.png"
+          },
+          "sourceScreenshot": "home-1440-source-section-2.png",
+          "importedScreenshot": "home-1440-imported-section-2.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 3,
+          "title": "Ready to level up your job hunting game?",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.213,
+            "meanAbsoluteRGBError": 0.129,
+            "localLuminanceSSIM16px": 0.99866,
+            "sourceSize": [
+              1440,
+              782
+            ],
+            "importedSize": [
+              1440,
+              782
+            ],
+            "diff": "home-1440-section-3-diff.png",
+            "overlay": "home-1440-section-3-overlay.png"
+          },
+          "sourceScreenshot": "home-1440-source-section-3.png",
+          "importedScreenshot": "home-1440-imported-section-3.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [
+            {
+              "sourceTag": "P",
+              "renderedTag": "P",
+              "source": "Join thousands of smart professionals who've already upgraded their job hunting process with TrackZi",
+              "imported": "Join thousands of smart professionals who\u2019ve already upgraded their job hunting process with TrackZi",
+              "likelyCause": "WordPress typography/content filters or a native-block text mutation; review actual glyphs."
+            }
+          ],
+          "qualityGoalMet": false
+        }
+      ],
+      "qualityGoalMet": false
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "fullPage": {
+        "changedPixelsRGBDeltaAbove25Percent": 0.173,
+        "meanAbsoluteRGBError": 0.143,
+        "localLuminanceSSIM16px": 0.99699,
+        "sourceSize": [
+          768,
+          3894
+        ],
+        "importedSize": [
+          768,
+          3894
+        ],
+        "diff": "home-768-full-diff.png",
+        "overlay": "home-768-full-overlay.png"
+      },
+      "heightDelta": 0,
+      "scrollWidthDelta": 0,
+      "sourceHorizontalOverflow": false,
+      "horizontalOverflow": false,
+      "sourceMissingImages": [],
+      "importedMissingImages": [],
+      "sourceFonts": [],
+      "importedFonts": [
+        {
+          "family": "dashicons",
+          "status": "loaded"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "title": "TAME THE JOB HUNT Grrrawww!",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.334,
+            "meanAbsoluteRGBError": 0.344,
+            "localLuminanceSSIM16px": 0.99102,
+            "sourceSize": [
+              768,
+              950
+            ],
+            "importedSize": [
+              768,
+              950
+            ],
+            "diff": "home-768-section-0-diff.png",
+            "overlay": "home-768-section-0-overlay.png"
+          },
+          "sourceScreenshot": "home-768-source-section-0.png",
+          "importedScreenshot": "home-768-imported-section-0.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [
+            {
+              "tag": "DIV",
+              "text": "\ud83d\ude80 Now in Beta - Start tracking for free",
+              "geometryDelta": {
+                "x": 0,
+                "y": 0,
+                "width": 2.5,
+                "height": 0
+              },
+              "styleDifferences": {},
+              "likelyCauses": []
+            }
+          ],
+          "textMutations": [
+            {
+              "sourceTag": "P",
+              "renderedTag": "P",
+              "source": "Job hunt got you feeling like you're fighting a Gila monster with a spoon? Meet Trackzilla: your bea",
+              "imported": "Job hunt got you feeling like you\u2019re fighting a Gila monster with a spoon? Meet Trackzilla: your bea",
+              "likelyCause": "WordPress typography/content filters or a native-block text mutation; review actual glyphs."
+            }
+          ],
+          "qualityGoalMet": false
+        },
+        {
+          "index": 1,
+          "title": "Everything you need for epic job hunting",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.007,
+            "meanAbsoluteRGBError": 0.005,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              768,
+              1046
+            ],
+            "importedSize": [
+              768,
+              1046
+            ],
+            "diff": "home-768-section-1-diff.png",
+            "overlay": "home-768-section-1-overlay.png"
+          },
+          "sourceScreenshot": "home-768-source-section-1.png",
+          "importedScreenshot": "home-768-imported-section-1.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 2,
+          "title": "Monster-Slaying 101",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.036,
+            "meanAbsoluteRGBError": 0.033,
+            "localLuminanceSSIM16px": 0.99934,
+            "sourceSize": [
+              768,
+              1052
+            ],
+            "importedSize": [
+              768,
+              1052
+            ],
+            "diff": "home-768-section-2-diff.png",
+            "overlay": "home-768-section-2-overlay.png"
+          },
+          "sourceScreenshot": "home-768-source-section-2.png",
+          "importedScreenshot": "home-768-imported-section-2.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 3,
+          "title": "Ready to level up your job hunting game?",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.444,
+            "meanAbsoluteRGBError": 0.269,
+            "localLuminanceSSIM16px": 0.99594,
+            "sourceSize": [
+              768,
+              646
+            ],
+            "importedSize": [
+              768,
+              646
+            ],
+            "diff": "home-768-section-3-diff.png",
+            "overlay": "home-768-section-3-overlay.png"
+          },
+          "sourceScreenshot": "home-768-source-section-3.png",
+          "importedScreenshot": "home-768-imported-section-3.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [
+            {
+              "sourceTag": "P",
+              "renderedTag": "P",
+              "source": "Join thousands of smart professionals who've already upgraded their job hunting process with TrackZi",
+              "imported": "Join thousands of smart professionals who\u2019ve already upgraded their job hunting process with TrackZi",
+              "likelyCause": "WordPress typography/content filters or a native-block text mutation; review actual glyphs."
+            }
+          ],
+          "qualityGoalMet": false
+        }
+      ],
+      "qualityGoalMet": false
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "fullPage": {
+        "changedPixelsRGBDeltaAbove25Percent": 0.127,
+        "meanAbsoluteRGBError": 0.119,
+        "localLuminanceSSIM16px": 0.99608,
+        "sourceSize": [
+          460,
+          5136
+        ],
+        "importedSize": [
+          460,
+          5136
+        ],
+        "diff": "home-390-full-diff.png",
+        "overlay": "home-390-full-overlay.png"
+      },
+      "heightDelta": 0,
+      "scrollWidthDelta": 0,
+      "sourceHorizontalOverflow": true,
+      "horizontalOverflow": true,
+      "sourceMissingImages": [],
+      "importedMissingImages": [],
+      "sourceFonts": [],
+      "importedFonts": [
+        {
+          "family": "dashicons",
+          "status": "loaded"
+        }
+      ],
+      "sections": [
+        {
+          "index": 0,
+          "title": "TAME THE JOB HUNT Grrrawww!",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.426,
+            "meanAbsoluteRGBError": 0.494,
+            "localLuminanceSSIM16px": 0.98431,
+            "sourceSize": [
+              390,
+              1042
+            ],
+            "importedSize": [
+              390,
+              1042
+            ],
+            "diff": "home-390-section-0-diff.png",
+            "overlay": "home-390-section-0-overlay.png"
+          },
+          "sourceScreenshot": "home-390-source-section-0.png",
+          "importedScreenshot": "home-390-imported-section-0.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [
+            {
+              "tag": "DIV",
+              "text": "\ud83d\ude80 Now in Beta - Start tracking for free",
+              "geometryDelta": {
+                "x": 0,
+                "y": 0,
+                "width": 2.5,
+                "height": 0
+              },
+              "styleDifferences": {},
+              "likelyCauses": []
+            }
+          ],
+          "textMutations": [
+            {
+              "sourceTag": "P",
+              "renderedTag": "P",
+              "source": "Job hunt got you feeling like you're fighting a Gila monster with a spoon? Meet Trackzilla: your bea",
+              "imported": "Job hunt got you feeling like you\u2019re fighting a Gila monster with a spoon? Meet Trackzilla: your bea",
+              "likelyCause": "WordPress typography/content filters or a native-block text mutation; review actual glyphs."
+            }
+          ],
+          "qualityGoalMet": false
+        },
+        {
+          "index": 1,
+          "title": "Everything you need for epic job hunting",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.008,
+            "meanAbsoluteRGBError": 0.005,
+            "localLuminanceSSIM16px": 0.99997,
+            "sourceSize": [
+              390,
+              1850
+            ],
+            "importedSize": [
+              390,
+              1850
+            ],
+            "diff": "home-390-section-1-diff.png",
+            "overlay": "home-390-section-1-overlay.png"
+          },
+          "sourceScreenshot": "home-390-source-section-1.png",
+          "importedScreenshot": "home-390-imported-section-1.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 2,
+          "title": "Monster-Slaying 101",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.074,
+            "meanAbsoluteRGBError": 0.06,
+            "localLuminanceSSIM16px": 0.99876,
+            "sourceSize": [
+              390,
+              1164
+            ],
+            "importedSize": [
+              390,
+              1164
+            ],
+            "diff": "home-390-section-2-diff.png",
+            "overlay": "home-390-section-2-overlay.png"
+          },
+          "sourceScreenshot": "home-390-source-section-2.png",
+          "importedScreenshot": "home-390-imported-section-2.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [],
+          "qualityGoalMet": true
+        },
+        {
+          "index": 3,
+          "title": "Ready to level up your job hunting game?",
+          "geometryDelta": {
+            "x": 0,
+            "y": 0.0,
+            "width": 0,
+            "height": 0.0
+          },
+          "pixels": {
+            "changedPixelsRGBDeltaAbove25Percent": 0.233,
+            "meanAbsoluteRGBError": 0.135,
+            "localLuminanceSSIM16px": 0.9986,
+            "sourceSize": [
+              390,
+              816
+            ],
+            "importedSize": [
+              390,
+              816
+            ],
+            "diff": "home-390-section-3-diff.png",
+            "overlay": "home-390-section-3-overlay.png"
+          },
+          "sourceScreenshot": "home-390-source-section-3.png",
+          "importedScreenshot": "home-390-imported-section-3.png",
+          "unmatchedSourceElements": 0,
+          "unmatchedElements": [],
+          "elementDifferences": [],
+          "textMutations": [
+            {
+              "sourceTag": "P",
+              "renderedTag": "P",
+              "source": "Join thousands of smart professionals who've already upgraded their job hunting process with TrackZi",
+              "imported": "Join thousands of smart professionals who\u2019ve already upgraded their job hunting process with TrackZi",
+              "likelyCause": "WordPress typography/content filters or a native-block text mutation; review actual glyphs."
+            }
+          ],
+          "qualityGoalMet": false
+        }
+      ],
+      "qualityGoalMet": false
+    }
+  ]
+}

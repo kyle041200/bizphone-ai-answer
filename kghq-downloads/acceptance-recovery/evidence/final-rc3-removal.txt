@@ -1,0 +1,9 @@
+{
+  "actualUIDeletion": true,
+  "allPageContentAndStyleHashesUnchanged": true,
+  "mediaOriginalsRetained": 104,
+  "companionActive": true,
+  "frontendScopedCSSPresent": true,
+  "editorReopensWithoutInvalidBlocks": true,
+  "status": "PASS"
+}

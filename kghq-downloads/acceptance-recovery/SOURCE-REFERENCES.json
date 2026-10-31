@@ -1,0 +1,17 @@
+{
+  "runnerImage": "kghq-converter-runner:0.5.0-rc1",
+  "runnerImageId": "sha256:0677d944339e2c6a00171e4eceaaeede6dc4b093888de7e5df0b8dc868177bbf",
+  "runnerNode": "v22.23.4",
+  "runnerChromium": "Chromium 156.0.8078.73 built on Debian GNU/Linux 12 (bookworm)",
+  "captureBrowser": "Chromium 154.0.8037.57 on both source and WordPress",
+  "sourceRepositories": [
+    {
+      "repository": "kyle041200/bizphone-ai-answer",
+      "commit": "4a66da501bbda92dd9fc318864decb215e8b3089"
+    },
+    {
+      "repository": "GuidoPenta/TrackZilla",
+      "commit": "d8099fdb253f0d21eaece84a2895d9d0671c8aa7"
+    }
+  ]
+}

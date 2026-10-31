@@ -1,0 +1,29 @@
+{
+  "repository": "GuidoPenta/TrackZilla",
+  "routes": [
+    "/"
+  ],
+  "workflow": "PASS",
+  "imports": [
+    {
+      "id": 115,
+      "status": "preserved",
+      "message": "Existing page and edits preserved; explicit replacement was not approved.",
+      "preview": "http://localhost:8087/?page_id=115&preview=true",
+      "edit": "http://localhost:8087/wp-admin/post.php?post=115&action=edit"
+    }
+  ],
+  "started": "2026-10-30T22:43:22.105Z",
+  "twoStepDashboard": true,
+  "manualUploadHidden": true,
+  "detectedPages": [
+    "/"
+  ],
+  "defaultBranchInfo": "1 pages detected on default branch main at d8099fdb253f. Select pages below.",
+  "exactSelection": true,
+  "log": "Conversion worker: cloning\n\nConversion worker: ready\n\nExternal stylesheet/font import requires rendered availability check: url('https://fonts.googleapis.com/css2')\n\nUnsupported interactions or integrations were detected. Review the report and acknowledge static-content conversion before importing.\n\nConversion worker: queued\n\nConversion worker: preparing\n\nConversion worker: installing\n\nConversion worker: building\n\nConversion worker: converting\n\nConversion worker: ready\n\nReact event-driven behavior is not imported; native Details toggles are preserved. SVG icons are rasterized to transparent PNG media. Internal source links retain original paths; review destination slugs before publishing.\n\n1 cross-origin stylesheets could not be read; export them as same-origin CSS before relying on font/style fidelity.\n\nUnreadable source stylesheet: https://fonts.googleapis.com/css2. Its fonts/styles are not certified by this export.\n\n5 JavaScript buttons are preserved as editable native buttons, but source event handlers are not imported. Configure WordPress actions before publishing.\n\n/: preserved — Existing page and edits preserved; explicit replacement was not approved.\n\nPreview draft Edit in Gutenberg",
+  "workerAutomaticallyInvoked": true,
+  "noManualBundleOrCLI": true,
+  "unapprovedExistingPagesUnchanged": true,
+  "finished": "2026-10-30T22:44:21.085Z"
+}

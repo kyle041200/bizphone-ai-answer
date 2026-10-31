@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "file": "visual-evidence/kghq-after-engine-b-visual-evidence.zip",
+      "bytes": 22395039,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "visual-evidence/kghq-before-engine-b-visual-evidence.zip",
+      "bytes": 22539048,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "visual-evidence/kghq-before-engine-a-visual-evidence.zip",
+      "bytes": 86804632,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "visual-evidence/kghq-after-engine-a-visual-evidence.zip",
+      "bytes": 86782361,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "visual-evidence/kghq-verified-project-b-visual-evidence.zip",
+      "bytes": 22396822,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "visual-evidence/kghq-verified-two-page-visual-evidence.zip",
+      "bytes": 86784081,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "packages/kghq-import-styles-0.5.0-rc2.zip",
+      "bytes": 15435,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "packages/kghq-importer-complete-source.zip",
+      "bytes": 241418,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "packages/kghq-import-styles-0.5.0-rc1.zip",
+      "bytes": 15132,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "packages/kghq-conversion-worker-source.zip",
+      "bytes": 107839,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "packages/kghq-lovable-importer-0.5.0-rc1.zip",
+      "bytes": 21836,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "packages/kghq-import-styles-0.5.0-rc3.zip",
+      "bytes": 15602,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "packages/kghq-converter-0.5.0-rc1.zip",
+      "bytes": 92398,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "bundles/kghq-engine-comparison-fixtures.zip",
+      "bytes": 3831477,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "bundles/kghq-two-page-acceptance-bundle.zip",
+      "bytes": 1677584,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    },
+    {
+      "file": "bundles/trackzilla-acceptance-bundle.zip",
+      "bytes": 240605,
+      "zipReadable": true,
+      "knownStagingBearerAbsent": true
+    }
+  ],
+  "exclusions": "No work directories, node_modules, Git metadata, cookies, wp-config.php, private .env files or actual service credential files. Synthetic local-only QA defaults remain test data.",
+  "note": "Known generated staging bearer checked in decompressed entries; this is not an exhaustive secret-discovery audit."
+}

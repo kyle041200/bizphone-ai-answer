@@ -1,0 +1,20 @@
+✔ AST scanner detects nested JSX, object routes and TanStack without site-specific adapters (26.145431ms)
+✔ scoping contains reset, root variables, media selectors, hover, layers, and keyframes (7.823827ms)
+✔ native wrappers receive image and button utility styles (1.603061ms)
+✔ GitHub arguments reject command/options injection before network (0.733714ms)
+✔ canonical native blocks survive parse/save without recovery (27.279002ms)
+✔ native Details preserves editable summary, inline icons, and child content (7.062221ms)
+✔ escaped ampersands in utility class names do not bypass selector scoping (1.747258ms)
+✔ font-face names and font family variables are namespaced together (1.105373ms)
+✔ zero-width content preserves decorative inline spans without block recovery (3.177669ms)
+✔ custom property scoping does not rename arbitrary utility class tokens or asset URLs (1.07104ms)
+✔ source rem units retain project root size without changing media breakpoint semantics (0.725321ms)
+✔ native static buttons, authored inline controls and linked native children remain canonical (20.450647ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 106.006524
