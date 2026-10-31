@@ -25,7 +25,9 @@ first provision the worker and connect it to WordPress:
    `kyle041200` authorizes that owner's future repositories too. It does not
    authorize other owners or provision private repository credentials.
 4. Store `KGHQ_WORKER_DATA` and Git temporary clones on a dedicated filesystem
-   with enforced byte/inode quotas. Host clone limits are not certified by the
+   with enforced byte/inode quotas. Create private writable jobs/tmp directories
+   before startup (the service example uses `/var/lib/kghq-worker`). Set `TMPDIR`
+   as well as `KGHQ_WORKER_DATA`; Node Git clones otherwise use the OS temp directory. Host clone limits are not certified by the
    current tests. Source inventory limits apply after clone and are not a substitute.
 5. Run `node importer/worker/server.mjs` as a dedicated trusted service account
    with Docker access. Docker access gives that service powerful host privileges;

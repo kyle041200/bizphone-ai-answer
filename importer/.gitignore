@@ -1,6 +1,11 @@
-engine/node_modules/
 work/
-dist/*
-!dist/.gitkeep
+dist/
+node_modules/
+**/node_modules/
+__pycache__/
+**/__pycache__/
+*.pyc
 worker-data/
-worker/.env
+.env
+.env.*
+!.env.example

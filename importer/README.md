@@ -5,7 +5,7 @@ structurally different Lovable repositories. The recovered worker supports
 frozen npm/Bun installs, isolated source execution and host-side CSS containment.
 Native Gutenberg editing is tested separately from front-end rendering.
 
-Read [worker setup](worker/README.md) and [recovery status](docs/RECOVERY-STATUS.md).
+Read the [final acceptance scorecard](docs/FINAL-ACCEPTANCE.md), then [worker setup](worker/README.md) and [recovery status](docs/RECOVERY-STATUS.md).
 Current evidence and development packages are published separately under
 `kghq-downloads/acceptance-recovery/`. This is not a production-ready certification;
 the classic-theme matrix, live fonts/reference access and other limitations must
