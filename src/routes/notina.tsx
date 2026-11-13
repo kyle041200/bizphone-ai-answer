@@ -19,7 +19,7 @@ export const Route = createFileRoute("/notina")({
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "stylesheet", href: pageCss }, { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" }],
+    links: [{ rel: "stylesheet", href: pageCss }, { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" }],
   }),
 });
 
