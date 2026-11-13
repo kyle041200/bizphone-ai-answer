@@ -1,4 +1,6 @@
 # Roadmap
+- [x] Build Notina page using supplied copy and portrait, with a white-label meeting preview
+- [x] Add Notina to homepage navigation and verify desktop/mobile and signup links
 - [x] Cool-tone the eight Marketing deliverable photos and share them with matching full-library entries
 - [x] Verify matching photos render on both pages
 - [x] Build the new KGHQ homepage from the supplied content

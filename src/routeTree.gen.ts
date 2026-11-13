@@ -18,6 +18,7 @@ import { Route as DeliverablesRouteImport } from './routes/deliverables'
 import { Route as GrowthResetRouteImport } from './routes/growth-reset'
 import { Route as MarketingRouteImport } from './routes/marketing'
 import { Route as NewClientRouteImport } from './routes/new-client'
+import { Route as NotinaRouteImport } from './routes/notina'
 import { Route as PartnersRouteImport } from './routes/partners'
 import { Route as SalesRouteImport } from './routes/sales'
 import { Route as TrainingRouteImport } from './routes/training'
@@ -68,6 +69,11 @@ const NewClientRoute = NewClientRouteImport.update({
   path: '/new-client',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NotinaRoute = NotinaRouteImport.update({
+  id: '/notina',
+  path: '/notina',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PartnersRoute = PartnersRouteImport.update({
   id: '/partners',
   path: '/partners',
@@ -99,6 +105,7 @@ export interface FileRoutesByFullPath {
   '/growth-reset': typeof GrowthResetRoute
   '/marketing': typeof MarketingRoute
   '/new-client': typeof NewClientRoute
+  '/notina': typeof NotinaRoute
   '/partners': typeof PartnersRoute
   '/sales': typeof SalesRoute
   '/training': typeof TrainingRoute
@@ -114,6 +121,7 @@ export interface FileRoutesByTo {
   '/growth-reset': typeof GrowthResetRoute
   '/marketing': typeof MarketingRoute
   '/new-client': typeof NewClientRoute
+  '/notina': typeof NotinaRoute
   '/partners': typeof PartnersRoute
   '/sales': typeof SalesRoute
   '/training': typeof TrainingRoute
@@ -130,6 +138,7 @@ export interface FileRoutesById {
   '/growth-reset': typeof GrowthResetRoute
   '/marketing': typeof MarketingRoute
   '/new-client': typeof NewClientRoute
+  '/notina': typeof NotinaRoute
   '/partners': typeof PartnersRoute
   '/sales': typeof SalesRoute
   '/training': typeof TrainingRoute
@@ -147,6 +156,7 @@ export interface FileRouteTypes {
     | '/growth-reset'
     | '/marketing'
     | '/new-client'
+    | '/notina'
     | '/partners'
     | '/sales'
     | '/training'
@@ -162,6 +172,7 @@ export interface FileRouteTypes {
     | '/growth-reset'
     | '/marketing'
     | '/new-client'
+    | '/notina'
     | '/partners'
     | '/sales'
     | '/training'
@@ -177,6 +188,7 @@ export interface FileRouteTypes {
     | '/growth-reset'
     | '/marketing'
     | '/new-client'
+    | '/notina'
     | '/partners'
     | '/sales'
     | '/training'
@@ -193,6 +205,7 @@ export interface RootRouteChildren {
   GrowthResetRoute: typeof GrowthResetRoute
   MarketingRoute: typeof MarketingRoute
   NewClientRoute: typeof NewClientRoute
+  NotinaRoute: typeof NotinaRoute
   PartnersRoute: typeof PartnersRoute
   SalesRoute: typeof SalesRoute
   TrainingRoute: typeof TrainingRoute
@@ -264,6 +277,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NewClientRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/notina': {
+      id: '/notina'
+      path: '/notina'
+      fullPath: '/notina'
+      preLoaderRoute: typeof NotinaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/partners': {
       id: '/partners'
       path: '/partners'
@@ -305,6 +325,7 @@ const rootRouteChildren: RootRouteChildren = {
   GrowthResetRoute: GrowthResetRoute,
   MarketingRoute: MarketingRoute,
   NewClientRoute: NewClientRoute,
+  NotinaRoute: NotinaRoute,
   PartnersRoute: PartnersRoute,
   SalesRoute: SalesRoute,
   TrainingRoute: TrainingRoute,

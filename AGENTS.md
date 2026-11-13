@@ -1,4 +1,5 @@
 # Project conventions
+- Keep Notina subscription values in a browser-safe offering module and derive the signup total from its fees so displayed pricing stays consistent and testable.
 
 - Keep the full booklet deliverable catalog in a dedicated browser-safe data module, separate from its page presentation, so all service variants and cost ranges remain auditable and testable.
 - Use the shared StackedBricks icon for library Brick prices so the currency symbol stays consistent across catalog controls and cards.
