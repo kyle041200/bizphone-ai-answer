@@ -1,4 +1,6 @@
 # Roadmap
+- [x] Verify Notina across 21 phone, tablet, laptop, and desktop widths without redesigning it; correct long-heading wrapping
+- [x] Verify matching Notina layouts in a script-free rendered copy outside the preview frame; actual CloneWebX/WordPress transfer remains untested
 - [x] Match Notina typography, colors, and spacing to existing KGHQ pages and verify phone/tablet/desktop layouts
 - [x] Build Notina page using supplied copy and portrait, with a white-label meeting preview
 - [x] Add Notina to homepage navigation and verify desktop/mobile and signup links

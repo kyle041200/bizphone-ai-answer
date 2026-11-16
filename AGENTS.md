@@ -1,6 +1,7 @@
 # Project conventions
 - Keep Notina subscription values in a browser-safe offering module and derive the signup total from its fees so displayed pricing stays consistent and testable.
 - Keep Notina presentation in its page-scoped stylesheet using shared color variables so styling changes do not affect other routes.
+- Use standard CSS media queries, Grid, Flexbox, and intrinsic text wrapping for Notina responsiveness; the rendered layout must not depend on React or the preview frame so it can survive cloning.
 
 - Keep the full booklet deliverable catalog in a dedicated browser-safe data module, separate from its page presentation, so all service variants and cost ranges remain auditable and testable.
 - Use the shared StackedBricks icon for library Brick prices so the currency symbol stays consistent across catalog controls and cards.
