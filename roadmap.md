@@ -1,4 +1,5 @@
 # Roadmap
+- [x] Match Notina typography, colors, and spacing to existing KGHQ pages and verify phone/tablet/desktop layouts
 - [x] Build Notina page using supplied copy and portrait, with a white-label meeting preview
 - [x] Add Notina to homepage navigation and verify desktop/mobile and signup links
 - [x] Cool-tone the eight Marketing deliverable photos and share them with matching full-library entries
